@@ -16,7 +16,7 @@ a.link:hover {text-decoration:underline;}
 .color-1 { color:#01a5ca;}
 a.color-1:hover {color:#000;}
 
-.font-3 {font-size: 17px;line-height: 33px;width:400px;color: #292929;float: left;margin-left: 50px;}
+.font-3 {font-size: 17px;line-height: 33px;width:460px;color: #292929;float: left;margin-left: -10px;}
 h2 { font-size:30px; line-height:36px; color:#292929; font-weight:normal; letter-spacing:-1px;}
 ul {margin:0; padding:0;list-style-image:none;}
 ul.list-1 li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/marker-1.gif) 0 11px no-repeat;}
@@ -64,14 +64,14 @@ h1 {float:left; margin:55px 0 0px 29px;}
 h1 a {font-size:40px; line-height:65px; color:#01a5ca; letter-spacing:1px; display:inline-block;}
 h1 a strong {display:block; color:#292929; margin-top:-21px; font-weight:normal;}
 
-.social-icons {overflow:hidden; text-align:right; margin-top:35px;}
-.social-icons a {display:inline-block; width:23px; height:23px; float:right;}
-.icon-1 {background:url(../images/icon-1.png) 0 0 no-repeat;}
-.icon-2 {background:url(../images/icon-2.png) 0 0 no-repeat; margin-left:7px;}
+.social-icon {overflow:hidden; text-align:right; margin-top:35px;}
+.social-icon a {display:inline-block; height:30px; float:right;color: #01a5ca;font-size:18px;}
+.icon-1 {background:url(../images/kefu.png) 0 0 no-repeat;}
+.icon-2 {background:url(../images/tel.png) 0 0 no-repeat; margin-left:7px;}
 .social-icons a:hover {background-position:0 bottom;}
 
 nav {overflow:hidden; margin-right:10px;}
-ul.menu {float:right; margin-top:39px;}
+ul.menu {float:right; margin-top:15px;}
 ul.menu li {float:left; line-height:20px; margin:0px 0 0px 16px;}
 ul.menu li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
 ul.menu li a:hover, ul.menu li.current a {color:#01a5ca;}
@@ -82,11 +82,11 @@ ul.menu li a:hover, ul.menu li.current a {color:#01a5ca;}
 #content {width:100%;}
 .box-shadow {box-shadow: 0px 0px 5px #dbdbdb;background:#fff;}
 .img-border {border:#f4f4f4 5px solid;}
-.block-1 { height: 240px;}
-.block-2 { padding:25px 30px 45px 44px;}
+.block-1 { height: 180px;}
+.block-2 { padding:25px 30px 5px 44px;}
 .block-3 { padding:25px 30px 25px 44px;}
-.col-1 {float:left; margin: 32px 20px;}
-.col-2 {float:left; width:225px;margin: 0px 95px;}
+.col-1 {float:left; margin: 15px 20px;}
+.col-2 {float:left; width:225px; margin: 0px 5px 0px 185px;}
 .col-3 {float:left; width:225px; margin-right:50px; }
 .col-4 {float:left; width:300px;margin-top:50px;}
 
@@ -104,12 +104,17 @@ width: 100%;
 position: relative;
 overflow: hidden;
 text-align: center;
-padding: 28px 0 45px 0;
+padding: 10px 0 45px 0;
 margin-top: 80px;
 border-top: 2px solid #050505;
 }
-footer p {color:#1e1e1e;}
-
+footer p {color:#1e1e1e;margin-top: 60px;}
+.ft_inf{float:left;margin-left: 50px;}
+.ft_not{width:105px}
+.ft_not h2{font-size:16px;line-height:21px;}
+footer ul.menu li a {font-size:15px;}
+footer span{font-size:15px;}
+.ft_nav{margin-top: 20px;}
 /**********************form**********************/
 .map {width:200px; height:200px; margin:20px 0 0 0;}
 .map iframe {width:200px; height:200px;}
