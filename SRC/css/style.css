@@ -135,7 +135,8 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .bg1{background: white;
 padding: 5px 10px 5px 10px;
 width: 50%;
-margin-top: 0px}
+margin-top: 0px;
+height: 592px}
 .container_12 .m1{width:960px}
 .m2{float:left; width:49; margin-right:13px;}
 .m3{float:left; width:300px;margin-top:3px;}
