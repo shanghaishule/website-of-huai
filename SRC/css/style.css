@@ -40,7 +40,7 @@ ul.list-2 li a:hover { color:#292929;}
 .top-1 {padding-top:35px;}
 .top-2 {padding-top:5px;}
 .top-3 {margin-top:23px;}
-.top-4 {margin-top:33px;}
+.top-4 {margin-top:3px;}
 .top-5 {margin-top:18px;}
 .top-6 {margin-top:12px;}
 
@@ -75,7 +75,7 @@ ul.menu {float:right; margin-top:39px;}
 ul.menu li {float:left; line-height:20px; margin:0px 0 0px 16px;}
 ul.menu li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
 ul.menu li a:hover, ul.menu li.current a {color:#01a5ca;}
-
+ul.p6 li {list-style-type:none;}
 .bg-img {background:url(../images/bg-img.gif) 0 0 no-repeat; width:150px; height:6px; position:absolute; top:-6px; left:-152px;}
 
 /*********************************content*************************************/
@@ -87,7 +87,7 @@ ul.menu li a:hover, ul.menu li.current a {color:#01a5ca;}
 .block-3 { padding:25px 30px 25px 44px;}
 .col-1 {float:left; margin: 32px 20px;}
 .col-2 {float:left; width:225px;margin: 0px 95px;}
-.col-3 {float:left; width:460px; margin-right:50px; }
+.col-3 {float:left; width:500px; margin-right:50px; }
 .col-4 {float:left; width:300px;margin-top:50px;}
 
 .form-search {margin:27px 0px 0 0px; width:210px; }
