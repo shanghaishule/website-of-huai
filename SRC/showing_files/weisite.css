@@ -1,20 +1,10 @@
 ﻿@charset "utf-8";
-form,ul,li,ol,li,dl,dt,dd,img,p,h1,h2,h3,h4,h5,h6,input{margin:0;padding:0; }
-h1,h2,h3,h4,h5,h6{font-size:12px;}
-input,select{font-size:12px;}
-img{border:0;}
-ul,li{list-style-type:none;}
-strong{font-weight:normal;}
-em {font-style:normal;}
-h1,h2,h3,h4,h5,h6 {font-weight:normal;}
 
-a{color:#393939;text-decoration:none; cursor:pointer;}
-a:hover{color:#bd0a01;text-decoration:underline;}
 
 .color_6e ,.color_6e a{ color:#6E6E6E;}
 .display_no{display:none;}
 .display_yes{display:block;}
-.layout{ width:1000px; margin:0 auto}
+.layout{ width:100%; margin:0 auto}
 .fl{ float: left;}
 .fr{ float: right;}
 
@@ -31,7 +21,7 @@ a:hover{color:#bd0a01;text-decoration:underline;}
  .v_box1{ width:1000px; overflow:hidden; margin-top:10px;}
 .v_box1_l{ float:left; overflow:hidden; width:495px; padding-left:15px;}
 .v_box1 span{ display:block;}
-.v_box1_r{ float:right; overflow:hidden; padding-right:30px;}
+.v_box1_r{ float:right; overflow:hidden; padding-right:80px;}
 .V_span1{ font-family:"微软雅黑"; color:#434343; font-size:14px; padding-top:20px; padding-bottom:45px; overflow:hidden;}
 .v_box2{ width:1000px; overflow:hidden; margin-top:10px;}
 .v_box2_title{ width:1000px; overflow:hidden;}
@@ -41,7 +31,7 @@ a:hover{color:#bd0a01;text-decoration:underline;}
 .v_box2_con_r span{ display:block; padding-bottom:23px;} 
 .v_box2_con_r span b{ display:block; padding-bottom:10px;} 
 
-.v_box2_con_r_0{ float:right; overflow:hidden; margin-right:15px; width:450px;}
+.v_box2_con_r_0{ float:right; overflow:hidden; margin-right:60px; width:450px;}
 .v_box2_con_r_0 span{ display:block; padding-bottom:23px; margin-top:50px; line-height:30px;} 
 .v_box2_con_r_0 span b{ display:block; padding-bottom:10px;} 
 
@@ -83,11 +73,6 @@ a:hover{color:#bd0a01;text-decoration:underline;}
 .prev, .next{display:inline-block;width:28px;height:50px;position:absolute;	top:50%;margin-top:-50px;z-index:100;background:url("http://www.cstrong.cn/Content/images/weimob.png") no-repeat 0 center;left:-20px;}
 .prev{background-position:0 -305px;}
 .next {left:auto;right:-20px;background-position:-30px -305px;}
-
-
-.footer{ height:111px; background:url("http://www.cstrong.cn/Content/images/bottom.png") repeat-x;}
-.footer span{ line-height:29px; color:#8a8a8a }
-.footer p a{ color:#8a8a8a}
-.botom_box{ padding-top:32px;}
+.buy {color:#00683}
 
 
