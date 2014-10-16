@@ -69,6 +69,9 @@
    		<script type="text/javascript" src="js/html5.js"></script>
     	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
 	<![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/lanrenzhijia.css">
+	<script type="text/javascript" src="js/jquery.1.4.2-min.js"></script>
+    <script type="text/javascript" src="js/lanrenzhijia.js"></script>
 </head>
 <body>
 
@@ -96,23 +99,39 @@
         </nav>
     </header>   
    <!-- =================侧边栏===================== -->
-   <div class="navbox">
-	
-	<link rel="stylesheet" type="text/css" media="screen" href="css/lanrenzhijia.css">
-	<script type="text/javascript" src="js/jquery.1.4.2-min.js"></script>
-<script type="text/javascript" src="js/lanrenzhijia.js"></script>
-	<ul id="sliderNav">
-		
-		<li class="sliderTag"><a href="">公司介绍</a></li>
-		<li class="sliderTag"><a href="">领导关怀</a></li>
-		<li class="sliderTag"><a href="">人力资源</a></li>
-		<li class="sliderTag"><a href="">组织机构</a></li>
+   
+   <div class="navbox">		
+	<ul id="sliderNav" class="sliderNav">
+		<li class="sliderTag"><a href="#one">公司介绍</a></li>
+		<li class="sliderTag"><a href="#two">领导关怀</a></li>
+		<li class="sliderTag"><a href="#three">人力资源</a></li>
+		<li class="sliderTag"><a href="#four">组织机构</a></li>
 		</ul>
 </div>
 <!-- =================侧边栏===================== -->
+  <script>
+$(function(){
+	//Default Action
+	$(".container_12").hide(); //Hide all content
+	$("ul.sliderNav li:first").addClass("active").show(); //Activate first tab
+	$(".container_12:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.sliderNav li").click(function() {
+		$("ul.sliderNav li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".container_12").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+  
+
+});
+</script>
 <!--==============================content================================-->
-    <section id="content-new">
-        <div class="container_12">
+    <section id="content-new" class="">
+        <div class="container_12" id="one">
           <div class="grid_12">
           	<div class="box-shadow">
             	<div class="wrap block-2 bg2">
@@ -140,9 +159,43 @@
           </div>
           <div class="clear"></div>
         </div>
+        
+        
+        
+        <div class="container_12" id="two">
+          <div class="grid_12">
+          	<div class="box-shadow">
+            	<div class="wrap block-2 bg2">
+                    <div class="m4">
+                    	
+                        <img src="images/page2-img1.jpg" alt="" class="img-border ">
+                        <p class="p4">沪爱健康，依托于上海第二军医大学、第三军医大学、上海交通大学医学院，以”弘扬军医文化、服务人民健康“为宗旨，专业致力于优质医疗资源平台整合，主要提供绿色就医、病后康复、私人医生、企业顾问服务，是中国顶级健康管理服务引领者。
+沪爱健康 7 大健康服务体系
+</p>
+                        <ul class="list-2 p5">
+                        	<li><a ></a></li>
+                            <li><a >2、绿色就医：提供上海长海医院、东方肝胆医院等三家医院绿色就医</a></li>
+                            <li><a >3、军字产品：引入优质部队首长使用的保健品，为人民健康服务</a></li>
+                            <li><a >4、企业顾问：为企业员工、高管，商会等提供一揽子健康服务</a></li>
+                            <li><a >5、将军体检：首长体检方案组合，全程五星级住宿、体检绿色安排</a></li>
+                            <li><a >6、病后康复：主动关怀、远程会诊、专业分析，中国最大的病后康复服务平台</a></li>
+                            <li><a >7、沪爱学院：中国最有价值的健康管理人才培训平台</a></li>
+                        </ul>
+                        
+                       
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
     </section> 
     <div class="clear"></div>
     <div style="height:50px"></div>
+    <!--==============================content================================-->
+    
+    
 <!--==============================footer=================================-->
     <footer>
         <div class="ft_inf">
