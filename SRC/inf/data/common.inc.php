@@ -1,11 +1,10 @@
 <?php
-//Êý¾Ý¿âÁ¬½ÓÐÅÏ¢
+//ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 $cfg_dbhost = 'localhost';
 $cfg_dbname = 'dedecmsv57gbk';
 $cfg_dbuser = 'root';
 $cfg_dbpwd = '';
 $cfg_dbprefix = 'dede_';
 $cfg_db_language = 'gbk';
-
 
 ?>

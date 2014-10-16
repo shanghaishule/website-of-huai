@@ -12,15 +12,16 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <!-- Le styles -->
-        <link href="/ezhanku/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/ezhanku/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="/ezhanku/css/hx-2013.css" rel="stylesheet">
+        <link href="./ezhanku/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./ezhanku/css/header.css" rel="stylesheet">
+        <link href="./ezhanku/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="./ezhanku/css/hx-2013.css" rel="stylesheet">
         <!--[if lt IE 9]>
         <link href="/ezhanku/css/hx-2013-ie5.css" rel="stylesheet">
         <![endif]-->
-<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
-<script language="javascript" type="text/javascript" src="/images/js/j.js" ></script>
-<script language="javascript" type="text/javascript" src="/templets/daocao/js/pic_scroll.js"></script>
+<script language="javascript" type="text/javascript" src="./include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript" src="./images/js/j.js" ></script>
+<script language="javascript" type="text/javascript" src="./templets/daocao/js/pic_scroll.js"></script>
 <script language="javascript" type="text/javascript">
 <!--
 	$(function(){
@@ -44,28 +45,51 @@
     </head>
     <body data-spy="scroll" data-target=".bs-docs-sidebar">
         <div class="container-hx">
-		            <div class="top">
-    <div class="top-box">
-        <h1 class="logo"><a href="/" target="_blank"><img src="/ezhanku/img/top_logo.png"></a></h1>
-        <div class="login-box" id="_userlogin">
-            <div class="btn-group">
-                <a href="/member/article_add.php" class="contribute" title="投稿">投稿</a>
-            </div>
-
-            <div class="btn-group">
-                <a href="#lgnModal" data-toggle="modal">登录</a>
-                <a href="/member/index_do.php?fmdo=user&dopost=regnew">注册</a>
-            </div>
-
-            
-            <div class="btn-group">
-                <a href="/rss.php" title="RSS"><i class="icon-rss"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
+		  <!-- <div class="top">
+			    <div class="top-box">
+			        <h1 class="logo"><a href="/" target="_blank"><img src="/ezhanku/img/top_logo.png"></a></h1>
+			        <div class="login-box" id="_userlogin">
+			            <div class="btn-group">
+			                <a href="/member/article_add.php" class="contribute" title="投稿">投稿</a>
+			            </div>
+			
+			            <div class="btn-group">
+			                <a href="#lgnModal" data-toggle="modal">登录</a>
+			                <a href="/member/index_do.php?fmdo=user&dopost=regnew">注册</a>
+			            </div>
+			
+			            
+			            <div class="btn-group">
+			                <a href="/rss.php" title="RSS"><i class="icon-rss"></i></a>
+			            </div>
+			        </div>
+			    </div>
+		</div>-->
      <script language="javascript" type="text/javascript">CheckLogin();</script> 
-<div class="side-menu-hx">
+<!--==============================header=================================-->
+    <header>
+        <h1><a href="/">
+        		<img src="/ezhanku/img/logo.png" width="25%"/>沪爱健康</a></h1>
+        <nav>
+        	<div class="social-icon">
+            	<a href="#" class="icon-2" style="width:155px;">4006-555-899</a>
+            	<a href="tencent://message/?uin=1402612547" class="icon-1" style="width:105px;">在线客服</a>
+            </div>
+            <ul class="menu">
+                <li class="current"><a href="index.html">首页</a></li>
+                <li><a href="about.html">公司介绍</a></li>
+                <li><a href="diagnosis.html">就医陪诊</a></li>
+                <li><a href="examination.html">高端体检</a></li>
+                <li><a href="product.html">军字产品</a></li>
+				<li><a href="consultant.html">企业顾问</a></li>
+                <li><a href="./inf/index.php">就医资讯</a></li>
+                <li><a href="contacts.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>  
+<!-- header end -->         
+   <!-- - 原有注释
+   <div class="side-menu-hx">
     <div class="side-menu-top">
         <ul class="side-menu-list">   
         
@@ -86,6 +110,7 @@
       	
             </ul>
     </div>
+
     <div class="search">
         <form  name="formsearch" action="/plus/search.php" class="form-search">
         <input type="hidden" name="kwtype" value="0" />
@@ -94,7 +119,7 @@
             <button class="search-btn"><i class="icon-search"></i></button>
         </form>
     </div>
-</div> 
+</div> -->
            <div class="row-fluid-wrap-hx">
                 <div class="center-container-hx">
                     <div class="clearfix row-fluid-hx"><div class="center-ctr-wrap">

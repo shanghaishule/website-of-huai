@@ -1,7 +1,7 @@
 /* Global properties ======================================================== */
 html, body {width:100%; padding:0; margin:0;}
 
-body {font: 14px/25px Microsoft YaHei;, Helvetica, sans-serif;color:#292929;min-width:960px;background: url(../images/bg.gif) center 0 repeat;border-top:#292929 6px solid;}
+body {font: 14px/25px Microsoft YaHei;, Helvetica, sans-serif;color:#292929;min-width:960px;}
 .ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
 .main {width:960px; margin:0 auto; position:relative;}
 /***********************************************************************/
@@ -76,8 +76,6 @@ ul.menu li {float:left; line-height:20px; margin:0px 0 0px 16px;}
 ul.menu li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
 ul.menu li a:hover, ul.menu li.current a {color:#006835;}
 ul.p6 li {list-style-type:none;}
-.bg-img {background:url(../images/bg-img.gif) 0 0 no-repeat; width:150px; height:6px; position:absolute; top:-6px; left:-152px;}
-
 /*********************************content*************************************/
 #content {width:100%;}
 .box-shadow {box-shadow: 0px 0px 5px #dbdbdb;background:#fff;}
