@@ -1,15 +1,5 @@
 ﻿@charset "utf-8";
-form,ul,li,ol,li,dl,dt,dd,img,p,h1,h2,h3,h4,h5,h6,input{margin:0;padding:0; }
-h1,h2,h3,h4,h5,h6{font-size:12px;}
-input,select{font-size:12px;}
-img{border:0;}
-ul,li{list-style-type:none;}
-strong{font-weight:normal;}
-em {font-style:normal;}
-h1,h2,h3,h4,h5,h6 {font-weight:normal;}
 
-a{color:#393939;text-decoration:none; cursor:pointer;}
-a:hover{color:#bd0a01;text-decoration:underline;}
 
 .color_6e ,.color_6e a{ color:#6E6E6E;}
 .display_no{display:none;}
@@ -83,11 +73,5 @@ a:hover{color:#bd0a01;text-decoration:underline;}
 .prev, .next{display:inline-block;width:28px;height:50px;position:absolute;	top:50%;margin-top:-50px;z-index:100;background:url("http://www.cstrong.cn/Content/images/weimob.png") no-repeat 0 center;left:-20px;}
 .prev{background-position:0 -305px;}
 .next {left:auto;right:-20px;background-position:-30px -305px;}
-
-
-.footer{ height:111px; background:url("http://www.cstrong.cn/Content/images/bottom.png") repeat-x;}
-.footer span{ line-height:29px; color:#8a8a8a }
-.footer p a{ color:#8a8a8a}
-.botom_box{ padding-top:32px;}
 
 
