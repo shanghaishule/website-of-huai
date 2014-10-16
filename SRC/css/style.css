@@ -76,7 +76,7 @@ ul.menu li {float:left; line-height:20px; margin:0px 0 0px 16px;}
 ul.menu li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
 ul.menu li a:hover, ul.menu li.current a {color:#006835;}
 ul.p6 li {list-style-type:none;}
-.bg-img {background:url(../images/bg-img.gif) 0 0 no-repeat; width:150px; height:6px; position:absolute; top:-6px; left:-152px;}
+.bg-img {width:150px; height:6px; position:absolute; top:-6px; left:-152px;}
 
 /*********************************content*************************************/
 #content {width:100%;}
