@@ -60,7 +60,7 @@ ul.list-2 li a:hover { color:#292929;}
 /*********************************header*************************************/
 header {width:100%; z-index:101; position:relative; overflow:hidden; padding-bottom:17px;}
 
-h1 {float:left; margin:55px 0 0px 29px;}
+h1 {float:left; margin:55px 0 0px 10px;}
 h1 a {font-size:40px; line-height:65px; color:#006835; letter-spacing:1px; display:inline-block;}
 h1 a strong {display:block; color:#292929; margin-top:-21px; font-weight:normal;}
 
