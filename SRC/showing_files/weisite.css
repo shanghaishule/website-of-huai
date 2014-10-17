@@ -73,6 +73,6 @@
 .prev, .next{display:inline-block;width:28px;height:50px;position:absolute;	top:50%;margin-top:-50px;z-index:100;background:url("http://www.cstrong.cn/Content/images/weimob.png") no-repeat 0 center;left:-20px;}
 .prev{background-position:0 -305px;}
 .next {left:auto;right:-20px;background-position:-30px -305px;}
-.buy {color:#00683}
+a.buy {color:red;font-weight:bold;font-size:1.2em}
 
 
