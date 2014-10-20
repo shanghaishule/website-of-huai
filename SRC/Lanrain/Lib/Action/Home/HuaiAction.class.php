@@ -1,6 +1,10 @@
 <?php
 class HuaiAction extends BaseAction{
 	
+	//首页
+	public function index(){
+		$this->display();
+	}
 	
 	//资讯
 	public function news(){
