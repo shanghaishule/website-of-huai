@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+<title>投诉举报</title>
+<link href="./tpl/Home/lanrain/images/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="complaints">
+		<div class="comp-text">投诉举报</div>
+		<div class="comp-content">
+		<form name="form1" action="{lanrain::U('Shop/add_tousu')}" method="post">
+		    <input type="hidden" name="id" value="">
+			<div class="comp-title">这里是临港经济开发区的办公室</div>
+			<div class="comp-who">要投诉谁</div>
+			<div class="comp-input"><input required="required" type="text" name="cwho" /></div>
+			<div class="comp-who">请详细描述您的不满</div>
+			<div class="comp-detail"><textarea required="required" cols="50" rows="6" name="cdetail"></textarea></div>
+			<div class="comp-who">联系电话</div>
+			<div class="comp-input"><input required="required" type="text" name="cphone" /></div>
+			<div class="comp-who">如何称呼您</div>
+			<div class="comp-input"><input required="required" type="text" name="cname" /></div>
+			<div class="comp-sub"><input type="submit" class="sub" value="提交"/></div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>

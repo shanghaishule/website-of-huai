@@ -1,0 +1,25 @@
+<include file="Public:head"/>
+<div class="content tou" style="width:920px; background:none; margin-left:275px; border:none; margin-bottom:30px;" >
+	<table cellpadding="0" cellspacing="0" padding="0" border="1">
+		<tr align="center">
+			<td>ID</td>
+			<td>被投诉人</td>
+			<td>投诉详情</td>
+			<td>投诉人电话</td>
+			<td>投诉人</td>
+			<td>添加时间</td>
+		</tr>
+		<volist name="tous" id="tous">
+		<tr align="center">
+		    <td>{lanrain:$tous['id']}</td>
+		    <td>{lanrain:$tous['cwho']}</td>
+		    <td>{lanrain:$tous['cdetail']}</td>
+		    <td>{lanrain:$tous['cphone']}</td>
+		    <td>{lanrain:$tous['cname']}</td>
+		    <td>{lanrain:$tous['addtime']|date="Y-m-d",###}</td>
+		</tr>
+		</volist>
+		<tr align="center"><td colspan="6">{lanrain::$page}</td></tr>
+	</table>
+</div>
+<include file="Public:footer"/>	

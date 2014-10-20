@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+<title>江阴市临港经济开发区</title>
+<link href="./tpl/Home/lanrain/images/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./tpl/static/jQuery/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+	$('.wx_left ul li a').click(function(){
+		$('.checked').removeClass('checked');
+		$(this).addClass('checked');
+	});
+	$('.wx-bor-right').click(function(){
+		$('.wx_left').toggle();
+		$(this).toggleClass('wx-bor-m');
+		$('.wx_right').toggleClass('wx-rig');
+	});
+});
+</script>
+</head>
+<body>
+<div class="wx">
+    <div class="wx_detail">
+      <div class="wx_left">
+      	<div class="wx-bor">
+            <ul>
+                 <li onclick="click_nine()"><a href="#" id="nine" class="checked">九通一平</a></li>
+                 <li onclick="click_stand()"><a href="#" id="stand">标准产房</a></li>                              
+            </ul>
+        </div>   
+      </div>
+      <div class="wx-bor-right"></div>
+      <div id="" class="wx_right">还没有信息</div>
+      <div class="wx_right_id" style="display:none">暂无信息</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function click_stand(){
+     $(".wx_right_id").css("display","");
+	 $(".wx_right").css("display","none");
+  }
+  function click_nine(){
+     $(".wx_right_id").css("display","none");
+	 $(".wx_right").css("display","");
+  }
+</script>
+    
+</body>
+</html>

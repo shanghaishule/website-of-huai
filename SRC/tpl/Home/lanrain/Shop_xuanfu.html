@@ -1,0 +1,71 @@
+	<div class="f-m"></div>
+		<section>
+			<div id="navList_box" class="box_swipe" style="visibility: visible;">
+				<ul style="list-style: none; width: 1280px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate3d(0px, 0px, 0px);">
+								<li style="width: 640px; display: table-cell; vertical-align: top;">
+									<a href="{lanrain::U('Home/Shop/index')}" class="weimob-list-item">
+										<span class="icon-home"><img src="./tpl/Home/lanrain/images/home.png" width="25px" height="27px"/></span>
+										<div>首页</div>
+								    </a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'临港产业城'))}" class="weimob-list-item">
+										<span class="icon-picture"><img src="./tpl/Home/lanrain/images/sancheng.png" width="25px" height="27px"/></span>
+										<div>三城产业</div>
+									</a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'魅力港城'))}" class="weimob-list-item">
+										<span class="icon-home"><img src="./tpl/Home/lanrain/images/meili.png" width="25px" height="27px"/></span>
+										<div>魅力港城</div>
+								    </a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'新闻中心'))}" class="weimob-list-item">
+										<span class="icon-check"><img src="./tpl/Home/lanrain/images/news.png" width="25px" height="27px"/></span>
+										<div>新闻中心</div>
+									</a>
+									
+									
+								</li>
+								<li style="width: 640px; display: table-cell; vertical-align: top;">
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'港城民生'))}" class="weimob-list-item">
+										<span class="icon-credit-card"><img src="./tpl/Home/lanrain/images/gangcheng.png" width="25px" height="27px"/></span>
+										<div>港城民生</div>
+									</a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'招商引资'))}" class="weimob-list-item">
+										<span class="icon-phone"><img src="./tpl/Home/lanrain/images/zhaoshang.png" width="25px" height="27px"/></span>
+										<div>招商引资</div>
+									</a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'便民服务'))}" class="weimob-list-item">
+										<span class="icon-edit"><img src="./tpl/Home/lanrain/images/bianmin.png" width="25px" height="27px"/></span>
+										<div>便民服务</div>
+									</a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'企业风采'))}" class="weimob-list-item">
+										<span class="icon-building"><img src="./tpl/Home/lanrain/images/fengcai.png" width="25px" height="27px"/></span>
+										<div>企业风采</div>
+									</a>
+									
+									
+								</li>
+								<li style="width: 640px; display: table-cell; vertical-align: top;">
+									
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'政务公开'))}" class="weimob-list-item">
+										<span class="icon-phone"><img src="./tpl/Home/lanrain/images/zhengwu.png" width="25px" height="27px"/></span>
+										<div>政务公开</div>
+									</a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'互动交流'))}" class="weimob-list-item">
+										<span class="icon-rss-sign"><img src="./tpl/Home/lanrain/images/exchange.png" width="25px" height="27px"/></span>
+										<div>互动交流</div>
+									</a>
+									<a href="{lanrain::U('Home/Shop/classtwo',array('classone'=>'档案中心'))}" class="weimob-list-item">
+										<span class="icon-phone"><img src="./tpl/Home/lanrain/images/dangan.png" width="25px" height="27px"/></span>
+										<div>档案中心</div>
+									</a>
+								</li>
+				</ul>
+				<ol>
+					<a href="javascript:navList_box.prev();">&nbsp;</a>
+					<a href="javascript:navList_box.next();">&nbsp;</a>
+				</ol>
+			</div>
+		</section>
+		<script>
+			$(document).ready(function(){
+				window.navList_box = new Swipe(document.getElementById('navList_box'), {auto:0});
+			});
+		</script>

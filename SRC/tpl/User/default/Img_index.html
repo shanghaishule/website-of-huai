@@ -1,0 +1,117 @@
+<include file="Public:head"/>
+<script src="/weTall/static/js/jquery/jquery.js"></script>
+<script src="/weTall/static/js/jquery/plugins/jquery.tools.min.js"></script>
+<script src="/weTall/static/js/jquery/plugins/formvalidator.js"></script>
+<script src="/weTall/static/js/pinphp.js"></script>
+<script src="/weTall/static/js/admin.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="/weTall/static/css/admin/style.css" />
+ 
+	<link href="/weTall/static/css/admin/style.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="/weTall/static/js/calendar/calendar-blue.css"/>
+	<script type="text/javascript" src="/weTall/static/js/calendar/calendar.js"></script>	
+<div class="content" style="width:920px; background:none; margin-left:275px; border:none; margin-bottom:30px;" >
+         
+          <div class="cLineB">
+              <h4 class="left">自定义回复信息</h4>
+              <div class="clr"></div>
+          </div>
+          <div class="cLine">
+              <div class="pageNavigator left">
+   <a href='{lanrain::U("Img/add",array('classify'=>$classify, 'classify2'=>$classify2))}' title='新增图文信息' class='btnGrayS vm bigbtn'><img src="{lanrain::RES}/images/pic.png" class="vm" />新增图文信息</a>　
+              
+            </div>
+          
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+					
+					<TH class="keywords">关键词</TH>
+					<TH class="answer">标题</TH>
+                    <TH  class="category" >发布人</TH>
+                    <TH class="time">浏览次数</TH>
+					<TH class="time">发布时间</TH>
+					<TH class="edit norightborder">操作</TH>
+                </TR>
+              </THEAD>
+              <TBODY>
+                <TR></TR>
+				<volist name="info" id="vo">
+				<tr>
+                  
+                  <td>{lanrain:$vo.keyword}</td>
+                  <td>{lanrain:$vo.title}</div></td>
+                  <td>{lanrain:$vo.person}</td>
+                  <td>{lanrain:$vo.click}</td>
+                    <td>{lanrain:$vo.statdate}</td>
+                   
+                   <td class="norightborder">
+				   <!--a target="ddd" href="{lanrain::U('Wap/Index/content',array('token'=>$_SESSION['token'],'id'=>$vo['id']))}">查看</a--> 
+				   <a href="{lanrain::U('Img/edit',array('id'=>$vo['id'], 'classify'=>$classify, 'classify2'=>$classify2))}" title="编辑图文自定义回复">编辑</a>
+				   <!--a href="{lanrain:$vo.tiaourl}" title="查看">查看</a-->
+				   <a href="javascript:void(0);" onclick="delete_img({Lanrain:$vo['id']})">删除</a>
+				   <!--<a href="{lanrain::U('Img/del',array('id'=>$vo['id']))}">删除</a></td>-->
+          
+                </tr>
+				</volist>
+                              
+              </TBODY>
+            </TABLE>
+
+           <script>
+		   function delete_img(id){
+		      if(confirm("确认删除?")){
+			    var href = "/index.php?g=User&m=Img&a=del&id="+id;				
+			    window.location.href=href;
+			  }
+		   }
+   function checkvotethis() {
+var aa=document.getElementsByName('del_id[]');
+var mnum = aa.length;
+j=0;
+for(i=0;i<mnum;i++){
+if(aa[i].checked){
+j++;
+}
+}
+if(j>0) {
+document.getElementById('info').submit();
+} else {
+alert('未选中任何文章或回复！')
+}
+}
+
+   </script>
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{lanrain:$page}</div>
+              </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+function checkAll(form, name) {
+for(var i = 0; i < form.elements.length; i++) {
+var e = form.elements[i];
+if(e.name.match(name)) {
+e.checked = form.elements['chkall'].checked;
+}
+}
+}
+
+
+  </script>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>

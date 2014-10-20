@@ -1,0 +1,25 @@
+<include file="./tpl/Home/lanrain/Shop_header.html" />
+      <div class="dh">
+                <ul>
+				<volist name="classtwo" id="vo">
+					<li>
+                        <img src="./tpl/Home/lanrain/images/3_06.png" width="80%"/>
+						<eq name="vo.info" value="">
+						<a href="{lanrain::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$token))}">{lanrain:$vo.name}</a>
+						<else/>
+                     	<a href="{lanrain:$vo.info}&classid={lanrain:$vo['id']}">{lanrain:$vo.name}</a>
+						</eq>
+                     </li>
+				</volist>
+                </ul>
+      </div>
+      <div class="foot">
+      	   <img src="./tpl/Home/lanrain/images/2png_10.png" width="100%"/>
+           <p>技术支持：江阴高通</p>
+      </div>
+      
+ <include file="./tpl/Home/lanrain/Shop_xuanfu.html" />     
+</div>
+    
+</body>
+</html>

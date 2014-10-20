@@ -1,0 +1,79 @@
+<include file="Public:head"/>
+<link rel="stylesheet" href="{lanrain::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{lanrain::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{lanrain::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{lanrain::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{lanrain::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){  
+$('#havenext').change(function(){  
+	var p=$('#name').val();
+	if($.trim(p) == ""){
+		$("#info").attr({ readonly: 'true' });
+		alert("请先填写名称！"); 
+	}else{
+	//alert($(this).children('option:selected').val());  
+	var p1=$(this).children('option:selected').val();//这就是selected的值
+	
+	if(p1 == "是"){
+		//$('#info').val("{lanrain::U('Home/Shop/detail',array('classtwo'=>$info['name']))}");
+		$('#info').val("/index.php?g=Home&m=Shop&a=detail&classtwo="+p);
+		$("#info").attr({ readonly: 'true' });
+	}else{
+		$('#info').val("");
+		$("#info").removeAttr("readonly"); 
+	}
+	}
+})  
+})
+</script>
+
+<div class="content" style="width:920px; background:none; margin-left:275px; border:none; margin-bottom:30px;" >
+	<div class="cLineB"><h4>{lanrain:$myaction}</h4><a href="javascript:history.go(-1);"  class="right btnGrayS vm" style="margin-top:-27px" >返回</a></div> 
+	<div class="msgWrap">
+	<form id="info_form" class="form" method="post" action="{lanrain::U('FunctionClassify/edit')}">
+	<input type="hidden" name="id" value="{lanrain:$info.id}" />
+	<TABLE class="userinfoArea" style=" margin:20px 0 0 0;" border="0" cellSpacing="0" cellPadding="0" width="100%">
+	<TBODY>
+		<tr>
+			<th>名称 :</th>
+			<td><input type="text" required="" class="px" id="name" name="name" value="{lanrain:$info.name}" style="width:500px"></td>
+		</tr>
+		<tr>
+			<th>上级 :</th>
+			<td><select name="funtype" class="pt" required="" style="width:250px">
+				<option value="">--请选择--</option>
+				<volist name='funtype_list' id='vo' >
+				<option value="{lanrain:$vo}" <eq name="vo" value="$info['funtype']">selected="selected"</eq> >{lanrain:$vo}</option>
+				</volist>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>特殊显示 :</th>
+			<td><select id="havenext" name="havenext" class="pt" required="" style="width:250px">
+				<option value="否" <eq name="info.havenext" value="否">selected="selected"</eq> >否</option>
+				<option value="是" <eq name="info.havenext" value="是">selected="selected"</eq> >是</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>外链URL :</th>
+			<td><input type="text" class="px" id="info" name="info" value="{lanrain:$info.info}" style="width:500px" <eq name="info.havenext" value="是">readonly</eq> ></td>
+		</tr>
+		<tr>
+			<th>排序 :</th>
+			<td><input type="text" required="" class="px" name="gid" value="{lanrain:$info.gid}" style="width:500px"></td>
+		</tr>
+		<TR>
+			<TH></TH>
+			<TD><button type="submit"  name="button"  class="btnGreen left" >保存</button>
+	  		<div class="clr"></div>
+	  		</TD>
+		</TR>
+	</TBODY>
+	</TABLE>
+	</form>
+	</div> 
+</div>
+<include file="Public:footer"/>
