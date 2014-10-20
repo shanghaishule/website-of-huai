@@ -59,7 +59,7 @@ ul.list-2 li a:hover { color:#292929;}
 
 /*********************************header*************************************/
 header {width:100%; z-index:101; position:relative; overflow:hidden; padding-bottom:17px;}
-.header_top{width:960px;}
+.header_top{width:960px;margin:0 auto;}
 h1 {float:left; margin:55px 0 0px 10px;width:25%}
 h1 a {font-size:37px; line-height:56px; color:#006835; letter-spacing:1px; display:inline-block;}
 h1 a strong {display:block; color:#292929; margin-top:-21px; font-weight:normal;}
