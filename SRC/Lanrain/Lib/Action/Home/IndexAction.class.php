@@ -16,7 +16,14 @@ class IndexAction extends BaseAction{
 		$this->assign('uid',$uid);
 		$this->display();
 	}
-	
+	//后台登陆
+	public function login(){
+		if($_SESSION['uid'] == '' && !isset($_SESSION['uid'])){
+			$this->display();
+		}else{
+			$this->redirect(U('User/Index/index'));
+		}
+	}
 	
 	public function test(){
 		require_once './Extend/PHPExcel_1.7.9/Classes/PHPExcel/IOFactory.php';
