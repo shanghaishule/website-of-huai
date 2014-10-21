@@ -60,7 +60,7 @@ body, a {font-size:12px; color:#737373;}
 	
 .wrapper {width:100%; min-width:320px; min-height:100%; overflow-x:hidden; position:relative; background-color:#ffffff;}
 
-.inner {width:960px; margin:0px auto;}
+.innerH {width:960px; margin:0px auto;}
 .fl, .alignleft {float:left;}
 .fr, .alignright {float:right;}
 .tac {text-align:center;}
@@ -340,7 +340,7 @@ nav.secondary_menu > ul > li:first-child > a {padding-left:0px;}
 
 
 
-#content {padding:0 0px 64px;}
+#content {padding:0;}
 .general_content {}
 .general_content p {color:#666666; line-height:18px;}
 
@@ -1128,30 +1128,7 @@ nav.secondary_menu > ul > li:first-child > a {padding-left:0px;}
 	text-indent:-9000px;
 }
 .block_pager .next:hover {background-color:#f24024; border:1px solid #f24024;}
-.block_pager .pages {overflow:hidden; background:url(images/line_pager.gif) repeat-x 0px 10px; text-align:center; line-height:0px;}
-.block_pager .pages ul {height:21px; padding:0px 11px; display:inline-block; background-color:#ffffff;}
-.block_pager .pages li {margin-left:5px; float:left; display:block;}
-.block_pager .pages li:first-child {margin-left:0px;}
-.block_pager .pages a {
-	width:19px;
-	height:19px;
-	line-height:19px;
-	display:block;
-	position:relative;
-	
-	border:1px solid #ffffff;
-	
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	
-	behavior:url(js/PIE.htc);
-	
-	color:#6b6b6b;
-}
-.block_pager .pages a:hover {border:1px solid #f8d2cc; text-decoration:none;}
-.block_pager .pages .current a {border:1px solid #e3e3e3; color:#3e3e3e;}
-
+.block_pager .pages {text-align:center}
 .block_tabs_pager {position:absolute; left:-1px; bottom:-27px;}
 .block_tabs_pager li {margin-left:4px; padding-top:5px; float:left; display:block;}
 .block_tabs_pager li:first-child {margin-left:0px;}
@@ -2011,13 +1988,13 @@ nav.secondary_menu > ul > li:first-child > a {padding-left:0px;}
 
 
 
-footer {padding-top:4px; background:url(images/bg_footer.jpg) repeat-x #1c1c1c;}
+/*footer {padding-top:4px; background:url(images/bg_footer.jpg) repeat-x #1c1c1c;}
 .sticky_footer footer {width:100%; min-width:320px; position:absolute; left:0px; bottom:0px;}
 #footer {}
 #footer .top {height:49px;}
 #footer .middle {padding:0px 0px 23px;}
 #footer .bottom {height:45px;}
-
+*/
 #logo_bottom {padding-top:17px; float:left;}
 
 .block_to_top {padding-top:13px; float:right;}
@@ -3314,8 +3291,6 @@ input.general_button {margin:0px; padding:0px 15px 4px; border:0px; cursor:point
 	
 	.block_newsletter .field {width:342px; background:url(images/bg_field_newsletter_420.png) no-repeat;}
 	.block_newsletter .field input {width:320px;}
-	
-	
 	
 	#footer .bottom {height:auto;}
 	

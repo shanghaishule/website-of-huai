@@ -2,8 +2,8 @@
 class MyClassifyAction extends UserAction{
 	function index(){
 		$classify = $this->_get('classify');
-		$classid = $this->_get('classid');
-		if($classify){
+		//$classid = $this->_get('classid');
+		//if($classify){
 
 			$db=D('Img');
 			$where['classname']=$classify;
@@ -22,10 +22,10 @@ class MyClassifyAction extends UserAction{
 			$this->display('Img:index');
 			
 			
-		}
-		else{
-			$this->error('没有找到该分类！');
-		}
+		//}
+		//else{
+		//	$this->error('没有找到该分类！');
+		//}
 		
 		
 		

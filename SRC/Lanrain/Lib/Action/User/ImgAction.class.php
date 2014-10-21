@@ -71,7 +71,7 @@ class ImgAction extends UserAction{
 		$this->all_insert('',U('MyClassify/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
 	}
 	public function upsave(){
-		$this->all_save('',U('MyClassify/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
+		$this->all_save('',U('Img/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
 	}
 }
 ?>
