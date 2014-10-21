@@ -1,47 +1,111 @@
 <include file="Public:header" />
+<link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/diagnosis.css">
+ <!-- =================侧边栏===================== -->
+   
+   <div class="navbox">		
+	<ul id="sliderNav" class="sliderNav">
+		<li class="sliderTag"><a href="#one">上海长海医院</a></li>
+		<li class="sliderTag"><a href="#two">上海东方肝胆外科医院</a></li>
+		<li class="sliderTag"><a href="#three">上海长征医院</a></li>
+		<li class="sliderTag"><a href="#four">上海华山医院</a></li>
+		</ul>
+</div>
+<!-- =================侧边栏===================== -->
+ <script>
+$(function(){
+	//Default Action
+	$(".container_12").hide(); //Hide all content
+	$("ul.sliderNav li:first").addClass("active").show(); //Activate first tab
+	$(".container_12:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.sliderNav li").click(function() {
+		$("ul.sliderNav li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".container_12").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+  
+
+});
+</script>
 <!--==============================content================================-->
-    <section id="content"><div class="ic">More Website Templates @ <a href="http://www.cssmoban.com/" >网页模板</a>. April 02, 2012!</div>
-        <div class="container_12">
+    <section id="content-new" class="">
+        <div class="container_12" id="one">
           <div class="grid_12">
           	<div class="box-shadow">
-            	<div class="wrap block-2">
-                    <div class="col-1">
-                    	<h2 class="p3"><span class="color-1">We do care</span> about your health</h2>
-                        <p class="p2"><strong>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </strong></p>
-                        <p class="p5">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-                        <div class="wrap box-1">
-                            <img src="images/page4-img1.jpg" alt="" class="img-border img-indent">
-                            <div class="extra-wrap">
-                                <p class="p2"><strong>Eirmod tempor invidunt ut labore et dolore</strong></p>
-                                <p>Magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
-                                <a href="#" class="button top-6">Search</a>
-                            </div>
-                        </div>
-                        <h2 class="p3 top-2"><span class="color-1">You are</span> in good hands</h2>
-                        <p class="p2"><strong>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</strong></p>
-                        <p class="p5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            	<div class="wrap block-2 bg2">
+                    <div class="m4">
+                    	<p>PET-CT(全身)检查绿色通道 <span style="color:red">￥7000元</span><span style="color:grey;">（医院价：￥7500元）</span></p>
+                    	<h1>适合人群： 防癌体检 专项体检 家庭体检 个人贵宾体检 体检时间：<span style="color:red">周一至周五</span></p>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+					            <tr>
+					              <td width="30%" height="60" align="left" class="table" style="background:#006835;color:white">检查项目</td>
+					              <td width="30%" align="left" class="table" style="background:#006835;color:white">检查内容</td>
+					              <td width="30%" align="left" class="table" style="background:#006835;color:white">临床意义</td>
+					            </tr>
+					            <tr background="__PUBLIC__/images/img/line.gif">
+					              <td width="30%" height="60" align="left" class="table">PET/CT</td>
+					              <td width="30%" align="left" class="table"></td>
+					              <td width="30%" align="left" class="table">PET/CT是目前世界最先进的检查手段之一。能够鉴别诊断出普通X光、CT等所以不能确诊的疾病。尤其在肿瘤，脑神经，心血管等领域发挥巨大优势。业界有“肿瘤终结者”的美誉，能早期发现细微肿瘤。</td> 		
+					           </tr>
+					            <tr>
+					              <td width="30%" height="60" align="left" class="table">PET/CT检查注意事项</td>
+					              <td width="30%" align="left" class="table"></td>
+					              <td width="30%" align="left" class="table">1、检查前禁食4-6小时（预约上午检查者不要吃早餐、预约下午检查者不要吃午饭）。做心肌检查例外。　　 2、治疗经过、病理、携带好以往检查资料（包括病史、CT和MRI等） 3、检查前2小时禁做剧烈运动，显像前需完全休息半小时。　　 4、检查前一天晚饭进高蛋白、低碳水化合物饮食（如：肉类、蛋类、海鲜，少吃谷物类、水果）。　　 5、糖尿病病人需提前与PET/CT中心联系，以控制血糖浓度。</td> </tr>
+					           </tr>
+					           <tr>
+					              <td width="30%" height="60" align="left" class="table">绿色通道流程</td>
+					              <td width="30%" align="left" class="table"></td>
+					              <td width="30%" align="left" class="table">1.预约PET/CT检查时间（方式：拨打021-65656969） 2.请根据约定时间前来医院PET/CT中心进行检查。 3.病史采集:请患者出示所有检查报告、超声、CT、ⅹ片、MRI等。医生将问询及记录患者病史、影像学检查资料、诊治经过等。进行血糖测定，向患者解释检查步骤和注意事项。 4.注射显像剂：静脉注射显像剂，根据检查目的不同，选用不同显像剂。注射后请按指定地点 5.安静休息：不要与人交谈，避免紧张体位。检查项目不同，注射后等候时间不同。医师将告诉您具体显像时间。 6.开始检查：做全身PET/CT检查最好双臂上举，一般检查时间在10分钟左右；脑部检查不需要双臂上举，一般检查时间在6分钟左右。 7.检查完毕：主管医生观察图像质量是否满意，认可后患者离开；根据病情需要，部分患者可能需要进行延迟显像或CT增强扫描，CT增强检查前需签署知情同意书。 8.领取报告：对诊断报告需咨询者，请有关人员解释。</td> </tr>
+					           </tr>
+					             
+					       </table>
+                       
                     </div>
-                    <div class="col-2">
-                        <h2 class="p6"><span class="color-1">About</span> nutrition</h2>
-                        <img src="images/page4-img2.jpg" alt="" class="img-border">
-                        <p class="p2 top-6"><strong>Nam liber tempor cum</strong></p>
-                        <p class="p4">Option congue nihil imperdiet doming id quod mazim placerat facer possim assum:</p>
-                        <ul class="list-2">
-                        	<li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                            <li><a href="#">Consectetuer adipiscing elit</a></li>
-                            <li><a href="#">Diam nonummy nibh</a></li>
-                            <li><a href="#">Euismod tincidunt ut laoreet</a></li>
-                            <li><a href="#">Dolore magna aliquamerat</a></li>
-                            <li><a href="#">Ut wisi enim adminim</a></li>
+                    
+                </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        
+        
+        
+        <div class="container_12" id="two">
+          <div class="grid_12">
+          	<div class="box-shadow">
+            	<div class="wrap block-2 bg2">
+                    <div class="m4">
+                    	
+                        <img src="images/page2-img1.jpg" alt="" class="img-border ">
+                        <p class="p4">沪爱健康，依托于上海第二军医大学、第三军医大学、上海交通大学医学院，以”弘扬军医文化、服务人民健康“为宗旨，专业致力于优质医疗资源平台整合，主要提供绿色就医、病后康复、私人医生、企业顾问服务，是中国顶级健康管理服务引领者。
+沪爱健康 7 大健康服务体系
+</p>
+                        <ul class="list-2 p5">
+                        	<li><a ></a></li>
+                            <li><a >2、绿色就医：提供上海长海医院、东方肝胆医院等三家医院绿色就医</a></li>
+                            <li><a >3、军字产品：引入优质部队首长使用的保健品，为人民健康服务</a></li>
+                            <li><a >4、企业顾问：为企业员工、高管，商会等提供一揽子健康服务</a></li>
+                            <li><a >5、将军体检：首长体检方案组合，全程五星级住宿、体检绿色安排</a></li>
+                            <li><a >6、病后康复：主动关怀、远程会诊、专业分析，中国最大的病后康复服务平台</a></li>
+                            <li><a >7、沪爱学院：中国最有价值的健康管理人才培训平台</a></li>
                         </ul>
-                        <a href="#" class="button top-5">Read more</a>
+                        
+                       
                     </div>
+                    
                 </div>
             </div>
           </div>
           <div class="clear"></div>
         </div>
     </section> 
+    <div class="clear"></div>
+    <div style="height:50px"></div>
+    <!--==============================content================================-->
 <!--==============================footer=================================-->
      <include file="Public:footer2" />
 <script>
