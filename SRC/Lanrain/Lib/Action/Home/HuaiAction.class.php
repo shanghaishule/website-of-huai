@@ -61,7 +61,7 @@ class HuaiAction extends BaseAction {
 		$this->assign('info',$this->info);
 		$this->assign('tpl',$this->tpl);
 		$this->assign('res',$res);
-		dump($res);die;
+		//dump($res);die;
 		$this->assign('copyright',$this->copyright);
 		if ($count==1){
 			$this->content($res[0]['id']);
