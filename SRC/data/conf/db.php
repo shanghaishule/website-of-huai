@@ -3,9 +3,9 @@ return array (
   'DB_TYPE' => 'mysql',
   'DB_HOST' => 'localhost',
   'DB_PORT' => '3306',
-  'DB_NAME' => 'wxtest',
+  'DB_NAME' => 'hu_ai',
   'DB_USER' => 'root',
-  'DB_PWD' => '3283d22365',
+  'DB_PWD' => '',
   'DB_PREFIX' => 'tp_',
 );
 ?>
