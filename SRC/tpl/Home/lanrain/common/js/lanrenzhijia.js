@@ -25,9 +25,9 @@ function slide(navigation_id, pad_out, pad_in, time, multiplier){
 	// 创建的所有链接元素的悬停滑动效果	
 	$(link_elements).each(function(i){
 		$(this).hover(function(){
-			$(this).animate({ paddingLeft: pad_out }, 10);
+			//$(this).animate({ paddingLeft: pad_out }, 10);
 		},function(){
-			$(this).animate({ paddingLeft: pad_in }, 10);
+			//$(this).animate({ paddingLeft: pad_in }, 10);
 		});
 	});
 

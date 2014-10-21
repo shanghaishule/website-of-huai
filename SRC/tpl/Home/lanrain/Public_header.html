@@ -60,7 +60,8 @@
     <script type="text/javascript" src="__PUBLIC__/js/lanrenzhijia.js"></script>
     <script>
     $(function(){
-    	$('a[href="/index.php'+location.search+'"]').parent().addClass('current');    	
+    	$('a[href="/index.php'+location.search+'"]').parent().addClass('current');
+    	$('a[href="'+location.href+'"]').parent().addClass('current');
     });
     </script>
 </head>
@@ -73,7 +74,7 @@
          
         <h1>
         <img src="__PUBLIC__/images/logo.png" width="28%"/>
-        <a href="index.html">
+        <a href="{lanrain::C('site_url')}">
         		沪爱健康</a></h1>
         <nav>
         	<div class="social-icon">
@@ -81,7 +82,7 @@
             	<a href="tencent://message/?uin=1402612547" class="icon-1" style="width:105px;">在线客服</a>
             </div>
             <ul class="menu">
-			                <li class="current"><a href="{lanrain::C('site_url')}">首页</a></li>
+			                <li><a href="{lanrain::C('site_url')}">首页</a></li>
 			                <li><a href="{lanrain::U('Home/Huai/about')}">公司介绍</a></li>
 			                <li><a href="{lanrain::U('Home/Huai/diagnosis')}">就医陪诊</a></li>
 			                <li><a href="{lanrain::U('Home/Huai/examination')}">高端体检</a></li>
