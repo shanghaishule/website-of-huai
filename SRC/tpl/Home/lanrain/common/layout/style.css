@@ -88,7 +88,7 @@ h6, h6 a {padding-bottom:13px; font-size:12px; font-weight:bold;}
 p {padding-bottom:15px;}
 p.general_title {padding-bottom:0px; background:url(images/line_6.gif) repeat-x 0px 11px; font-size:19px; color:#1a1a1a !important; text-transform:uppercase; text-align:center; line-height:normal !important;}
 p.general_title span {padding:0px 8px; display:inline-block; background-color:#ffffff;}
-p.general_subtitle {margin-top:-4px; padding-bottom:18px; font-size:11px; color:#919191 !important; line-height:16px !important;}
+p.general_subtitle {margin-top:-4px; padding:10px 0 18px 0; font-size:11px; color:#919191 !important; line-height:16px !important;}
 p.general_subtitle_2 {margin-top:-14px; padding-bottom:18px; font-size:11px; color:#b3b3b3 !important; line-height:16px !important;}
 
 a {text-decoration:none;}

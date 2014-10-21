@@ -56,12 +56,12 @@ class HuaiAction extends BaseAction {
 		if($p==false){$p=0;}
 		$res=$db->where($where)->order('statdate DESC,id DESC')->limit("{$p},".$pageSize."")->select();
 		$res=$this->convertLinks($res);
-		//dump($count);die();
 		$this->assign('page',$pagecount);
 		$this->assign('p',$page);
 		$this->assign('info',$this->info);
 		$this->assign('tpl',$this->tpl);
 		$this->assign('res',$res);
+		dump($res);die;
 		$this->assign('copyright',$this->copyright);
 		if ($count==1){
 			$this->content($res[0]['id']);
