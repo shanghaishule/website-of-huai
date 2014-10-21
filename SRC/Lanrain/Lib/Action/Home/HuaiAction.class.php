@@ -5,7 +5,27 @@ class HuaiAction extends BaseAction{
 	public function index(){
 		$this->display();
 	}
-	
+	//about
+	public function about(){
+		$this->display();
+	//contacts
+		public function contacts(){
+			$this->display();
+	//diagnosis
+			public function diagnosis(){
+				$this->display();
+	//information
+				public function information(){
+					$this->display();
+	//examination
+					public function examination(){
+						$this->display();
+	//consultant
+						public function consultant(){
+							$this->display();
+	//product
+							public function product(){
+								$this->display();
 	//资讯
 	public function news(){
 		/*$db=D('Img');	
