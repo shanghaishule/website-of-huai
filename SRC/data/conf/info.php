@@ -2,7 +2,7 @@
 return array (
   'site_name' => '临港经济开发区管理后台',
   'site_title' => '临港经济开发区管理后台',
-  'site_url' => 'http://lingang.weixinkf.cn',
+  'site_url' => 'http://127.0.0.1/',
   'home_token' => 'gmbqsf1389536537',
   'site_my' => '临港经济开发区管理后台',
   'ischeckuser' => 'true',
