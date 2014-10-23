@@ -1,1 +1,0 @@
-<a href="/member/index.php?uid=[field:userid/]&action=archives" target="_blank">¸ü¶à</a>

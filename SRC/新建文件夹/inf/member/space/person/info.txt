@@ -1,4 +1,0 @@
-name:科技博客
-author:ezhanku
-type:个人
-date:2013年8月

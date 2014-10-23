@@ -58,9 +58,9 @@ class ImgAction extends UserAction{
 		if(D(MODULE_NAME)->where($where)->delete()){
 			M('Keyword')->where(array('pid'=>$this->_get('id','intval'),'token'=>session('token'),'module'=>'Img'))->delete();
 			//$this->success('操作成功',U(MODULE_NAME.'/index'));
-			$this->success('操作成功',U('Img/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
+			$this->success('操作成功',U('Img/index',array('classid'=>session('classid'),'token'=>session('token'))));
 		}else{
-			$this->error('操作失败',U('Img/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
+			$this->error('操作失败',U('Img/index',array('classid'=>session('classid'),'token'=>session('token'))));
 		}
 	}
 	public function insert(){
