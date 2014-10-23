@@ -34,6 +34,7 @@ class ImgAction extends UserAction{
 		$this->assign('classify2',$classify2);
 		$this->display();
 	}
+	
 	public function edit(){
 		$classify = $this->_get('classify');
 		//dump($classify);exit;
@@ -44,6 +45,7 @@ class ImgAction extends UserAction{
 			$where['token']=session('token');
 			$info=$db->where($where)->select();
 		}
+		
 		//dump($info);exit;
 		$where['id']=$this->_get('id','intval');
 		$where['uid']=session('uid');
