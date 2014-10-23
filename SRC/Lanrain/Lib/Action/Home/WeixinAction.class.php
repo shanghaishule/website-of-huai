@@ -28,9 +28,7 @@ class WeixinAction extends Action
 			$foloow_lists = M('Follow')->add($follow_data);
 			
             $this->requestdata('follownum');
-            $data = M('Areply')->field('home,keyword,content')->where(array(
-                'token' => $this->token
-            ))->find();
+            $data = M('Areply')->field('home,keyword,content')->where(array('token' => $this->token))->find();
             if ($data['keyword'] == '首页' || $data['keyword'] == 'home') {
                 return $this->shouye();
             }

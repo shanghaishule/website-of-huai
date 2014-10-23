@@ -8,7 +8,7 @@ class ImgAction extends UserAction{
 		//$this->checkauth('Img','Img');
 		
 		$db=D('Img');
-		//$where['uid']=session('uid');
+		$where['uid']=session('uid');
 		$where['token']=session('token');
 		$count=$db->where($where)->count();
 		$page=new Page($count,25);
@@ -58,9 +58,9 @@ class ImgAction extends UserAction{
 		if(D(MODULE_NAME)->where($where)->delete()){
 			M('Keyword')->where(array('pid'=>$this->_get('id','intval'),'token'=>session('token'),'module'=>'Img'))->delete();
 			//$this->success('操作成功',U(MODULE_NAME.'/index'));
-			$this->success('操作成功',U('MyClassify/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
+			$this->success('操作成功',U('Img/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
 		}else{
-			$this->error('操作失败',U('MyClassify/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
+			$this->error('操作失败',U('Img/index',array('classid'=>session('classid'),'token'=>session('token'),'classify'=>$_SESSION['classname'])));
 		}
 	}
 	public function insert(){
