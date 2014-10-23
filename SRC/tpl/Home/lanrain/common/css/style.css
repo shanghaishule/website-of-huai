@@ -16,7 +16,7 @@ a.link:hover {text-decoration:underline;}
 .color-1 { color:#006835;}
 a.color-1:hover {color:#000;}
 
-.font-3 {font-size: 14px;line-height: 33px;width:460px;color: #292929;float: left;margin-left: -10px;}
+.font-3 {font-size: 14px;line-height: 33px;width:95%;color: #292929;float: left;margin-left: -24px;}
 h2 { font-size:30px; line-height:36px; color:#292929; font-weight:normal; letter-spacing:-1px;}
 ul {margin:0; padding:0;list-style-image:none;}
 ul.list-1 li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/marker-1.gif) 0 11px no-repeat;}
@@ -31,6 +31,7 @@ ul.list-2 li a:hover { color:#292929;}
 .clear {clear:both; line-height:0; font-size:0; width:100%;}
 .wrapper {width:100%; overflow:hidden; position:relative}
 .wrap {overflow:hidden; position:relative;float:left;}
+.box-1{width:33.33%}
 .extra-wrap {overflow:hidden;width: 140px;}
 .fleft {float:left;}
 .fright {float:right;}
@@ -84,8 +85,11 @@ ul.p6 li {list-style-type:none;}
 .block-1 { height: 180px;}
 .block-2 { padding:25px 30px 5px 44px;}
 .block-3 { padding:25px 30px 25px 44px;}
-.col-1 {float:left; margin: 15px 20px;}
-.col-2 {float:left; width:225px; margin: 0px 5px 0px 185px;}
+.col-1 {float:left; margin: 15px 20px;width:100%}
+.col-1 a{color:black}
+.col-2 {float:left; width:33.333%; margin: 0px 5px 0px 16px;}
+.child{width: 23%;
+margin-left: 30px}
 .col-3 {float:left; width:460px; margin-right:50px; }
 .col-4 {float:left; width:300px;margin-top:50px;}
 
