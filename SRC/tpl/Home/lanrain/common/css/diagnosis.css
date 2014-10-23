@@ -2,11 +2,26 @@
 .right_main{background:white;margin-left:2%;width:68%;height:px;float:left}
 .left_list_top{height:30px;background-color: #006835}
 .left_list_top p{font-size:1.3em;color:white;padding-left:5px;padding:2px auto}
-ul.service_list{padding-left:5%;width:90%}
+ul.service_list{padding-left:0%;width:98%}
 ul.hospital_list{padding-left:16%;width:90%;padding-top:10px}
 ul.hospital_list li{float:left;width:30%;line-height:30px}
 td.table{
 padding: 6px 10px;
 border: 1px solid #006835;
 border: 1px solid #006835;
+font-size:0.6em;
+font-weight:normal;
+line-height:15px;
+font-family: Verdana, Arial, '宋体';
 }
+td.top_table{background:#006835;color:white;}
+.service_list li img{width:10%;float:left;padding-top: 5px;}
+.service_list li p{float:left;width:90%}
+.hospital_list li a {color:black}
+.hospital_list li a:hover{color:#006835}
+.money_info{height:30px;border:1px solid #006835;background:#006835 }
+.money_info li{float:left;width:45%;color:white;margin-left:3%}
+.money_info li a{color:white}
+.money_info li a:active{color:#006835}
+ .money_info_content ul{ padding-left:30px}
+.money_info_content ul li {list-style-type: decimal;width:90%;}
