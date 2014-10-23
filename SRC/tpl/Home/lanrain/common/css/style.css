@@ -76,7 +76,7 @@ ul.menu li {float:left; line-height:20px; margin:0px 0 0px 16px;}
 ul.menu li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
 ul.menu li a:hover, ul.menu li.current a {color:#006835;}
 ul.p6 li {list-style-type:none;}
-.navbox #sliderNav li.active a{padding-left:25px;color:#01a5ca}
+.navbox #sliderNav li.active a{padding-left:25px;color:#006835}
 /*********************************content*************************************/
 #content {width:100%;}
 .box-shadow {box-shadow: 0px 0px 5px #dbdbdb;background:#fff;}
