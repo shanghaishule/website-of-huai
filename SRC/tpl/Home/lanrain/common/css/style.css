@@ -157,6 +157,12 @@ height: 592px}
 .menu1{float: left;
 margin-right: 67px}
 .mar{margin-top:5px}
-.h_all_list p{background: #45916C;color:white;padding-left:10px}
+.h_all_list p{background: #45916C;color:white;margin-left:2%;width:96%}
 .h_all_list{margin-bottom:20px;background: white;}
-.h_list{border:1px solid #006835;text-align:center;padding:0 5px}
+.h_list{border:1px solid #006835;text-align:center;padding:0 5px
+;
+
+}
+.h_table{width:96%;margin-left:2%}
+.h_all{background: white;}
+
