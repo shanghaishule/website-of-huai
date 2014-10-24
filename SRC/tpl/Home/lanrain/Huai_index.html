@@ -1,8 +1,22 @@
-
 <include file="Public:header" />
-
-
 <!--==============================content================================-->
+    <script>
+		$(window).load(function(){
+			$('.slider')._TMS({
+			prevBu:'.prev',
+			nextBu:'.next',
+			pauseOnHover:true,
+			pagNums:false,
+			duration:800,
+			easing:'easeOutQuad',
+			preset:'Fade',
+			slideshow:7000,
+			pagination:'.pagination',
+			waitBannerAnimation:false,
+			banners:'fade'
+			})
+		}) 	
+    </script>
 <section id="content">
 	<div class="container_12">
 		<div class="grid_12">
