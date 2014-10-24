@@ -7,6 +7,7 @@ class IndexAction extends BaseAction{
 		$this->assign('res',$article_arr);
 		$this->display('Huai:index');
 	}
+	
 	public function resetpwd(){
 		$uid=$this->_get('uid','intval');
 		$code=$this->_get('code','trim');
