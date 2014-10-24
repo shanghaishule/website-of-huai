@@ -2,7 +2,9 @@
 class IndexAction extends BaseAction{
 	//关注回复
 	public function index(){
-		
+		//article
+		$article_arr = M('img')->field('id,title')->limit(8)->select();
+		$this->assign('res',$article_arr);
 		$this->display('Huai:index');
 	}
 	public function resetpwd(){

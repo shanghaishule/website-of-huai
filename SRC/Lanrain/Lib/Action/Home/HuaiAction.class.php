@@ -12,7 +12,7 @@ class HuaiAction extends BaseAction {
 	
 	// 首页
 	public function index() {
-		$this->display ();
+		$this->display();
 	}
 	// about
 	public function about() {
@@ -76,6 +76,15 @@ class HuaiAction extends BaseAction {
 	   	  $this->error('当前资讯不存在');
 	   	  exit;
 	   }
+	   
+	   $preId_where['id']=array('lt',$id);//上一篇
+	   $preId=$db->where($preId_where)->order('id DESC')->limit(1)->find();
+	   $this->assign("preArticle",$preId);
+	    
+	   $nextId_where["id"]=array('gt',$id);//下一篇
+	   $nextArticle=$db->where($nextId_where)->order('id ASC')->limit(1)->find();
+	   $this->assign("nextArticle",$nextArticle);
+	   
 	   //dump($res);die;
 	   $this->assign('res',$res);
 	   $this->display();

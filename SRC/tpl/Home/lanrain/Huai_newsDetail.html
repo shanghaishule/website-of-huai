@@ -74,15 +74,27 @@
                         <div class="separator" style="height:30px;"></div>
                         
                         <h2>资讯平台</h2>
-                        
-                        <p class="general_subtitle">权威资讯在此发布.</p>
-                        
+                        <div class="article-share">
+	                        <div class="general_subtitle float_l">权威资讯在此发布.</div>
+	                        
+							<!-- JiaThis Button BEGIN -->
+							<div class="jiathis_style bshare-custom float_r">
+								<a class="jiathis_button_qzone"></a>
+								<a class="jiathis_button_tsina"></a>
+								<a class="jiathis_button_tqq"></a>
+								<a class="jiathis_button_weixin"></a>
+								<a class="jiathis_button_renren"></a>
+								<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+								<a class="jiathis_counter_style"></a>
+							</div>
+							<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+							<!-- JiaThis Button END -->  
+						</div>                      
                         <div class="line_4" style="margin:0px 0px 0px;"></div>
                         
                         <div class="block_blog_1">
 
                         	<article class="blog_post">
-                            	<div class="tail"></div>
                             	<div class="f_pic"><img src="{lanrain:$res['pic']}" alt="" width="610" height="244"/></div>
                             	
                                 <h4 class="title">{lanrain:$res['title']}</h4>
@@ -106,7 +118,16 @@
                                 </div>
                                 
                             </article>
-
+                            
+							<div class="clearfix w-l790 float_l article-page">
+								<if condition="$preArticle['id'] neq ''">
+									<a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$preArticle['id']))}"  class="float_l">上一篇：{lanrain:$preArticle.title|msubstr=0,50,'utf-8',true}</a>
+								</if>
+								<if condition="$nextArticle['id'] neq ''">
+									<a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$nextArticle['id']))}"  class="float_r">下一篇：{lanrain:$nextArticle.title|msubstr=0,50,'utf-8',true}</a>
+								</if>
+							</div>    
+							             
                         </div>
                         
                     </div>
