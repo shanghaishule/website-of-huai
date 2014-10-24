@@ -3,7 +3,7 @@
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
-html, body, div, span, applet, object, iframe,
+div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -18,9 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0;
 	vertical-align: baseline;
 }
-body {
-	line-height: 1;
-}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
@@ -52,10 +50,9 @@ aside, article, footer, header, nav, section {display:block;}
 
 /* defaults end */
 html, body {height:100%;}
-body {}
 body, a {font-size:12px; color:#737373;}
 	
-.wrapper {width:100%; min-width:320px; min-height:100%; overflow-x:hidden; position:relative; background-color:#ffffff;}
+.wrapper {width:100%; min-width:320px; min-height:100%; overflow-x:hidden; position:relative;}
 
 .innerH {width:960px; margin:0px auto;}
 .fl, .alignleft {float:left;}
