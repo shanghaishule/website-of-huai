@@ -110,15 +110,12 @@
 						<span class="color-1">就医</span> 资讯
 					</h2>
 					<ul class="list-1">
-<<<<<<< HEAD
-						
-						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
-=======
+
 					  <volist name="res" id="vo">
 					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
 					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;</p></a></li>
->>>>>>> branch 'master' of https://github.com/shanghaishule/website-of-huai.git
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+
 					</ul>
 					<!--  <div class="form-search">
                         	<h2><span class="color-1">信息</span> 搜索</h2>
