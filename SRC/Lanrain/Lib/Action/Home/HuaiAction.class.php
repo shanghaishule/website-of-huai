@@ -38,6 +38,11 @@ class HuaiAction extends BaseAction {
 	public function examination() {
 		$this->display ();
 	}
+	//hospitalall
+	public function hospitalall() {
+		$this->display ();
+	}
+	
 	// consultant
 	public function consultant() {
 		$this->display ();
