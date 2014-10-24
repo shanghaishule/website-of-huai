@@ -628,22 +628,47 @@ function trace($value='[think]',$label='',$level='DEBUG',$record=false) {
     }
 }
 
-function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=true) {
-    if(function_exists("mb_substr")){
-        $slice = mb_substr($str, $start, $length, $charset);
-        $strlen = mb_strlen($str,$charset);
-    }elseif(function_exists('iconv_substr')){
-        $slice = iconv_substr($str,$start,$length,$charset);
-        $strlen = iconv_strlen($str,$charset);
-    }else{
-        $re['utf-8']   = "/[\x01-\x7f]|[\xc2-\xdf][\x80-\xbf]|[\xe0-\xef][\x80-\xbf]{2}|[\xf0-\xff][\x80-\xbf]{3}/";
-        $re['gb2312'] = "/[\x01-\x7f]|[\xb0-\xf7][\xa0-\xfe]/";
-        $re['gbk']    = "/[\x01-\x7f]|[\x81-\xfe][\x40-\xfe]/";
-        $re['big5']   = "/[\x01-\x7f]|[\x81-\xfe]([\x40-\x7e]|\xa1-\xfe])/";
-        preg_match_all($re[$charset], $str, $match);
-        $slice = join("",array_slice($match[0], $start, $length));
-        $strlen = count($match[0]);
+function mbsubstr($str, $start=0, $length, $suffix=true, $charset="utf-8") {
+    $re['utf-8']   = "/[\x01-\x7f]|[\xc2-\xdf][\x80-\xbf]|[\xe0-\xef][\x80-\xbf]{2}|[\xf0-\xff][\x80-\xbf]{3}/";
+    $re['gb2312'] = "/[\x01-\x7f]|[\xb0-\xf7][\xa0-\xfe]/";
+    $re['gbk']    = "/[\x01-\x7f]|[\x81-\xfe][\x40-\xfe]/";
+    $re['big5']   = "/[\x01-\x7f]|[\x81-\xfe]([\x40-\x7e]|\xa1-\xfe])/";
+    preg_match_all($re[$charset], $str, $match);
+    
+    $strArr = $match[0];
+    $str = array_values(tempStrArr($strArr));
+    $strArrCount = count($str);
+    if($strArrCount == $length+1){
+        $length += 1;
     }
-    if($suffix && $strlen>$length)$slice.='...';
-    return $slice;
+    
+    $slice = implode('',array_slice($str,$start,$length));
+    if($strArrCount > $length){
+        return $suffix ? $slice.'...' : $slice;
+    }else{
+        return $slice;
+    }
+ }
+ function tempStrArr($strArr){
+    $e = range('a','z');
+    $i = count($strArr);
+    foreach($strArr as $k=>$v){
+        if(in_array(strtolower($v), $e)){
+            if(in_array(strtolower($strArr[$k+1]), $e)){
+                $strArr[$k] = $v.$strArr[$k+1];
+                unset($strArr[$k+1]);
+                break;
+            }
+        }elseif($v > 0 && $v < 10 && $strArr[$k+1] > 0 && $strArr[$k+1] < 10){
+            $strArr[$k] = $v.$strArr[$k+1];
+            unset($strArr[$k+1]);
+            break;
+        }
+        $i--;
+    }
+    if($i > 0){
+        $strArr = tempStrArr($strArr);
+    }
+    
+    return $strArr;
  }
