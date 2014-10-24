@@ -110,15 +110,15 @@
 						<span class="color-1">就医</span> 资讯
 					</h2>
 					<ul class="list-1">
-						<li><a href="#">上海长海医院国家重点学科介绍</a></li>
-						<li><a href="#">上海东方肝胆医院专家介绍</a></li>
-						<li><a href="#">糖尿病饮食有哪些误区？</a></li>
-						<li><a href="#">肝炎病人是否会发生肝硬化肝癌？</a></li>
-						<li><a href="#">甲肝与乙肝有什么区别？各有什么特点？</a></li>
-						<li><a href="#">糖尿病饮食有哪些误区？</a></li>
-						<li><a href="#">肝炎病人是否会发生肝硬化肝癌？</a></li>
-						<li><a href="#">甲肝与乙肝有什么区别？各有什么特点？</a>
+<<<<<<< HEAD
+						
 						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+=======
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;</p></a></li>
+>>>>>>> branch 'master' of https://github.com/shanghaishule/website-of-huai.git
 					</ul>
 					<!--  <div class="form-search">
                         	<h2><span class="color-1">信息</span> 搜索</h2>

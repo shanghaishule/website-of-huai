@@ -3,7 +3,7 @@
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
-html, body, div, span, applet, object, iframe,
+div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -18,9 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0;
 	vertical-align: baseline;
 }
-body {
-	line-height: 1;
-}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
@@ -52,10 +50,9 @@ aside, article, footer, header, nav, section {display:block;}
 
 /* defaults end */
 html, body {height:100%;}
-body {}
 body, a {font-size:12px; color:#737373;}
 	
-.wrapper {width:100%; min-width:320px; min-height:100%; overflow-x:hidden; position:relative; background-color:#ffffff;}
+.wrapper {width:100%; min-width:320px; min-height:100%; overflow-x:hidden; position:relative;}
 
 .innerH {width:960px; margin:0px auto;}
 .fl, .alignleft {float:left;}
@@ -70,7 +67,7 @@ body, a {font-size:12px; color:#737373;}
 /* lines */
 .line_1 {height:1px; clear:both; overflow:hidden; background-color:#3d3d3d;}
 .line_2 {height:5px; clear:both; overflow:hidden; background:url(images/line_2.gif) repeat-x;}
-.line_3 {height:1px; clear:both; overflow:hidden; background-color:#006835;}
+.line_3 {height:1px; clear:both; overflow:hidden; background-color:#E2E2E2;}
 .line_4 {height:3px; clear:both; overflow:hidden; background:url(images/line_4.gif) repeat-x;}
 
 /* fonts */
@@ -335,7 +332,20 @@ nav.secondary_menu > ul > li:first-child > a {padding-left:0px;}
 .block_big_dropdown .more li:first-child {padding:0px;}
 .block_big_dropdown .more a {font-size:10px; color:#5a8ea1; text-transform:uppercase;}
 
-
+/** article**/
+.article-page {
+margin: 20px 0 50px;
+}
+.w-l790 {
+width: 620px;
+}
+.float_l {
+float: left;
+}
+.float_r {
+float: right;
+}
+/** article End**/
 
 #content {padding:0;}
 .general_content {}
@@ -353,7 +363,7 @@ nav.secondary_menu > ul > li:first-child > a {padding-left:0px;}
 .block_home_col_2 {width:300px; float:right;}
 .block_home_col_2 .line_3.first {display:none;}
 
-.block_breadcrumbs {height:26px; border-top:1px solid #006835; border-bottom:1px solid #006835;}
+.block_breadcrumbs {height:26px; border-top:1px solid  #E2E2E2; border-bottom:1px solid #E2E2E2;}
 .block_breadcrumbs ul {margin-left:8px; display:block; float:left;}
 .block_breadcrumbs li {height:26px; line-height:26px; margin-left:7px; padding-left:11px; display:block; float:left; background:url(images/arrow_1.gif) no-repeat 0px 11px; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#a5a5a5;}
 .block_breadcrumbs li:first-child {margin-left:0px; padding-left:0px; background:none;}
@@ -687,7 +697,7 @@ nav.secondary_menu > ul > li:first-child > a {padding-left:0px;}
 .block_tabs_type_4 .tab_content p {padding-bottom:0px; color:#737373; line-height:17px;}
 
 .block_blog_1 {}
-.block_blog_1 .blog_post {padding:24px 0px 3px; position:relative; border-bottom:1px solid #006835;}
+.block_blog_1 .blog_post {padding:24px 0px 3px; position:relative; border-bottom:1px solid #E2E2E2;}
 .block_blog_1 .blog_post .tail {width:6px; height:6px; position:absolute; left:43px; bottom:-6px; background:url(images/blog_tail_1.png) no-repeat;}
 .block_blog_1 .blog_post .f_pic {
 	margin-bottom:20px;
@@ -1924,7 +1934,7 @@ nav.secondary_menu > ul > li:first-child > a {padding-left:0px;}
 .block_popular_stuff {}
 .block_popular_stuff h4 {padding-bottom:18px;}
 .block_popular_stuff .line_2 {margin-top:22px;}
-.block_popular_stuff .content {width:246px; padding-right:13px; float:left; position:relative; border-right:1px solid #006835;}
+.block_popular_stuff .content {width:246px; padding-right:13px; float:left; position:relative; border-right:1px solid #E2E2E2;}
 .block_popular_stuff .content p {padding-bottom:0px; color:#383838; font-weight:bold; line-height:18px;}
 .block_popular_stuff .content p.date {margin-bottom:-5px; padding-top:9px; font-size:11px; color:#868686; font-weight:normal; line-height:normal;}
 .block_popular_stuff .content a {padding-bottom:0px; color:#383838; font-weight:bold;}
