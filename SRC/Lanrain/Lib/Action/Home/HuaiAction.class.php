@@ -56,7 +56,7 @@ class HuaiAction extends BaseAction {
 		$db=D('Img');
 		//$where['classname']=$this->_get('classname','trim');
 		$count=$db->count();
-		$Page       = new Page($count,25);// 实例化分页类 传入总记录数和每页显示的记录数
+		$Page       = new Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数
 		$show       = $Page->show();//
 		$res=$db->order('statdate DESC,id DESC')->limit($Page->firstRow.','.$Page->listRows)->select();
 		$res=$this->convertLinks($res);
