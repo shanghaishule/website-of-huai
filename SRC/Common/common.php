@@ -628,7 +628,7 @@ function trace($value='[think]',$label='',$level='DEBUG',$record=false) {
     }
 }
 
-function mbsubstr($str, $start=0, $length, $suffix=true, $charset="utf-8") {
+function msubstr($str, $start=0, $length, $suffix=true, $charset="utf-8") {
     $re['utf-8']   = "/[\x01-\x7f]|[\xc2-\xdf][\x80-\xbf]|[\xe0-\xef][\x80-\xbf]{2}|[\xf0-\xff][\x80-\xbf]{3}/";
     $re['gb2312'] = "/[\x01-\x7f]|[\xb0-\xf7][\xa0-\xfe]/";
     $re['gbk']    = "/[\x01-\x7f]|[\x81-\xfe][\x40-\xfe]/";
