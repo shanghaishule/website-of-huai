@@ -155,7 +155,7 @@ height: 592px}
 #content-new{width:75%;float:left;}
 .bg2{background: white;
 	padding: 5px 10px 5px 10px;
-	width: 65%;
+	width: 74.5%;
 	margin-top: 0px}
 .m4{float: left;
 	margin-right: 30px}
@@ -172,4 +172,5 @@ margin-right: 67px}
 }
 .h_table{width:96%;margin-left:2%}
 .h_all{background: white;}
-#exa_right{width:1077px}
+#exa_right{width:px}
+.upper{padding-top:0px}
