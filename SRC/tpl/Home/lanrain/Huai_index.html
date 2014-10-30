@@ -33,7 +33,37 @@
 				<li><a href="#">公司介绍</a></li>      
 			</ul>
 		</div>
+		<div class="ban_right">
+			<div class="col-2">
+				<h2 class="p3">
+					<span class="color-1">就医</span> 资讯
+				</h2>
+				<ul class="list-1">
+				  <volist name="res" id="vo">
+				 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+				  </volist>	
+					<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+	
+				</ul>
+			</div>
+	    </div>
 	</div>
+	<div class="clear"></div>
+	<div class="tab1" id="tab1">
+		<div class="menu1">
+			<ul>
+				<li id="one1" onclick="setTab('one',1)">上海长海医院</li>
+				<li id="one2" onclick="setTab('one',2)">上海长征医院</li>
+				<li id="one3" onclick="setTab('one',3)">东方肝胆医院</li>
+			</ul>
+		</div>
+		<div class="menu1div">
+			<div id="con_one_1">我的网站</div>
+			<div id="con_one_2" style="display:none;">JS代码,导航菜单</div>
+			<div id="con_one_3" style="display:none;">看到效果了吗？？？</div>
+		</div>
+	</div>
+    <div style="text-align:center;clear:both;"></div>
 	<div class="grid_12 top-1 ">
 		<div class="box-shadow">
 			<div class="wrap block-2" style="background: #FFF;">
@@ -45,26 +75,6 @@
 				   定制体检、病后康复、私人医生、企业顾问服务，是中国领先的健康医疗机构。
 				   <a href="{lanrain::U('Home/Huai/about')}"><span style="color:red">&lt;&lt;点击更多</span></a></p>
 			   </div>
-				<div class="col-2">
-					<h2 class="p3">
-						<span class="color-1">就医</span> 资讯
-					</h2>
-					<ul class="list-1">
-
-					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
-					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
-
-					</ul>
-					<!--  <div class="form-search">
-                        	<h2><span class="color-1">信息</span> 搜索</h2>
-                            <form id="form-search" method="post">
-                              <input type="text" value="Enter your Zip" onBlur="if(this.value=='') this.value='Enter your Zip'" onFocus="if(this.value =='Enter your Zip' ) this.value=''"  />
-                              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button">Search</a>
-                            </form>
-                        </div>-->
-				</div>
 				<div class="col-2 child">
 					<h2 class="p3">
 						<span class="color-1">医疗</span> 网络
@@ -84,6 +94,13 @@
 					</ul>
 					
 				</div>
+				<div class="form-search">
+	                        	<h2><span class="color-1">信息</span> 搜索</h2>
+	                            <form id="form-search" method="post">
+	                              <input type="text" value="Enter your Zip" onBlur="if(this.value=='') this.value='Enter your Zip'" onFocus="if(this.value =='Enter your Zip' ) this.value=''"  />
+	                              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button">Search</a>
+	                            </form>
+	        </div>
 			</div>
 		</div>
 	</div>
@@ -127,6 +144,52 @@ var MyMar=setInterval(Marquee,speed);
 tab.onmouseover=function() {clearInterval(MyMar)};
 tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
 -->
+</script>
+<script type="text/javascript">
+function setTab(name,cursel){
+	cursel_0=cursel;
+	for(var i=1; i<=links_len; i++){
+		var menu = document.getElementById(name+i);
+		var menudiv = document.getElementById("con_"+name+"_"+i);
+		if(i==cursel){
+			menu.className="off";
+			menudiv.style.display="block";
+		}
+		else{
+			menu.className="";
+			menudiv.style.display="none";
+		}
+	}
+}
+function Next(){
+	cursel_0++;
+	if (cursel_0>links_len)cursel_0=1
+	setTab(name_0,cursel_0);
+}
+var name_0='one';
+var cursel_0=1;
+var ScrollTime=3000;//循环周期（毫秒）
+var links_len,iIntervalId;
+onload=function(){
+	var links = document.getElementById("tab1").getElementsByTagName('li')
+	links_len=links.length;
+	for(var i=0; i<links_len; i++){
+		links[i].onmouseover=function(){
+			clearInterval(iIntervalId);
+			this.onmouseout=function(){
+				iIntervalId = setInterval(Next,ScrollTime);;
+			}
+		}
+	}
+	document.getElementById("con_"+name_0+"_"+links_len).parentNode.onmouseover=function(){
+		clearInterval(iIntervalId);
+		this.onmouseout=function(){
+			iIntervalId = setInterval(Next,ScrollTime);;
+		}
+	}
+	setTab(name_0,cursel_0);
+	iIntervalId = setInterval(Next,ScrollTime);
+}
 </script>
 <!--==============================footer=================================-->
 <include file="Public:footer2" />
