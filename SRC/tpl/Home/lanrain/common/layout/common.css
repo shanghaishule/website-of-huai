@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 /*common*/
-body{ font-size:12px; background:#FFF;}
-a{color:#252525;}
-a:hover{color:#f60; text-decoration:none;}
-
 /*布局*/
 .wp{width:1000px; margin:auto;}
 .fl {float:left;display:inline;}
