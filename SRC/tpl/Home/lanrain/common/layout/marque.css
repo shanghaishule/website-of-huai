@@ -1,7 +1,7 @@
 ﻿
 /* 专家推荐 */
 .list_img_1000_c4 a.next_pic_2{left:980px}
-.list_img_1000_c4 .inner{height: 140px;margin: 22px 20px 0 20px;width: 960px;}
+.list_img_1000_c4 .inner{height: 140px;margin: 22px 20px 0 0px;width: 940px;}
 .list_img_1000_c4 li{width:230px;height:140px;margin-right:0;padding-right:10px}
 .list_img_1000_c4 li a {width: 120px;font-size: 16px;text-align: left;display: block;line-height: 24px;height: 24px;color:#015abd}
 .zjtj_list li dl{width:100%;height:100%;overflow:hidden}
@@ -23,7 +23,7 @@ line-height: 34px;
 font-size: 12px;
 }
 /* 首页特色科室滚动 */
-.tsks_sy .inner{height:178px;margin:22px 40px 0 40px; width:920px;}
+.tsks_sy .inner{height:178px;margin: 22px 20px 0 0px; width:940px;}
 .tsks_sy li{width:215px;  height:180px; margin-right:20px;padding-right:0}
 .tsks_sy li a{width:215px;  font-size:12px; text-align:center; display:block; line-height:24px; height:24px; float:left;color:#000}
 .tsks_sy img{width:215px; height:140px; margin-bottom:10px; float:left;}

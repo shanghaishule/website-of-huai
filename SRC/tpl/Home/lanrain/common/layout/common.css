@@ -2,11 +2,11 @@
 /* CSS Document */
 /*common*/
 /*布局*/
-.wp{width:1000px; margin:auto;}
+.wp{width:960px;}
 .fl {float:left;display:inline;}
 .fr {float:right;display:inline;}
 .mt10{ margin-top:10px;}
-.mt20{ margin-top:20px;}
+.mt20{ margin-top:10px;}
 .mt30{ margin-top:30px;}
 .ml20{ margin-left:20px;}
 .ml40{ margin-left:40px;}
