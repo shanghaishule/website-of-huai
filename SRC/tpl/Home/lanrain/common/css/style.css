@@ -184,19 +184,31 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .h_all_list{margin-bottom:20px;background: white;}
 .h_list{border:1px solid #006835;text-align:center;padding:0 5px;}
 .h_table{width:96%;margin-left:2%}
-.img_intro{width: 320px;height: 210px;margin: 10px 0px;float:left;}
-.con_intro{width: 640px;float: left;height: 210px;}
+.img_intro{width: 25%;margin: 10px 0px;float:left;}
+.con_intro{width: 74%;float: left;margin-left:1%;height:159px;background:white;margin-top: 10px}
+.con_intro h2{font-size:1em;;line-height:22px}
+
 .keshi_all{width:960px;}
-.tab2{width:960px;border: 2px solid #006835;margin:10px 0px;}
+.tab2{width:960px;border: 1px solid #ccc;margin:10px 0px;}
 .menu3{height:28px;}
-.menu3 li{float:left;width:150px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
+.menu3 li{float: left;
+width: 191px;
+text-align: center;
+line-height: 23px;
+height: 26px;
+cursor: pointer;
+border-left: #ccc solid 1px;
+font-size: 14px;
+overflow: hidden;
+background:white;
+border:}
 .menu3 li.off{background:#FFFFFF;color:#000;}
-.menu3div{height:300px;border-left:#cccccc solid 1px;border-right:#cccccc solid 1px;border-top:0;background:#fefefe}
+.menu3div{height:220px;;border-top:0;background:#fefefe;overflow: auto}
 #exa_right{width:px}
 .upper{padding-top:0px}
 .main_c {
 float: left;
-width: 1040px;
+width: 960px;
 font-size: 12px;}
 .index_dpt_list {
 margin: 0;
@@ -210,3 +222,6 @@ float: left;
 width: 11.8%;
 line-height: 31px;
 }
+.dpt_disease_list li{float:left;width:211px;margin-left: 18px;
+background: white;
+margin-top: 13px}
