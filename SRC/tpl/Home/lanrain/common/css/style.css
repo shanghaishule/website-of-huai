@@ -116,7 +116,7 @@ margin-left: 30px}
 .box-2 p.color-1 {margin-top:5px;}
 .border-1 {border-bottom:#e5e5e5 1px solid; padding-bottom:15px; margin-bottom:9px;}
 .ban_right{float:left;border: 2px solid #ccc;width: 294px;height:245px;margin-top:-20px;margin-left:8px;background:#FFF;}
-.tab1{width:640px;border: 2px solid #006835;margin:10px;}
+.tab1{width:640px;border: 2px solid #006835;margin:10px 0px;}
 .menu2{height:28px;}
 .menu2 li{float:left;width:150px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
 .menu2 li.off{background:#FFFFFF;color:#000;}
@@ -125,7 +125,7 @@ margin-left: 30px}
 .hos_inf ul {float:right; margin-top:15px;}
 .hos_inf ul li {float:left; line-height:20px; margin:10px 16px;}
 .hos_inf ul li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
-.hos_inf ul li a:hover, ul li.current a {color:#006835;}
+.hos_inf ul li a:hover {color:#006835;}
 /****************************footer************************/
 footer {
 width: 960px;
