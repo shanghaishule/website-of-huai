@@ -19,122 +19,126 @@
     </script>
 <section id="content">
 	<div class="container_12">
-		<div class="slider_box" id="slider_name">
-			<ul class="silder_con">		
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_bg.png" /></a></li>
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_01.png" /></a></li>
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_02.png"  /></a></li>
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_03.png" /></a></li>
-			</ul>
-			<ul class="silder_nav">            
-				<li><a href="#">就医陪诊</a></li>    
-				<li><a href="#">首长保健</a></li>    
-				<li><a href="#">绿色通道</a></li>    
-				<li><a href="#">公司介绍</a></li>      
-			</ul>
-		</div>
-		<div class="ban_right">
-			<div class="col-2">
-				<h2 class="p3">
-					<span class="color-1">就医</span> 资讯
-				</h2>
-				<ul class="list-1">
-				  <volist name="res" id="vo">
-				 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
-				  </volist>	
-					<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
-	
+		<div class="content_left">
+			<div class="slider_box" id="slider_name">
+				<ul class="silder_con">		
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_bg.png" /></a></li>
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_01.png" /></a></li>
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_02.png"  /></a></li>
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_03.png" /></a></li>
+				</ul>
+				<ul class="silder_nav">            
+					<li><a href="#">就医陪诊</a></li>    
+					<li><a href="#">首长保健</a></li>    
+					<li><a href="#">绿色通道</a></li>    
+					<li><a href="#">公司介绍</a></li>      
 				</ul>
 			</div>
-	    </div>
+			<div class="tab1" id="tab1">
+				<div class="menu2">
+					<ul>
+						<li id="one1" onclick="setTab('one',1)">上海长海医院</li>
+						<li id="one2" onclick="setTab('one',2)">上海长征医院</li>
+						<li id="one3" onclick="setTab('one',3)">东方肝胆医院</li>
+					</ul>
+				</div>
+				<div class="menu2div">
+					<div id="con_one_1">
+						<div class="hos_inf">
+						    <ul>
+								<li><a href="#">消化内科</a></li>
+								<li><a href="#">泌尿外科</a></li>
+								<li><a href="#">胸心外科</a></li>
+								<li><a href="#">烧伤外科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">中医内科</a></li>
+								<li><a href="#">中医外科</a></li>
+								<li><a href="#">中医妇科</a></li>
+								<li><a href="#">中医针灸推拿科</a></li>
+								<li><a href="#">影像医学科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">心血管内科</a></li>
+								<li><a href="#">血液内科</a></li>
+								<li><a href="#">肛肠外科</a></li>
+								<li><a href="#">血管外科</a></li>
+								<li><a href="#">神经外科</a></li>
+								<li><a href="#">整形外科</a></li>
+								<li><a href="#">麻醉科</a></li>
+								<li><a href="#">耳鼻喉科</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="con_one_2" style="display:none;">
+						<div class="hos_inf">
+						    <ul>
+								<li><a href="#">消化内科</a></li>
+								<li><a href="#">泌尿外科</a></li>
+								<li><a href="#">胸心外科</a></li>
+								<li><a href="#">烧伤外科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">中医内科</a></li>
+								<li><a href="#">中医外科</a></li>
+								<li><a href="#">中医妇科</a></li>
+								<li><a href="#">中医针灸推拿科</a></li>
+								<li><a href="#">影像医学科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">心血管内科</a></li>
+								<li><a href="#">血液内科</a></li>
+								<li><a href="#">肛肠外科</a></li>
+								<li><a href="#">血管外科</a></li>
+								<li><a href="#">神经外科</a></li>
+								<li><a href="#">整形外科</a></li>
+								<li><a href="#">麻醉科</a></li>
+								<li><a href="#">耳鼻喉科</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="con_one_3" style="display:none;">
+						<div class="hos_inf">
+						    <ul>
+								<li><a href="#">消化内科</a></li>
+								<li><a href="#">泌尿外科</a></li>
+								<li><a href="#">胸心外科</a></li>
+								<li><a href="#">烧伤外科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">中医内科</a></li>
+								<li><a href="#">中医外科</a></li>
+								<li><a href="#">中医妇科</a></li>
+								<li><a href="#">中医针灸推拿科</a></li>
+								<li><a href="#">影像医学科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">心血管内科</a></li>
+								<li><a href="#">血液内科</a></li>
+								<li><a href="#">肛肠外科</a></li>
+								<li><a href="#">血管外科</a></li>
+								<li><a href="#">神经外科</a></li>
+								<li><a href="#">整形外科</a></li>
+								<li><a href="#">麻醉科</a></li>
+								<li><a href="#">耳鼻喉科</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_right">
+			<div class="ban_right">
+				<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">就医</span> 资讯
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+		
+					</ul>
+				</div>
+		    </div>
+		</div>
 	</div>
 	<div class="clear"></div>
-	<div class="tab1" id="tab1">
-		<div class="menu2">
-			<ul>
-				<li id="one1" onclick="setTab('one',1)">上海长海医院</li>
-				<li id="one2" onclick="setTab('one',2)">上海长征医院</li>
-				<li id="one3" onclick="setTab('one',3)">东方肝胆医院</li>
-			</ul>
-		</div>
-		<div class="menu2div">
-			<div id="con_one_1">
-				<div class="hos_inf">
-				    <ul>
-						<li><a href="#">消化内科</a></li>
-						<li><a href="#">泌尿外科</a></li>
-						<li><a href="#">胸心外科</a></li>
-						<li><a href="#">烧伤外科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">中医内科</a></li>
-						<li><a href="#">中医外科</a></li>
-						<li><a href="#">中医妇科</a></li>
-						<li><a href="#">中医针灸推拿科</a></li>
-						<li><a href="#">影像医学科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">心血管内科</a></li>
-						<li><a href="#">血液内科</a></li>
-						<li><a href="#">肛肠外科</a></li>
-						<li><a href="#">血管外科</a></li>
-						<li><a href="#">神经外科</a></li>
-						<li><a href="#">整形外科</a></li>
-						<li><a href="#">麻醉科</a></li>
-						<li><a href="#">耳鼻喉科</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="con_one_2" style="display:none;">
-				<div class="hos_inf">
-				    <ul>
-						<li><a href="#">消化内科</a></li>
-						<li><a href="#">泌尿外科</a></li>
-						<li><a href="#">胸心外科</a></li>
-						<li><a href="#">烧伤外科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">中医内科</a></li>
-						<li><a href="#">中医外科</a></li>
-						<li><a href="#">中医妇科</a></li>
-						<li><a href="#">中医针灸推拿科</a></li>
-						<li><a href="#">影像医学科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">心血管内科</a></li>
-						<li><a href="#">血液内科</a></li>
-						<li><a href="#">肛肠外科</a></li>
-						<li><a href="#">血管外科</a></li>
-						<li><a href="#">神经外科</a></li>
-						<li><a href="#">整形外科</a></li>
-						<li><a href="#">麻醉科</a></li>
-						<li><a href="#">耳鼻喉科</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="con_one_3" style="display:none;">
-				<div class="hos_inf">
-				    <ul>
-						<li><a href="#">消化内科</a></li>
-						<li><a href="#">泌尿外科</a></li>
-						<li><a href="#">胸心外科</a></li>
-						<li><a href="#">烧伤外科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">中医内科</a></li>
-						<li><a href="#">中医外科</a></li>
-						<li><a href="#">中医妇科</a></li>
-						<li><a href="#">中医针灸推拿科</a></li>
-						<li><a href="#">影像医学科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">心血管内科</a></li>
-						<li><a href="#">血液内科</a></li>
-						<li><a href="#">肛肠外科</a></li>
-						<li><a href="#">血管外科</a></li>
-						<li><a href="#">神经外科</a></li>
-						<li><a href="#">整形外科</a></li>
-						<li><a href="#">麻醉科</a></li>
-						<li><a href="#">耳鼻喉科</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
     <div style="text-align:center;clear:both;"></div>
 	<div class="grid_12 top-1 ">
 		<div class="box-shadow">
