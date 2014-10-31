@@ -187,3 +187,19 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .menu3div{height:300px;border-left:#cccccc solid 1px;border-right:#cccccc solid 1px;border-top:0;background:#fefefe}
 #exa_right{width:px}
 .upper{padding-top:0px}
+.main_c {
+float: left;
+width: 1040px;
+font-size: 12px;}
+.index_dpt_list {
+margin: 0;
+padding: 0 0 0 32px;
+color: #999;
+_height: 100%;
+overflow: hidden;
+}
+.index_dpt_list li {
+float: left;
+width: 11.8%;
+line-height: 31px;
+}
