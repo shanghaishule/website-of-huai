@@ -120,6 +120,40 @@
 					</div>
 				</div>
 			</div>
+			<div class="ban_right4">
+				<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">公司</span> 新闻
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="ban_right5">
+				<div class="col-2">
+					<h2 class="p3">
+						已累计服务<span class="color-1">8674名</span>患者 
+					</h2>
+					<ul class="list-1">
+						<div id="up_time" style="width:300px;height:220px;overflow:hidden;">
+							<a href="javascript:"><span>5秒</span>前,我要赚钱，</a>
+							<a href="javascript:"><span>1小时</span>前,我要生活 </a>
+							<a href="javascript:"><span>3小时</span>前,我要买房，</a>
+							<a href="javascript:"><span>8小时</span>前,我要一切</a>
+							<a href="javascript:"><span>1天</span>前,男人就要对自己狠点</a>
+							<a href="javascript:"><span>8888秒</span>前,我要赚钱，</a>
+							<a href="javascript:"><span>99999小时</span>前,我要生活 </a>
+							<a href="javascript:"><span>4444小时</span>前,我要买房，</a>
+							<a href="javascript:"><span>55555小时</span>前,我要一切</a>
+							<a href="javascript:"><span>6666666天</span>前,男人就要对自己狠点</a>
+						</div> 
+					</ul>
+				</div>
+		    </div>
 		</div>
 		<div class="content_right">
 			<div class="ban_right">
@@ -132,73 +166,39 @@
 					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
 					  </volist>	
 						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
-		
+					</ul>
+				</div>
+				
+		    </div>
+		    <div class="ban_right2">
+				<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">绿色</span> 通道
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
 					</ul>
 				</div>
 		    </div>
-		</div>
-	</div>
-	<div class="clear"></div>
-    <div style="text-align:center;clear:both;"></div>
-	<div class="grid_12 top-1 ">
-		<div class="box-shadow">
-			<div class="wrap block-2" style="background: #FFF;">
-			    <div class="col-2">
-				   <p class="font-3">
-				   上海沪爱健康管理有限公司，依托于上海第二军医大学、上海交通大学医学院、
-				   复旦大学医学院、上海20几家著名三甲医院，以”弘扬军医文化、服务人民健康“为宗旨，
-				   "沪爱健康、美丽人生“为企业文化。公司专业致力于优质医疗资源平台整合，提供陪诊就医、
-				   定制体检、病后康复、私人医生、企业顾问服务，是中国领先的健康医疗机构。
-				   <a href="{lanrain::U('Home/Huai/about')}"><span style="color:red">&lt;&lt;点击更多</span></a></p>
-			   </div>
-				<div class="col-2 child">
+		    <div class="ban_right3">
+				<div class="col-2">
 					<h2 class="p3">
-						<span class="color-1">医疗</span> 网络
+						<span class="color-1">专家</span> 观点
 					</h2>
 					<ul class="list-1">
-						<li><a href="#">上海长海医院</a></li>
-						<li><a href="#">上海东方肝胆医院</a></li>
-						<li><a href="">上海长征医院</a></li>
-					<li class=""><a href="">上海华山医院</a></li>
-					<li><a href="">上海瑞金医院</a></li>
-					<li><a href="">上海中医医院</a></li>
-					<li><a href="">上海新华医院</a></li>
-					<li><a href="">上海红房子医院</a>
-					<a href="{lanrain::U('Home/Huai/hospitalall')}"><p style="color:red">&lt;&lt;点击更多</p></a>
-					</li>
-					
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
 					</ul>
-					
 				</div>
-				<div class="form-search">
-	                        	<h2><span class="color-1">信息</span> 搜索</h2>
-	                            <form id="form-search" method="post">
-	                              <input type="text" value="Enter your Zip" onBlur="if(this.value=='') this.value='Enter your Zip'" onFocus="if(this.value =='Enter your Zip' ) this.value=''"  />
-	                              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button">Search</a>
-	                            </form>
-	        </div>
-			</div>
+				
+		    </div>
 		</div>
 	</div>
-	<div class="clear"></div>
-	<div id="demo">
-	<div id="indemo">
-		<div id="demo1">
-			<a href="#" class="demo1_a">
-				<img src="__PUBLIC__/images/doct1.jpg" border="0" />
-			</a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct2.jpg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct3.jpg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct4.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct5.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct6.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct7.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct8.jpg" border="0" /></a>
-		</div>
-		<div id="demo2"></div>
-	</div>
-    </div>
-
 <!--名医推介-->
 <div class="wp clearfix mt20">
   <div class="cm_title_tab">
@@ -1115,6 +1115,7 @@ tab.onmouseover=function() {clearInterval(MyMar)};
 tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
 -->
 </script>
+<!--==============================滚动评论=================================-->
 <script type="text/javascript">
 function setTab(name,cursel){
 	cursel_0=cursel;
@@ -1160,6 +1161,17 @@ onload=function(){
 	setTab(name_0,cursel_0);
 	iIntervalId = setInterval(Next,ScrollTime);
 }
+</script>
+<script>
+var t=setInterval(myfunc,1000)
+var d=document.getElementById("up_time")
+function myfunc(){
+var o=d.firstChild
+d.removeChild(o)
+d.appendChild(o)
+}
+d.onmouseover=function(){clearInterval(t)}
+d.onmouseout=function(){t=setInterval(myfunc,1000)}
 </script>
 <!--==============================footer=================================-->
 <include file="Public:footer2" />
