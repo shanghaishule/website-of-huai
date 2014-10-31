@@ -129,7 +129,7 @@
 					  <volist name="res" id="vo">
 					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
 					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+						<a href="{lanrain::U('Home/Huai/news')}"><p>&lt;&lt;点击更多</p></a></li>
 					</ul>
 				</div>
 		    </div>
@@ -165,7 +165,7 @@
 					  <volist name="res" id="vo">
 					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
 					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+						<a href="{lanrain::U('Home/Huai/news')}"><p>&lt;&lt;点击更多</p></a></li>
 					</ul>
 				</div>
 				
@@ -176,10 +176,14 @@
 						<span class="color-1">绿色</span> 通道
 					</h2>
 					<ul class="list-1">
-					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
-					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+					 	<li><a href="#">长海医院泌尿外科</a></li>
+					 	<li><a href="#">长海医院烧伤外科</a></li>
+					    <li><a href="#">长海医院消化内科</a></li>
+					    <li><a href="#">东方肝胆医院肝胆外科</a></li>
+					    <li><a href="#">长征医院肾内科</a></li>
+					    <li><a href="#">长征医院眼科</a></li>
+					    <li><a href="#">长征医呼吸科</a></li>
+						<a href="#"><p>&lt;&lt;联系我们</p></a></li>
 					</ul>
 				</div>
 		    </div>
@@ -192,7 +196,7 @@
 					  <volist name="res" id="vo">
 					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
 					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+						<a href="{lanrain::U('Home/Huai/news')}"><p>&lt;&lt;点击更多</p></a></li>
 					</ul>
 				</div>
 				
@@ -1158,7 +1162,7 @@ onload=function(){
 		}
 	}
 	setTab(name_0,cursel_0);
-	iIntervalId = setInterval(Next,ScrollTime);
+	//iIntervalId = setInterval(Next,ScrollTime);
 }
 </script>
 <script>
