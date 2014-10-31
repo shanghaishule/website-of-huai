@@ -1,0 +1,41 @@
+﻿
+/* 专家推荐 */
+.list_img_1000_c4 a.next_pic_2{left:980px}
+.list_img_1000_c4 .inner{height: 140px;margin: 22px 20px 0 20px;width: 960px;}
+.list_img_1000_c4 li{width:230px;height:140px;margin-right:0;padding-right:10px}
+.list_img_1000_c4 li a {width: 120px;font-size: 16px;text-align: left;display: block;line-height: 24px;height: 24px;color:#015abd}
+.zjtj_list li dl{width:100%;height:100%;overflow:hidden}
+.zjtj_list li dl dt{float:right;width:120px;font-size:14px;font-weight:700}
+.list_img_1000_c4 img{width:100px;height:140px;margin:0}
+.zjtj_list li dl dd{float:right;width:120px;}
+.zjtj_list li dl dd,.zjtj_list li dl dd b{color:#6f6f6f}
+.zjtj_list li dl dd font{font-size:12px;color:#117321}
+.zjtj_list li dl dd.pic{float:left;width:auto}
+.zjtj_list li dl dd.pic a{display:block;width:100px;height:140px}
+.cm_title_tab span {
+float: right;
+font-size: 14px;
+padding: 0 10px;
+}
+.cm_title_tab span a {
+color: #999;
+line-height: 34px;
+font-size: 12px;
+}
+/* 首页特色科室滚动 */
+.tsks_sy .inner{height:178px;margin:22px 40px 0 40px; width:920px;}
+.tsks_sy li{width:215px;  height:180px; margin-right:20px;padding-right:0}
+.tsks_sy li a{width:215px;  font-size:12px; text-align:center; display:block; line-height:24px; height:24px; float:left;color:#000}
+.tsks_sy img{width:215px; height:140px; margin-bottom:10px; float:left;}
+.tsks_sy ul{width:4700px}
+/* 特色科室 */
+.tsks{height:50px;line-height:50px;padding:0 20px;color:#656565;font-weight:700;border-bottom:1px dotted #d9d9d9}
+.tsks span{margin-left:20px}
+.tsks span a{color:#656565;font-weight:normal;margin:0 5px}
+.kslb{padding:0 10px;overflow: hidden;color:#7d7d7d}
+.kslb label{float: left;width: 115px;text-align: center;}
+.kslb li{line-height: 30px;background:url(tl_bg01.jpg) no-repeat 0 50%;padding: 10px 0;border-bottom:1px dotted #d9d9d9}
+.kslb p{margin-left:115px;padding:0!important}
+.kslb p span{width: 176px;padding-right: 10px;float: left;}
+----------------------------------------
+
