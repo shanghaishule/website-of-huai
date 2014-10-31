@@ -34,29 +34,39 @@
 <body>
 	<div class="wrapper sticky_footer">
     	<!-- HEADER BEGIN -->
-	   <header class="header_top">
-	        <h1>
-        <div style="float:left;height:90px;width:123px;background:url(__PUBLIC__/images/logo.png) 0 0 no-repeat;background-size:100% 100%"></div>
-        <!-- <img src="__PUBLIC__/images/logo.png" width="40%"/> -->
-        <a href="{lanrain::C('site_url')}" style="font-weight:bold">
-        		沪爱健康</a></h1>
-	        <nav>
-	        	<div class="social-icon">
-	            	<a href="#" class="icon-2" style="width:155px;">4006-555-899</a>
-	            	<a href="tencent://message/?uin=1402612547" class="icon-1" style="width:105px;">在线客服</a>
-	            </div>
-	            <ul class="menu">
-				                <li><a href="{lanrain::C('site_url')}">首页</a></li>
-				                <li><a href="{lanrain::U('Home/Huai/about')}">公司介绍</a></li>
-				                <li><a href="{lanrain::U('Home/Huai/diagnosis')}">就医陪诊</a></li>
-				                <li><a href="{lanrain::U('Home/Huai/examination')}">高端体检</a></li>
-				                <li><a href="{lanrain::U('Home/Huai/product')}">军字产品</a></li>
-								 <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
-				                <li class="current"><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
-				                <li><a href="{lanrain::U('Home/Huai/contacts')}">联系我们</a></li>
-				            </ul>
-	        </nav>
-	    </header> 
+	  <header class="header_top">
+         
+       
+        
+        <!-- <img src="__PUBLIC__/images/logo.png" width="40%"/> 
+        <a href="{lanrain::C('site_url')}">
+        		沪爱健康</a></h1>-->
+        <nav>
+        	<div class="social-icon">
+            	<a href="#" class="icon-2" style="width:155px;">4006-555-899</a>
+            	<a href="tencent://message/?uin=1402612547" class="icon-1" style="width:105px;">在线客服</a>
+            </div>
+            <div style=";height:110px;width:960px;background:url(__PUBLIC__/images/header.png) 0 0 no-repeat;background-size:100% 100%">
+        </div>
+            <ul class="menu">
+			                <li><a href="{lanrain::C('site_url')}">首页</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/about')}">公司介绍</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/diagnosis')}">就医陪诊</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/examination')}">首长保健</a></li>
+			                <!--  <li><a href="{lanrain::U('Home/Huai/product')}">军字产品</a></li>-->
+							  <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/contacts')}">联系我们</a></li>
+			                <li id="sousuo"><form id="form-search1" method="post">
+	                              <input type="text" value="搜索" onblur="if(this.value=='') this.value='搜索'" onfocus="if(this.value =='搜索' ) this.value=''">
+	                              <a href="#" onclick="document.getElementById('form-search').submit()" class="search_button1">搜索</a>
+	                            <input type="hidden" name="__hash__" value="eb2c32c2868b1cf6e4c08477729ccc4d_29f50a5f66da4a28ebfdb28d0a301a71"></form>
+			                </li>
+			            </ul>
+			            
+			            <div class="clear"></div>
+        </nav>
+    </header>   
     	<!-- HEADER END -->
         
         <!-- CONTENT BEGIN -->
