@@ -17,7 +17,7 @@ a.link:hover {text-decoration:underline;}
 a.color-1:hover {color:#000;}
 
 .font-3 {line-height: 33px;width:95%;color: #292929;float: left;margin-left: -24px;}
-h2 { font-size:14px; line-height:36px; color:#292929; font-weight:normal; letter-spacing:-1px;}
+h2 { font-size:16px; line-height:36px; color:#292929; font-weight:normal; letter-spacing:-1px;}
 ul {margin:0; padding:0;list-style-image:none;}
 ul.list-1 li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/marker-1.gif) 0 11px no-repeat;}
 ul.list-1 li a { font-size:14px; color:#292929; line-height:25px;}
@@ -53,7 +53,6 @@ ul.list-2 li a:hover { color:#292929;}
 
 .p1 {padding-bottom:25px;}
 .p2 {padding-bottom:5px;}
-.p3 {padding-bottom:12px;}
 .p4 {padding-bottom:15px;}
 .p5 {padding-bottom:10px;}
 .p6 {padding-bottom:20px;}
@@ -102,7 +101,7 @@ ul.p6 li {list-style-type:none;}
 .child{width: 23%;margin-left: 30px}
 .col-3 {float:left; width:460px; margin-right:50px; }
 .col-4 {float:left; width:300px;margin-top:50px;}
-
+.col-2 p{color:#006835;margin-left: 150px;}
 .form-search {margin:27px 0px 0 0px; width:210px; }
 #form-search input { width:188px; border:#f4f4f4 1px solid; height:18px; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#bebebe;  vertical-align:top; padding:11px 9px 12px 11px; display:inline-block; margin-top:19px;}
 .search_button {background:#f4f4f4; font-size:14px; line-height:18px; color:#006835; text-transform:uppercase; display:inline-block; padding:12px 28px 13px 28px; margin:15px 0px 0 0;}
@@ -121,8 +120,9 @@ ul.p6 li {list-style-type:none;}
 .ban_right3{border: 2px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
 .ban_right4{width: 260px;border: 2px solid #ccc;height:290px;background:#FFF;float:left;}
 .ban_right5{width: 362px;border: 2px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
-.ban_right5 a{display:block;}
+.ban_right5 a{display:block;color:#000}
 .ban_right5 span{color:#006835;}
+.ban_right5 p1{margin:0px 10px;}
 .tab1{width:640px;border: 2px solid #006835;margin:10px 0px;}
 .menu2{height:28px;}
 .menu2 li{float:left;width:150px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
@@ -131,7 +131,7 @@ ul.p6 li {list-style-type:none;}
 .hos_inf{overflow:hidden; margin:50px 20px; width:600px;}
 .hos_inf ul {float:right; margin-top:15px;}
 .hos_inf ul li {float:left; line-height:20px; margin:10px 16px;}
-.hos_inf ul li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
+.hos_inf ul li a {font-size:14px; line-height:22px; color:#292929; display:inline-block; }
 .hos_inf ul li a:hover {color:#006835;}
 /****************************footer************************/
 footer {
