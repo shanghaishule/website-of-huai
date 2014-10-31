@@ -17,7 +17,7 @@ a.link:hover {text-decoration:underline;}
 a.color-1:hover {color:#000;}
 
 .font-3 {line-height: 33px;width:95%;color: #292929;float: left;margin-left: -24px;}
-h2 { font-size:18px; line-height:36px; color:#292929; font-weight:normal; letter-spacing:-1px;}
+h2 { font-size:14px; line-height:36px; color:#292929; font-weight:normal; letter-spacing:-1px;}
 ul {margin:0; padding:0;list-style-image:none;}
 ul.list-1 li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/marker-1.gif) 0 11px no-repeat;}
 ul.list-1 li a { font-size:14px; color:#292929; line-height:25px;}
@@ -162,33 +162,28 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .btns a {display:inline-block; margin:0 0px 0 10px;}
 .first1{background:white}
 /*****************nick***********************************/
-.bg1{background: white;
-padding: 5px 10px 5px 10px;
-width: 50%;
-margin-top: 0px;
-height: 592px}
+.bg1{background: white;padding: 5px 10px 5px 10px;width: 50%;margin-top: 0px;height: 592px}
 .container_12 .m1{width:%}
 .m2{float:left; width:49; margin-right:13px;}
 .m3{float:left; width:300px;margin-top:3px;}
 #content-new{width:75%;float:left;}
-.bg2{background: white;
-	padding: 5px 10px 5px 10px;
-	width: 74.5%;
-	margin-top: 0px}
-.m4{float: left;
-	margin-right: 30px}
+.bg2{background: white;padding: 5px 10px 5px 10px;width: 74.5%;margin-top: 0px}
+.m4{float: left;margin-right: 30px}
 .product{background:#006835;display:inline-block;color:white;font-size:1.5em}
 .product p{padding:6px}
-.menu1{float: left;
-margin-right: 67px}
+.menu1{float: left;margin-right: 67px}
 .mar{margin-top:5px}
 .h_all_list p{background: #45916C;color:white;margin-left:2%;width:96%}
 .h_all_list{margin-bottom:20px;background: white;}
-.h_list{border:1px solid #006835;text-align:center;padding:0 5px
-;
-
-}
+.h_list{border:1px solid #006835;text-align:center;padding:0 5px;}
 .h_table{width:96%;margin-left:2%}
-.h_all{background: white;}
+.img_intro{width: 320px;height: 210px;margin: 10px 0px;float:left;}
+.con_intro{width: 640px;float: left;height: 210px;}
+.keshi_all{width:960px;}
+.tab2{width:960px;border: 2px solid #006835;margin:10px 0px;}
+.menu3{height:28px;}
+.menu3 li{float:left;width:150px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
+.menu3 li.off{background:#FFFFFF;color:#000;}
+.menu3div{height:300px;border-left:#cccccc solid 1px;border-right:#cccccc solid 1px;border-top:0;background:#fefefe}
 #exa_right{width:px}
 .upper{padding-top:0px}
