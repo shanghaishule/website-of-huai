@@ -293,6 +293,7 @@ a.next_pic_3{width:23px; top: 60px; left:677px; background: url('gallery.gif') -
 
 /*cm_title_tab*/
 .cm_title_tab{ height:34px; border-bottom:1px solid #ccc; clear:both;}
+.cm_title_tab a{color:#000}
 .cm_title_tab ul{float:left; height:34px;font-family:"微软雅黑","黑体";}
 .cm_title_tab li,.cm_title_tab h1{ float:left; font-size:16px;  line-height:32px; margin-right:15px; width:114px;text-align: center;}
 .cm_title_tab li.selected{ border:1px solid #ddd; border-top:2px solid #326433;border-bottom:none;background:#FFF; height:33px; font-weight: bold;font-size: 18px;}
@@ -375,6 +376,7 @@ q:before,q:after , blockquote:before, blockquote:after{ content:'';}
 sub, sup {font-size:75%; line-height:0; position:relative; vertical-align:baseline;}
 sup { top:-0.5em;}
 sub { bottom:-0.25em;}
+
 ins,a { text-decoration:none;}
 a:hover { text-decoration:underline;}
 a:focus,*:focus { outline:none;}
