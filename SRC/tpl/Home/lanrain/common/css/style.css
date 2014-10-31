@@ -120,8 +120,9 @@ ul.p6 li {list-style-type:none;}
 .ban_right3{border: 2px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
 .ban_right4{width: 260px;border: 2px solid #ccc;height:290px;background:#FFF;float:left;}
 .ban_right5{width: 362px;border: 2px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
-.ban_right5 a{display:block;}
+.ban_right5 a{display:block;color:#000}
 .ban_right5 span{color:#006835;}
+.ban_right5 p1{margin:0px 10px;}
 .tab1{width:640px;border: 2px solid #006835;margin:10px 0px;}
 .menu2{height:28px;}
 .menu2 li{float:left;width:150px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
@@ -130,7 +131,7 @@ ul.p6 li {list-style-type:none;}
 .hos_inf{overflow:hidden; margin:50px 20px; width:600px;}
 .hos_inf ul {float:right; margin-top:15px;}
 .hos_inf ul li {float:left; line-height:20px; margin:10px 16px;}
-.hos_inf ul li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
+.hos_inf ul li a {font-size:14px; line-height:22px; color:#292929; display:inline-block; }
 .hos_inf ul li a:hover {color:#006835;}
 /****************************footer************************/
 footer {
