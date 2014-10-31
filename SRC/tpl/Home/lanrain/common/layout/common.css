@@ -271,7 +271,7 @@ a.next_pic_3{width:23px; top: 60px; left:677px; background: url('gallery.gif') -
 /*700px 4 栏平均分 */
 .list_img_1000_c4{ overflow:hidden; position:relative;width:1020px;}
 .list_img_1000_c4 .inner{ height:178px; overflow:hidden;position:relative; margin:22px 40px 0 40px; width:920px;}
-.list_img_1000_c4 ul{width:91860px;overflow:hidden; position:relative;}
+.list_img_1000_c4 ul{width:4800px;overflow:hidden; position:relative;}
 .list_img_1000_c4 li{ float:left; width:215px;  height:180px; margin-right:20px; overflow:hidden;}
 .list_img_1000_c4 img{width:215px; height:140px; margin-bottom:10px; float:left;}
 .list_img_1000_c4 li a{width:184px;  font-size:12px; text-align:center; display:block; line-height:24px; height:24px; float:left;}
