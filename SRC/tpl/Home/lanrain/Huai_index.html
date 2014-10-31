@@ -19,182 +19,186 @@
     </script>
 <section id="content">
 	<div class="container_12">
-		<div class="slider_box" id="slider_name">
-			<ul class="silder_con">		
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_bg.png" /></a></li>
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_01.png" /></a></li>
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_02.png"  /></a></li>
-				<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_03.png" /></a></li>
-			</ul>
-			<ul class="silder_nav">            
-				<li><a href="#">就医陪诊</a></li>    
-				<li><a href="#">首长保健</a></li>    
-				<li><a href="#">绿色通道</a></li>    
-				<li><a href="#">公司介绍</a></li>      
-			</ul>
-		</div>
-		<div class="ban_right">
-			<div class="col-2">
-				<h2 class="p3">
-					<span class="color-1">就医</span> 资讯
-				</h2>
-				<ul class="list-1">
-				  <volist name="res" id="vo">
-				 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
-				  </volist>	
-					<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
-	
+		<div class="content_left">
+			<div class="slider_box" id="slider_name">
+				<ul class="silder_con">		
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_bg.png" /></a></li>
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_01.png" /></a></li>
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_02.png"  /></a></li>
+					<li class="silder_panel"><a href="#" class="f_l"><img src="__PUBLIC__/images//banner_03.png" /></a></li>
+				</ul>
+				<ul class="silder_nav">            
+					<li><a href="#">就医陪诊</a></li>    
+					<li><a href="#">首长保健</a></li>    
+					<li><a href="#">绿色通道</a></li>    
+					<li><a href="#">公司介绍</a></li>      
 				</ul>
 			</div>
-	    </div>
-	</div>
-	<div class="clear"></div>
-	<div class="tab1" id="tab1">
-		<div class="menu2">
-			<ul>
-				<li id="one1" onclick="setTab('one',1)">上海长海医院</li>
-				<li id="one2" onclick="setTab('one',2)">上海长征医院</li>
-				<li id="one3" onclick="setTab('one',3)">东方肝胆医院</li>
-			</ul>
-		</div>
-		<div class="menu2div">
-			<div id="con_one_1">
-				<div class="hos_inf">
-				    <ul>
-						<li><a href="#">消化内科</a></li>
-						<li><a href="#">泌尿外科</a></li>
-						<li><a href="#">胸心外科</a></li>
-						<li><a href="#">烧伤外科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">中医内科</a></li>
-						<li><a href="#">中医外科</a></li>
-						<li><a href="#">中医妇科</a></li>
-						<li><a href="#">中医针灸推拿科</a></li>
-						<li><a href="#">影像医学科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">心血管内科</a></li>
-						<li><a href="#">血液内科</a></li>
-						<li><a href="#">肛肠外科</a></li>
-						<li><a href="#">血管外科</a></li>
-						<li><a href="#">神经外科</a></li>
-						<li><a href="#">整形外科</a></li>
-						<li><a href="#">麻醉科</a></li>
-						<li><a href="#">耳鼻喉科</a></li>
+			<div class="tab1" id="tab1">
+				<div class="menu2">
+					<ul>
+						<li id="one1" onclick="setTab('one',1)">上海长海医院</li>
+						<li id="one2" onclick="setTab('one',2)">上海长征医院</li>
+						<li id="one3" onclick="setTab('one',3)">东方肝胆医院</li>
 					</ul>
 				</div>
-			</div>
-			<div id="con_one_2" style="display:none;">
-				<div class="hos_inf">
-				    <ul>
-						<li><a href="#">消化内科</a></li>
-						<li><a href="#">泌尿外科</a></li>
-						<li><a href="#">胸心外科</a></li>
-						<li><a href="#">烧伤外科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">中医内科</a></li>
-						<li><a href="#">中医外科</a></li>
-						<li><a href="#">中医妇科</a></li>
-						<li><a href="#">中医针灸推拿科</a></li>
-						<li><a href="#">影像医学科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">心血管内科</a></li>
-						<li><a href="#">血液内科</a></li>
-						<li><a href="#">肛肠外科</a></li>
-						<li><a href="#">血管外科</a></li>
-						<li><a href="#">神经外科</a></li>
-						<li><a href="#">整形外科</a></li>
-						<li><a href="#">麻醉科</a></li>
-						<li><a href="#">耳鼻喉科</a></li>
-					</ul>
+				<div class="menu2div">
+					<div id="con_one_1">
+						<div class="hos_inf">
+						    <ul>
+								<li><a href="#">消化内科</a></li>
+								<li><a href="#">泌尿外科</a></li>
+								<li><a href="#">胸心外科</a></li>
+								<li><a href="#">烧伤外科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">中医内科</a></li>
+								<li><a href="#">中医外科</a></li>
+								<li><a href="#">中医妇科</a></li>
+								<li><a href="#">中医针灸推拿科</a></li>
+								<li><a href="#">影像医学科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">心血管内科</a></li>
+								<li><a href="#">血液内科</a></li>
+								<li><a href="#">肛肠外科</a></li>
+								<li><a href="#">血管外科</a></li>
+								<li><a href="#">神经外科</a></li>
+								<li><a href="#">整形外科</a></li>
+								<li><a href="#">麻醉科</a></li>
+								<li><a href="#">耳鼻喉科</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="con_one_2" style="display:none;">
+						<div class="hos_inf">
+						    <ul>
+								<li><a href="#">消化内科</a></li>
+								<li><a href="#">泌尿外科</a></li>
+								<li><a href="#">胸心外科</a></li>
+								<li><a href="#">烧伤外科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">中医内科</a></li>
+								<li><a href="#">中医外科</a></li>
+								<li><a href="#">中医妇科</a></li>
+								<li><a href="#">中医针灸推拿科</a></li>
+								<li><a href="#">影像医学科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">心血管内科</a></li>
+								<li><a href="#">血液内科</a></li>
+								<li><a href="#">肛肠外科</a></li>
+								<li><a href="#">血管外科</a></li>
+								<li><a href="#">神经外科</a></li>
+								<li><a href="#">整形外科</a></li>
+								<li><a href="#">麻醉科</a></li>
+								<li><a href="#">耳鼻喉科</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="con_one_3" style="display:none;">
+						<div class="hos_inf">
+						    <ul>
+								<li><a href="#">消化内科</a></li>
+								<li><a href="#">泌尿外科</a></li>
+								<li><a href="#">胸心外科</a></li>
+								<li><a href="#">烧伤外科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">中医内科</a></li>
+								<li><a href="#">中医外科</a></li>
+								<li><a href="#">中医妇科</a></li>
+								<li><a href="#">中医针灸推拿科</a></li>
+								<li><a href="#">影像医学科</a></li>
+								<li><a href="#">中医肿瘤科</a></li>
+								<li><a href="#">心血管内科</a></li>
+								<li><a href="#">血液内科</a></li>
+								<li><a href="#">肛肠外科</a></li>
+								<li><a href="#">血管外科</a></li>
+								<li><a href="#">神经外科</a></li>
+								<li><a href="#">整形外科</a></li>
+								<li><a href="#">麻醉科</a></li>
+								<li><a href="#">耳鼻喉科</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div id="con_one_3" style="display:none;">
-				<div class="hos_inf">
-				    <ul>
-						<li><a href="#">消化内科</a></li>
-						<li><a href="#">泌尿外科</a></li>
-						<li><a href="#">胸心外科</a></li>
-						<li><a href="#">烧伤外科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">中医内科</a></li>
-						<li><a href="#">中医外科</a></li>
-						<li><a href="#">中医妇科</a></li>
-						<li><a href="#">中医针灸推拿科</a></li>
-						<li><a href="#">影像医学科</a></li>
-						<li><a href="#">中医肿瘤科</a></li>
-						<li><a href="#">心血管内科</a></li>
-						<li><a href="#">血液内科</a></li>
-						<li><a href="#">肛肠外科</a></li>
-						<li><a href="#">血管外科</a></li>
-						<li><a href="#">神经外科</a></li>
-						<li><a href="#">整形外科</a></li>
-						<li><a href="#">麻醉科</a></li>
-						<li><a href="#">耳鼻喉科</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-    <div style="text-align:center;clear:both;"></div>
-	<div class="grid_12 top-1 ">
-		<div class="box-shadow">
-			<div class="wrap block-2" style="background: #FFF;">
-			    <div class="col-2">
-				   <p class="font-3">
-				   上海沪爱健康管理有限公司，依托于上海第二军医大学、上海交通大学医学院、
-				   复旦大学医学院、上海20几家著名三甲医院，以”弘扬军医文化、服务人民健康“为宗旨，
-				   "沪爱健康、美丽人生“为企业文化。公司专业致力于优质医疗资源平台整合，提供陪诊就医、
-				   定制体检、病后康复、私人医生、企业顾问服务，是中国领先的健康医疗机构。
-				   <a href="{lanrain::U('Home/Huai/about')}"><span style="color:red">&lt;&lt;点击更多</span></a></p>
-			   </div>
-				<div class="col-2 child">
+			<div class="ban_right4">
+				<div class="col-2">
 					<h2 class="p3">
-						<span class="color-1">医疗</span> 网络
+						<span class="color-1">公司</span> 新闻
 					</h2>
 					<ul class="list-1">
-						<li><a href="#">上海长海医院</a></li>
-						<li><a href="#">上海东方肝胆医院</a></li>
-						<li><a href="">上海长征医院</a></li>
-					<li class=""><a href="">上海华山医院</a></li>
-					<li><a href="">上海瑞金医院</a></li>
-					<li><a href="">上海中医医院</a></li>
-					<li><a href="">上海新华医院</a></li>
-					<li><a href="">上海红房子医院</a>
-					<a href="{lanrain::U('Home/Huai/hospitalall')}"><p style="color:red">&lt;&lt;点击更多</p></a>
-					</li>
-					
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
 					</ul>
-					
 				</div>
-				<div class="form-search">
-	                        	<h2><span class="color-1">信息</span> 搜索</h2>
-	                            <form id="form-search" method="post">
-	                              <input type="text" value="Enter your Zip" onBlur="if(this.value=='') this.value='Enter your Zip'" onFocus="if(this.value =='Enter your Zip' ) this.value=''"  />
-	                              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button">Search</a>
-	                            </form>
-	        </div>
-			</div>
+		    </div>
+		    <div class="ban_right5">
+				<div class="col-2">
+					<h2 class="p3">
+						已累计服务<span class="color-1">8674名</span>患者 
+					</h2>
+					<ul class="list-1">
+						<div id="up_time" style="width:300px;height:220px;overflow:hidden;">
+							<a href="javascript:"><span>5秒</span>前,我要赚钱，</a>
+							<a href="javascript:"><span>1小时</span>前,我要生活 </a>
+							<a href="javascript:"><span>3小时</span>前,我要买房，</a>
+							<a href="javascript:"><span>8小时</span>前,我要一切</a>
+							<a href="javascript:"><span>1天</span>前,男人就要对自己狠点</a>
+							<a href="javascript:"><span>8888秒</span>前,我要赚钱，</a>
+							<a href="javascript:"><span>99999小时</span>前,我要生活 </a>
+							<a href="javascript:"><span>4444小时</span>前,我要买房，</a>
+							<a href="javascript:"><span>55555小时</span>前,我要一切</a>
+							<a href="javascript:"><span>6666666天</span>前,男人就要对自己狠点</a>
+						</div> 
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div class="content_right">
+			<div class="ban_right">
+				<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">就医</span> 资讯
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+					</ul>
+				</div>
+				
+		    </div>
+		    <div class="ban_right2">
+				<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">绿色</span> 通道
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="ban_right3">
+				<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">专家</span> 观点
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  </volist>	
+						<a href="{lanrain::U('Home/Huai/news')}"><p style="color:red">&lt;&lt;点击更多</p></a></li>
+					</ul>
+				</div>
+				
+		    </div>
 		</div>
 	</div>
-	<div class="clear"></div>
-	<div id="demo">
-	<div id="indemo">
-		<div id="demo1">
-			<a href="#" class="demo1_a">
-				<img src="__PUBLIC__/images/doct1.jpg" border="0" />
-			</a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct2.jpg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct3.jpg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct4.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct5.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct6.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct7.jpeg" border="0" /></a>
-			<a href="#" class="demo1_a"><img src="__PUBLIC__/images/doct8.jpg" border="0" /></a>
-		</div>
-		<div id="demo2"></div>
-	</div>
-    </div>
-
 <!--名医推介-->
 <div class="wp clearfix mt20">
   <div class="cm_title_tab">
@@ -210,713 +214,714 @@
     <!--begin 3585136-0-5-->
     <a href="http://www.81.cn/zghjy/node_62977.htm" target="_blank" class="">更多</a>
     <!--end 3585136-0-5-->
-    </span> </div>
-		<div class="clearfix list_img_1000_c4 zmzj">
-			<div class="inner marqueeleft" id="marquee1">
-				<div style="width: 9600px;">
-					<ul class="zjtj_list" id="marquee1_1" style="margin-left: 0px;">
-						<!-- 医生推介列表 -->
-						<!--begin 3585137-62977-1-->
-						<li>
-							<dl>
-								<dt>
-									<a
-										href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
-										target="_blank">吴孟超</a>
-								</dt>
-								<dd class="pic">
-									<a
-										href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
-										target="_blank"> <img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425d40405.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国科学院院士</b><br> <font>上海东方肝胆外科医院</font><br> <b>擅长：</b>肝胆疾病的各种外科手术治疗，尤其擅长肝癌、肝血管瘤等疾病的外科手术治疗
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank">黎介寿</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425d32002.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>在中国普通外科领域享有很高的声誉，是中国肠外瘘治疗的鼻祖、临床营养支持的奠基人、亚洲人同种异体小肠移植的开拓者。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a
-										href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
-										target="_blank">俞梦孙</a>
-								</dt>
-								<dd class="pic">
-									<a
-										href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811427608005.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>空军航空医学研究所</font><br> <b>擅长：</b>为我国航空生物医学工程事业的开拓、创新和发展做出了突出贡献，多项成果填补了国内空白。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
-										target="_blank">高长青</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e281142649de42.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>心外科主任</b><br> <font>解放军总医院</font><br> <b>擅长：</b>冠脉搭桥术、二尖瓣成形术或替换术、三尖瓣成形术、房间隔缺损修补术和室间隔缺损修补术等
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
-										target="_blank">李素芝</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e281142763cb0a.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>院长、主任医师</b><br> <font>西藏军区总医院</font><br> <b>擅长：</b>共为600余例先天性心脏病、风心病患者免费治病，成功达98.6%，做肾移植8例手术100%成功。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
-										target="_blank">庄仕华</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e28114275ecc02.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>院长、主任医师</b><br> <font>武警新疆总队医院</font><br> <b>擅长：</b>实施腹腔镜下胆囊切除手术10万多例无一失败，赢得各族群众自发赠送的锦旗9000多面，被誉为各族群众生命的“守护神”
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
-										target="_blank">任建安</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425e28a06.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>完成了雷公藤预防克罗恩术后复发机制、腹腔感染时肠粘膜屏障功能、腹腔开放疗法治疗战创伤致腹腔感染等医学重难点课题的研究
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
-										target="_blank">吕吉云</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d156989f53c.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>院长</b><br> <font>第302医院</font><br> <b>擅长：</b>中华中医药学会、中国灾害医学救援学会，中国预防性艾滋病基金会理事。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
-										target="_blank">张文瑾</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d15698f574a.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>在乙型、丙型病毒性肝炎的抗病毒治疗，肝癌的预防及处理方面经验丰富。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
-										target="_blank">赵平</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d15698d2f44.JPG"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>各种肝病、肝硬化的治疗，在重症肝病、疑难肝病诊治方面经验丰富。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
-										target="_blank">肖小河</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d156990334d.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>从事中药鉴定学和临床中药学研究。研制开发系列肝病治疗创新中药5种。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
-										target="_blank">孙颖浩</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155fe9854d.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>校长、主任医师</b><br> <font>第二军医大学</font><br> <b>擅长：</b>擅长泌尿系肿瘤（尤其是前列腺癌）的诊治及微创泌尿外科技术的应用。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
-										target="_blank">赵敏</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155fec6f58.JPG"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>对艾滋病进行了系统的研究，并且取得了多项填补我国空白的研究成果。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
-										target="_blank">韩雅玲</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155feac052.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>沈阳军区总医院</font><br> <b>擅长：</b>在急诊介入技术救治危重急性心肌梗死方面具有丰富经验和娴熟技术。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
-										target="_blank">陈菊梅</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155febcd55.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>传染病专业博士研究生，曾任西安医学院传染病教研室讲师、主治医师。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
-										target="_blank">刘志红</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425e85c0a.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>刘志红是我国著名的肾脏病学家，对临床医学及基础研究均有很深的造诣。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
-										target="_blank">卢世璧</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/141a612d6bc55816100851.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>解放军总医院</font><br> <b>擅长：</b>在人工关节、周围神经损伤的治疗、记忆合金棒矫正脊柱侧凸、微波原位热疗在四肢恶性骨肿瘤保肢手术中的应用等多方面有独到的建树
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
-										target="_blank">王秋萍</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811425e1d20d.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>国家教育部博士后站研究生导师</b><br> <font>南京军区南京总医院</font><br>
-									<b>擅长：</b>从事耳鼻咽喉科工作28年，临床经验丰富，熟练掌握耳鼻咽喉-头颈外科各类疑难大手术。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
-										target="_blank">李宁&nbsp;</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811425e56711.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>博士生导师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>
-									<!--StartFragment -->
-									<div>肠外瘘、严重腹腔感染、营养支持、短肠综合征、小肠移植、放射性肠损伤、炎症性肠病、顽固性便秘</div>
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
-										target="_blank">王烈</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811426228914.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>普通外科研究所长</b><br> <font>南京军区福州总医院</font><br> <b>擅长：</b>开展基础、胃肠、甲状腺、乳腺、胰脾、血管、小儿、疝与腹壁和腹腔镜外科专业。
-								</dd>
-							</dl>
-						</li>
-						<!--end 3585137-62977-1-->
-					</ul>
-					<ul class="zjtj_list" id="marquee1_2" style="margin-left: 0px;">
-						<!-- 医生推介列表 -->
-						<!--begin 3585137-62977-1-->
-						<li>
-							<dl>
-								<dt>
-									<a
-										href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
-										target="_blank">吴孟超</a>
-								</dt>
-								<dd class="pic">
-									<a
-										href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425d40405.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国科学院院士</b><br> <font>上海东方肝胆外科医院</font><br> <b>擅长：</b>肝胆疾病的各种外科手术治疗，尤其擅长肝癌、肝血管瘤等疾病的外科手术治疗
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank">黎介寿</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425d32002.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>在中国普通外科领域享有很高的声誉，是中国肠外瘘治疗的鼻祖、临床营养支持的奠基人、亚洲人同种异体小肠移植的开拓者。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a
-										href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
-										target="_blank">俞梦孙</a>
-								</dt>
-								<dd class="pic">
-									<a
-										href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811427608005.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>空军航空医学研究所</font><br> <b>擅长：</b>为我国航空生物医学工程事业的开拓、创新和发展做出了突出贡献，多项成果填补了国内空白。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
-										target="_blank">高长青</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e281142649de42.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>心外科主任</b><br> <font>解放军总医院</font><br> <b>擅长：</b>冠脉搭桥术、二尖瓣成形术或替换术、三尖瓣成形术、房间隔缺损修补术和室间隔缺损修补术等
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
-										target="_blank">李素芝</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e281142763cb0a.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>院长、主任医师</b><br> <font>西藏军区总医院</font><br> <b>擅长：</b>共为600余例先天性心脏病、风心病患者免费治病，成功达98.6%，做肾移植8例手术100%成功。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
-										target="_blank">庄仕华</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e28114275ecc02.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>院长、主任医师</b><br> <font>武警新疆总队医院</font><br> <b>擅长：</b>实施腹腔镜下胆囊切除手术10万多例无一失败，赢得各族群众自发赠送的锦旗9000多面，被誉为各族群众生命的“守护神”
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
-										target="_blank">任建安</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425e28a06.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>完成了雷公藤预防克罗恩术后复发机制、腹腔感染时肠粘膜屏障功能、腹腔开放疗法治疗战创伤致腹腔感染等医学重难点课题的研究
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
-										target="_blank">吕吉云</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d156989f53c.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>院长</b><br> <font>第302医院</font><br> <b>擅长：</b>中华中医药学会、中国灾害医学救援学会，中国预防性艾滋病基金会理事。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
-										target="_blank">张文瑾</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d15698f574a.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>在乙型、丙型病毒性肝炎的抗病毒治疗，肝癌的预防及处理方面经验丰富。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
-										target="_blank">赵平</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d15698d2f44.JPG"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>各种肝病、肝硬化的治疗，在重症肝病、疑难肝病诊治方面经验丰富。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
-										target="_blank">肖小河</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d156990334d.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>从事中药鉴定学和临床中药学研究。研制开发系列肝病治疗创新中药5种。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
-										target="_blank">孙颖浩</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155fe9854d.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>校长、主任医师</b><br> <font>第二军医大学</font><br> <b>擅长：</b>擅长泌尿系肿瘤（尤其是前列腺癌）的诊治及微创泌尿外科技术的应用。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
-										target="_blank">赵敏</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155fec6f58.JPG"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>对艾滋病进行了系统的研究，并且取得了多项填补我国空白的研究成果。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
-										target="_blank">韩雅玲</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155feac052.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>沈阳军区总医院</font><br> <b>擅长：</b>在急诊介入技术救治危重急性心肌梗死方面具有丰富经验和娴熟技术。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
-										target="_blank">陈菊梅</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330ff2d155febcd55.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>传染病专业博士研究生，曾任西安医学院传染病教研室讲师、主治医师。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
-										target="_blank">刘志红</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/18037330feeb1425e85c0a.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>刘志红是我国著名的肾脏病学家，对临床医学及基础研究均有很深的造诣。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
-										target="_blank">卢世璧</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/141a612d6bc55816100851.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>中国工程院院士</b><br> <font>解放军总医院</font><br> <b>擅长：</b>在人工关节、周围神经损伤的治疗、记忆合金棒矫正脊柱侧凸、微波原位热疗在四肢恶性骨肿瘤保肢手术中的应用等多方面有独到的建树
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
-										target="_blank">王秋萍</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811425e1d20d.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>国家教育部博士后站研究生导师</b><br> <font>南京军区南京总医院</font><br>
-									<b>擅长：</b>从事耳鼻咽喉科工作28年，临床经验丰富，熟练掌握耳鼻咽喉-头颈外科各类疑难大手术。
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
-										target="_blank">李宁&nbsp;</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811425e56711.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>博士生导师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>
-									<!--StartFragment -->
-									<div>肠外瘘、严重腹腔感染、营养支持、短肠综合征、小肠移植、放射性肠损伤、炎症性肠病、顽固性便秘</div>
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
-										target="_blank">王烈</a>
-								</dt>
-								<dd class="pic">
-									<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
-										target="_blank"><img
-										src="./中国好军医 - 中国军网_files/00600846e2811426228914.jpg"
-										border="0"></a>
-								</dd>
-								<dd>
-									<b>普通外科研究所长</b><br> <font>南京军区福州总医院</font><br> <b>擅长：</b>开展基础、胃肠、甲状腺、乳腺、胰脾、血管、小儿、疝与腹壁和腹腔镜外科专业。
-								</dd>
-							</dl>
-						</li>
-						<!--end 3585137-62977-1-->
-					</ul>
-				</div>
+    </span> 
+    </div>
+	<div class="clearfix list_img_1000_c4 zmzj">
+		<div class="inner marqueeleft" id="marquee1">
+			<div style="width: 9600px;">
+				<ul class="zjtj_list" id="marquee1_1" style="margin-left: 0px;">
+					<!-- 医生推介列表 -->
+					<!--begin 3585137-62977-1-->
+					<li>
+						<dl>
+							<dt>
+								<a
+									href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
+									target="_blank">吴孟超</a>
+							</dt>
+							<dd class="pic">
+								<a
+									href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
+									target="_blank"> <img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国科学院院士</b><br> <font>上海东方肝胆外科医院</font><br> <b>擅长：</b>肝胆疾病的各种外科手术治疗，尤其擅长肝癌、肝血管瘤等疾病的外科手术治疗
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank">黎介寿</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank"><img
+									src="__PUBLIC__/images/doct3.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>在中国普通外科领域享有很高的声誉，是中国肠外瘘治疗的鼻祖、临床营养支持的奠基人、亚洲人同种异体小肠移植的开拓者。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a
+									href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
+									target="_blank">俞梦孙</a>
+							</dt>
+							<dd class="pic">
+								<a
+									href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct4.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>空军航空医学研究所</font><br> <b>擅长：</b>为我国航空生物医学工程事业的开拓、创新和发展做出了突出贡献，多项成果填补了国内空白。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
+									target="_blank">高长青</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct5.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>心外科主任</b><br> <font>解放军总医院</font><br> <b>擅长：</b>冠脉搭桥术、二尖瓣成形术或替换术、三尖瓣成形术、房间隔缺损修补术和室间隔缺损修补术等
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
+									target="_blank">李素芝</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct6.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>院长、主任医师</b><br> <font>西藏军区总医院</font><br> <b>擅长：</b>共为600余例先天性心脏病、风心病患者免费治病，成功达98.6%，做肾移植8例手术100%成功。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
+									target="_blank">庄仕华</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct7.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>院长、主任医师</b><br> <font>武警新疆总队医院</font><br> <b>擅长：</b>实施腹腔镜下胆囊切除手术10万多例无一失败，赢得各族群众自发赠送的锦旗9000多面，被誉为各族群众生命的“守护神”
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
+									target="_blank">任建安</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>完成了雷公藤预防克罗恩术后复发机制、腹腔感染时肠粘膜屏障功能、腹腔开放疗法治疗战创伤致腹腔感染等医学重难点课题的研究
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
+									target="_blank">吕吉云</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>院长</b><br> <font>第302医院</font><br> <b>擅长：</b>中华中医药学会、中国灾害医学救援学会，中国预防性艾滋病基金会理事。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
+									target="_blank">张文瑾</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>在乙型、丙型病毒性肝炎的抗病毒治疗，肝癌的预防及处理方面经验丰富。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
+									target="_blank">赵平</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>各种肝病、肝硬化的治疗，在重症肝病、疑难肝病诊治方面经验丰富。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
+									target="_blank">肖小河</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>从事中药鉴定学和临床中药学研究。研制开发系列肝病治疗创新中药5种。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
+									target="_blank">孙颖浩</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>校长、主任医师</b><br> <font>第二军医大学</font><br> <b>擅长：</b>擅长泌尿系肿瘤（尤其是前列腺癌）的诊治及微创泌尿外科技术的应用。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
+									target="_blank">赵敏</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>对艾滋病进行了系统的研究，并且取得了多项填补我国空白的研究成果。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
+									target="_blank">韩雅玲</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>沈阳军区总医院</font><br> <b>擅长：</b>在急诊介入技术救治危重急性心肌梗死方面具有丰富经验和娴熟技术。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
+									target="_blank">陈菊梅</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>传染病专业博士研究生，曾任西安医学院传染病教研室讲师、主治医师。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
+									target="_blank">刘志红</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>刘志红是我国著名的肾脏病学家，对临床医学及基础研究均有很深的造诣。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
+									target="_blank">卢世璧</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>解放军总医院</font><br> <b>擅长：</b>在人工关节、周围神经损伤的治疗、记忆合金棒矫正脊柱侧凸、微波原位热疗在四肢恶性骨肿瘤保肢手术中的应用等多方面有独到的建树
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
+									target="_blank">王秋萍</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>国家教育部博士后站研究生导师</b><br> <font>南京军区南京总医院</font><br>
+								<b>擅长：</b>从事耳鼻咽喉科工作28年，临床经验丰富，熟练掌握耳鼻咽喉-头颈外科各类疑难大手术。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
+									target="_blank">李宁&nbsp;</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>博士生导师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>
+								<!--StartFragment -->
+								<div>肠外瘘、严重腹腔感染、营养支持、短肠综合征、小肠移植、放射性肠损伤、炎症性肠病、顽固性便秘</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
+									target="_blank">王烈</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>普通外科研究所长</b><br> <font>南京军区福州总医院</font><br> <b>擅长：</b>开展基础、胃肠、甲状腺、乳腺、胰脾、血管、小儿、疝与腹壁和腹腔镜外科专业。
+							</dd>
+						</dl>
+					</li>
+					<!--end 3585137-62977-1-->
+				</ul>
+				<ul class="zjtj_list" id="marquee1_2" style="margin-left: 0px;">
+					<!-- 医生推介列表 -->
+					<!--begin 3585137-62977-1-->
+					<li>
+						<dl>
+							<dt>
+								<a
+									href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
+									target="_blank">吴孟超</a>
+							</dt>
+							<dd class="pic">
+								<a
+									href="http://chn.chinamil.com.cn/2011adagamdyswmc/node_47598.htm"
+									target="_blank"><img
+									src="__PUBLIC__/images/doct2.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国科学院院士</b><br> <font>上海东方肝胆外科医院</font><br> <b>擅长：</b>肝胆疾病的各种外科手术治疗，尤其擅长肝癌、肝血管瘤等疾病的外科手术治疗
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank">黎介寿</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://tv.81.cn/2012/lijieshou.htm" target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330feeb1425d32002.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>在中国普通外科领域享有很高的声誉，是中国肠外瘘治疗的鼻祖、临床营养支持的奠基人、亚洲人同种异体小肠移植的开拓者。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a
+									href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
+									target="_blank">俞梦孙</a>
+							</dt>
+							<dd class="pic">
+								<a
+									href="http://chn.chinamil.com.cn/2012yumengsun/node_54749.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/00600846e2811427608005.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>空军航空医学研究所</font><br> <b>擅长：</b>为我国航空生物医学工程事业的开拓、创新和发展做出了突出贡献，多项成果填补了国内空白。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
+									target="_blank">高长青</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://tp.chinamil.com.cn/2011/xzdq.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/00600846e281142649de42.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>心外科主任</b><br> <font>解放军总医院</font><br> <b>擅长：</b>冠脉搭桥术、二尖瓣成形术或替换术、三尖瓣成形术、房间隔缺损修补术和室间隔缺损修补术等
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
+									target="_blank">李素芝</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://chn.chinamil.com.cn/2012lsz/index.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/00600846e281142763cb0a.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>院长、主任医师</b><br> <font>西藏军区总医院</font><br> <b>擅长：</b>共为600余例先天性心脏病、风心病患者免费治病，成功达98.6%，做肾移植8例手术100%成功。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
+									target="_blank">庄仕华</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://chn.chinamil.com.cn/2011cxw/node_48141.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/00600846e28114275ecc02.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>院长、主任医师</b><br> <font>武警新疆总队医院</font><br> <b>擅长：</b>实施腹腔镜下胆囊切除手术10万多例无一失败，赢得各族群众自发赠送的锦旗9000多面，被誉为各族群众生命的“守护神”
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
+									target="_blank">任建安</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623507.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330feeb1425e28a06.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>完成了雷公藤预防克罗恩术后复发机制、腹腔感染时肠粘膜屏障功能、腹腔开放疗法治疗战创伤致腹腔感染等医学重难点课题的研究
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
+									target="_blank">吕吉云</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116029.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d156989f53c.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>院长</b><br> <font>第302医院</font><br> <b>擅长：</b>中华中医药学会、中国灾害医学救援学会，中国预防性艾滋病基金会理事。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
+									target="_blank">张文瑾</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116045.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d15698f574a.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>在乙型、丙型病毒性肝炎的抗病毒治疗，肝癌的预防及处理方面经验丰富。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
+									target="_blank">赵平</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116039.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d15698d2f44.JPG"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>各种肝病、肝硬化的治疗，在重症肝病、疑难肝病诊治方面经验丰富。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
+									target="_blank">肖小河</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/28/content_6116037.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d156990334d.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>从事中药鉴定学和临床中药学研究。研制开发系列肝病治疗创新中药5种。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
+									target="_blank">孙颖浩</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-07/31/content_6072435.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d155fe9854d.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>校长、主任医师</b><br> <font>第二军医大学</font><br> <b>擅长：</b>擅长泌尿系肿瘤（尤其是前列腺癌）的诊治及微创泌尿外科技术的应用。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
+									target="_blank">赵敏</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/12/content_6105354.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d155fec6f58.JPG"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>对艾滋病进行了系统的研究，并且取得了多项填补我国空白的研究成果。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
+									target="_blank">韩雅玲</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-07/16/content_6050578.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d155feac052.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>沈阳军区总医院</font><br> <b>擅长：</b>在急诊介入技术救治危重急性心肌梗死方面具有丰富经验和娴熟技术。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
+									target="_blank">陈菊梅</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-07/17/content_6051572.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330ff2d155febcd55.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>主任医师</b><br> <font>第302医院</font><br> <b>擅长：</b>传染病专业博士研究生，曾任西安医学院传染病教研室讲师、主治医师。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
+									target="_blank">刘志红</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2014-08/26/content_5623493.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/18037330feeb1425e85c0a.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>刘志红是我国著名的肾脏病学家，对临床医学及基础研究均有很深的造诣。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
+									target="_blank">卢世璧</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2011-07/14/content_5581610.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/141a612d6bc55816100851.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>中国工程院院士</b><br> <font>解放军总医院</font><br> <b>擅长：</b>在人工关节、周围神经损伤的治疗、记忆合金棒矫正脊柱侧凸、微波原位热疗在四肢恶性骨肿瘤保肢手术中的应用等多方面有独到的建树
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
+									target="_blank">王秋萍</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/30/content_5623440.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/00600846e2811425e1d20d.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>国家教育部博士后站研究生导师</b><br> <font>南京军区南京总医院</font><br>
+								<b>擅长：</b>从事耳鼻咽喉科工作28年，临床经验丰富，熟练掌握耳鼻咽喉-头颈外科各类疑难大手术。
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
+									target="_blank">李宁&nbsp;</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622603.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/00600846e2811425e56711.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>博士生导师</b><br> <font>南京军区南京总医院</font><br> <b>擅长：</b>
+								<!--StartFragment -->
+								<div>肠外瘘、严重腹腔感染、营养支持、短肠综合征、小肠移植、放射性肠损伤、炎症性肠病、顽固性便秘</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
+									target="_blank">王烈</a>
+							</dt>
+							<dd class="pic">
+								<a href="http://www.81.cn/zghjy/2013-10/29/content_5622539.htm"
+									target="_blank"><img
+									src="./中国好军医 - 中国军网_files/00600846e2811426228914.jpg"
+									border="0"></a>
+							</dd>
+							<dd>
+								<b>普通外科研究所长</b><br> <font>南京军区福州总医院</font><br> <b>擅长：</b>开展基础、胃肠、甲状腺、乳腺、胰脾、血管、小儿、疝与腹壁和腹腔镜外科专业。
+							</dd>
+						</dl>
+					</li>
+					<!--end 3585137-62977-1-->
+				</ul>
 			</div>
 		</div>
+	</div>
 		<script type="text/javascript">marqueeStart(1, "left");</script>
 </div>
 <!--名医推介 END-->
@@ -935,7 +940,7 @@
 </div>
 <div class="clearfix list_img_1000_c4 tsks_sy">
 			<div class="inner marqueeleft" id="marquee2">
-				<div style="width: 9400px;">
+				<div style="width:9400px;">
 					<ul id="marquee2_1">
 						<!--特色科室 63057-->
 						<!--begin 3585140-63057-1-->
@@ -1091,7 +1096,6 @@
 <!-- 特色科室 END -->	
 </div>	
 </section>
-
 <script>
 <!--
 var speed=10;
@@ -1156,6 +1160,17 @@ onload=function(){
 	setTab(name_0,cursel_0);
 	iIntervalId = setInterval(Next,ScrollTime);
 }
+</script>
+<script>
+var t=setInterval(myfunc,1000)
+var d=document.getElementById("up_time")
+function myfunc(){
+var o=d.firstChild
+d.removeChild(o)
+d.appendChild(o)
+}
+d.onmouseover=function(){clearInterval(t)}
+d.onmouseout=function(){t=setInterval(myfunc,1000)}
 </script>
 <!--==============================footer=================================-->
 <include file="Public:footer2" />

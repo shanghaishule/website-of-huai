@@ -88,6 +88,8 @@ ul.menu li a:hover, ul.menu li.current a {color:#006835;}
 ul.p6 li {list-style-type:none;}
 .navbox #sliderNav li.active a{padding-left:25px;color:#006835}
 /*********************************content*************************************/
+.content_left{width: 640px;float: left;}
+.content_right{width: 300px;margin-left:10px;float:left;}
 #content {width:100%;}
 .box-shadow {box-shadow: 0px 0px 5px #dbdbdb;background:#fff;}
 .img-border {border:#f4f4f4 5px solid;}
@@ -96,9 +98,8 @@ ul.p6 li {list-style-type:none;}
 .block-3 { padding:25px 30px 25px 44px;}
 .col-1 {float:left; margin: 15px 20px;width:100%}
 .col-1 a{color:black}
-.col-2 {float:left; width:33.333%; margin: 0px 5px 0px 16px;}
-.child{width: 23%;
-margin-left: 30px}
+.col-2 {float:left; margin: 0px 5px 0px 16px;}
+.child{width: 23%;margin-left: 30px}
 .col-3 {float:left; width:460px; margin-right:50px; }
 .col-4 {float:left; width:300px;margin-top:50px;}
 
@@ -115,7 +116,13 @@ margin-left: 30px}
 .box-2>div {float:left; width:170px; margin-right:30px;}
 .box-2 p.color-1 {margin-top:5px;}
 .border-1 {border-bottom:#e5e5e5 1px solid; padding-bottom:15px; margin-bottom:9px;}
-.ban_right{float:left;border: 2px solid #ccc;width: 294px;height:245px;margin-top:-20px;margin-left:8px;background:#FFF;}
+.ban_right{border: 2px solid #ccc;height:332px;background:#FFF;}
+.ban_right2{border: 2px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
+.ban_right3{border: 2px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
+.ban_right4{width: 260px;border: 2px solid #ccc;height:290px;background:#FFF;float:left;}
+.ban_right5{width: 362px;border: 2px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
+.ban_right5 a{display:block;}
+.ban_right5 span{color:#006835;}
 .tab1{width:640px;border: 2px solid #006835;margin:10px 0px;}
 .menu2{height:28px;}
 .menu2 li{float:left;width:150px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
