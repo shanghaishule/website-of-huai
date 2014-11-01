@@ -1,4 +1,4 @@
-//jsÎÞ·ì¹ö¶¯´úÂë
+//jsï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 function marquee(i, direction){
 	var obj = document.getElementById("marquee" + i);
 	var obj1 = document.getElementById("marquee" + i + "_1");
@@ -14,10 +14,19 @@ function marquee(i, direction){
 			}
 		}
 	}else{
+		/*
 		if (obj2.offsetWidth - obj.scrollLeft <= 0){
 			obj.scrollLeft -= obj1.offsetWidth;
 		}else{
 			obj.scrollLeft++;
+		}
+		*/
+		obj.scrollLeft++;
+
+		if (obj.scrollLeft == obj1.offsetWidth){
+
+		obj.scrollLeft = 1;
+
 		}
 	}
 }
