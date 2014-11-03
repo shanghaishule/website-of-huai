@@ -85,7 +85,7 @@ class BaseAction extends Action
             }
         }
     }
-    protected function all_save($name = '', $back = '/index')
+    protected function all_save($name = '', $back = '/')
     {
         $name = $name ? $name : MODULE_NAME;
         $db   = D($name);
