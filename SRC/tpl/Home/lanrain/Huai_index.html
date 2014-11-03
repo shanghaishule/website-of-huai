@@ -126,10 +126,10 @@
 						<span class="color-1">公司</span> 新闻
 					</h2>
 					<ul class="list-1">
-					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  <volist name="res3" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,13,'utf-8',true}</a></li>
 					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p>&lt;&lt;点击更多</p></a></li>
+						<li><a href="{lanrain::U('Home/Huai/news')}"><p>&lt;&lt;点击更多</p></a></li>
 					</ul>
 				</div>
 		    </div>
@@ -139,18 +139,20 @@
 						已累计服务<span class="color-1">8674名</span>患者 
 					</h2>
 					<ul class="list-1">
+					   <li>
 						<div id="up_time" style="width:330px;height:220px;overflow:hidden;">
-							<a href="javascript:"><span>5秒</span>前,<p1>台州李先生</p1>“我要赚钱”</a>
-							<a href="javascript:"><span>1小时</span>前,<p1>义乌郝女士</p1>“我要生活” </a>
-							<a href="javascript:"><span>3小时</span>前,<p1>泰州姜先生</p1>“我要买房”</a>
-							<a href="javascript:"><span>8小时</span>前,<p1>合肥李先生</p1>“我要一切”</a>
-							<a href="javascript:"><span>10小时</span>前,<p1>温州吴先生</p1>“男人就要对自己狠点”</a>
-							<a href="javascript:"><span>14小时</span>前,<p1>苏州娄女士</p1>“我要赚钱”</a>
-							<a href="javascript:"><span>20小时小时</span>前,<p1>宿迁候先生</p1>“我要生活” </a>
-							<a href="javascript:"><span>1天</span>前,<p1>连云港万女士</p1>“我要买房”</a>
-							<a href="javascript:"><span>1天</span>前,<p1>广州孙先生</p1>“我要一切”</a>
-							<a href="javascript:"><span>1天</span>前,<p1>厦门王先生</p1>“男人就要对自己狠点”</a>
+							<a href="javascript:"><span>5秒</span>前,台州李先生“我要赚钱”</a>
+							<a href="javascript:"><span>1小时</span>前,义乌郝女士“我要生活” </a>
+							<a href="javascript:"><span>3小时</span>前,泰州姜先生“我要买房”</a>
+							<a href="javascript:"><span>8小时</span>前,合肥李先生“我要一切”</a>
+							<a href="javascript:"><span>10小时</span>前,温州吴先生“男人就要对自己狠点”</a>
+							<a href="javascript:"><span>14小时</span>前,苏州娄女士“我要赚钱”</a>
+							<a href="javascript:"><span>20小时小时</span>前,宿迁候先生“我要生活” </a>
+							<a href="javascript:"><span>1天</span>前,连云港万女士“我要买房”</a>
+							<a href="javascript:"><span>1天</span>前,广州孙先生“我要一切”</a>
+							<a href="javascript:"><span>1天</span>前,厦门王先生“男人就要对自己狠点”</a>
 						</div> 
+					   </li>	
 					</ul>
 				</div>
 		    </div>
@@ -163,9 +165,9 @@
 					</h2>
 					<ul class="list-1">
 					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,13,'utf-8',true}</a></li>
 					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p>&lt;&lt;点击更多</p></a></li>
+						 <li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
 					</ul>
 				</div>
 				
@@ -173,17 +175,12 @@
 		    <div class="ban_right2">
 				<div class="col-2">
 					<h2 class="p3">
-						<span class="color-1">绿色</span>通道&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>提供就医一站式服务平台</strong>
+						<span class="color-1">绿色</span> 通道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>提供就医一站式服务平台</strong>
 					</h2>
 					<ul class="list-1">
-					 	<li><a href="#">上海长海医院泌尿外科</a></li>
-					 	<li><a href="#">上海长海医院烧伤外科</a></li>
-					    <li><a href="#">上海长海医院消化内科</a></li>
-					    <li><a href="#">东方肝胆医院肝胆外科</a></li>
-					    <li><a href="#">上海长征医院肾内科</a></li>
-					    <li><a href="#">上海长征医院眼科</a></li>
-					    <li><a href="#">上海长征医呼吸科</a></li>
-						<a href="#"><p>&lt;&lt;联系我们</p></a></li>
+					   <volist name="res1" id="vo">
+					 		<li><a href="#">{lanrain:$vo.title|msubstr=0,13,'utf-8',true}</a></li>
+					   </volist>	
 					</ul>
 				</div>
 		    </div>
@@ -193,10 +190,10 @@
 						<span class="color-1">专家</span> 观点
 					</h2>
 					<ul class="list-1">
-					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,50,'utf-8',true}</a></li>
+					  <volist name="res2" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,13,'utf-8',true}</a></li>
 					  </volist>	
-						<a href="{lanrain::U('Home/Huai/news')}"><p>&lt;&lt;点击更多</p></a></li>
+						 <li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
 					</ul>
 				</div>
 				
