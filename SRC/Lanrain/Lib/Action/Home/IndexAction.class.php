@@ -44,7 +44,6 @@ class IndexAction extends BaseAction{
 		if (!file_exists("./Extend/PHPExcel_1.7.9/Examples/01simple.xls")) {
 			exit("file not exist.");
 		}
-		
 		$objPHPExcel = PHPExcel_IOFactory::load("./Extend/PHPExcel_1.7.9/Examples/01simple.xls");
 		
 		dump($objPHPExcel);
