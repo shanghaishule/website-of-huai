@@ -17,21 +17,21 @@
 .text h4 {color: #2A2A2A;font: 20px/28px "微软雅黑", "黑体";}
 .text h4 font {margin-right: 5px;letter-spacing: 2px;color: #1380C5;}
 .text .start {display: block;width: 273px;height: 73px;margin: 30px 0 0 20px;background: url("http://www.cstrong.cn/Content/images/fl.png") no-repeat;}
- .v_main1{ overflow:hidden;padding-top:25px; background:#fff;}
+ .v_main1{ overflow:hidden;padding-top:10px; background:#fff;}
  .v_box1{ width:1000px; overflow:hidden; margin-top:10px;}
-.v_box1_l{ float:left; overflow:hidden; width:495px; padding-left:15px;}
+.v_box1_l{ float:left; overflow:hidden; width:300px; padding-left:15px;}
 .v_box1 span{ display:block;}
-.v_box1_r{ float:right; overflow:hidden; padding-right:80px;}
+.v_box1_r{ float:right; overflow:hidden; padding-right:0px;}
 .V_span1{ font-family:"微软雅黑"; color:#434343; font-size:14px; padding-top:20px; padding-bottom:45px; overflow:hidden;}
-.v_box2{ width:1000px; overflow:hidden; margin-top:10px;}
-.v_box2_title{ width:1000px; overflow:hidden;}
-.v_box2_con{ width:1000px; overflow:hidden; margin-top:20px;}
-.v_box2_con_l{ float:left; overflow:hidden; padding-left:35px;}
+.v_box2{ width:700px; overflow:hidden; margin-top:10px;}
+.v_box2_title{ width:700px; overflow:hidden;}
+.v_box2_con{ width:700px; overflow:hidden; margin-top:20px;}
+.v_box2_con_l{ float:left; overflow:hidden; padding-left:0px;}
 .v_box2_con_r{ float:right; overflow:hidden; margin-right:15px; width:400px;}
 .v_box2_con_r span{ display:block; padding-bottom:23px;} 
 .v_box2_con_r span b{ display:block; padding-bottom:10px;} 
 
-.v_box2_con_r_0{ float:right; overflow:hidden; margin-right:60px; width:450px;}
+.v_box2_con_r_0{ float:right; overflow:hidden; margin-right:60px; width:228px;}
 .v_box2_con_r_0 span{ display:block; padding-bottom:23px; margin-top:50px; line-height:30px;} 
 .v_box2_con_r_0 span b{ display:block; padding-bottom:10px;} 
 
