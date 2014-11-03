@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* slider_box */
-.slider_box{width:640px;height:245px;overflow:hidden;position:relative;border: 1px solid #ccc;}
+.slider_box{height:245px;overflow:hidden;position:relative;border: 1px solid #ccc;}
 .silder_con{height:210px;overflow:hidden;position:absolute;}
-.silder_panel{width:640px;height:210px;overflow:hidden;float:left;position:relative;}
+.silder_panel{height:210px;overflow:hidden;float:left;position:relative;}
 .silder_panel img{width:640px;height:210px;display:block;overflow:hidden;}
 .silder_nav{width:960px;height:35px;margin:0px auto;bottom:0px;position:absolute;overflow:hidden;}
 .silder_nav li{float:left;width:160px;height:35px;font-size:14px;text-align:center;padding:0px;margin-right:1px;background:url(../images/homeBannerDdBgThis.png);line-height:35px;font-family:'微软雅黑';}
