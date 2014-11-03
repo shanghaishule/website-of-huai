@@ -60,13 +60,13 @@
 			<div class="tab1" id="tab1">
 				<div class="menu2">
 					<ul>
-						<li id="one1" onclick="setTab('one',1)">上海长海医院</li>
-						<li id="one2" onclick="setTab('one',2)">上海长征医院</li>
-						<li id="one3" onclick="setTab('one',3)">东方肝胆医院</li>
+						<li class="off"><a href="#con_one_1">上海长海医院</a></li>
+						<li><a href="#con_one_2">上海长征医院</a></li>
+						<li><a href="#con_one_3">东方肝胆医院</a></li>
 					</ul>
 				</div>
 				<div class="menu2div">
-					<div id="con_one_1">
+					<div id="con_one_1" class="tab_content">
 						<div class="hos_inf">
 						    <ul>
 								<li><a href="#">消化内科</a></li>
@@ -91,7 +91,7 @@
 							</ul>
 						</div>
 					</div>
-					<div id="con_one_2" style="display:none;">
+					<div id="con_one_2" class="tab_content" style="display:none;">
 						<div class="hos_inf">
 						    <ul>
 								<li><a href="#">消化内科</a></li>
@@ -116,7 +116,7 @@
 							</ul>
 						</div>
 					</div>
-					<div id="con_one_3" style="display:none;">
+					<div id="con_one_3" class="tab_content" style="display:none;">
 						<div class="hos_inf">
 						    <ul>
 								<li><a href="#">消化内科</a></li>
@@ -573,50 +573,25 @@
 
 </section>
 <script type="text/javascript">
-function setTab(name,cursel){
-	cursel_0=cursel;
-	for(var i=1; i<=links_len; i++){
-		var menu = document.getElementById(name+i);
-		var menudiv = document.getElementById("con_"+name+"_"+i);
-		if(i==cursel){
-			menu.className="off";
-			menudiv.style.display="block";
-		}
-		else{
-			menu.className="";
-			menudiv.style.display="none";
-		}
-	}
-}
-function Next(){
-	cursel_0++;
-	if (cursel_0>links_len)cursel_0=1
-	setTab(name_0,cursel_0);
-}
-var name_0='one';
-var cursel_0=1;
-var ScrollTime=3000;//循环周期（毫秒）
-var links_len,iIntervalId;
-onload=function(){
-	var links = document.getElementById("tab1").getElementsByTagName('li')
-	links_len=links.length;
-	/*for(var i=0; i<links_len; i++){
-		links[i].onmouseover=function(){
-			clearInterval(iIntervalId);
-			this.onmouseout=function(){
-				iIntervalId = setInterval(Next,ScrollTime);;
-			}
-		}
-	}
-	document.getElementById("con_"+name_0+"_"+links_len).parentNode.onmouseover=function(){
-		clearInterval(iIntervalId);
-		this.onmouseout=function(){
-			iIntervalId = setInterval(Next,ScrollTime);;
-		}
-	}
-	setTab(name_0,cursel_0);
-	iIntervalId = setInterval(Next,ScrollTime);*/
-}
+
+$(document).ready(function() {
+
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$(".menu2 > ul li:first").addClass("off").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$(".menu2 > ul li").click(function() {
+		$(".menu2 > ul li").removeClass("off"); //Remove any "active" class
+		$(this).addClass("off"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+
+});
 </script>
 <script>
 var t=setInterval(myfunc,1000)
