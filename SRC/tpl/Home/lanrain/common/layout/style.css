@@ -732,7 +732,7 @@ padding-top: 10px}
 .block_blog_1 .blog_post .author a:hover {color:#f24024; text-decoration:none;}
 .block_blog_1 .blog_post .category {height:32px; float:left;}
 .block_blog_1 .blog_post .category .text {float:left; font-size:9px; color:#3a3a3a; text-transform:uppercase; line-height:32px;}
-.block_blog_1 .blog_post .category ul {padding-top:8px; float:left; display:block;}
+.block_blog_1 .blog_post .category ul {padding-top:3px; float:left; display:block;}
 .block_blog_1 .blog_post .category li {margin-left:5px; float:left; display:block;}
 .block_blog_1 .blog_post .category a {
 	height:15px;
