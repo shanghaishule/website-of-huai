@@ -58,7 +58,7 @@ class HuaiAction extends BaseAction {
 		$count=$db->count();
 		$Page       = new Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数
 		$show       = $Page->show();//
-		$res=$db->order('statdate DESC,id DESC')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$res=$db->order('statdate DESC,id ASC')->limit($Page->firstRow.','.$Page->listRows)->select();
 		$res=$this->convertLinks($res);
 		$this->assign('page',$show);
 		$this->assign('info',$this->info);
@@ -83,13 +83,13 @@ class HuaiAction extends BaseAction {
 	   }
 	   
 	   $preId_where['id']=array('lt',$id);//上一篇
-	   $preId=$db->where($preId_where)->order('id DESC')->limit(1)->find();
+	   $preId=$db->field('id,title')->where($preId_where)->order('id DESC')->limit(1)->find();
+	   
 	   $this->assign("preArticle",$preId);
 	    
 	   $nextId_where["id"]=array('gt',$id);//下一篇
-	   $nextArticle=$db->where($nextId_where)->order('id ASC')->limit(1)->find();
+	   $nextArticle=$db->field('id,title')->where($nextId_where)->order('id ASC')->limit(1)->find();
 	   $this->assign("nextArticle",$nextArticle);
-	   
 	   //dump($res);die;
 	   $this->assign('res',$res);
 	   $this->display();

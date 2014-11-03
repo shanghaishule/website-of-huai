@@ -102,21 +102,21 @@
                                 <h4 class="title"><a href="{lanrain:$vo.url}">{lanrain:$vo.title}</a></h4>
                                 
                                 <div class="content">
-                                	<p>{lanrain:$vo.info|msubstr=0,185,'utf-8',true}</p>
+                                	<p>{lanrain:$vo.info|msubstr=0,120,'utf-8',true}</p>
                                 </div>
                                 
                                 <div class="info">
                                 	<div class="date"><p>{lanrain:$vo.createtime|date='Y-m-d H:i:s',###}</p></div>
                                     <div class="author"><p>作者: <a href="#">{lanrain:$vo.person}</a></p></div>
                                     
-                                    <div class="r_part">
+                                    <!-- <div class="r_part">
                                     	<div class="category">
                                         	<p class="text">分类:</p>
                                             <ul>
                                             	<li><a href="#">BUSINESS</a></li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 
                             </article>
