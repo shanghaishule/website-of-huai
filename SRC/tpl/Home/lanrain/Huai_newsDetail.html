@@ -132,10 +132,10 @@
                             
 							<div class="clearfix w-l790 float_l article-page">
 								<if condition="$preArticle['id'] neq ''">
-									<a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$preArticle['id']))}"  class="float_l">上一篇：{lanrain:$preArticle.title|msubstr=0,50,'utf-8',true}</a>
+									<a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$preArticle['id']))}"  class="float_l">上一篇：{lanrain:$preArticle['title']|msubstr=0,13,'utf-8',true}</a>
 								</if>
 								<if condition="$nextArticle['id'] neq ''">
-									<a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$nextArticle['id']))}"  class="float_r">下一篇：{lanrain:$nextArticle.title|msubstr=0,50,'utf-8',true}</a>
+									<a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$nextArticle['id']))}"  class="float_r">下一篇：{lanrain:$nextArticle['title']|msubstr=0,13,'utf-8',true}</a>
 								</if>
 							</div>    
 							             
