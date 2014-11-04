@@ -81,9 +81,10 @@ a.buy {color:red;font-weight:bold;font-size:1.2em}
 
 
 #bd,#hd { width:700px;margin:0 auto;}
-#bd { padding-bottom:40px;}
+#bd { padding-bottom:40px;width: 98%;
+margin: 0 auto;margin-top:10px}
 
-a { color:#006835;text-decoration:none;}
+a { color:black;text-decoration:none;}
 a:hover { text-decoration:underline;}
 
 #hd { width: 994px; margin:0 auto 30px; }
@@ -219,12 +220,12 @@ padding: 14px 0 0 40px}
 
 .i_summary_box { background:#cad0cb;}
 .i_summary_box li { float:left;height:110px;}
-.i_summary_box .cola { width:107px;padding:;;height:110px;}
-.i_summary_box .cola table { width:108px;height:110px;background:;text-align:center;color:#fff;font-size:18px;word-break:break-all;word-wrap:break-word;border-right: solid 1px #cadfea;}
-.i_summary_box .colb { width:386px;border-right:solid 1px #cadfea;padding:;}
-.i_summary_box .colb table { height:110px;font-size:16px;color:#fff;}
+.i_summary_box .cola { width:94px;padding:;;height:110px;}
+.i_summary_box .cola table { width:108px;height:110px;background:;text-align:center;color:#666;font-size:18px;word-break:break-all;word-wrap:break-word;border-right: solid 1px white;}
+.i_summary_box .colb { width:386px;border-right:solid 1px white;padding:;}
+.i_summary_box .colb table { height:110px;font-size:16px;color:#666;}
 .i_summary_box .colb table p { background:url(/images/new/i_icon_bg2.png) left center no-repeat;padding: 1px 0 6px 5px;}
-.i_summary_box .colc { width:205px;text-align:center;color:#fff;font-size:14px;padding-top:5px;height:110px;}
+.i_summary_box .colc { width:205px;text-align:center;color:#666;font-size:14px;padding-top:5px;height:110px;}
 .i_summary_box .colc img { display:block;margin:0 auto;}
 .i_summary_box .colc .t { font-size:13px;padding:2px 0 26px;color:#666}
 
@@ -309,7 +310,8 @@ padding: 14px 0 0 40px}
 .find_titlebar { font-size:18px;padding-top:30px;line-height:40px;}
 
 .find_list li .content { width:550px;}
-.spec{with:750px}
+#spec{width: 98%;
+margin: 0 auto}
 #colb_s{width:217px}
 .cola_a td{padding-top: 40px;color:#666}
 .cola_b td{padding-top:25px;padding-left:16px;color:#666}
