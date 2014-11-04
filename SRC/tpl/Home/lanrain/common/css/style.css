@@ -176,15 +176,15 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .h_all_list{margin-bottom:20px;background: white;}
 .h_list{border:1px solid #006835;text-align:center;padding:0 5px;}
 .h_table{width:96%;margin-left:2%}
-.img_intro{width: 25%;margin: 10px 0px;float:left;}
-.con_intro{width: 74%;float: left;margin-left:1%;height:159px;background:white;margin-top: 10px}
+.img_intro{width: 25%;margin: 10px 0px;float:;}
+.con_intro{width: 94%;float:;margin-left:1%;height:159px;background:white;margin-top: 10px}
 .con_intro h2{font-size:1em;;line-height:22px}
 
-.keshi_all{width:960px;}
-.tab2{width:960px;border: 1px solid white;margin:10px 0px;}
+.keshi_all{width:730px;}
+.tab2{width:730px;border: 1px solid white;margin:10px 0px;}
 .menu3{height:28px;}
 .menu3 li{float: left;
-width: 191px;
+width: 138px;
 text-align: center;
 line-height: 23px;
 height: 26px;
@@ -195,12 +195,12 @@ overflow: hidden;
 background:#cad0cb;
 border:}
 .menu3 li.off{background:#006835;color:#000;}
-.menu3div{height:220px;;border-top:0;background:#fefefe;overflow: auto}
+.menu3div{height:px;;border-top:0;background:#fefefe;overflow: auto}
 #exa_right{width:px}
 .upper{padding-top:0px}
 .main_c {
 float: left;
-width: 943px;
+width: 730px;
 font-size: 12px;}
 .index_dpt_list {
 margin: 0;
