@@ -91,7 +91,7 @@ td.top_table {
 	background: #006835
 }
 
-.money_info li {
+.money_info li {text-align: center;
 	float: left;
 	width: 30%;
 	color: white;

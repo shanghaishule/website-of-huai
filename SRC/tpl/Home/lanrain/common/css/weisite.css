@@ -219,7 +219,7 @@ padding: 14px 0 0 40px}
 
 .i_summary_box { background:#47906C;}
 .i_summary_box li { float:left;height:110px;}
-.i_summary_box .cola { width:107px;padding:;border-right:solid 1px #cadfea;height:110px;}
+.i_summary_box .cola { width:107px;padding:;;height:110px;}
 .i_summary_box .cola table { width:108px;height:110px;background:;text-align:center;color:#fff;font-size:18px;word-break:break-all;word-wrap:break-word;border-right: solid 1px #cadfea;}
 .i_summary_box .colb { width:386px;border-right:solid 1px #cadfea;padding:;}
 .i_summary_box .colb table { height:110px;font-size:16px;color:#fff;}
@@ -309,4 +309,5 @@ padding: 14px 0 0 40px}
 .find_titlebar { font-size:18px;padding-top:30px;line-height:40px;}
 
 .find_list li .content { width:550px;}
-
+.spec{with:750px}
+#colb_s{width:217px}
