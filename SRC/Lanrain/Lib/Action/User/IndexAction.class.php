@@ -85,7 +85,7 @@ class IndexAction extends UserAction{
 				//$this->assign('stat_UV', $stat_UV);
 				
 				//dump($query_pv); dump($stat_PV); dump($query_uv); dump($stat_UV);exit;
-				
+				/*
 				$buycount= M('item')->where(array('status'=>1,'tokenTall'=>$tokenTall))->count();
 				$nobuycount= M('item')->where(array('status'=>0,'tokenTall'=>$tokenTall))->count();
 				$fukuan= M('item_order')->where(array('status'=>1,'tokenTall'=>$tokenTall))->count();
@@ -103,7 +103,7 @@ class IndexAction extends UserAction{
 								'totalamt'=>$totalamt
 						)
 				);
-				
+				*/
 				
 				$info_notice = M('info_notice')->where(array('status'=>1))->select();
 				$this->assign('info_notice', $info_notice);
