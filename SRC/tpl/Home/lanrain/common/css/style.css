@@ -1,7 +1,7 @@
 /* Global properties ======================================================== */
 html, body {width:100%; padding:0; margin:0;}
 
-body {font: 14px/25px Microsoft YaHei;, Helvetica, sans-serif;color:#292929;min-width:960px;;background:url(../images/bg.gif) repeat }
+body {font: 14px/25px Microsoft YaHei;, Helvetica, sans-serif;color:#666;min-width:960px;;background:url(../images/bg.gif) repeat }
 .ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
 .main {width:960px; margin:0 auto; position:relative;}
 /***********************************************************************/
@@ -16,16 +16,16 @@ a.link:hover {text-decoration:underline;}
 .color-1 { color:#006835;}
 a.color-1:hover {color:#000;}
 
-.font-3 {line-height: 33px;width:95%;color: #292929;float: left;margin-left: -24px;}
-h2 { font-size:16px; line-height:36px; color:#292929; font-weight:normal; letter-spacing:-1px;}
+.font-3 {line-height: 33px;width:95%;color: #666;float: left;margin-left: -24px;}
+h2 { font-size:16px; line-height:36px; color:#666; font-weight:normal; letter-spacing:-1px;}
 ul {margin:0; padding:0;list-style-image:none;}
 ul.list-1 li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/marker-1.gif) 0 11px no-repeat;}
-ul.list-1 li a { font-size:14px; color:#292929; line-height:25px;}
+ul.list-1 li a { font-size:14px; color:#666; line-height:25px;}
 ul.list-1 li a:hover {color:#006835;}
 
 ul.list-2 li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/marker-1.gif) 0 11px no-repeat;}
 ul.list-2 li a { font-size:14px; color:#006835; line-height:25px;}
-ul.list-2 li a:hover { color:#292929;}
+ul.list-2 li a:hover { color:#666;}
 
 /******************************************************************/
 .clear {clear:both; line-height:0; font-size:0; width:100%;}
@@ -69,7 +69,7 @@ display: inline-block;
 float: left;
 width: 56%;
 padding-top: 10px}
-.header_top h1 a strong {display:block; color:#292929; margin-top:-21px; font-weight:normal;}
+.header_top h1 a strong {display:block; color:#666; margin-top:-21px; font-weight:normal;}
 .header_top img{vertical-align:top;}
 .social-icon {overflow:hidden; text-align:right; margin-top:5px;}
 .social-icon a {display:inline-block; height:30px; float:right;color: #006835;font-size:18px;}
@@ -78,15 +78,15 @@ padding-top: 10px}
 .social-icons a:hover {background-position:0 bottom;}
 
 nav {overflow:hidden; margin-right:10px;}
-ul.menu {float:left; margin-top:5px;background: white;
+ul.menu {float:left; margin-top:5px;background: #006835;
 display: block;
-height: 24px;}
+height: 35px;}
 ul.menu{width:640px}
 ul.menu li {float:left; line-height:20px; margin:0px 7px 0px 7px;}
-ul.menu li a {font-size:17px; line-height:22px; color:#292929; display:inline-block; }
-ul.menu li a:hover, ul.menu li.current a {color:#006835;}
+ul.menu li a {font-size:17px; line-height:22px; color:white;; display:inline-block;padding-top: 5px; }
+ul.menu li a:hover, ul.menu li.current a {color:black}
 ul.p6 li {list-style-type:none;}
-.navbox #sliderNav li.active a{padding-left:25px;color:#006835}
+.navbox #sliderNav li.active a{padding-left:25px;color:black}
 /*********************************content*************************************/
 .content_left{width: 640px;float: left;}
 .content_right{width: 300px;margin-left:10px;float:left;}
@@ -97,7 +97,7 @@ ul.p6 li {list-style-type:none;}
 .block-2 { padding:25px 30px 5px 44px;}
 .block-3 { padding:25px 30px 25px 44px;}
 .col-1 {float:left; margin: 15px 20px;width:100%}
-.col-1 a{color:black}
+.col-1 a{color:#666}
 .col-2 {float:left; margin: 0px 5px 0px 16px;}
 .child{width: 23%;margin-left: 30px}
 .col-3 {float:left; width:460px; margin-right:50px; }
@@ -132,7 +132,7 @@ ul.p6 li {list-style-type:none;}
 .hos_inf{overflow:hidden; margin:50px 20px; width:600px;}
 .hos_inf ul {float:right; margin-top:15px;}
 .hos_inf ul li {float:left; line-height:20px; margin:10px 16px;}
-.hos_inf ul li a {font-size:14px; line-height:22px; color:#292929; display:inline-block; }
+.hos_inf ul li a {font-size:14px; line-height:22px; color:#666; display:inline-block; }
 .hos_inf ul li a:hover {color:#006835;}
 /****************************footer************************/
 footer {
@@ -168,7 +168,7 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 #content-new{width:75%;float:left;}
 .bg2{background: white;padding: 5px 10px 5px 10px;width: 74.5%;margin-top: 0px}
 .m4{float: left;margin-right: 30px}
-.product{background:#47906C;display:inline-block;color:white;font-size:1.5em}
+.product{background:#006835;display:inline-block;color:white;font-size:1.5em}
 .product p{padding:6px}
 .menu1{float: left;margin-right: 67px}
 .mar{margin-top:5px}
@@ -217,11 +217,12 @@ line-height: 31px;
 .dpt_disease_list li{float:left;width:211px;margin-left: 18px;
 background: white;
 margin-top: 13px}
-.dpt_disease_list li a {color:black;font-weight:bold}
+.dpt_disease_list li a {color:#666;font-weight:bold}
 #bon_one_1 ul li{float:left;width: 104px;
 margin-left: 16px}
-.menu3div ul li a{color:black}
+.menu3div ul li a{color:#666}
 #sliderNav li .sliderTag_a{height:120px}
 #sliderNav li .sliderTag_a p{padding-top: 43px;
 color: white;
 font-size: 1.5em}
+table{font: 14px/25px Microsoft YaHei}

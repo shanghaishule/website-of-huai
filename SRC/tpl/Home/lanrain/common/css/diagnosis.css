@@ -3,8 +3,8 @@
 	width: 30%;
 	height: px;
 	float: left;
-	border: 1px solid #006835;;
-	border-right: 1px solid #006835
+	border: 1px solid #ccc;;
+	
 }
 
 .right_main {
@@ -13,8 +13,8 @@
 	width:  67.49999999999999999999999%;
 	height: px;
 	float: left;
-	border: 1px solid #006835;;
-	border-right: 1px solid #006835
+	border: 1px solid #ccc;;
+	border-right: 1px solid #ccc
 }
 
 .left_list_top {
@@ -58,12 +58,12 @@ td.table {
 	font-size: 0.6em;
 	font-weight: normal;
 	line-height: 15px;
-	font-family: Verdana, Arial, '宋体';
+	font: 14px/25px Microsoft YaHei
 }
 
 td.top_table {
-	background: #006835;
-	color: white;
+	background: #cad0cb;
+	color: #666
 }
 
 .service_list li img {
@@ -78,7 +78,7 @@ td.top_table {
 }
 
 .hospital_list li a {
-	color: black
+	color: #666
 }
 
 .hospital_list li a:hover {
@@ -158,8 +158,8 @@ td.top_table {
 .ps_right_list{width:30%;float:left;text-align:center;margin-left:2%}
 .ps_right_content{margin-bottom:20px}
 .ps_right_list a:hover{ text-decoration: underline;color:#006835}
-.ps_right_content h1{color:black;font-weight:bold;line-height: 16px}
+.ps_right_content h1{color:#666;font-weight:bold;line-height: 16px}
 .ps_right_content h2{color:grey;font-size:1em;line-height: 15px;margin-top: 0px}
 .ps_right_content h3{color:red;font-size:1em;line-height: 25px}
-.ps_right_content h4{color:black;font-size:0.6em;line-height: 4px}
+.ps_right_content h4{color:#666;font-size:0.6em;line-height: 4px}
 .ps_right_content h5{}
