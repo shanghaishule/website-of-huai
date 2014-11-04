@@ -499,7 +499,7 @@
 			//On Click Event
 			$("ul.second_doc li").click(function() {
 				$("ul.second_doc li").removeClass("off"); //Remove any "active" class
-				$(this).addClass("off"); //Add "active" class to selected tab
+				$(this).addClass("off"); //Add "off" class to selected tab
 				$(".tab_con").hide(); //Hide all tab content
 				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
 				$(activeTab).fadeIn(); //Fade in the active content
