@@ -19,19 +19,20 @@
 					医院占地23.4万平方米，建筑面积68万平方米，医院下辖一个中医系、57个科室，展开床位2100张，1993年医院首批评为三级甲等医院，1999年荣膺“全国百佳医院”称号，先后被评为全国“支援西部地区医院工作先进单位”，全军“思想政治建设先进单位”、“医院文化建设先进单位”、“为部队服务先进医院”、“创先争优全军试点单位”。</h2>
 			</div>
 			<div class="clear"></div>
+			<div class="b10"></div>
 			<div class="keshi_all">
 				<div class="tab2" id="tab1">
 					<div class="menu3" id="menu-tab">
-						<ul>
-							<li id="aone1" onclick="setTab('one',1)">国家级重点科室</li>
-							<li id="aone2" onclick="setTab('one',2)">全军及上海市重点科室</li>
-							<li id="aone3" onclick="setTab('one',3)">医学中心及专业研究所</li>
-							<li id="aone4" onclick="setTab('one',4)">全部科室</li>
-							<li id="aone5" onclick="setTab('one',5)">专家介绍</li>
+						<ul class="first_doc">
+							<li id="aone1"><a href="#con_one_1">国家级重点科室</a></li>
+							<li id="aone2"><a href="#con_one_2">全军及上海市重点科室</a></li>
+							<li id="aone3"><a href="#con_one_3">医学中心及专业研究所</a></li>
+							<li id="aone4"><a href="#con_one_4">全部科室</a></li>
+							<li id="aone5"><a href="#con_one_5">专家介绍</a></li>
 						</ul>
 					</div>
 					<div class="menu3div">
-						<div id="con_one_1">
+						<div id="con_one_1" class="tab_content">
 							<div class="main_c">
 								<ul class="dpt_disease_list">
 									<li><a href="http://chhospital.com.cn/department/single.php?did=3743"> <img
@@ -99,7 +100,7 @@
 								</ul>
 							</div>
 						</div>
-						<div id="con_one_2" style="display: none;">
+						<div id="con_one_2" class="tab_content">
 							<div class="main_c">
 								<ul class="dpt_disease_list">
 									<li><a
@@ -168,7 +169,7 @@
 								</ul>
 							</div>
 						</div>
-						<div id="con_one_3" style="display: none;">
+						<div id="con_one_3" class="tab_content">
 							<div class="main_c">
 								<ul class="index_dpt_list">
 									<li><a
@@ -184,10 +185,11 @@
 										href="http://chhospital.com.cn/department/single.php?did=6"
 										title="肿瘤射波刀治疗中心">肿瘤射波刀治疗中心</a></li>
 								</ul>
+								<div class="clear"></div>
 							</div>
 
 						</div>
-						<div id="con_one_4" style="display: none;">
+						<div id="con_one_4" class="tab_content">
 							<div class="main_c">
 								<ul class="index_dpt_list">
 									<li><a
@@ -353,17 +355,38 @@
 										href="http://chhospital.com.cn/department/single.php?did=3741"
 										title="药学部">药学部</a></li>
 								</ul>
+								<div class="clear"></div>
 							</div>
 
 
 						</div>
-						<div id="con_one_5" style="display: none;">专家介绍</div>
+						<div id="con_one_5" class="tab_content">专家介绍</div>
 
 					</div>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
 		
+		$(document).ready(function() {
+		
+			//Default Action
+			$(".tab_content").hide(); //Hide all content
+			$("ul.first_doc li:first").addClass("off").show(); //Activate first tab
+			$(".tab_content:first").show(); //Show first tab content
+			
+			//On Click Event
+			$("ul.first_doc li").click(function() {
+				$("ul.first_doc li").removeClass("off"); //Remove any "active" class
+				$(this).addClass("off"); //Add "active" class to selected tab
+				$(".tab_content").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active content
+				return false;
+			});
+		
+		});
+		</script>		
 		<div class="hos_intro">
 
 			<div class="img_intro">
@@ -374,100 +397,117 @@
 				<h2>中国人民解放军第二军医大学第三附属医院（东方肝胆外科医院，东方肝胆外科研究所），是在我国肝胆外科开拓者、著名肝胆外科专家、中国科学院院士吴孟超教授领导下，从 1956 年成立肝胆外科三人小组开始，经过50多年的自力更生、艰苦奋斗、奋发图强、勇攀高峰，由一个小组发展到集医、教、研为一体的院所合一、国内唯一的专科医院。已成为国家重点学科，国家级继续医学教育基地，全军肝胆外科专科中心，全军肝胆外科研究所，全军重点研究所，军队“重中之重”建设学科，上海市医学领先专业重点学科，上海市临床医学中心。 1993 年 5 月，原中共中央总书记、国家主席、中央军委主席江泽民亲笔提写院名、所名。1996 年12 月被总后勤部批准为“三级甲等”专科医院。</h2>
 			</div>
 			<div class="clear"></div>
+			<div class="b10"></div>
 			<div class="keshi_all">
 				<div class="tab2" id="tab1">
 					<div class="menu3" id="menu-tab1">
-						<ul>
+						<ul class="second_doc">
 							
-							<li id="bone1" onclick="setTab('one',1)">全部科室</li>
-							<li id="bone2" onclick="setTab('one',2)">专家介绍</li>
+							<li id="bone1"><a href="#bon_one_1">全部科室</a></li>
+							<li id="bone2"><a href="#bon_one_2">专家介绍</a></li>
 						</ul>
 					</div>
 					<div class="menu3div">
 						
-						<div id="bon_one_1">
+						<div id="bon_one_1" class="tab_con">
 							
-						<ul>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3873" title="麻醉科">麻醉科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3862" title="肝外四科">肝外四科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3871" title="肝外六科">肝外六科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3864" title="腹腔镜科">腹腔镜科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3868" title="胆道二科">胆道二科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3860" title="胆道一科">胆道一科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3861" title="肝外五科">肝外五科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3857" title="肝外一科">肝外一科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3883" title="肝外二科">肝外二科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3859" title="肝外三科">肝外三科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3854" title="特需诊疗一科">特需诊疗一科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=59237" title="特需诊疗二科">特需诊疗二科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=633" title="肝脏移植科">肝脏移植科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3870" title="中西医结合科">中西医结合科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3867" title="微创一科">微创一科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3866" title="放射介入二科">放射介入二科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3865" title="放射介入一科">放射介入一科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=17643" title="肝胆内二科">肝胆内二科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3876" title="内镜科">内镜科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3877" title="病理科">病理科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3875" title="超声科">超声科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3874" title="放射科">放射科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3879" title="药材科">药材科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3880" title="仪器科">仪器科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3881" title="信息科">信息科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=17502" title="肿瘤免疫与基因治疗实验室">肿瘤免疫与基因治疗实验室</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=17501" title="分子肿瘤实验室">分子肿瘤实验室</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=17586" title="肿瘤生物治疗科">肿瘤生物治疗科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3878" title="检验科">检验科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=17515" title="门诊部">门诊部</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=3869" title="肝胆内一科">肝胆内一科</a></li>
-<!---->
-			<li ><a href="http://www.ehbh.cn/departments/?section_id=60958" title="信息科一">信息科一</a></li>
-<!---->
-			</ul>
-
-		</div>
-		
-		<div class="clear_Both"></div>
-
-
+							<ul>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3873" title="麻醉科">麻醉科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3862" title="肝外四科">肝外四科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3871" title="肝外六科">肝外六科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3864" title="腹腔镜科">腹腔镜科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3868" title="胆道二科">胆道二科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3860" title="胆道一科">胆道一科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3861" title="肝外五科">肝外五科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3857" title="肝外一科">肝外一科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3883" title="肝外二科">肝外二科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3859" title="肝外三科">肝外三科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3854" title="特需诊疗一科">特需诊疗一科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=59237" title="特需诊疗二科">特需诊疗二科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=633" title="肝脏移植科">肝脏移植科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3870" title="中西医结合科">中西医结合科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3867" title="微创一科">微创一科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3866" title="放射介入二科">放射介入二科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3865" title="放射介入一科">放射介入一科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=17643" title="肝胆内二科">肝胆内二科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3876" title="内镜科">内镜科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3877" title="病理科">病理科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3875" title="超声科">超声科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3874" title="放射科">放射科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3879" title="药材科">药材科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3880" title="仪器科">仪器科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3881" title="信息科">信息科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=17502" title="肿瘤免疫与基因治疗实验室">肿瘤免疫与基因治疗实验室</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=17501" title="分子肿瘤实验室">分子肿瘤实验室</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=17586" title="肿瘤生物治疗科">肿瘤生物治疗科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3878" title="检验科">检验科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=17515" title="门诊部">门诊部</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=3869" title="肝胆内一科">肝胆内一科</a></li>
+					
+								<li ><a href="http://www.ehbh.cn/departments/?section_id=60958" title="信息科一">信息科一</a></li>
+					
+								</ul>
+					            <div class="clear"></div>
+							</div>
 						</div>
-						<div id="bon_one_2" style="display: none;">专家介绍</div>
+						<div id="bon_one_2" class="tab_con">专家介绍</div>
 
 					</div>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
 		
+		$(document).ready(function() {
+		
+			//Default Action
+			$(".tab_con").hide(); //Hide all content
+			$("ul.second_doc li:first").addClass("off").show(); //Activate first tab
+			$(".tab_con:first").show(); //Show first tab content
+			
+			//On Click Event
+			$("ul.second_doc li").click(function() {
+				$("ul.second_doc li").removeClass("off"); //Remove any "active" class
+				$(this).addClass("off"); //Add "active" class to selected tab
+				$(".tab_con").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active content
+				return false;
+			});
+		
+		});
+		</script>		
 		<div class="hos_intro">
 
 			<div class="img_intro">
@@ -478,19 +518,20 @@
 				<h2>中国人民解放军第二军医大学第三附属医院（东方肝胆外科医院，东方肝胆外科研究所），是在我国肝胆外科开拓者、著名肝胆外科专家、中国科学院院士吴孟超教授领导下，从 1956 年成立肝胆外科三人小组开始，经过50多年的自力更生、艰苦奋斗、奋发图强、勇攀高峰，由一个小组发展到集医、教、研为一体的院所合一、国内唯一的专科医院。已成为国家重点学科，国家级继续医学教育基地，全军肝胆外科专科中心，全军肝胆外科研究所，全军重点研究所，军队“重中之重”建设学科，上海市医学领先专业重点学科，上海市临床医学中心。 1993 年 5 月，原中共中央总书记、国家主席、中央军委主席江泽民亲笔提写院名、所名。1996 年12 月被总后勤部批准为“三级甲等”专科医院。</h2>
 			</div>
 			<div class="clear"></div>
+			<div class="b10"></div>
 			<div class="keshi_all">
 				<div class="tab2" id="tab1">
 					<div class="menu3" id="menu-tab">
-						<ul>
-							<li id="aone1" onclick="setTab('one',1)">国家级重点科室</li>
-							<li id="aone2" onclick="setTab('one',2)">全军及上海市重点科室</li>
-							<li id="aone3" onclick="setTab('one',3)">医学中心及专业研究所</li>
-							<li id="aone4" onclick="setTab('one',4)">全部科室</li>
-							<li id="aone5" onclick="setTab('one',5)">专家介绍</li>
+						<ul class="third_doc">
+							<li id="aone1"><a href="#third_con_1">国家级重点科室</a></li>
+							<li id="aone2"><a href="#third_con_2">全军及上海市重点科室</a></li>
+							<li id="aone3"><a href="#third_con_3">医学中心及专业研究所</a></li>
+							<li id="aone4"><a href="#third_con_4">全部科室</a></li>
+							<li id="aone5"><a href="#third_con_5">专家介绍</a></li>
 						</ul>
 					</div>
 					<div class="menu3div">
-						<div id="con_one_1">
+						<div id="third_con_1">
 							<div class="main_c">
 								<ul class="dpt_disease_list">
 									<li><a href="http://chhospital.com.cn/department/single.php?did=3743"> <img
@@ -558,7 +599,7 @@
 								</ul>
 							</div>
 						</div>
-						<div id="con_one_2" style="display: none;">
+						<div id="third_con_2" class="third_con">
 							<div class="main_c">
 								<ul class="dpt_disease_list">
 									<li><a
@@ -627,7 +668,7 @@
 								</ul>
 							</div>
 						</div>
-						<div id="con_one_3" style="display: none;">
+						<div id="third_con_3" class="third_con">
 							<div class="main_c">
 								<ul class="index_dpt_list">
 									<li><a
@@ -643,10 +684,11 @@
 										href="http://chhospital.com.cn/department/single.php?did=6"
 										title="肿瘤射波刀治疗中心">肿瘤射波刀治疗中心</a></li>
 								</ul>
+								<div class="clear"></div>
 							</div>
 
 						</div>
-						<div id="con_one_4" style="display: none;">
+						<div id="third_con_4" class="third_con">
 							<div class="main_c">
 								<ul class="index_dpt_list">
 									<li><a
@@ -812,126 +854,38 @@
 										href="http://chhospital.com.cn/department/single.php?did=3741"
 										title="药学部">药学部</a></li>
 								</ul>
+								<div class="clear"></div>
 							</div>
 
 
 						</div>
-						<div id="con_one_5" style="display: none;">专家介绍</div>
+						<div id="third_con_5" class="third_con">专家介绍</div>
 
 					</div>
 				</div>
 			</div>
 		</div>
 		<script type="text/javascript">
-			var cursel_0 = 1;
-
-			function Next() {
-				cursel_0++;
-				if (cursel_0 > links_len)
-					cursel_0 = 1
-				setTab(name_0, cursel_0);
-			}
-			var name_0 = 'one';
-			//var cursel_0 = 1;
-			var ScrollTime = 3000;//循环周期（毫秒）
-			var links_len, iIntervalId;
-			onload = function() {
-				var links = document.getElementById("menu-tab")
-						.getElementsByTagName('li');
-				links_len = links.length;
-				//alert(links_len);
-				/*for ( var i = 0; i < links_len; i++) {
-					links[i].onmouseover = function() {
-						clearInterval(iIntervalId);
-						this.onmouseout = function() {
-							iIntervalId = setInterval(Next, ScrollTime);
-							;
-						}
-					}
-				}
-				document.getElementById("con_" + name_0 + "_" + links_len).parentNode.onmouseover = function() {
-					clearInterval(iIntervalId);
-					this.onmouseout = function() {
-						iIntervalId = setInterval(Next, ScrollTime);
-						;
-					}
-				}
-				setTab(name_0, cursel_0);
-				iIntervalId = setInterval(Next, ScrollTime);
-				 */
-			}
-			function setTab(name, cursel) {
-				cursel_0 = cursel;
-				for ( var i = 1; i <= links_len; i++) {
-					var menu = document.getElementById("a" + name + i);
-					var menudiv = document.getElementById("con_" + name + "_"
-							+ i);
-					if (i == cursel) {
-						menu.className = "off";
-						menudiv.style.display = "block";
-					} else {
-						menu.className = "on";
-						menudiv.style.display = "none";
-					}
-				}
-			}
-		</script>
 		
+		$(document).ready(function() {
 		
-		<script type="text/javascript">
-			var cursel_0 = 1;
-
-			function Next() {
-				cursel_0++;
-				if (cursel_0 > links_len)
-					cursel_0 = 1
-				setTab(name_0, cursel_0);
-			}
-			var name_0 = 'one';
-			//var cursel_0 = 1;
-			var ScrollTime = 3000;//循环周期（毫秒）
-			var links_len, iIntervalId;
-			onload = function() {
-				var links = document.getElementById("menu-tab1")
-						.getElementsByTagName('li');
-				links_len = links.length;
-				//alert(links_len);
-				/*for ( var i = 0; i < links_len; i++) {
-					links[i].onmouseover = function() {
-						clearInterval(iIntervalId);
-						this.onmouseout = function() {
-							iIntervalId = setInterval(Next, ScrollTime);
-							;
-						}
-					}
-				}
-				document.getElementById("con_" + name_0 + "_" + links_len).parentNode.onmouseover = function() {
-					clearInterval(iIntervalId);
-					this.onmouseout = function() {
-						iIntervalId = setInterval(Next, ScrollTime);
-						;
-					}
-				}
-				setTab(name_0, cursel_0);
-				iIntervalId = setInterval(Next, ScrollTime);
-				 */
-			}
-			function setTab(name, cursel) {
-				cursel_0 = cursel;
-				for ( var i = 1; i <= links_len; i++) {
-					var menu = document.getElementById("b" + name + i);
-					var menudiv = document.getElementById("bon_" + name + "_"
-							+ i);
-					if (i == cursel) {
-						menu.className = "off";
-						menudiv.style.display = "block";
-					} else {
-						menu.className = "on";
-						menudiv.style.display = "none";
-					}
-				}
-			}
-		</script>
+			//Default Action
+			$(".third_con").hide(); //Hide all content
+			$("ul.third_doc li:first").addClass("off").show(); //Activate first tab
+			$(".third_con:first").show(); //Show first tab content
+			
+			//On Click Event
+			$("ul.third_doc li").click(function() {
+				$("ul.third_doc li").removeClass("off"); //Remove any "active" class
+				$(this).addClass("off"); //Add "active" class to selected tab
+				$(".third_con").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active content
+				return false;
+			});
+		
+		});
+		</script>		
 		<!--==============================footer=================================-->
 		<include file="Public:footer2" />
 	</div>

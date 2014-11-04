@@ -125,12 +125,12 @@ ul.p6 li {list-style-type:none;}
 .ban_right5 span{color:#006835;}
 .ban_right5 p1{margin:0px 10px;}
 .tab1{border: 1px solid #ccc;margin:10px 0px;}
-.menu2{height:28px;}
-.menu2 li{float:left;width:150px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
+.menu2{height:35px;}
+.menu2 li{float:left;width:211.66px;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
 .menu2 li.off{background:#FFFFFF;color:#000;}
-.menu2div{height:300px;border-left:#cccccc solid px;border-right:#cccccc solid px;border-top:0;background:#fefefe}
-.hos_inf{overflow:hidden; margin:50px 20px; width:600px;}
-.hos_inf ul {float:right; margin-top:15px;}
+.menu2div{border-left:#cccccc solid px;border-right:#cccccc solid px;border-top:0;background:#fefefe}
+.hos_inf{overflow:hidden;padding:20px; width:600px;}
+.hos_inf ul {float:right;}
 .hos_inf ul li {float:left; line-height:20px; margin:10px 16px;}
 .hos_inf ul li a {font-size:14px; line-height:22px; color:#292929; display:inline-block; }
 .hos_inf ul li a:hover {color:#006835;}
@@ -181,7 +181,7 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .con_intro h2{font-size:1em;;line-height:22px}
 
 .keshi_all{width:960px;}
-.tab2{width:960px;border: 1px solid white;margin:10px 0px;}
+.tab2{width:960px;border: 1px solid white;}
 .menu3{height:28px;}
 .menu3 li{float: left;
 width: 191px;
@@ -194,14 +194,17 @@ font-size: 14px;
 overflow: hidden;
 background:#cad0cb;
 border:}
+.menu3 li a{color:#000;text-decoration:none;}
 .menu3 li.off{background:#006835;color:#000;}
-.menu3div{height:220px;;border-top:0;background:#fefefe;overflow: auto}
+.menu3div{border-top:0;background:#fefefe;}
 #exa_right{width:px}
 .upper{padding-top:0px}
 .main_c {
 float: left;
-width: 943px;
-font-size: 12px;}
+width: 940px;
+font-size: 12px;
+background: #fff;
+padding: 10px;}
 .index_dpt_list {
 margin: 0;
 padding: 0 0 0 32px;
