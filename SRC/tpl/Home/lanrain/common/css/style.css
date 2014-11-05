@@ -139,7 +139,7 @@ height: 10px; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#
 .hos_inf ul li a:hover {color:#006835;}
 /****************************footer************************/
 footer {
-width: 960px;position: relative;overflow: hidden;text-align: center;padding: 10px 0 45px 0;margin-top: 40px;margin-left:auto;margin-right:auto;border-top: 2px solid #050505;}
+width: 960px;position: relative;overflow: hidden;text-align: center;padding: 10px 0 10px 0;margin-top: 40px;margin-left:auto;margin-right:auto;border-top: 2px solid #050505;}
 footer p {margin-top:100px;}
 .ft_inf{float:left;margin-left: 50px;}
 .ft_not{width:105px}
@@ -243,3 +243,6 @@ background: transparent;padding-left: 21px;}
 .shanghai li{width:32.8%}
 .third_con ul li{float:left;width: 11.8%;
 margin-left: 5%}
+
+/**cnzz**/
+#cnzz_stat_icon_1253491104{display:none;}
