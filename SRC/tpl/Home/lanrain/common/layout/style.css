@@ -54,7 +54,7 @@ body, a {font-size:12px; color:#737373;}
 	
 .wrapper {width:100%; min-width:320px; min-height:100%; overflow-x:hidden; position:relative;}
 
-.innerH {width:960px; margin:0px auto;background: white}
+.innerH {width:960px; margin:0px auto;}
 .fl, .alignleft {float:left;}
 .fr, .alignright {float:right;}
 .tac {text-align:center;}
@@ -66,9 +66,9 @@ body, a {font-size:12px; color:#737373;}
 
 /* lines */
 .line_1 {height:1px; clear:both; overflow:hidden; background-color:#3d3d3d;}
-.line_2 {height:5px; clear:both; overflow:hidden; background:url(images/line_2.gif) repeat-x;}
+.line_2 {height:5px; clear:both; overflow:hidden; background:;}
 .line_3 {height:1px; clear:both; overflow:hidden; background-color:#E2E2E2;}
-.line_4 {height:3px; clear:both; overflow:hidden; background:url(images/line_4.gif) repeat-x;}
+.line_4 {height:3px; clear:both; overflow:hidden;;}
 
 /* fonts */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color:#1a1a1a; font-weight:normal; line-height:1em;}
@@ -351,10 +351,10 @@ float: right;
 .general_content {}
 .general_content p {color:#666666; line-height:18px;}
 
-.right_sidebar .general_content {background:url(images/line_content.gif) repeat-y 640px 0px;}
-.right_sidebar .main_content {width:620px; float:left;padding-left: 10px;
-padding-top: 10px}
-.right_sidebar .sidebar {width:300px; float:right;margin-top:-28px;padding-right: 10px}
+.right_sidebar .general_content {;}
+.right_sidebar .main_content {padding-right: 7px;width:620px; float:left;padding-left: 10px;
+padding-top: 10px;background:white}
+.right_sidebar .sidebar {padding-left: 8px;width:300px; float:right;margin-top:0px;padding-right: 10px;background:white}
 
 .left_sidebar .general_content {background:url(images/line_content.gif) repeat-y 320px 0px;}
 .left_sidebar .main_content {width:620px; float:right;}
@@ -364,7 +364,7 @@ padding-top: 10px}
 .block_home_col_2 {width:300px; float:right;}
 .block_home_col_2 .line_3.first {display:none;}
 
-.block_breadcrumbs {height:26px; border-top:1px solid  #E2E2E2; border-bottom:1px solid #E2E2E2;}
+.block_breadcrumbs {height:26px;  border-bottom:1px solid #E2E2E2;}
 .block_breadcrumbs ul {margin-left:8px; display:block; float:left;}
 .block_breadcrumbs li {height:26px; line-height:26px; margin-left:7px; padding-left:11px; display:block; float:left; background:url(images/arrow_1.gif) no-repeat 0px 11px; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#a5a5a5;}
 .block_breadcrumbs li:first-child {margin-left:0px; padding-left:0px; background:none;}
@@ -1924,12 +1924,12 @@ padding-top: 10px}
 .block_twitter_widget .twtr-bd .twtr-tweet-wrap {padding:0px;}
 .block_twitter_widget .twtr-bd .twtr-tweet-text em {display:none;}
 .block_twitter_widget .twtr-ft {display:none;}
-
+#content_p{font-family:雅黑}
 .block_newsletter {}
 .block_newsletter h4 {padding-bottom:18px;}
 .block_newsletter .field {width:222px; height:34px; float:left; overflow:hidden; background:url(images/bg_field_newsletter.png) no-repeat;}
 .block_newsletter .field input {width:200px; height:14px; margin-left:11px; padding:10px 0px; display:block; background-color:transparent; border:0px; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#b5b5b5; line-height:14px;}
-.block_newsletter .button {width:81px; height:34px; margin-left:-3px; display:block; float:left; background-repeat:no-repeat; background-color:transparent; background-image:url(images/button_subscribe.png); background-position:right 0px; border:0px; font-family:'PT Sans', Arial, Helvetica, sans-serif; font-size:11px; color:#ffffff; font-weight:bold; text-transform:uppercase; text-shadow:0px -1px rgba(0, 0, 0, 0.14); line-height:1em; cursor:pointer;}
+.block_newsletter .button {width:81px; height:34px; margin-left:-3px; display:block; float:left; background-repeat:no-repeat; background-color:transparent; background-position:right 0px; border:0px; font-family:'PT Sans', Arial, Helvetica, sans-serif; font-size:11px; color:#666; font-weight:bold; text-transform:uppercase; text-shadow:0px -1px rgba(0, 0, 0, 0.14); line-height:1em; cursor:pointer;}
 .block_newsletter .button:hover {background-position:right -34px;}
 
 .block_popular_stuff {}

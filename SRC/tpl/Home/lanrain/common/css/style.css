@@ -126,12 +126,12 @@ height: 10px; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#
 .ban_right5 a{display:block;color:#000}
 .ban_right5 span{color:#006835;}
 .ban_right5 p1{margin:0px 10px;}
-.tab1{border: 1px solid #ccc;margin:10px 0px;height:378px}
+.tab1{border: 1px solid #ccc;margin:10px 0px;height:378px;background: white}
 .menu2{height:28px;}
 .menu2 a{color:black;font-size:14px}
 .menu2 li{float:left;width: 33.17666666666666%;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
 .menu2 li.off{background:#FFFFFF;color:#000;}
-.menu2div{height:300px;border-left:#cccccc solid px;border-right:#cccccc solid px;border-top:0;background:#fefefe}
+.menu2div{height:300px;border-left:#cccccc solid px;margin-top: 30px;border-right:#cccccc solid px;border-top:0;background:#fefefe}
 .hos_inf{overflow:hidden; margin:50px 20px; width:600px;}
 .hos_inf ul {float:right; margin-top:15px;}
 .hos_inf ul li {float:left; line-height:20px; margin:10px 16px;}
