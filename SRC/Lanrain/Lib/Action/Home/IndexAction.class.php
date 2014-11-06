@@ -5,11 +5,11 @@ class IndexAction extends BaseAction{
 		//就医资讯
 		$article_arr = M('img')->field('id,title')->where("classname='%s'",array('就医资讯'))->limit(8)->select();
 		//绿色通道
-		$green_arr = M('img')->field('id,title')->where("classname='%s'",array('绿色通道'))->limit(8)->select();
+		$green_arr = M('img')->field('id,title')->where("classname='%s'",array('绿色通道'))->limit(7)->select();
 		//专家观点
-		$idea_arr = M('img')->field('id,title')->where("classname='%s'",array('专家观点'))->limit(8)->select();
+		$idea_arr = M('img')->field('id,title')->where("classname='%s'",array('专家观点'))->limit(7)->select();
 		//公司新闻
-		$news_arr = M('img')->field('id,title')->where("classname='%s'",array('公司新闻'))->limit(8)->select();
+		$news_arr = M('img')->field('id,title')->where("classname='%s'",array('公司新闻'))->limit(7)->select();
 		
 		$this->assign('res',$article_arr);
 		$this->assign('res1',$green_arr);
