@@ -237,7 +237,7 @@ padding: 14px 0 0 40px}
 .i_tab_a .on a{background-position:left top; }
 
 .info_a_box { margin-bottom:24px;}
-.info_a_box .head{ padding-bottom:20px;}
+.info_a_box .head{ padding-bottom:20px;margin-top:20px}
 .info_a_box .head h4{display:inline-block;font-size:18px;color:#006835;border:solid 3px #006835;padding:0 10px;line-height:30px;height:30px;}
 .info_a_box .body { padding-bottom:10px;}
 

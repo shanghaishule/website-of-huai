@@ -180,7 +180,7 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .h_list{border:1px solid #006835;text-align:center;padding:0 5px;}
 .h_table{width:96%;margin-left:2%}
 .img_intro{width: 25%;margin: 10px 0px;float:;}
-.con_intro{width: 94%;float:;margin-left:1%;height:159px;background:white;margin-top: 10px}
+.con_intro{width: 94%;float:;margin-left:1%;;background:white;margin-top: 10px}
 .con_intro h2{font-size:1em;;line-height:22px}
 
 .keshi_all{width:730px;}
@@ -241,7 +241,7 @@ table{font: 14px/25px Microsoft YaHei}
 background: transparent;padding-left: 21px;}
 #footer1 ul.menu1 li a{color:#666}
 .shanghai li{width:32.8%}
-.third_con ul li{float:left;width: 11.8%;
+.third_con ul li{float:left;width: 9.8%;
 margin-left: 5%}
 
 /**cnzz**/
