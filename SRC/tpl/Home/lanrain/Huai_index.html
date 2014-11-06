@@ -352,7 +352,7 @@
 					</h2>
 					<ul class="list-1">
 					   <volist name="res1" id="vo">
-					 		<li><a href="#">{lanrain:$vo.title|msubstr=0,18,'utf-8',true}</a></li>
+					 		<li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo.title|msubstr=0,18,'utf-8',true}</a></li>
 					   </volist>
 					   <li><a href="tencent://message/?uin=1402612547">&lt;&lt;联系我们</a></li>	
 					</ul>
