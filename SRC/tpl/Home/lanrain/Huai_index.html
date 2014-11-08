@@ -307,7 +307,7 @@
 					</h2>
 					<ul class="list-1">
 					  <volist name="res3" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,18,'utf-8',true}</a></li>
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,15,'utf-8',true}</a></li>
 					  </volist>	
 						<li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
 					</ul>
@@ -591,6 +591,44 @@
 </div>
 <!--名医推介 END-->
 
+
+
+<div id="marquee4">
+	<div class="inner">
+		<ul id="marquee4_1">
+			<!--特色科室 63057-->
+			<!--begin 3585140-63057-1-->
+			<li><a href="http://chhospital.com.cn/department/single.php?did=16184"
+				target="_blank"><img
+					src="__PUBLIC__/images/changhai_shaoshang.jpg" border="0"><span>长海医院烧伤科</span></a></li>
+			<li><a href="http://chhospital.com.cn/department/single.php?did=3743"
+				target="_blank"><img
+					src="__PUBLIC__/images/changhai_neike.jpg" border="0"><span>长海医院-消化内科</span></a></li>
+			<li><a href="http://chhospital.com.cn/department/single.php?did=3748#"
+				target="_blank"><img
+					src="__PUBLIC__/images/keshi_1.jpg" border="0"><span>长海医院-胸心外科</span></a></li>
+			<li><a
+				href="http://www.shczyy.com/front/officeShow.aspx?id=26"
+				target="_blank"><img
+					src="__PUBLIC__/images/keshi_2.jpg" border="0"><span>长征医院-眼科</span></a></li>
+			
+			<li><a
+				href="http://www.ehbh.cn/departments/?section_id=3857"
+				target="_blank"><img
+					src="__PUBLIC__/images/keshi_5.jpg" border="0"><span>东方肝胆医院-肝胆外科</span></a></li>
+			<li><a href="http://www.shczyy.com/front/officeShow.aspx?id=5"
+				target="_blank"><img
+					src="__PUBLIC__/images/keshi_6.JPG" border="0"><span>长征医院-内分泌科</span></a></li>
+			<!--end 3585140-63057-1-->
+		</ul>
+		<ul id="marquee4_2">
+			
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">marqueeStart(4, "left");</script>
+</div>
+<!-- 特色科室 END -->
 
 
 </section>

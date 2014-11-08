@@ -4,8 +4,8 @@
 <head>
 <title>沪爱健康-就医资讯-{lanrain:$res['title']}</title>
 
-<meta name="keywords" content="沪爱健康,就医资讯" />
-<meta name="description" content="{lanrain:$res['title']}" />
+<meta name="keywords" content="{lanrain:$res['text']}" />
+<meta name="description" content="{lanrain:$res['text']}" />
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
@@ -13,9 +13,7 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="__PUBLIC__/layout/plugins/html5.js"></script>
 <![endif]-->
-
 <link rel="stylesheet" href="__PUBLIC__/layout/style.css" type="text/css" />
-
 <script type="text/javascript" src="__PUBLIC__/layout/js/jquery.js"></script>
 
 <!-- Header start -->
@@ -54,11 +52,9 @@
 			                <li><a href="{lanrain::U('Home/Huai/examination')}">首长保健</a></li>
 			                <!-- <li><a href="{lanrain::U('Home/Huai/product')}">军医文化</a></li>-->
 							  <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
+			                <li class="current"><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
 			                <li><a href="{lanrain::U('Home/Huai/contacts')}">联系我们</a></li>
-			              <div class="clear"></div>
 			            </ul>
-			             
 			             <div id="sousuo"><form id="form-search1" method="post">
 	                              <input type="text" value="科室或医生" onblur="if(this.value=='') this.value='科室或医生'" onfocus="if(this.value =='科室或医生' ) this.value=''">
 	                              <a href="#" onclick="document.getElementById('form-search').submit()" class="search_button1">搜索</a>
