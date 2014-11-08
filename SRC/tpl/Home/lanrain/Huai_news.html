@@ -22,13 +22,6 @@
 
 <script type="text/javascript" src="__PUBLIC__/layout/js/main.js"></script>
 
-<script type="text/javascript">
-$(function(){
-	$('a[href="/index.php'+location.search+'"]').parent().addClass('current');
-	$('a[href="'+location.href+'"]').parent().addClass('current');
-});
-</script>
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 
 <body>
@@ -55,7 +48,7 @@ $(function(){
 			                <li><a href="{lanrain::U('Home/Huai/examination')}">首长保健</a></li>
 			               <!-- <li><a href="{lanrain::U('Home/Huai/product')}">军医文化</a></li>  -->
 							  <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
+			                <li class="current"><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
 			                <li><a href="{lanrain::U('Home/Huai/contacts')}">联系我们</a></li>
 			              
 			            </ul>
