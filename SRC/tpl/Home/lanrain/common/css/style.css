@@ -118,13 +118,8 @@ height: 10px; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#
 .box-2>div {float:left; width:170px; margin-right:30px;}
 .box-2 p.color-1 {margin-top:5px;}
 .border-1 {border-bottom:#e5e5e5 1px solid; padding-bottom:15px; margin-bottom:9px;}
-<<<<<<< HEAD
-.ban_right{border: 1px solid #ccc;height:332px;background:#FFF;margin-top:10px;}
-.ban_right2{border:1px solid #ccc;height:290px;background:#FFF;}
-
-
-.ban_right2{border:1px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
-
+.ban_right{border: 1px solid #ccc;height:332px;background:#FFF;margin-top:10px}
+.ban_right2{border:1px solid #ccc;height:290px;background:#FFF;;}
 .ban_right3{border:1px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
 .ban_right4{width: 260px;border: 1px solid #ccc;height:290px;background:#FFF;float:left;}
 .ban_right5{width: 366px;border: 1px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
@@ -174,7 +169,7 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .m2{float:left; width:49; margin-right:13px;}
 .m3{float:left; width:300px;margin-top:3px;}
 #content-new{width:75%;float:left;}
-.bg2{background: white;padding: 5px 10px 5px 10px;width: 700px;margin-top: 0px}
+.bg2{background: white;padding: 5px 10px 5px 10px;width: 74.5%;margin-top: 0px}
 .m4{float: left;margin-right: 0px}
 .product{background:#006835;display:inline-block;color:white;font-size:1.5em}
 .product p{padding:6px}
@@ -251,3 +246,7 @@ margin-left: 5%}
 
 /**cnzz**/
 #cnzz_stat_icon_1253491104{display:none;}
+
+
+/**shouye*/
+#index_1{width:100%}
