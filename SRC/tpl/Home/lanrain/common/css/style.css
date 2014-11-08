@@ -82,8 +82,8 @@ ul.menu {float:left; margin-top:5px;background: #006835;
 display: block;
 height: 35px;}
 ul.menu{width:640px}
-ul.menu li {float:left; line-height:20px; margin:0px 7px 0px 7px;}
-ul.menu li a {font-size:17px; line-height:22px; color:white;; display:inline-block;padding-top: 5px; }
+ul.menu li {float:left; line-height:20px; margin:0px 10px;}
+ul.menu li a {font-size:16px; line-height:22px; color:white;; display:inline-block;padding-top: 5px; }
 ul.menu li a:hover, ul.menu li.current a {color:black}
 ul.p6 li {list-style-type:none;}
 .navbox #sliderNav li.active a{padding-left:25px;color:black}
@@ -118,8 +118,8 @@ height: 10px; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#
 .box-2>div {float:left; width:170px; margin-right:30px;}
 .box-2 p.color-1 {margin-top:5px;}
 .border-1 {border-bottom:#e5e5e5 1px solid; padding-bottom:15px; margin-bottom:9px;}
-.ban_right{border: 1px solid #ccc;height:332px;background:#FFF;}
-.ban_right2{border:1px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
+.ban_right{border: 1px solid #ccc;height:332px;background:#FFF;margin-top:10px;}
+.ban_right2{border:1px solid #ccc;height:290px;background:#FFF;}
 .ban_right3{border:1px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
 .ban_right4{width: 260px;border: 1px solid #ccc;height:290px;background:#FFF;float:left;}
 .ban_right5{width: 366px;border: 1px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
