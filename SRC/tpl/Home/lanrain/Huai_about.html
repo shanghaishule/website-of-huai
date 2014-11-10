@@ -13,15 +13,15 @@
 <script>
 $(function(){
 	//Default Action
-	$(".container_12").hide(); //Hide all content
+	$(".hosall").hide(); //Hide all content
 	$("ul.sliderNav li:first").addClass("active").show(); //Activate first tab
-	$(".container_12:first").show(); //Show first tab content
+	$(".hosall:first").show(); //Show first tab content
 
 	//On Click Event
 	$("ul.sliderNav li").click(function() {
 		$("ul.sliderNav li").removeClass("active"); //Remove any "active" class
 		$(this).addClass("active"); //Add "active" class to selected tab
-		$(".container_12").hide(); //Hide all tab content
+		$(".hosall").hide(); //Hide all tab content
 		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
 		$(activeTab).fadeIn(); //Fade in the active content
 		return false;
@@ -31,7 +31,7 @@ $(function(){
 </script>
 <!--==============================content================================-->
 <section id="content-new" class="">
-	<div class="container_12" id="one">
+	<div class="hosall" id="one">
 		<div class="grid_12">
 			<div class="box-shadow">
 				<div class="wrap block-2 bg2">
@@ -60,7 +60,7 @@ $(function(){
 		<div class="clear"></div>
 	</div>
 
-  <div class="container_12" id="two">
+  <div class="hosall" id="two">
 		<div class="grid_12">
 			<div class="box-shadow">
 				<div class="wrap block-2 bg2">
@@ -79,7 +79,7 @@ $(function(){
 		<div class="clear"></div>
 	</div>
 
-	<div class="container_12" id="three">
+	<div class="hosall" id="three">
 		<div class="grid_12">
 			<div class="box-shadow">
 				<div class="wrap block-2 bg2">
@@ -110,7 +110,7 @@ $(function(){
 		<div class="clear"></div>
 	</div>
 	
-	<div class="container_12" id="four">
+	<div class="hosall" id="four">
 		<div class="grid_12">
 			<div class="box-shadow">
 				<div class="wrap block-2 bg2">

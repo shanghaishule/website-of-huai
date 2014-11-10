@@ -307,7 +307,7 @@
 					</h2>
 					<ul class="list-1">
 					  <volist name="res3" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,18,'utf-8',true}</a></li>
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,13,'utf-8',true}</a></li>
 					  </volist>	
 						<li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
 					</ul>
