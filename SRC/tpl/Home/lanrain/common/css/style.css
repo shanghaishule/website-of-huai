@@ -121,7 +121,7 @@ height: 10px; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#
 .ban_right{border: 1px solid #ccc;height:332px;background:#FFF;margin-top:10px}
 .ban_right2{border:1px solid #ccc;height:290px;background:#FFF;;}
 .ban_right3{border:1px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
-.ban_right4{width: 260px;border: 1px solid #ccc;height:290px;background:#FFF;float:left;}
+.ban_right4{width: 260px;border: 1px solid #ccc;height:290px;background:#FFF;float:left;overflow:hidden}
 .ban_right5{width: 366px;border: 1px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
 .ban_right5 a{display:block;color:#000}
 .ban_right5 span{color:#006835;}
