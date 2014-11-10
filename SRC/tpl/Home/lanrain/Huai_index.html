@@ -614,7 +614,7 @@ $(document).ready(function() {
 });
 </script>
 <script>
-var t=setInterval(myfunc,1000)
+var t=setInterval(myfunc,5000)
 var d=document.getElementById("up_time")
 function myfunc(){
 var o=d.firstChild
@@ -622,7 +622,7 @@ d.removeChild(o)
 d.appendChild(o)
 }
 d.onmouseover=function(){clearInterval(t)}
-d.onmouseout=function(){t=setInterval(myfunc,1000)}
+d.onmouseout=function(){t=setInterval(myfunc,5000)}
 </script>
 <!--==============================footer=================================-->
 <include file="Public:footer2" />
