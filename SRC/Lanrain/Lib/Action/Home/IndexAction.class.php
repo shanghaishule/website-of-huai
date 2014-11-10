@@ -3,7 +3,7 @@ class IndexAction extends BaseAction{
 	//关注回复
 	public function index(){
 		//就医资讯
-		$article_arr = M('img')->field('id,title')->where("classname='%s'",array('就医资讯'))->order('uptatetime DESC')->limit(9)->select();
+		$article_arr = M('img')->field('id,title')->where("classname='%s'",array('就医资讯'))->order('uptatetime DESC')->limit(7)->select();
 		//绿色通道
 		$green_arr = M('img')->field('id,title')->where("classname='%s'",array('绿色通道'))->order('uptatetime DESC')->limit(7)->select();
 		//专家观点

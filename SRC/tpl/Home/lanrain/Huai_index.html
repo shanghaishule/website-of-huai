@@ -307,20 +307,48 @@
 					</h2>
 					<ul class="list-1">
 					  <volist name="res3" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,13,'utf-8',true}</a></li>
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,18,'utf-8',true}</a></li>
 					  </volist>	
-						<li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
+						<li><a href="{lanrain::U('Home/Huai/news')}" style="color: #006835;margin-left:180px;">&lt;&lt;点击更多</a></li>
 					</ul>
 				</div>
 		    </div>
 		    <div class="ban_right5">
+		    	<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">就医</span> 资讯
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,20,'utf-8',true}</a></li>
+					  </volist>	
+						 <li><a href="{lanrain::U('Home/Huai/news')}" style="color: #006835;margin-left:180px;">&lt;&lt;点击更多</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div class="content_right">
+		 <div class="ban_right2">
+				<div class="col-2">
+					<h2 class="p3">
+						<span class="color-1">绿色</span> 通道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>提供就医一站式服务平台</strong>
+					</h2>
+					<ul class="list-1">
+					   <volist name="res1" id="vo">
+					 		<li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo.title|msubstr=0,19,'utf-8',true}</a></li>
+					   </volist>
+					   <li><a href="tencent://message/?uin=1402612547" style="color: #006835;margin-left:150px;">&lt;&lt;联系我们</a></li>	
+					</ul>
+				</div>
+		    </div>
+			<div class="ban_right">
 				<div class="col-2">
 					<h2 class="p3">
 						已累计陪诊服务<span class="color-1">8674名</span>患者 
 					</h2>
 					<ul class="list-1">
 					   <li>
-						<div id="up_time" style="width:330px;height:220px;overflow:hidden;">
+						<div id="up_time" style="width:276px;height:280px;overflow:hidden;">
 							<a href="javascript:"><span>5秒</span>前,台州李先生“服务很周到、贴心”</a>
 							<a href="javascript:"><span>1小时</span>前,义乌郝女士“我对上海不熟悉，第一次过去，所以就选择了他们” </a>
 							<a href="javascript:"><span>3小时</span>前,泰州姜先生“有个小姑娘服务态度很好啊”</a>
@@ -334,36 +362,7 @@
 						</div> 
 					   </li>	
 					</ul>
-				</div>
-		    </div>
-		</div>
-		<div class="content_right">
-		 <div class="ban_right2">
-				<div class="col-2">
-					<h2 class="p3">
-						<span class="color-1">绿色</span> 通道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>提供就医一站式服务平台</strong>
-					</h2>
-					<ul class="list-1">
-					   <volist name="res1" id="vo">
-					 		<li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo.title|msubstr=0,18,'utf-8',true}</a></li>
-					   </volist>
-					   <li><a href="tencent://message/?uin=1402612547">&lt;&lt;联系我们</a></li>	
-					</ul>
-				</div>
-		    </div>
-			<div class="ban_right">
-				<div class="col-2">
-					<h2 class="p3">
-						<span class="color-1">就医</span> 资讯
-					</h2>
-					<ul class="list-1">
-					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,18,'utf-8',true}</a></li>
-					  </volist>	
-						 <li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
-					</ul>
-				</div>
-				
+				</div>	
 		    </div>
 		   
 		    <div class="ban_right3">
@@ -375,7 +374,7 @@
 					  <volist name="res2" id="vo">
 					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,18,'utf-8',true}</a></li>
 					  </volist>	
-						 <li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
+						 <li><a href="{lanrain::U('Home/Huai/news')}" style="color: #006835;margin-left:150px;">&lt;&lt;点击更多</a></li>
 					</ul>
 				</div>
 				
@@ -627,29 +626,6 @@ d.onmouseout=function(){t=setInterval(myfunc,1000)}
 </script>
 <!--==============================footer=================================-->
 <include file="Public:footer2" />
-</div>
-<div id="kefu1">
-	<div class="cs_close"><a href="javascript:;" onClick="$('#kefu1').fadeOut()"><span>关闭</span></a></div>
-	<div class="cs_tel"></div>
-	<div class="cs_tel_ct">
-		<span class="cs_tel_num">4006-555-899</span>
-		工作日：9:00-18:00<br />
-		周　六：9:00-18:00<br />
-	</div>
-	<div class="cs_spr"></div>
-	<div class="cs_online"></div>
-	<div class="cs_online_ct">
-		<div class="cs_online_qq"><a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=6fcb83777ae7745bd5093a1a5917f915f4e95cfc498633379ebfbb4"><img border="0" src="http://wpa.qq.com/pa?p=2:40372312:52" alt="点击这里给我发消息" title="点击这里给我发消息" align="absmiddle" /> 沪爱客服01</a></div>
-		<div class="cs_online_qq"><a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=6fcb83630777ae7745bd5093a1a5917f915f4e95cfc498633379ebfbb4"><img border="0" src="http://wpa.qq.com/pa?p=2:1402612547:52" alt="点击这里给我发消息" title="点击这里给我发消息" align="absmiddle" /> 沪爱客服02</a></div>
-		<div class="cs_online_qq"><a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=6fcb8c3630777ae7745bd5093a1a5917f915f4e95cfc498633379ebfbb4"><img border="0" src="http://wpa.qq.com/pa?p=2:351363496:52" alt="点击这里给我发消息" title="点击这里给我发消息" align="absmiddle" /> 沪爱客服03</a></div>
-	</div>
-	<div class="cs_qcode"><img src="__PUBLIC__/images/huai_weixin.jpg" width="120" height="120" title="微信扫一扫体验更方便" /></div>
-	<div class="cs_spr"></div>
-	<div class="cs_baidu"><a href="http://www.hajk.com.cn/index.php?g=Home&m=Huai&a=examination" target="_blank"><span>首长保健康卡</span></a></div>
-	<div class="cs_space"></div>
-	<div class="cs_free"><a href="http://www.hajk.com.cn/index.php?g=Home&m=Huai&a=diagnosis" target="_blank"><span>就医绿色通道</span></a></div>
-</div>
-<div style="text-align:center;clear:both">
 </div>
 <script>
 	Cufon.now();
