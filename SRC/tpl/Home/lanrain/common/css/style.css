@@ -152,7 +152,7 @@ footer h1{font-size:15px;margin: 0 35px;}
 .map iframe {width:200px; height:200px;}
 dl {margin:12px 0px 0 0px;}
 dl dt {}
-dl dd span { display:block; width:83px; float:left;}
+dl dd span {display:block; width:83px; float:left;}
 dl dd {}
 dl dd a {text-decoration:underline !important;}
 dl dd a:hover {text-decoration:underline; color:#333;}
