@@ -1,78 +1,602 @@
 <include file="Public:header" />
 <!--==============================content================================-->
- <div class="product_logo">
-       
-       <img src="__PUBLIC__/images/baojian.png" width="100%"/>
- </div>
-    <div  class="v_main1 layout">
-       
-      
-    
-    
-        <div  class="v_box2">
-            <div  class="v_box2_title product">
-            	<p>
-            	   消脂灵茶
-            	</p>
-            
-            
-            </div>
-            <div  class="v_box2_con">
-                <div  class="v_box1_l"> <span></span> <br><br>
-                <span  class="V_span1">
-                	成分：决明子（焦），何首乌（制）、链子芯。
-                	<p>主治功能：活血化瘀、疏肝理气。用于血脂偏高、脂肪肝、肥胖、便秘、慢性胆囊炎和动脉硬化等。</p>
-            	<span id="mar" style="margin-top:5px"><a  href=""class="buy">点击购买</a></span></a></span></span><br><br><br><br> </div>
-                <div  class="v_box1_r"><img  src="__PUBLIC__/images/xiaozhi.png"></div>
+<!-- =================侧边栏===================== -->
+
+<div class="navbox">
+	<ul id="sliderNav" class="sliderNav">
+		<li class="sliderTag"><a href="#one">院士介绍</a></li>
+		<li class="sliderTag"><a href="#two">历史沿革</a></li>
+		<li class="sliderTag"><a href="#three">军医风采</a></li>
+		
+	</ul>
+</div>
+<!-- =================侧边栏===================== -->
+<script>
+	$(function() {
+		//Default Action
+		$(".hosall").hide(); //Hide all content
+		$("ul.sliderNav li:first").addClass("active").show(); //Activate first tab
+		$(".hosall:first").show(); //Show first tab content
+
+		//On Click Event
+		$("ul.sliderNav li").click(function() {
+			$("ul.sliderNav li").removeClass("active"); //Remove any "active" class
+			$(this).addClass("active"); //Add "active" class to selected tab
+			$(".hosall").hide(); //Hide all tab content
+			var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+			$(activeTab).fadeIn(); //Fade in the active content
+			return false;
+		});
+
+	});
+</script>
+<!--==============================content================================-->
+<section id="content-new" class="">
+	<div class="hosall" id="one">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+
+						<div class="wp_single wp_column_article" id="wp_column_article">
+							<div class="wp_entry">
+								<p style="text-indent: 0.74cm; margin-bottom: 0cm;">
+									<br />
+								</p>
+								<p style="text-indent: 0.74cm; margin-bottom: 0cm;">
+									<img border="0" hspace="12" align="left"
+										src="http://202.121.224.8/_upload/article/67/d7/da3ce87d4d0ab4d8df6521243b60/cf2e95a5-fc83-4006-925f-df9b3c8c69d1.jpg"
+										width="302" height="224"
+										style="font-size: 14px; line-height: 1.5em; text-indent: 0.74cm; float: left; margin-right: 20px;" />
+								</p>
+								<p
+									style="text-indent: 0.74cm; line-height: 2em; margin-bottom: 0cm;">
+									<strong>吴孟超</strong>，男，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1922</span></span>年出生于福建闽清，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1949</span></span>年毕业于同济大学医学院，获学士学位。中国科学院院士，国际著名肝胆外科专家，我国肝脏外科的开拓者和主要创始人。
+								</p>
+								<p style="line-height: 2em; margin-bottom: 0cm;">
+									现任第二军医大学东方肝胆外科医院院长、东方肝胆外科研究所所长、全军第九届医学科学技术委员会常务委员等职。曾任中华医学会副会长、中国癌症基金会副主席。从事肝脏外科领域研究近<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">60</span></span>年来，在<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">Science</span></span>、<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">NatureMed</span></span>、<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">Hepatology</span></span>等国际国内学术刊物发表学术论文<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">801</span></span>篇，多次获得省部级一等以上奖项。<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1994</span></span>年获全国“侨界十杰”荣誉称号，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1996</span></span>年<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1</span></span>月被中央军委授予“模范医学专家”荣誉称号，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">2008</span></span>年被上海市授予“教育功臣”荣誉称号，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1994</span></span>年获何梁何利医学基金奖，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">2005</span></span>年获国家最高科学技术奖，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">2010</span></span>年荣获全军科技重大贡献奖。
+								</p>
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<hr color="#006835"
+									style="border-style: dotted; padding: 0px; line-height: 23px; font-family: arial, helvetica, sans-serif, 宋体; font-size: 15px; list-style-type: none;" />
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<p
+									style="text-indent: 0.74cm; line-height: 2em; margin-bottom: 0cm;">
+									<strong>陈宜张</strong>，男，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1927</span></span>年出生于浙江余姚，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1952</span></span>年毕业于浙江大学医学院，获学士学位。中国科学院院士，神经生理学家。
+								</p>
+								<p>
+									<img style="float: right; margin-left: 20px;" border="0"
+										hspace="12" align="left"
+										src="http://202.121.224.8/_upload/article/67/d7/da3ce87d4d0ab4d8df6521243b60/b6e3e293-8972-448a-b864-cfd0edabf709.jpg"
+										width="293" height="208" />
+								</p>
+								<p style="line-height: 2em; margin-bottom: 0cm;">
+									现任第二军医大学神经科学研究所所长，全军第九届医学科学技术委员会常务委员，兼任浙江大学脑与智能研究中心主任、浙大医学院学术委员会主任，《<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">NeuroscienceBulletin</span></span>》名誉顾问。主要从事神经生理及神经内分泌领域的研究工作。在第<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">33</span></span>届国际生理学大会中，陈宜张院士应邀主持了“甾体激素快速非基因组作用”专题讨论会。近年来，陈院长在国内又发起了跨学科的“活细胞单分子实时显示”领域的研究，为神经生理学研究打开了新的窗口，在基础科学和医学研究事业中做出了重要贡献。曾获国家自然科学奖，国家科技进步奖，军队科技进步奖，上海医学科技奖等多项奖励，被总后授予“科学技术一代名师”荣誉称号。
+								</p>
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<hr color="#006835"
+									style="border-style: dotted; padding: 0px; line-height: 23px; font-family: arial, helvetica, sans-serif, 宋体; font-size: 15px; list-style-type: none;" />
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<p>
+									<img style="float: left; margin-right: 20px;" border="0"
+										hspace="12" align="left"
+										src="http://202.121.224.8/_upload/article/67/d7/da3ce87d4d0ab4d8df6521243b60/ffcc2bc8-6631-44d6-a686-5166fc3c3d10.jpg"
+										width="195" height="256" />
+								</p>
+								<p
+									style="text-indent: 0.74cm; line-height: 2em; margin-bottom: 0cm;">
+									<strong>曹雪涛</strong>，男，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1964</span></span>年出生于山东济南，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1990</span></span>年毕业于第二军医大学，获博士学位。中国工程院院士，分子免疫学家。
+								</p>
+								<p style="line-height: 2em; margin-bottom: 0cm;">
+									现任第二军医大学免疫学研究所所长，医学免疫学国家重点实验室主任，全军免疫与基因治疗重点实验室主任，全军第九届医学科学技术委员会常务委员，中国免疫学会理事长，“长江计划”特聘教授，国家免疫学重点学科带头人，国家杰出青年科学基金获得者，国家<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">973</span></span>免疫学项目首席科学家，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">863</span></span>计划医药生物技术领域专家，国家自然科学基金免疫学重大项目和创新团队项目负责人。主要从事免疫识别与免疫调节的基础研究、肿瘤的免疫与基因治疗的应用研究。在<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">NatureImmunology</span></span>等<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">SCI</span></span>收录的国外杂志发表论文<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">190</span></span>多篇，其中<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">SCI</span></span>影响因子<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">10</span></span>分以上论文和评论<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">28</span></span>篇，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">SCI</span></span>影响因子<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">25</span></span>分的文章<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">8</span></span>篇。获得以国家自然科学奖二等奖为代表的省部级一等以上奖项<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">5</span></span>项，承担项目包括国家<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">973</span></span>、<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">863</span></span>、国家重大专利等。
+								</p>
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<hr color="#006835"
+									style="border-style: dotted; padding: 0px; line-height: 23px; font-family: arial, helvetica, sans-serif, 宋体; font-size: 15px; list-style-type: none;" />
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<p
+									style="text-indent: 0.74cm; line-height: 2em; margin-bottom: 0cm;">
+									<strong>王红阳</strong>，女，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1952</span></span>年出生于江苏徐州，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1992</span></span>年毕业于德国乌尔姆大学，获临床生化专业博士学位。中国工程院院士，全
+								</p>
+								<p>
+									<img style="float: right; margin-left: 20px;" border="0"
+										hspace="12" align="left"
+										src="http://202.121.224.8/_upload/article/67/d7/da3ce87d4d0ab4d8df6521243b60/537441f1-ec1b-4cd0-8395-4c8682ba4a3f.jpg"
+										width="302" height="216" />
+								</p>
+								<p style="line-height: 2em;">国政协委员，肿瘤分子生物学家。</p>
+								<p style="line-height: 2em; margin-bottom: 0cm;">
+									现任第二军医大学东方肝胆外科研究所常务副所长、生物信号转导研究中心主任、国家自然科学基金委员会医学科学部主任、中国工程院医药卫生学部常委会常委、国家杰出青年基金项目获得者、教育部“长江学者”奖励计划特聘教授、全军第九届医学科学技术委员会主任委员、总后勤部科技金星。首次发现新的抑制性受体对肝癌细胞生长、凋亡的调控机制和基于癌基因<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">p28</span></span>的肝癌异常信号通路，为肝癌防治提供了新的靶标。在<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">J.E.M.</span></span>、<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">Gastroenterology</span></span>（<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">USA</span></span>）、<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">Hepatology</span></span>、<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">CancerRes.</span></span>、<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">Nature</span></span>和<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">Oncogene</span></span>等有影响的主流期刊发表论文<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">100</span></span>多篇，总影响因子<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">459</span></span>，近五年获得发明专利<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">8</span></span>项（国际专利<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1</span></span>项），<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">2010</span></span>年被国家科技部授予“十一五”国家科技计划执行突出贡献奖。
+								</p>
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<hr color="#006835"
+									style="border-style: dotted; padding: 0px; line-height: 23px; font-family: arial, helvetica, sans-serif, 宋体; font-size: 15px; list-style-type: none;" />
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<p>
+									<img border="0" hspace="0" align="left"
+										src="http://202.121.224.8/_upload/article/67/d7/da3ce87d4d0ab4d8df6521243b60/8c14c6f5-bce8-49e9-ab6b-7d7e69ffb6aa.jpg"
+										width="302" height="205" vspace="0"
+										style="width: 302px; height: 205px; float: left; margin-right: 20px;" />
+								</p>
+								<p
+									style="text-indent: 0.74cm; line-height: 2em; margin-bottom: 0cm;">
+									<strong>廖万清</strong>，男，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1938</span></span>年出生于新加坡，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1961</span></span>年毕业于第四军医大学，获学士学位。中国工程院院士，皮肤病、真菌病学专家。
+								</p>
+								<p style="line-height: 2em; margin-bottom: 0cm;">
+									现任第二军医大学长征医院皮肤性病与真菌病研究所所长、全军第九届医学科学技术委员会常务委员、中华皮肤病与性病学会咨询委员会副主任委员、中国菌物学会理事兼医学真菌专业委员会副主任委员、中国微生物学会副主任委员。长期致力于军队皮肤病、真菌病的防治，主持完成军队重点课题“东南沿海部队高发皮肤病的防治研究”，研制的防治药物等已在军内推广应用，显著降低了发病率，有效保障了战斗力。发表论文<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">385</span></span>篇，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">SCI</span></span>收录<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">40</span></span>篇，主编《真菌病学》等专著<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">8</span></span>部，以第一完成人荣获国家科技进步二等奖、三等奖各<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1</span></span>项，军队医疗成果一等奖及其它各类成果奖<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">18</span></span>项，荣立二等功<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1</span></span>次，三等功<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">4</span></span>次，被总后勤部授予“一代名师”荣誉称号。
+								</p>
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<hr color="#006835"
+									style="border-style: dotted; padding: 0px; line-height: 23px; font-family: arial, helvetica, sans-serif, 宋体; font-size: 15px; list-style-type: none;" />
+								<p style="margin-bottom: 0cm;">
+									<br />
+								</p>
+								<p
+									style="text-indent: 0.74cm; line-height: 2em; margin-bottom: 0cm;">
+									<strong>夏照帆</strong>，女，<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">1954</span></span>年<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">3</span></span>月生，江苏泰兴人。中国工程院院士、一级教授、第二军医大学长海医院烧伤外科（国家重点学
+								</p>
+								<p>
+									<img style="float: right; margin-left: 20px;" border="0"
+										hspace="12" align="left"
+										src="http://202.121.224.8/_upload/article/67/d7/da3ce87d4d0ab4d8df6521243b60/005e5cbc-80ac-480c-b2b7-e4d23822a00b.jpg"
+										width="302" height="201" />
+								</p>
+								<p style="line-height: 2em;">
+									科、<span style="font-family: liberation serif, serif"><span
+										lang="en-US">211</span></span>工程重点建设学科、上海市烧伤急救中心、上海市医学领先专业重点学科）主任，全军休克与器官损伤防治重点实验室主任，全军烧伤研究所所长，主任医师、教授，博士生导师，专业技术一级。是国家杰出青年基金获得者、国家百千万人才工程第一、二层次人选、教育部长江学者计划特聘教授、全国巾帼建功模范医师、全军首批高层次科技领军人才和优秀共产党员、军队育才金奖获得者，担任中华医学会烧伤外科分会主任委员、上海医学会常务理事和烧伤专业委员会主任委员、全军医学科学技术委员会常委和烧伤专业委员会副主任委员。先后主持国家科技部支撑计划、国家自然科学基金重点课题等，以第一或通讯作者发表<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">SCI</span></span>论文<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">91</span></span>篇，获得包括国家科技进步一、二、三等奖在内的<span
+										style="font-family: liberation serif, serif"><span
+										lang="en-US">16</span></span>项国家及省部级科技奖励。
+								</p>
+								<p style="text-indent: 0.74cm; margin-bottom: 0cm;">
+									<br />
+								</p>
+							</div>
+						</div>
 
 
-            </div>
-        </div>
-        <div  class="v_box2">
-            <div  class="v_box2_title product">
-            	<p>
-            	  舒肝灵茶
-            	</p>           
-            </div>
-            <div  class="v_box2_con">
-                <div  class="v_box2_con_l"><img  src="__PUBLIC__/images/shuganning.png"  width="368"  height="302"></div>
-                <div  class="v_box2_con_r_0">
-                 <span>
-                 	成分：女贞子、败酱草、三七。
-                 	<p>功能主治：清热养肝、理气解毒。用于慢性迁移性肝炎、脂肪肝引起的肝功能异常，早期肝硬化及肝纤维化等辅助治疗。</p>
-                 <span id="mar" style="margin-top:5px"><a  href=""class="buy">点击购买</a></span></span>  </div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="hosall" id="two">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+						<div class="wp_single wp_column_article" id="wp_column_article">
+							<div class="wp_entry">
+								<style type="text/css">
+<!--
+@page {
+	margin-left: 3.18cm;
+	margin-right: 3.18cm;
+	margin-top: 2.54cm;
+	margin-bottom: 2.54cm
+}
+
+P {
+	margin-bottom: 0.21cm;
+	direction: ltr;
+	color: #000000;
+	text-align: justify;
+	widows: 0;
+	orphans: 0
+}
+-->
+</style>
+								<p style="text-align: center; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"><img
+										src="__PUBLIC__/images/erjunda.jpg" /></span>
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<span style="font-size: 14px;">中国人民解放军第二军医大学与共和国同龄，创建于</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1949</span></span><span
+										style="font-size: 14px;">年</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">9</span></span><span
+										style="font-size: 14px;">月，当时称华东军区人民医学院，主要由华东医务干部学校、第三野战军卫生部医学院、国民党原国防医学院部分留大陆人员和从地方招聘的专家教授组成。</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1950</span></span><span
+										style="font-size: 14px;">年</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">10</span></span><span
+										style="font-size: 14px;">月，更名为上海军医大学。</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1951</span></span><span
+										style="font-size: 14px;">年</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">7</span></span><span
+										style="font-size: 14px;">月</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">9</span></span><span
+										style="font-size: 14px;">日，由中央军委正式命名为第二军医大学。建校</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">65</span></span><span
+										style="font-size: 14px;">年来，全校同志发愤图强，锐意进取，学校在困难中前进，在曲折中发展，取得了巨大建设成就。学校发展历程大体可分为四个阶段。</span><br
+										style="text-align: left;" />
+								</p>
+
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<strong><span style="font-size: 14px;">第一阶段</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">(1949</span></strong></span></span><strong><span
+										style="font-size: 14px;">年至</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">1952</span></strong></span></span><strong><span
+										style="font-size: 14px;">年</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">)</span></strong></span></span><strong><span
+										style="font-size: 14px;">是建校初期</span></strong>
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"> &nbsp;
+										学校校址是原国民党国防医学院的旧址，国民党逃往台湾时，国防医学院基础部分只剩下空房子，教学设备全部搬到台湾去了。因此，当时建校十分困难。在上级党委和领导的关怀和支持下，全校同志克服重重困难，艰苦奋斗，赶制了一些木制课桌椅，终于在</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1949</span></span><span
+										style="font-size: 14px;">年</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">9</span></span><span
+										style="font-size: 14px;">月</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">12</span></span><span
+										style="font-size: 14px;">日正式开学。教材不完整，就从书店买一些旧的教材，更多的是靠老师课堂讲，学员记笔记。全校师生和医护人员就是这样，不畏艰难，坚持边教学医疗，边建校建院，一所大学就这样诞生了。</span>
+								</p>
+
+								<p style="margin-bottom: 0cm;">
+									<br style="text-align: left;" />
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<strong><span style="font-size: 14px;">第二阶段</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">(1954</span></strong></span></span><strong><span
+										style="font-size: 14px;">年至</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">1965</span></strong></span></span><strong><span
+										style="font-size: 14px;">年</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">)</span></strong></span></span><strong><span
+										style="font-size: 14px;">是建设时期</span></strong>
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"> &nbsp;
+										在这一阶段，全校同志在物质条件十分困难的情况下，齐心协力，奋发图强，学校的基本建设逐步加强，办学规模不断扩大，教学、医疗和科研工作成效明显，为学校的发展奠定了坚实基础。一是规范了教学工作。</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1954</span></span><span
+										style="font-size: 14px;">年制定了军医和药学专业新的教学计划和大纲。二是完善了办学体系。</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1955</span></span><span
+										style="font-size: 14px;">年创办了卫勤系，</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1960</span></span><span
+										style="font-size: 14px;">年增设了海医系，</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1961</span></span><span
+										style="font-size: 14px;">年开始承担外军医学留学生培训任务。三是形成了传统特色和优势。这个阶段，我校在烧伤救治等领域，取得了突破性成果，形成了学校传统的学科优势和特色——“烧、心、肝”。</span>
+								</p>
+
+								<p style="margin-bottom: 0cm;">
+									<br style="text-align: left;" />
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<strong><span style="font-size: 14px;">第三阶段</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">(1966</span></strong></span></span><strong><span
+										style="font-size: 14px;">年夏至</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">1976</span></strong></span></span><strong><span
+										style="font-size: 14px;">年秋</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">)</span></strong></span></span><strong><span
+										style="font-size: 14px;">是文革时期</span></strong>
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"> &nbsp;
+										十年浩劫，使学校遭受了历史上最严重的破坏。</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">400</span></span><span
+										style="font-size: 14px;">余名干部、教师、医生、护士受到迫害，</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">504</span></span><span
+										style="font-size: 14px;">名干部被下放到宁夏贺兰山“五</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">.</span></span><span
+										style="font-size: 14px;">七”干校劳动改造。</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1969</span></span><span
+										style="font-size: 14px;">年</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">10</span></span><span
+										style="font-size: 14px;">月，学校奉命搬迁到西安现第四军医大学校址，</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1975</span></span><span
+										style="font-size: 14px;">年</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">8</span></span><span
+										style="font-size: 14px;">月，学校又奉命迁回上海。在这样来回动荡中，广大教职员工根本无法安心工作，教学工作完全停止达</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">4</span></span><span
+										style="font-size: 14px;">年，除个别国家重点研究课题外，科研工作停止了将近</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">10</span></span><span
+										style="font-size: 14px;">年。医疗工作虽然没有中断，但由于人心涣散，人人自危，医护质量显著下降。代价沉痛，教训深刻。</span>
+								</p>
+
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<strong><span style="font-size: 14px;">第四阶段</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">(1977</span></strong></span></span><strong><span
+										style="font-size: 14px;">年至今</span></strong><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US"><strong><span
+												style="font-family: &amp; amp; amp; #39; liberation serif&amp;amp; amp; #39; , serif; font-size: 14px;">)</span></strong></span></span><strong><span
+										style="font-size: 14px;">是发展时期</span></strong>
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"> &nbsp;
+										粉碎“四人帮”以后，经过拨乱反正，学校全面贯彻党的十一届三中全会以来的路线、方针、政策，积极推进以教学为中心的各项改革，从指导思想到办学实践，从德育教育、知识传授到能力培养，从学科建设、人才培养到科研创新，从师生的精神风貌到学校的办学条件和内部管理，都发生了前所未有的巨大变化。特别是</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">1997</span></span><span
+										style="font-size: 14px;">年跻身国家“</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">211</span></span><span
+										style="font-size: 14px;">工程”重点建设院校以来，学校教、医、研等各项工作得到了快速发展，并以优秀成绩通过了国家“</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">211</span></span><span
+										style="font-size: 14px;">工程”三期、军队“</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">2110</span></span><span
+										style="font-size: 14px;">工程”二期和总后“</span><span
+										style="font-family: liberation serif, serif;"><span
+										lang="en-US" style="font-size: 14px;">530</span></span><span
+										style="font-size: 14px;">工程”一期验收。</span>
+								</p>
+								<p style="text-align: left; margin-bottom: 0cm;">
+									<a name="_GoBack"></a>
+								</p>
+
+								<p style="margin-bottom: 0cm;">
+									<br style="text-align: left;" />
+								</p>
+							</div>
+						</div>
 
 
-            </div>
-        </div>
-        <div  class="v_box2">
-            <div  class="v_box2_title product">
-            	<p>
-            	   复方强生胶囊
-            	</p>           
-            </div>
-            <div  class="v_box2_con">
-                <div  class="v_box1_l"> <span></span> <br><br>
-                <span  class="V_span1">
-             	   成分：纯人体胎盘粉，人参皂戒。
-             	   <p>功效：益气补血、安神生津。用于体质虚弱、咳喘盗汗、神经衰弱及胃肠功能紊乱，对产后身体恢复、重病愈后恢复、放疗、化疗调整有明显效果。</p>
-             	 
-               <span id="mar" style="margin-top:5px"><a  href=""class="buy">点击购买</a></span></span><br><br><br><br> </div>
-                <div  class="v_box1_r"><img  src="__PUBLIC__/images/fufang.png"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="hosall" id="three">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+						<div class="wp_single wp_column_article" id="wp_column_article">
+							<div class="wp_entry">
+
+								<p style="text-align: center; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"><img
+										src="__PUBLIC__/images/11101.jpg" /></span>
+								</p>
+								<p style="text-align: center; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"><img
+										src="__PUBLIC__/images/11102.jpg" /></span>
+								</p>
+								<p style="text-align: center; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"><img
+										src="__PUBLIC__/images/11103.png" /></span>
+								</p>
+								<p style="text-align: center; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"><img
+										src="__PUBLIC__/images/11104.jpg" /></span>
+								</p>
+								<p style="text-align: center; margin-bottom: 0cm;">
+									<span style="font-size: 14px;"><img
+										src="__PUBLIC__/images/11105.jpg" /></span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="hosall" id="four">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+
+						<!--  <img src="__PUBLIC__/images/hr.png" width="100%" alt=""
+							class="img-border ">-->
+						<p class="p4">更新中，敬请期待</p>
 
 
-            </div>
-        </div>
-        
 
-    </div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
+<div class="clear"></div>
+<div style="height: 50px"></div>
+<!--==============================content================================-->
 
 
-    <script  src="__PUBLIC__/images/js"></script>
 
 <!--==============================footer=================================-->
-      <include file="Public:footer2" />
-</div>    
+<include file="Public:footer2" />
+</div>
 <script>
 	Cufon.now();
 </script>
