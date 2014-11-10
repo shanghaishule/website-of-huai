@@ -183,6 +183,8 @@ position: relative;}
 .h_list{border:1px solid #006835;text-align:center;padding:0 5px;}
 .h_table{width:96%;margin-left:2%}
 .img_intro{width: 25%;margin: 10px 0px;float:;}
+.img_intro_1{width: 60%;margin: 10px 0px}
+.img_intro_1 img{padding-left: 30%}
 .con_intro{width: 94%;float:;margin-left:1%;;background:white;margin-top: 10px}
 .con_intro h2{font-size:1em;;line-height:22px}
 
