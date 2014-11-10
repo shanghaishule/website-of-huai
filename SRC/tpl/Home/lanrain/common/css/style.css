@@ -201,7 +201,7 @@ background:#cad0cb;
 border:}
 .menu3 li.off{background:#006835;color:#000;}
 .menu3div{height:px;;border-top:0;background:#fefefe;overflow: auto}
-#exa_right{width:px}
+#exa_right{width:100%}
 .upper{padding:0px}
 .main_c {
 float: left;
@@ -254,3 +254,6 @@ margin-left: 5%}
 #index_1{width:100%}
 
 .container11{width:100%}
+.hosall{margin: 0 auto;
+width: 75%;
+float: left}
