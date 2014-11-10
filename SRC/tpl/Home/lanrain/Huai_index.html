@@ -307,32 +307,22 @@
 					</h2>
 					<ul class="list-1">
 					  <volist name="res3" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,13,'utf-8',true}</a></li>
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,16,'utf-8',true}</a></li>
 					  </volist>	
 						<li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
 					</ul>
 				</div>
 		    </div>
 		    <div class="ban_right5">
-				<div class="col-2">
+		    	<div class="col-2">
 					<h2 class="p3">
-						已累计陪诊服务<span class="color-1">8674名</span>患者 
+						<span class="color-1">就医</span> 资讯
 					</h2>
 					<ul class="list-1">
-					   <li>
-						<div id="up_time" style="width:330px;height:220px;overflow:hidden;">
-							<a href="javascript:"><span>5秒</span>前,台州李先生“服务很周到、贴心”</a>
-							<a href="javascript:"><span>1小时</span>前,义乌郝女士“我对上海不熟悉，第一次过去，所以就选择了他们” </a>
-							<a href="javascript:"><span>3小时</span>前,泰州姜先生“有个小姑娘服务态度很好啊”</a>
-							<a href="javascript:"><span>8小时</span>前,合肥李先生“沪爱他们服务很方便”</a>
-							<a href="javascript:"><span>10小时</span>前,温州吴先生“为了赶时间，取药、复诊很慢发，通过沪爱很方便”</a>
-							<a href="javascript:"><span>14小时</span>前,苏州娄女士“我过来是沪爱的专车接送的，太专业了”</a>
-							<a href="javascript:"><span>20小时</span>前,宿迁候先生“年龄大了，看病确实不方便，沪爱还给我找了个专家” </a>
-							<a href="javascript:"><span>1天</span>前,连云港万女士“能享受很多医院享受不到的服务”</a>
-							<a href="javascript:"><span>1天</span>前,广州孙先生“他们这种模式少有啊！”</a>
-							<a href="javascript:"><span>1天</span>前,厦门王先生“我宁愿不去医院，但是通过沪爱，省心，真的！”</a>
-						</div> 
-					   </li>	
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,20,'utf-8',true}</a></li>
+					  </volist>	
+						 <li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
 					</ul>
 				</div>
 		    </div>
@@ -354,16 +344,25 @@
 			<div class="ban_right">
 				<div class="col-2">
 					<h2 class="p3">
-						<span class="color-1">就医</span> 资讯
+						已累计陪诊服务<span class="color-1">8674名</span>患者 
 					</h2>
 					<ul class="list-1">
-					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,18,'utf-8',true}</a></li>
-					  </volist>	
-						 <li><a href="{lanrain::U('Home/Huai/news')}">&lt;&lt;点击更多</a></li>
+					   <li>
+						<div id="up_time" style="width:276px;height:280px;overflow:hidden;">
+							<a href="javascript:"><span>5秒</span>前,台州李先生“服务很周到、贴心”</a>
+							<a href="javascript:"><span>1小时</span>前,义乌郝女士“我对上海不熟悉，第一次过去，所以就选择了他们” </a>
+							<a href="javascript:"><span>3小时</span>前,泰州姜先生“有个小姑娘服务态度很好啊”</a>
+							<a href="javascript:"><span>8小时</span>前,合肥李先生“沪爱他们服务很方便”</a>
+							<a href="javascript:"><span>10小时</span>前,温州吴先生“为了赶时间，取药、复诊很慢发，通过沪爱很方便”</a>
+							<a href="javascript:"><span>14小时</span>前,苏州娄女士“我过来是沪爱的专车接送的，太专业了”</a>
+							<a href="javascript:"><span>20小时</span>前,宿迁候先生“年龄大了，看病确实不方便，沪爱还给我找了个专家” </a>
+							<a href="javascript:"><span>1天</span>前,连云港万女士“能享受很多医院享受不到的服务”</a>
+							<a href="javascript:"><span>1天</span>前,广州孙先生“他们这种模式少有啊！”</a>
+							<a href="javascript:"><span>1天</span>前,厦门王先生“我宁愿不去医院，但是通过沪爱，省心，真的！”</a>
+						</div> 
+					   </li>	
 					</ul>
-				</div>
-				
+				</div>	
 		    </div>
 		   
 		    <div class="ban_right3">
