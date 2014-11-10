@@ -92,7 +92,7 @@ ul.p6 li {list-style-type:none;}
 .content_right{width: 310px;margin-left:10px;float:left;}
 #content {width:100%;}
 .box-shadow {box-shadow: 0px 0px 5px #dbdbdb;background:#fff;}
-.img-border {border:#f4f4f4 5px solid;}
+.img-border {;}
 .block-1 { height: 180px;}
 .block-2 { padding:25px 30px 5px 44px;}
 .block-3 { padding:25px 30px 25px 44px;}
@@ -122,14 +122,14 @@ height: 10px; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#
 .ban_right2{border:1px solid #ccc;height:290px;background:#FFF;;}
 .ban_right3{border:1px solid #ccc;height:290px;background:#FFF;margin-top:10px;}
 .ban_right4{width: 260px;border: 1px solid #ccc;height:290px;background:#FFF;float:left;overflow:hidden}
-.ban_right5{width: 366px;border: 1px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
+.ban_right5{width: 365px;border: 1px solid #ccc;height:290px;background:#FFF;margin-left:10px;float:left;}
 .ban_right5 a{display:block;color:#000}
 .ban_right5 span{color:#006835;}
 .ban_right5 p1{margin:0px 10px;}
 .tab1{border: 1px solid #ccc;margin:10px 0px;height:378px;background: white}
 .menu2{height:28px;}
 .menu2 a{color:black;font-size:14px}
-.menu2 li{float:left;width: 33.17666666666666%;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
+.menu2 li{float:left;width:33.1%;text-align:center;line-height:35px;height:35px;cursor:pointer;border-left:#ffffff solid 1px;font-size:18px;overflow:hidden;background:#cad0cb;}
 .menu2 li.off{background:#FFFFFF;color:#000;}
 .menu2div{height:300px;border-left:#cccccc solid px;margin-top: 30px;border-right:#cccccc solid px;border-top:0;background:#fefefe}
 .hos_inf{overflow:hidden; margin:50px 20px; width:600px;}
@@ -168,10 +168,12 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 .container_12 .m1{width:%}
 .m2{float:left; width:49; margin-right:13px;}
 .m3{float:left; width:300px;margin-top:3px;}
-#content-new{width:75%;float:left;}
-.bg2{background: white;padding: 5px 10px 5px 10px;width: 74.5%;margin-top: 0px}
+#content-new{}
+.bg2{background: white;padding: 5px 10px 5px 10px;;margin-top: 0px}
 .m4{float: left;margin-right: 0px}
 .product{background:#006835;display:inline-block;color:white;font-size:1.5em}
+.wrap1{overflow: hidden;
+position: relative;}
 .product p{padding:6px}
 .menu1{float: left;margin-right: 67px;background:transparent}
 .mar{margin-top:5px}
