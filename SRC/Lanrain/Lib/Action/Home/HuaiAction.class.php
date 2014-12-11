@@ -6,6 +6,7 @@ function strExists($haystack, $needle)
 class HuaiAction extends BaseAction {
 	private $info;
 	public function _initialize(){
+		parent::_initialize();
 		$info=M('function_master')->where(array('class'=>1))->order('orderno asc')->select();
 		$info=$this->convertLinks($info);//加外链等信息
 	}
