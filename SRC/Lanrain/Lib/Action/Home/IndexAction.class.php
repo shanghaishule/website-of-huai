@@ -1,5 +1,8 @@
 <?php
 class IndexAction extends BaseAction{
+	public function _initialize(){
+		parent::_initialize();
+	}
 	//关注回复
 	public function index(){
 		//就医资讯

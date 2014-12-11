@@ -9,6 +9,12 @@ class BaseAction extends Action
         //设置wecha_id值
         $this->getWechaId();
     }
+
+   public function _empty(){
+    	header("HTTP/1.0 404 Not Found");//使HTTP返回404状态码
+    	$this->display("Public:404");
+    }
+    
     protected function all_insert($name = '', $back = '/index')
     {
         $name = $name ? $name : MODULE_NAME;
