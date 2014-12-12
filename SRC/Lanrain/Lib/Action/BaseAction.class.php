@@ -191,7 +191,6 @@ class BaseAction extends Action
 		if($tokenTall == "" && $_SESSION["tokenTall"] != "") {$tokenTall = $_SESSION["tokenTall"];}
 		if($tokenTall == "" && $_SESSION["token"] != "") {$tokenTall = $_SESSION["token"];}
 		if($tokenTall != "") {$_SESSION["tokenTall"]=$tokenTall;}
-		 
 		return $tokenTall;
 	}
 }
