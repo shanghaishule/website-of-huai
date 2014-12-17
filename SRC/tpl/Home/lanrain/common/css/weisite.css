@@ -192,7 +192,7 @@ a:hover { text-decoration:underline;}
 .aside .code_box img { display:block;float:left;}
 .aside .code_box p { float:left;display:block;width:134px;text-align:center;color:#fff;font-size:14px;line-height:24px;padding-top:26px;}
 
-.i_main_box { background:white;padding:;position:relative;height:311px;}
+.i_main_box { background:white;padding:;position:relative;}
 .i_main_box .show_box { float:left;width:34%;height:100%}
 .i_main_box .show_box .pic_box { position:relative;width:220px;height:150px;overflow:hidden;}
 .i_main_box .show_box img { display:block;position:absolute;left:0;top:0;filter:alpha(opacity=0);opacity:0;}

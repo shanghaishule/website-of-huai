@@ -1,5 +1,5 @@
 /* Global properties ======================================================== */
-html, body {width:100%; padding:0; margin:0;}
+html, body {width:100%; padding:0; margin:0;font:normal 12px 'Microsoft YaHei','Arial','simsun','Hiragino Sans GB','Hiragino Sans GB W3'}
 
 body {font: 14px/25px Microsoft YaHei;, Helvetica, sans-serif;color:#252525;min-width:960px;;background:url(../images/bg.gif) repeat }
 .ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
@@ -295,3 +295,54 @@ background: transparent;padding-left: 21px;}
 .cs_close a{display: block; height: 10px;}
 .cs_close a span{display: none;}
 /**kefuzaixian*/
+/*首长保健start*/
+#content-new a{text-decoration: none}
+.mistake_four_letter p{text-align:center;color:#008632;font-size:20px;font-weight:bold;padding:6px 0;font-family:"微软雅黑"}
+  .mistake_four_pic #list ul li{float:left;width:20%;height:px;;color:white;text-align:center}
+ .tese #list ul li{float:left;width:;height:px;background:white;color:white;text-align:center}
+.mistake_four_pic #list ul li a{color:white;line-height:45px;display:block;height:45px;background:#008632;}
+.tese #list ul li a{position:absolute;top:90px;left:28%;color:white;line-height:100px;display:block;height:100px;width:100px;border-radius:50px;background:#008632;opacity:0.8}
+.tese #list ul li a.jsa1{top:2px}
+.margin_li_content p{color:black;padding-top:4px;font-weight:bold}
+.imgtext{color:white;position:absolute;bottom:0;height:284px;width:219px;background-color: #000;
+FILTER: alpha(opacity=60);
+opacity: 0.7;
+-moz-opacity: 0.7;
+position: absolute;
+left: 0px;
+top:284px;}
+.show{}
+.showp{position:absolute;top:20%;left:5%}
+.showp p{text-align:left}
+.jsa{z-index:1000}
+#imgtextp{padding-top: 109px}
+.margin_li_content{height:60px;background:white;ine-height:60px;opacity:1;z-index:300}
+ .mistake_four_pic #list ul li.margin_li{margin-left:6.6666%}
+.tese #list ul li.margin_li{margin-left:1%}
+.tese #list ul .js{position:relative;overflow: hidden;}
+.tese #list ul .js p{position:relative;padding-top:31px;line-height:3px}
+.deep #list div{float:left;height:px;color:white;text-align:center}
+.deep #list .js_deep_00{width:32%}
+.deep #list .js_deep_00 a{font-size: 13px;color:white;width:216px;display:block;background:#008632;height:60px;width:98%;line-height:60px;position:static;border-radius:0px;top:0px}
+.deep #list .js_deep_00 a.show{background: url('../images/yellowarrow.png');background-size:100% 100%}
+.deep #list .js_deep_01{width:64%;margin-left:3%;background:#008632;height: 274px;}
+.deep #list ul li{width:450px;background:black;height:274px;position:relative}
+.x1_list #x1_list_ul{width:100%}
+#x1_list_li{float:left;width:33.33%}
+#x1_list_ul li a{;padding:5px 10px;background:#008632;font-size:23px;color:white}
+.x1{position:relative;text-align:center}
+.lanrenzhijia{position:absolute;width: 100%;top: 132px;}
+.lanrenzhijia .tab a{;background:;float:left;width:33.3333333333333%;display:block;text-align: center;}
+.lanrenzhijia .tab .on{;;}
+.lanrenzhijia .tab a p{padding:5px 10px;background:#008632;font-size:20px;color:white;height:45px;width:60%;line-height:45px;margin: 0 auto;}
+.lanrenzhijia .tab .on p{background:#c07800}
+.contentx1 li div{float:left;height:100%}
+.contentx1 li div.x1_list_content_01{line-height: 48px;width:60px;text-align:center;background:#008632;color:white;font-size:22px}
+.contentx1 li div.x1_list_content_02{line-height: 23px;color:#008632;width:90%;border:1px solid #ccc;height: 190px;border-color:#008632}
+.contentx1{margin-top:9px}
+.x1_all{margin-top: -50px;width:685px;height:551px;background:#eaf5fc;background: url('../images/x11bg.png');background-size:100% 100%}
+.x1_all_01{margin-top: -25px;width:685px;height:414px;background:#eaf5fc;background: url('../images/x22bg.png');background-size:100% 100%}
+.x1_all_03{width:685px;height:589px;background:#eaf5fc;background: url('../images/x33bg.png');background-size:100% 100%}
+.mistake_four_letter{border-bottom: dotted 1px #ccd4da;margin: 15px 0;}
+.mistake_four_letter p{border: solid 3px #008632;}
+/*首长保健end*/

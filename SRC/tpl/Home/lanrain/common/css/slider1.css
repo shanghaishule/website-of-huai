@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body {
+	background:#9221f1;
+}
+#demo_wrapper {
+	width:100%;
+	padding-top:50px;
+	background:url(../_images/demo_bg.png) repeat-x;
+	overflow:hidden;
+}
+#featured_project {
+	float:left;
+	overflow:hidden;
+}
+#grid_spacer {
+	width:100%;
+	height:0px;
+	float:left;
+	display:none;
+}
+#project_top {
+	float:left;
+	overflow:hidden;
+}
+#project_btm {
+	overflow:hidden;
+	padding-bottom:20px;
+}
+#featured_project .project_info, #project_top .project_info, #project_btm .project_info {
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+}
+#project_top li, #project_btm li {
+	float:left;
+}
+#featured_project li, #project_top li, #project_btm li {
+	position:relative;
+	overflow:hidden;
+}
+#featured_project li a, #project_top li a, #project_btm li a {
+	display:block;
+}
+#featured_project h2, #project_top h2, #project_btm h2 {
+	color:#FFF;
+	font-weight:normal;
+	text-shadow:0 1px 0 #303030;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	position:relative;
+	top:120%;
+}
+.project_info {
+	background-image:url("./img/current_project_desc_bg.png");
+	background-repeat:repeat;
+	display:none;
+}
+#griddler_load {
+	width:150px;
+	height:22px;
+	margin:0 auto;
+	padding:7px;
+	background-color:#151515;
+	border-radius:2px;
+	color:#FFF;
+	font-size:20px;
+	text-align:center;
+	overflow:hidden;
+}
+#griddler_load:hover {
+	background-color:#202020;
+	cursor:pointer;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
