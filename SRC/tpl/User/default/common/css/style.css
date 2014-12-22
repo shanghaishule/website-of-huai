@@ -882,7 +882,7 @@ TABLE.ListProduct .select{
 TABLE.ListProduct .keywords{width: 150px;
 }
 TABLE.ListProduct .answer{
-	width: 375px;
+	width: 316px;
 }
 TABLE.ListProduct .answer_text{
 	 width: 360px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
