@@ -4,7 +4,7 @@
 	height: px;
 	float: left;
 	
-	
+	box-shadow: 0px 0px 5px #dbdbdb;
 }
 
 .right_main {
@@ -12,7 +12,7 @@
 	margin-left: 2%;
 	width:  67.49999999999999999999999%;
 	height: px;
-	float: left;
+	float: left;box-shadow: 0px 0px 5px #dbdbdb;
 	border: }
 
 .left_list_top {
@@ -99,6 +99,7 @@ td.top_table {
 .money_info li a {
 	color: white
 }
+.money_info li a:hover{color:red}
 
 .money_info li a:active {
 	color: #006835

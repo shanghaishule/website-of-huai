@@ -6,13 +6,13 @@ class IndexAction extends BaseAction{
 	//关注回复
 	public function index(){
 		//就医资讯
-		$article_arr = M('img')->field('id,title')->where("classname='%s'",array('就医资讯'))->order('uptatetime DESC')->limit(7)->select();
+		$article_arr = M('img')->field('id,title')->where("classname='%s'",array('就医资讯'))->order('uptatetime DESC')->limit(11)->select();
 		//绿色通道
-		$green_arr = M('img')->field('id,title')->where("classname='%s'",array('绿色通道'))->order('uptatetime DESC')->limit(7)->select();
+		$green_arr = M('img')->field('id,title')->where("classname='%s'",array('绿色通道'))->order('uptatetime DESC')->limit(9)->select();
 		//专家观点
-		$idea_arr = M('img')->field('id,title')->where("classname='%s'",array('专家观点'))->order('uptatetime DESC')->limit(7)->select();
+		$idea_arr = M('img')->field('id,title')->where("classname='%s'",array('专家观点'))->order('uptatetime DESC')->limit(4)->select();
 		//公司新闻
-		$news_arr = M('img')->field('id,title')->where("classname='%s'",array('公司新闻'))->order('uptatetime DESC')->limit(7)->select();
+		$news_arr = M('img')->field('id,title')->where("classname='%s'",array('公司新闻'))->order('uptatetime DESC')->limit(11)->select();
 		
 		$this->assign('res',$article_arr);
 		$this->assign('res1',$green_arr);

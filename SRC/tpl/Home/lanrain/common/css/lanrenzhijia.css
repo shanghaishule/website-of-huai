@@ -36,7 +36,7 @@ float: left;
 #sliderNav li.sliderTag a {
 	color:#292929;
 	background:White;
-	
+	box-shadow: 0px 0px 5px #dbdbdb;
 	text-decoration:none;
 }
 #sliderNav li.sliderTag a:hover {
