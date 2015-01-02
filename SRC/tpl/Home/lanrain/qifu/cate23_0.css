@@ -1,0 +1,334 @@
+}
+
+.body {
+	max-width: 640px;
+	margin: auto;
+	min-height: 100%;
+	position: relative;
+	font-size: 12px;
+}
+
+.index_head {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999999;
+	height: 45px;
+	background: #006835;
+	width: 100%
+}
+
+.index_head1 {
+	height: 45px;
+	background: #006835;
+	width: 100%
+}
+
+#nav {
+	width: 100%
+}
+
+.navlist1 {
+	width: 100%
+}
+
+.navlist1 li {
+	float: left;
+}
+
+.navlist1 #n_0 {
+	padding-top: 5px;
+	width: 20%;
+	float: left;
+	text-align: center
+}
+
+.navlist1 #n_0 .headtop1 {
+	width: 35px;
+	height: 35px;
+	margin: auto;
+}
+
+.navlist1 #n_1 {
+	width: 80%;
+}
+
+.navlist1 #a_0 {
+	padding-top: 7px;
+	width: 20%;
+	float: left;
+	text-align: center
+}
+
+.navlist1 #a_0 .headtop2 {
+	width: 35px;
+	height: 30px;
+	margin: auto;
+}
+
+.navlist1 #a_1 {
+	width: 60%;
+}
+
+.navlist1 #a_2 {
+	width: 20%;
+}
+
+#addliter {
+	color: white
+}
+
+#a_2 p {
+	padding-left: 10px;
+	padding-top: 15px;
+	font-size: 16px;
+}
+
+#a_1 div {
+	padding-top: 10.5px;
+}
+
+#a_1 div p {
+	text-align: center;
+	font-size: 1.5em;
+	color: white
+}
+
+.nav_links {
+	margin-top: -20px;
+	padding: 15px 0 0 0;
+	background: white;
+	height: 74px
+}
+
+.nav_links a .top4 {
+	width: 29px;
+	height: 29px;
+	margin: auto;
+	display: block;
+}
+
+.nav_links a {
+	color: #000;
+	display: block;
+	width: 86%;
+	margin: auto;
+	height: 56px;
+	line-height: 33px;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+}
+
+.nav_links a:link {
+	background: white
+}
+
+.nav_links a:visited {
+	background: white
+}
+
+.nav_links a:hover {
+	background: white
+}
+
+.nav_links a:active {
+	background: white
+}
+
+.nav_links a:active {
+	background: white
+}
+
+.ul_list {
+	overflow: hidden;
+	position: relative;
+}
+
+.ul_list li {
+	width: 50%;
+	float: left;
+	background: white;
+	margin-bottom: 1px
+}
+
+.ul_list ol {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: block;
+	width: 34px;
+	height: 34px;
+	background-image: url(/weTall/static/weixin/images/home/hoslogo.png);
+	background-size: 100% 100%;
+	margin-left: -17px;
+	z-index: 10;
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+
+.content_start {
+	margin-top: 10px
+}
+
+.content_start p {;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-top: 5px
+}
+
+.content_start span {
+	padding-left: 60%;
+}
+
+.content_start span a {
+	color: #8b8b8b;
+	font-size: 0.9em
+}
+
+.ofh {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+#ofh1 {
+	margin-top: 0px;
+	border-right: 1px solid #f1f0f5;
+}
+
+ul.ul_list {
+	margin-bottom: 1px
+}
+
+#ofh2 {
+	margin-top: 0px;
+}
+
+.content1 {
+	width: 96px;
+	height: 48px;
+	margin: 0 auto;
+	padding-top: 12px;
+	padding-right: 50px;
+	color: #333;
+	letter-spacing: 0px;
+	font-size: 16px
+}
+
+.content0 p {
+	color: #525252;
+	font-weight: normal
+}
+
+.ul_list a {
+	height: 65px;
+	display: block;
+	text-align: center;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-position: 0 -15px;
+	overflow: hidden;
+}
+
+.weimob-list-item {
+	display: block;
+	height: ;
+	width: 100%
+}
+
+.weimob-list-item div {
+	color: white;
+	line-height: 1.8em
+}
+
+.weimob-list-item img {
+	padding-top: 2px;
+	
+}
+
+#bottom {
+	height: ;
+	background: ;
+	opacity: 1;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999999999;
+}
+
+.space {
+	height:45px
+}
+
+.copyright {
+	color: #ccc;
+}
+
+/**alllist**/
+.alllist_ul_list li {
+	width: 33%;
+	float: left;
+	height: 27px;
+	text-align: center;
+	background: white;
+	padding-top: 10px;
+	font-size: 1.2em;
+	border-right:1px solid #f1f0f5;
+	border-bottom:1px solid #f1f0f5;
+}
+
+.alllist_ul_list p {
+	color: #666666;
+}
+
+.fangge {
+	height: 11px;
+	width: 0.2em;
+	background: #006835;
+	display: inline-block
+}
+
+.alllist {
+	margin-top: px
+}
+
+#list1 {
+	margin-top: 12px;
+	background: white
+}
+
+#list1 p {
+	font-size: 1.1em;
+	padding-left: 5px;
+	
+}
+#list1_firstP{background:#f1f0f5}
+.clear {
+	clear: both
+}
+/**二级分类**/
+#bfh1 {
+	
+}
+
+.cfh {;
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center
+}
+
+.cfh  li {
+	width: 49.6%;
+	background: white;
+	margin: 1px 0 0 1px
+}
+
+#banner_box ul {
+	height: 100px;
+}

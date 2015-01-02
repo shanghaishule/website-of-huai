@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://m.hajk.com.cn/weTall/index.php?m=index&a=index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>沉痛哀悼！</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="./tpl/Home/lanrain/qifu/cate23_0.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="./tpl/Home/lanrain/qifu/reset.css" media="all">
+
+
+
+
+</head>
+<body onselectstart="return true;" ondragstart="return false;" style="background:url(./tpl/Home/lanrain/qifu/bg.jpg);background-size:100% 100%">
+	<!--背景音乐-->
+	<div class="body">
+		
+		
+		
+		<section>
+		<div style="width:100%;margin:0 auto;position:relative">
+		  <img src="./tpl/Home/lanrain/qifu/pic1.jpg" width="100%">
+		  <div style="width:100%;margin:0 auto;position:absolute;top:0"">
+		     <img src="./tpl/Home/lanrain/qifu/pic2.png" width="100%">
+		  </div>
+		</div>
+		
+		
+			
+		<section>
+		   
+		
+<div id="bottom" class="box_xuanfu" style="">
+				<ul style="list-style: none; width: 100%; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate3d(0px, 0px, 0px);">
+								<li style="width: 33.3%;float:left;text-align:center  ">
+									<a href="" class="weimob-list-item">
+										<img src="./tpl/Home/lanrain/qifu/01.png" width="40%">
+										<div style="color:red;">送花<span>(20)</span></div>
+								    </a>
+									</li>
+									<li style="width: 33.3%;float:left;text-align:center   ">
+									<a href="" class="weimob-list-item">
+										<img src="./tpl/Home/lanrain/qifu/02.jpg" width="40%">
+										<div style="color:red;">上香<span>(20)</span></div>
+									</a>
+									</li>
+									<li style="width: 33.3%;float:left ;text-align:center  ">
+									<a href="http://m.wsq.qq.com/263962360" class="weimob-list-item">
+										<img src="./tpl/Home/lanrain/qifu/03.jpg" width="40%">
+										<div style="color:red;">留言<span>(20)</span></div>
+										
+								    </a>
+									</li>
+									
+								
+				</ul>
+				
+			﻿<div class="" style="text-align:center;color:white"><a href="http://mp.weixin.qq.com/s?__biz=MjM5NjM2NDI1Nw==&mid=200795086&idx=1&sn=6899df48e18f1df58b563fba3aa75a37#rd"  style="color:white">由“沪爱健康”发起</a></div>
+				
+			</div>
+
+
+<!-- <a href="/weTall/index.php?m=shopcart&a=index&"><span></span></a><span class="baseBg J-shoping-num">0</span> -->
+
+		<div class="space"></div>
+	<script type="text/javascript">
+	window.shareData = {
+			"moduleName" : "Index",
+			"moduleID" : '0',
+			"imgUrl" : "http://www.hajk.com.cn/qifu/qifu/pic1.jpg",
+			"timeLineLink" : "http://www.hajk.com.cn/index.php?g=Home&m=Huai&a=qifu",
+			"sendFriendLink" : "http://www.hajk.com.cn/index.php?g=Home&m=Huai&a=qifu",
+			"weiboLink" : "http://www.hajk.com.cn/index.php?g=Home&m=Huai&a=qifu",
+			"tTitle" : "我为外滩遇难者送上了一束鲜花，愿逝者安息！",
+			"tContent" : "我为外滩遇难者送上了一束鲜花，愿逝者安息！ "
+		};
+	</script>
+	<script>
+		document.addEventListener('WeixinJSBridgeReady',
+				function onBridgeReady() {
+					WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+						shareHandle('friend');
+						WeixinJSBridge.invoke('sendAppMessage', {
+							"img_url" : window.shareData.imgUrl,
+							"img_width" : "640",
+							"img_height" : "640",
+							"link" : window.shareData.sendFriendLink,
+							"desc" : window.shareData.tContent,
+							"title" : window.shareData.tTitle
+						}, function(res) {
+							_report('send_msg', res.err_msg);
+						})
+					});
+
+					WeixinJSBridge.on('menu:share:timeline', function(argv) {
+						shareHandle('frineds');
+						WeixinJSBridge.invoke('shareTimeline', {
+							"img_url" : window.shareData.imgUrl,
+							"img_width" : "640",
+							"img_height" : "640",
+							"link" : window.shareData.sendFriendLink,
+							"desc" : window.shareData.tContent,
+							"title" : window.shareData.tTitle
+						}, function(res) {
+							_report('timeline', res.err_msg);
+						});
+					});
+
+					WeixinJSBridge.on('menu:share:weibo', function(argv) {
+						shareHandle('weibo');
+						WeixinJSBridge.invoke('shareWeibo', {
+							"content" : window.shareData.tContent,
+							"url" : window.shareData.sendFriendLink,
+						}, function(res) {
+							_report('weibo', res.err_msg);
+						});
+					});
+				}, false)
+
+		function shareHandle(to) {
+			var submitData = {
+				module : window.shareData.moduleName,
+				moduleid : window.shareData.moduleID,
+				token : 'ipwhoy1414718223',
+				wecha_id : 'ogsVXuL8yWmchzbD_jYCesE9Y2Bw',
+				url : window.shareData.sendFriendLink,
+				to : to
+			};
+			$.post('/index.php?g=Wap&m=Share&a=shareData&token=ipwhoy1414718223&wecha_id=ogsVXuL8yWmchzbD_jYCesE9Y2Bw',
+							submitData, function(data) {
+							}, 'json')
+		}
+	</script>
+
+<div style="display:none">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253491104'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1253491104' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body></html>

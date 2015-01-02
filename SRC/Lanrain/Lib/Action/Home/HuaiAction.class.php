@@ -52,6 +52,11 @@ class HuaiAction extends BaseAction {
 	public function product() {
 		$this->display ();
 	}
+	//qifu
+	public function qifu(){
+	
+		$this->display();
+	}
 	// 资讯
 	public function news() {
 		$db=D('Img');
