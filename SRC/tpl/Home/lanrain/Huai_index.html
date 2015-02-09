@@ -28,27 +28,7 @@
     <script src="__PUBLIC__/js/jquery.slides.js"></script>
     <script src="__PUBLIC__/layout/js/ScrollPic.js"></script>
     <style type="text/css">
-#marquee3 {height:147px;;overflow:hidden;background:white}
-#marquee3 .inner {width:10000px;overflow:hidden;}
-#marquee3 ul,#marquee3 li {padding:0;margin:0;list-style:none;}
-#marquee3 ul,#marquee3 li {float:left;}
-#marquee3 li {width:230px;  height:140px; margin-right:10px;padding-right:10}
-#marquee3 li a{width: 120px;font-size:16px;text-align:left;display: block;line-height: 24px;height: 24px;color:#000}
-#marquee3 img{width:100px;height:140px;margin:0}
-#marquee3 li dl{width:100%;height:100%;overflow:hidden}
-#marquee3 li dl dt{float:right;width:120px;font-size:14px;font-weight:700}
-#marquee3 li dl dd{float:right;width:120px;}
-#marquee3 li dl dd,#marquee3 li dl dd b{color:#000}
-#marquee3 li dl dd font{font-size:12px;color:#117321}
-#marquee3 li dl dd.pic{float:left;width:auto}
-#marquee3 li dl dd.pic a{display:block;width:100px;height:140px}
-#marquee4 {height:187px;width:px;margin: ;overflow:hidden;text-align:center;background:white}
-#marquee4 .inner {width:10000px;overflow:hidden;}
-#marquee4 ul,#marquee4 li {padding:0;margin:0;list-style:none;}
-#marquee4 ul,#marquee4 li {float:left;}
-#marquee4 li {width:215px;  height:180px; margin-right:20px;padding-right:0;padding-top: 10px}
-#marquee4 li a{width:215px;  font-size:12px; text-align:center; display:block; line-height:24px; height:24px; float:left;color:#000}
-#marquee4 img{width:215px; height:140px; margin-bottom:10px; float:left;}
+
 </style>
 <!--==============================content================================-->
     <script>
@@ -69,26 +49,7 @@
 		}) 	
     </script>
 		<style type="text/css">
-			#demo {
-			background: #FFF;
-			overflow:hidden;
-			border: 1px dashed #CCC;
-			width: 940px;
-			margin:50px 10px;
-			}
-			#demo img {
-			border: 3px solid #F2F2F2;
-			}
-			#indemo {
-			float: left;
-			width: 800%;
-			}
-			#demo1 {
-			float: left;
-			}
-			#demo2 {
-			float: left;
-			}
+			
         </style>
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -109,6 +70,24 @@
     	$('a[href="'+location.href+'"]').parent().addClass('current');
     });
     </script>
+    <script>
+			$(function(){
+				var menu = 1; // 默认值为0，二级菜单向下滑动显示；值为1，则二级菜单向上滑动显示
+				if(menu ==0){
+					$('.menu li').hover(function(){
+						$('.second',this).show();
+					},function(){
+						$('.second',this).hide();
+					});
+				}else if(menu ==1){
+					$('.menu li').hover(function(){
+						$('.second',this).show();
+					},function(){
+						$('.second',this).hide();
+					});
+				}
+			});
+</script>
 </head>
 <body>
 <header class="header_top">
@@ -129,19 +108,33 @@ margin: auto;">
             <div style=";height:110px;width:960px;margin:0 auto;background:url(__PUBLIC__/images/header1.png) 0 0 no-repeat;background-size:100% 100%">
         </div>
          <div class="colum_head">
-            <ul class="menu">
-                            <li style="color:#006835;background: white;width:90px;height:45px;text-align:center;background:url(__PUBLIC__/images/wenzilogo.png) 0 0 no-repeat;background-size:100% 100%""></li>
-			                <li><a href="{lanrain::C('site_url')}">首页</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/about')}">公司介绍</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/product')}">军医文化</a></li>
+             <ul class="menu">
+                            <li style="color:#006835;background: white;width:139px;height:45px;text-align:center;background:url(__PUBLIC__/images/wenzilogo.png) 0 0 no-repeat;background-size:100% 100%""></li>
+			                <li><a href="{lanrain::C('site_url')}">首页</a>
+			                
+			                
+			                </li>
+			                <li><a >公司概况</a>
+			                    <div class="second">
+			                    <a href="{lanrain::U('Home/Huai/about')}">公司介绍</a>
+									<a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a>
+									<a href="{lanrain::U('Home/Huai/product')}">军医文化</a>
+									<a href="{lanrain::U('Home/Huai/contacts')}">联系我们</a>
+									
+							    </div>
+			                </li>
+			                <li><a href="{lanrain::U('Home/Huai/suspect')}">复诊助手</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/diagnosis')}">陪诊助手</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/rebook')}">会诊助手</a></li>
+			                <li><a href="{lanrain::U('Home/Huai/exam')}">白金体检</a></li>
+			                 <li><a href="{lanrain::U('Home/Huai/lvse')}">绿色通道</a></li>
+			                <li>  <a href="{lanrain::U('Home/Huai/examination')}">首长保健</a></li>
+			                
 			                 <li><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
-			                 <li><a href="{lanrain::U('Home/Huai/examination')}">首长保健</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/diagnosis')}">就医陪诊</a></li>
-		    				 <li><a href="{lanrain::U('Home/Huai/contacts')}">联系我们</a></li>
+			                
+		    				
 			                
 			            </ul>
-			             
 			            <!--   <div id="sousuo"><form id="form-search1" method="post">
 	                              <input type="text" value="科室或医生" onblur="if(this.value=='') this.value='科室或医生'" onfocus="if(this.value =='科室或医生' ) this.value=''">
 	                              <a href="#" onclick="document.getElementById('form-search').submit()" class="search_button1">搜索</a>
@@ -159,16 +152,17 @@ margin: auto;">
  <div class="" style="width:960px;;margin:0 auto">
     <div class="slider_box" id="slider_name">
 				<ul class="silder_con">	
-					<li class="silder_panel"><a href="{lanrain::U('Home/Huai/examination')}" class="f_l"><img src="__PUBLIC__/images//banner_01.png" /></a></li>
+					<li class="silder_panel"><a href="{lanrain::U('Home/Huai/rebook')}" class="f_l"><img src="__PUBLIC__/images/fuzhen.jpg" /></a></li>
 					<li class="silder_panel"><a href="{lanrain::U('Home/Huai/diagnosis')}" class="f_l"><img src="__PUBLIC__/images//banner_bg.png" /></a></li>
-					<li class="silder_panel"><a href="{lanrain::U('Home/Huai/contacts')}" class="f_l"><img src="__PUBLIC__/images//banner_02.png"  /></a></li>
-					<li class="silder_panel"><a href="http://www.hajk.com.cn/index.php?m=Huai&a=newsDetail&itemid=11176" class="f_l"><img src="__PUBLIC__/images//banner_03.png" /></a></li>
+					<li class="silder_panel"><a href="{lanrain::U('Home/Huai/suspect')}" class="f_l"><img src="__PUBLIC__/images/huizhen.jpg"  /></a></li>
+					<li class="silder_panel"><a href="{lanrain::U('Home/Huai/exam')}" class="f_l"><img src="__PUBLIC__/images/tijian.jpg" /></a></li>
 				</ul>
 				<ul class="silder_nav">   
-					<li><a href="{lanrain::U('Home/Huai/examination')}">首长保健</a></li>           
-					<li><a href="{lanrain::U('Home/Huai/diagnosis')}">就医陪诊</a></li>    
-					<li><a href="{lanrain::U('Home/Huai/contacts')}">绿色通道</a></li>    
-					<li><a href="http://www.hajk.com.cn/index.php?m=Huai&a=newsDetail&itemid=11176">移植中心</a></li>      
+				
+					<li><a href="{lanrain::U('Home/Huai/rebook')}">复诊助手</a></li>           
+					<li><a href="{lanrain::U('Home/Huai/diagnosis')}">陪诊助手</a></li>    
+					<li><a href="{lanrain::U('Home/Huai/suspect')}">会诊助手</a></li>    
+					<li><a href="{lanrain::U('Home/Huai/exam')}">白金体检</a></li>      
 				</ul>
 			</div>
 			</div>
@@ -200,7 +194,37 @@ margin: auto;">
 					<li><a href="http://www.hajk.com.cn/index.php?m=Huai&a=newsDetail&itemid=11176">移植中心</a></li>      
 				</ul>
 			</div>-->
-			<div class="tab1" id="tab1">
+			
+			<div class="ban_right4">
+			 
+				<div class="col-2">
+					<h2 class="p3 p3news">
+						<span class="color-1">公司</span> 新闻<span>/news</span>
+					</h2>
+					<ul class="list-1">
+					  <volist name="res3" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,16,'utf-8',true}</a></li>
+					  </volist>	
+						<li><a href="{lanrain::U('Home/Huai/news')}" style="color: #006835;margin-left:180px;">&lt;&lt;点击更多</a></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="ban_right5">
+		    	<div class="col-2">
+					<h2 class="p3 p3news">
+						<span class="color-1">就医</span> 资讯<span>/hospital</span>
+					</h2>
+					<ul class="list-1">
+					  <volist name="res" id="vo">
+					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,16,'utf-8',true}</a></li>
+					  </volist>	
+						 <li><a href="{lanrain::U('Home/Huai/news')}" style="color: #006835;margin-left:180px;">&lt;&lt;点击更多</a></li>
+					</ul>
+				</div>
+		    </div>
+		    <div style="clear:both"></div>
+		    <div class="hosmeterial"></div>
+		    <div class="tab1" id="tab1">
 				<div class="menu2">
 					<ul>
 						<li class="off"><a href="#con_one_1">二军大附属长海医院</a></li>
@@ -442,35 +466,11 @@ margin: auto;">
 					</div>
 				</div>
 			</div>
-			<div class="ban_right4">
-			 
-				<div class="col-2">
-					<h2 class="p3">
-						<span class="color-1">公司</span> 新闻
-					</h2>
-					<ul class="list-1">
-					  <volist name="res3" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,16,'utf-8',true}</a></li>
-					  </volist>	
-						<li><a href="{lanrain::U('Home/Huai/news')}" style="color: #006835;margin-left:180px;">&lt;&lt;点击更多</a></li>
-					</ul>
-				</div>
-		    </div>
-		    <div class="ban_right5">
-		    	<div class="col-2">
-					<h2 class="p3">
-						<span class="color-1">就医</span> 资讯
-					</h2>
-					<ul class="list-1">
-					  <volist name="res" id="vo">
-					 	 <li><a href="{lanrain::U('Huai/newsDetail',array('itemid'=>$vo['id']))}">{lanrain:$vo['title']|msubstr=0,16,'utf-8',true}</a></li>
-					  </volist>	
-						 <li><a href="{lanrain::U('Home/Huai/news')}" style="color: #006835;margin-left:180px;">&lt;&lt;点击更多</a></li>
-					</ul>
-				</div>
-		    </div>
 		</div>
 		<div class="content_right">
+		<div class="adv advone" style="background:url(__PUBLIC__/images/81bjmall.jpg);background-size:100% 100%"></div>
+		<div class="adv advtwo" style="background:url(__PUBLIC__/images/fuwu.jpg);background-size:100% 100%"></div>
+		<div class="adv advthree" style="background:url(__PUBLIC__/images/jinka.jpg);background-size:100% 100%"></div>
 		<div id="sousuo"><form id="form-search1" method="post">
 	                              <input type="text" value="科室或医生" onblur="if(this.value=='') this.value='科室或医生'" onfocus="if(this.value =='科室或医生' ) this.value=''">
 	                              <a href="#" onclick="document.getElementById('form-search').submit()" class="search_button1">搜索</a>
@@ -538,7 +538,7 @@ margin: auto;">
   <ul>
     <li class="selected">
       <!--特色科室 63057-->
-      <!--begin 3585138-0-5--><a href="http://www.81.cn/zghjy/node_63057.htm" target="_blank" class="">科室推荐</a><!--end 3585138-0-5-->
+      <!--begin 3585138-0-5--><a href="http://www.81.cn/zghjy/node_63057.htm" target="_blank" class="">国家级科室</a><!--end 3585138-0-5-->
     </li>
   </ul>
   <span>
@@ -591,7 +591,7 @@ margin: auto;">
       <li class="selected">
         <!-- 名医推介 -->
         <!--begin 3585135-0-5-->
-        <a href="#" target="_blank" class="">名医推介</a>
+        <a href="#" target="_blank" class="">名医推荐</a>
         <!--end 3585135-0-5-->
       </li>
     </ul>
@@ -812,6 +812,7 @@ d.appendChild(o)
 d.onmouseover=function(){clearInterval(t)}
 d.onmouseout=function(){t=setInterval(myfunc,5000)}
 </script>
+
 <!--==============================footer=================================-->
 <include file="Public:footer2" />
 </div>

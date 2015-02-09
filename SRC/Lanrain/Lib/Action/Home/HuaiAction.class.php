@@ -19,6 +19,10 @@ class HuaiAction extends BaseAction {
 	public function about() {
 		$this->display ();
 	}
+	//tijian
+	public function exam() {
+		$this->display ();
+	}
 	//hospital
 	public function hospital () {
 		$this->display ();
@@ -52,8 +56,29 @@ class HuaiAction extends BaseAction {
 	public function product() {
 		$this->display ();
 	}
+	// rebook
+	public function rebook() {
+		$this->display ();
+	}
+	// rebook
+	public function suspect() {
+		$this->display ();
+	}
+	//login
+	public function login() {
+		$this->display ();
+	}
 	//qifu
 	public function qifu(){
+	
+		$this->display();
+	}
+	//lvse
+	public function lvse(){
+	
+		$this->display();
+	}
+	public function indexn(){
 	
 		$this->display();
 	}

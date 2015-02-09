@@ -1,72 +1,122 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>沪爱健康-就医资讯-{lanrain:$res['title']}</title>
-<meta name="keywords" content="{lanrain:$res['text']}" />
-<meta name="description" content="{lanrain:$res['text']}" />
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<!--[if lt IE 9]>
-<script type="text/javascript" src="__PUBLIC__/layout/plugins/html5.js"></script>
-<![endif]-->
+<title>上海医院预约挂号|高端体检|私人保健|上海管理有限公司|陪诊、肝癌治疗、肝脏移植、首长保健、第二军医大学附属医院</title>
+    <meta charset="utf-8">
+	<meta name="keywords" content="陪诊、高端体检、个人/私人保健、长海医院网上预约、东方肝胆医院、长征医院网上挂号、绿色通道、上海预约挂号、肝癌治疗、肝脏移植、首长保健、第二军医大学附属医院" />
+    <meta name="description" content="，依托于上海长海医院、东方肝胆医院、长征医院，以”弘扬军医文化、服务人民健康“为宗旨，专业致力于优质医疗资源平台整合，主要提供绿色就医、个人保健、上海医院预约挂号、高端体检，陪诊是中国顶级健康管理服务引领者" />
+    
+
+
 <link rel="stylesheet" href="__PUBLIC__/layout/style.css" type="text/css" />
+
 <script type="text/javascript" src="__PUBLIC__/layout/js/jquery.js"></script>
+ <link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/indexn/cssreset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/indexn/css1.css">
 <!-- Header start -->
 <link rel="stylesheet" href="__PUBLIC__/css/style.css" type="text/css">
 <!-- Header end -->
-<script type="text/javascript">
-	jQuery(function () {
+ <script type="text/javascript" src="__PUBLIC__/js/indexn/jquery-min-1.7.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/indexn/js.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/indexn/jq.marq.js"></script>
+<script src="__PUBLIC__/js/indexn/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layout/js/main.js"></script>
+<script>
+$(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
 	});
+});
 </script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style>.ds-powered-by{display:none;}</style>
+<!-- js调用部分end -->
 </head>
 <body>
-	<div class="wrapper sticky_footer">
-    	<!-- HEADER BEGIN -->
-	   <header class="header_top">
-         
-       
-        
-        <!-- <img src="__PUBLIC__/images/logo.png" width="40%"/> 
-        <a href="{lanrain::C('site_url')}">
-        		沪爱健康</a></h1>-->
-        <nav>
-        	<div class="social-icon">
-        	   <div style="width: 960px;
-height: 30px;
-margin: auto;">
-            	<a href="#" class="icon-2" style="width:155px;">4006-555-899</a>
-            	<a href="tencent://message/?uin=1402612547" class="icon-1" style="width:105px;">在线客服</a>
-            </div>
-            <div style=";height:110px;width:960px;margin:0 auto;background:url(__PUBLIC__/images/header1.png) 0 0 no-repeat;background-size:100% 100%">
+
+
+
+<!--top-->
+<div class="top">
+    <!--top_one-->
+    <div class="top_one">
+        <!--logo-->
+        <a href="./中国领先的私人医生服务机构-国康健康管理服务有限公司_files/中国领先的私人医生服务机构-国康健康管理服务有限公司.html" class="top_logo"><img src="__PUBLIC__/images/header1.png" width="960" alt="沪爱健康" title="沪爱健康"></a>
+        <!--ico-->
+    </div>
+    <!--top_two-->
+    <div class="top_two">
+        <!--doctor-->
+        <div class="doctor">
+         <a onclick="javascript:location.href=&#39;/p_person.htm&#39;" href="">沪爱产品</a>
+            <ul class="doctor_ul" style="display: none; height: 0px;">
+                                
+   <li data="" class=""><a href=""><span>就医陪诊</span></a></li>
+            	                   
+   <li data="" class="flex-active"><a href=""><span>复诊助手</span></a></li>
+            	                   
+   <li data=""><a href=""><span>绿色通道</span></a></li>
+            	                   
+   <li data=""><a href=""><span>定制体检</span></a></li>
+   <li data=""><a href=""><span>亚健康管理</span></a></li>
+            	           
+            </ul>
         </div>
-         <div class="colum_head">
-            <ul class="menu">
-                            <li style="color:#006835;background: white;width:90px;height:45px;text-align:center;background:url(__PUBLIC__/images/wenzilogo.png) 0 0 no-repeat;background-size:100% 100%""></li>
-			                <li><a href="{lanrain::C('site_url')}">首页</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/about')}">公司介绍</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
-			                <li><a href="{lanrain::U('Home/Huai/product')}">军医文化</a></li>
-			                 <li class="current"><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
-			                 <li><a href="{lanrain::U('Home/Huai/examination')}">首长保健</a></li>
-			                <li ><a href="{lanrain::U('Home/Huai/diagnosis')}" >就医陪诊</a></li>
-		    				 <li><a href="{lanrain::U('Home/Huai/contacts')}">联系我们</a></li>
-			                
-			            </ul>
-			             
-			            <!--   <div id="sousuo"><form id="form-search1" method="post">
-	                              <input type="text" value="科室或医生" onblur="if(this.value=='') this.value='科室或医生'" onfocus="if(this.value =='科室或医生' ) this.value=''">
-	                              <a href="#" onclick="document.getElementById('form-search').submit()" class="search_button1">搜索</a>
-	                            <input type="hidden" name="__hash__" value="eb2c32c2868b1cf6e4c08477729ccc4d_29f50a5f66da4a28ebfdb28d0a301a71"></form>
-			                </div>-->
-			                </div>
-			            
-			            <div class="clear"></div>
-			            
-			            
-        </nav>
-    </header>   
+<script>
+ 
+</script>
+        <!--navigation-->
+        <div class="navigation">
+         	    <span><a href="{lanrain::U('Home/Huai/indexn')}" class="hover">首 页</a>
+                 <!-- -->
+
+        </span>
+		
+                	    <span><a href="" class="1" -"36"="">个人及家庭</a>
+                 <!--                      <ul class="nav_ul">
+                                           <li><a href="/n_76.htm">典型客户</a></li>
+                  
+                                           <li><a href="/n_77.htm">选择我们的企业家（部份）</a></li>
+                  
+                                        </ul>
+                      -->
+
+        </span>
+		
+                	    <span><a href="" class="1" -"82"="">企业顾问</a>
+                 <!-- -->
+
+        </span>
+         <span><a href="" class="1" -"75"="">医生服务</a>
+                 <!--                      <ul class="nav_ul">
+                                           <li><a href="/n_73.htm">知名专家</a></li>
+                                           <li><a href="/n_74.htm">强大的医院合作网络</a></li>
+                                        </ul>
+                    -->
+
+        </span>
+		 <span><a href="" class="1" -"82"="">优质资源</a></span>
+                	    <span><a href="http://www.guokang.com/p_resource.htm" class="1" -"75"="">沪爱商城</a>
+                                
+                  
+
+        </span>
+		
+                	    <span><a href="http://www.guokang.com/p_about1.htm" class="1" -"79"="">关于沪爱</a>
+                <ul class="nav_ul">
+                                           <li><a href="{lanrain::U('Home/Huai/about')}">沪爱简介</a></li>
+                                           <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
+                                           <li><a href="{lanrain::U('Home/Huai/product')}">军医文化</a></li>
+                                           <li><a href="{lanrain::U('Home/Huai/contacts')}">联系沪爱</a></li>
+                                           <li><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
+                                          
+                                        </ul>
+
+        </span>
+		
+                            
+        </div>
+    </div>
+</div>
+   
     	<!-- HEADER END -->
     <div class="b10"></div>    
         <!-- CONTENT BEGIN -->

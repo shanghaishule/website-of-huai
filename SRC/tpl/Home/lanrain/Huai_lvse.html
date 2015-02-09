@@ -1,0 +1,127 @@
+<include file="Public:header2" />
+
+  
+<link rel="stylesheet" type="text/css" media="screen"
+	href="__PUBLIC__/css/home1.css">
+<!--==============================content================================-->
+
+ <div id="bd">
+	 
+
+    <div class="abox box1">
+        
+        <div class="body">
+            <ul class="list">
+                                <li class="li_a"
+					style="opacity: 1; background-image: url(__PUBLIC__/images/tijian1.jpg);background-size:100% 100%"
+					onclick="">
+                                      
+                                        <div class="c">
+                        <a 
+							class="title">知名专家预约</a>
+                        <p>汇聚二军大三家知名三家附属医院医生，为您提供更科学的诊断</p>
+                    </div>
+                </li>
+                                <li class="li_b"
+					style="opacity: 1; background-image: url(__PUBLIC__/images/suqu.jpg);"
+					onclick="">
+                                      
+                                        <div class="c">
+                        <a 
+							class="title">检查报告速取</a>
+                        <p>提前取报告，不耽误您的时间，不耽误您的病情，亦可为您寄报告</p>
+                    </div>
+                </li>
+                                <li class="li_c"
+					style="opacity: 1; background-image:url(__PUBLIC__/images/shoushu.jpg);"
+					onclick="">
+                                      
+                                        <div class="c">
+                        <a 
+							class="title">手术安排</a>
+                        <p>为您提供指定专家进行手术，权威放心</p>
+                    </div>
+                </li>
+                                <li class="li_d"
+					style="opacity: 1; background-image: url(__PUBLIC__/images/zhuyuan.jpg);"
+					onclick="">
+                                     
+                                        <div class="c">
+                        <a 
+							class="title">住院直通车</a>
+                        <p>为您提前预约安排床位，来院即可住院</p>
+                    </div>
+                </li>
+                            </ul>
+        </div>
+        <div class="foot"></div>
+    </div>
+
+    <div class="talk_box">
+        <div class="ad_a">
+			 <img src="__PUBLIC__/images/fuwuhao.jpg" width="238px" height="238px">
+		</div>
+        <div class="head">扫描微信二维码</div>
+        <div class="title">手机在线选择服务</div>
+        
+    </div>
+
+   
+
+   
+    </div>
+<script>
+    $(function () {
+        $('.box1 li,.box2 li,.box3 li,.service_list li').hover(function () {
+            var find_l = $(this).parent().find('li');
+            find_l.not($(this).stop().animate({ 'opacity': '1' }, 200)).stop().animate({ 'opacity': '0.5' }, 200);
+        }, function () {
+            var find_l = $(this).parent().find('li');
+            find_l.stop().animate({ 'opacity': '1' }, 200);
+        });
+        
+        var html = '';
+        $('#bd').after(html);
+        
+         var body_height = $('body').height();
+    $('.mask').css('height',body_height);
+    
+    if (typeof document.body.style.maxHeight === "undefined") {
+      var window_width = $('body').width();
+      $('.mask').css('width',window_width);
+    }
+    });
+</script>
+ <script>
+function getMsg(){
+	var topic_id = "53";
+    $.ajax({
+        type:"post",
+        url:'/passport/getmsg',
+        data:{'topic_id':topic_id},
+        success:function(result){
+        	if(result!="null"){
+                $("#today_topic").html(result);
+            }
+        }
+
+    });
+}
+function tzurl(url){
+	window.location.href= url;
+}
+$(function(){
+    setInterval("getMsg()",120000);
+});
+</script>   	
+</div>
+
+	
+<!--==============================footer=================================-->
+     <include file="Public:footer2" />
+</div>    
+<script>
+	Cufon.now();
+</script>
+</body>
+</html>
