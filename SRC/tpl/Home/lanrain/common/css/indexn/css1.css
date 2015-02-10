@@ -88,6 +88,7 @@ background-position: 200px 15px;
 .navigation span a:hover{
     color: #fff;
     background: #006939;
+	text-decoration: none;
 }
 .navigation span a.hover{
     color: #fff;
@@ -911,7 +912,7 @@ padding: 5px 0;
 	float:right;
 	 
 }
-.resource_p{color: #b9b9b9;border-bottom: 1px solid #ccc;}
+.resource_p{color: #b9b9b9;border-bottom: 1px solid #ccc;padding-top: 8px;}
 
 .resource_ul{
     padding-top: 25px;

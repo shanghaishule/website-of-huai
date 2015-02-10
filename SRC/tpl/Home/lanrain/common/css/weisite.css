@@ -262,8 +262,8 @@ padding: 14px 0 0 40px}
 .module_box .aside { float:right;}
 
 
-.abox { background:#ececec;margin-bottom:10px;}
-.abox .head{background:#d8e7ef;font-size:18px;height:50px;line-height:50px;padding-left:24px;}
+.abox { background:white;margin-bottom:10px;}
+.abox .head{background:white;font-size:18px;height:50px;line-height:50px;padding-left:24px;}
 
 .abox_1 .list { line-height:36px;font-size:16px;padding:20px 24px;}
 .abox_1 .list li { width:216px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}

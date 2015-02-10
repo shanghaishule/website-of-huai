@@ -48,12 +48,12 @@ body { background: url(/images/new/page_bg.png); }
 .service_list .d a { color: #e5a590; }
 
 .abox { }
-.abox .head { height: 42px; padding: 20px 30px 0 8px; border-bottom: dotted 1px #ccd4da; background: #E7FBF5; }
+.abox .head { height: 42px; padding: 20px 30px 0 8px; border-bottom: dotted 1px #ccd4da; background: white; }
 .abox .head h3 { float: left; font-size: 18px; border: solid 3px #12864E; padding: 0 8px; line-height: 30px; height: 30px;overflow:hidden;_padding-top:2px;_height:28px;}
 .abox .head h3 a { color:#12864E; }
 .abox .head h3 a:hover { text-decoration: none; }
 .abox .head .more { float: right; color: #636363; display: block; line-height: 36px; }
-.abox .body { background: #E7FBF5; padding-top: 20px; }
+.abox .body { background: white; padding-top: 20px; }
 .abox .foot { background: url(/images/new/png_bg_1.png) left top no-repeat; height: 40px; width: 744px; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/png_bg_1.png",sizingMethod="noscale"); _background: none; }
 
 .box1 { float: left; width: 744px; }
@@ -147,12 +147,12 @@ a.linka{color:black}
 .box3 .body .l_f .bg { top:auto;bottom:0;}
 
 .box4 { }
-.box4 .head, .box4 .body { background: #E7FBF5; }
+.box4 .head, .box4 .body { background: ; }
 .box4 .cola, .box4 .colb, .box4 .colc { float: left; }
 .box4 .cola { width: 488px; position: relative; margin-right: 10px; }
-.box4 .cola .more { display: inline-block; position: absolute; right: 36px; top: 32px; color: #636363; }
+.box4 .cola .more { display: inline-block; position: absolute; right: 36px; top: 17px; color: #006939;border:none }
 .box4 .cola img { display: block; }
-.box4 .cola .top { background: #B0DCCF; height: 247px; margin-bottom: 3px; }
+.box4 .cola .top { background: #B0DCCF; height: 247px; margin-bottom: 3px; width:100%}
 .box4 .cola .bottom { width:488px;height:323px;background-position:left top;background-repeat:no-repeat;position:relative;}
 .box4 .cola .bottom .btn { position:absolute;left:65px;top:253px;display:block;height:24px;width:62px;background:url(/images/new/i_btn_a.png);}
 .box4 .cola .title { font-size: 24px; text-align: center; padding-top: 50px; }
@@ -164,7 +164,7 @@ a.linka{color:black}
 .box4 .cola .link_box .c span { background-position: -100px -83px; }
 .box4 .cola .link_box .d span { background-position: -150px -83px; }
 
-.box4 .colb { width: 248px; background: #93CDB1; height: 573px; margin-right: 10px; text-align: center;color:white}
+.box4 .colb { width: 486px; background: #93CDB1; height: 573px; margin-right: 10px; text-align: center;color:white}
 .box4 .colb .title { color: #fff; padding: 5px 0 0 0; font-size: 16px; text-align: center;  }
 .box4 .colb .head_pic { margin: 0 auto; width: 118px; height: 108px; position: relative; padding-top: 10px; }
 .box4 .colb .head_pic .m { position: absolute; top: 0; left: 0; width: 118px; height: 118px; z-index: 3; background: url(/images/new/png_bg_2.png); _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/png_bg_2.png",sizingMethod="noscale"); _background: none; }
