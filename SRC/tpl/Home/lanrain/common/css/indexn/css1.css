@@ -975,13 +975,13 @@ padding: 5px 0;
     height: 280px;
     display: block;
     border: 4px solid #e8e8e8;
-    background: url("../images/resource_more1.jpg") no-repeat;
+    background: url("../../../images/resource_more1.jpg") no-repeat;
 }
 .resource_more:hover{
     width: 187px;
     height: 286px;
     border: none;
-    background: url("../images/resource_more.jpg") no-repeat;}
+    background: url("../../../images/resource_more.jpg") no-repeat;}
 /*第四块*/
 .resource_four{
     overflow: hidden;

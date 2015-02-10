@@ -6,7 +6,7 @@
 <meta name="Keywords" content="三甲医院知名医生,保健服务团队,私人医生服务平台,国康私人医生集团" />
 <meta name="Description" content="国康私人医生集团是国内最大的私人医生服务平台,医疗资源涵盖北京,上海,广州等全国各大城市的三甲医院的知名医生,拥有专业的保健服务团队,7X24小时响应服务." />
     <link rel="stylesheet" href="/tpl/Home/lanrain/css/reset.css" />
-    <link rel="stylesheet" href="/tpl/Home/lanrain/css/css.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/indexn/css1.css" />
     <link rel="stylesheet" href="/tpl/Home/lanrain/css/page.css" />
 	<script type="text/javascript" src="/tpl/Home/lanrain/js/jquery-min-1.7.js"></script>
     <script type="text/javascript" src="/tpl/Home/lanrain/js/js.js"></script>
@@ -88,66 +88,6 @@
         <div style="height:50px;"></div>
     </div>
 </div>
-
-<div id="LRdiv0" style="display: block;">
-
-<script type="text/javascript">
-    var browser = {
-
-        versions: function () {
-            var u = navigator.userAgent, app = navigator.appVersion;
-
-            return {
-                trident: u.indexOf('Trident') > -1, //IE内核
-                presto: u.indexOf('Presto') > -1, //opera内核
-                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-                mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
-                ios: !!u.match(/(i[^;]+\;(U;)? CPU.+Mac OS X)/), //ios终端
-                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-                iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
-                iPad: u.indexOf('iPad') > -1, //是否iPad
-                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-            };
-        } (),
-        language: (navigator.browserLanguage || navigator.language).toLowerCase()
-    }
-
-    
-    $(function () {
-    if(browser.versions.iPad)
-    {
-        $('#demo01').flexslider({
-            animation: "slide",
-            direction: "horizontal",
-            easing: "swing",
-            manualControls: ".doctor_ul li a span"
-        });  
-         }
-        else
-        {
-        $('#demo01').flexslider({
-            animation: "slide",
-            direction: "horizontal",
-            easing: "swing",
-            manualControls: ".doctor_ul li"
-        });  
-        }
-        //        $(".doctor_ul li").mousemove(function (i) {
-        //            var id = $(this).attr("data");
-        //            $('#demo01 li').removeClass("flex-active-slide");
-        //            $('#demo01 li').eq(id).addClass("flex-active-slide");
-
-        //        })
-//        $('#demo02').flexslider({
-//            animation: "slide",
-//            direction: "vertical",
-//            easing: "swing"
-//        });
-     
-    });
- 
-</script>
-</div>
+ <include file="Public:footer2" />
 </body>
 </html>
