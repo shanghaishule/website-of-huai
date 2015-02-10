@@ -8,7 +8,7 @@
                 pagination: "#pager",
                 scroll: 1000
             });
-           
+ 
             $(function () {
                 $("#sorllMenu11").marquee({
                     isAuto: true, distance: 239, time: 3, btnGo: {
@@ -26,6 +26,7 @@
                         up: '#left2', down: '#right2'
                     }
                 });
+
 //                $("#sorllMenu12").marquee({
 //                    direction: "up", distance: 27, time: 2, btnGo: {
 //                        up: '#left2', down: '#right2'
@@ -260,25 +261,25 @@
 		            	<li><a href="http://www.guokang.com/p_qyln.htm" target="_blank">复诊助手</a></li>                                    	                     
 		            	<li><a href="http://www.guokang.com/p_gltd.htm" target="_blank">绿色通道</a></li>                                    	                     
 		            	<li><a href="http://www.guokang.com/p_gkgtxcsp.htm" target="_blank">白金体检</a></li>                                    	                                    	                                    	                                    	                                    	                                    	                                    	                                    	                                    	                                        
-		            	<li><a href="http://www.guokang.com/n_5.htm" target="_blank">亚健康管理</a></li>
+		            	<li><a href="{lanrain::U('Home/Huai/yjkgl')}" target="_blank">亚健康管理</a></li>
 		    		</ul>
                 </span>
                 <span><a href="http://www.guokang.com/p_help.htm">沪爱介绍</a>
                     <ul>
-	                    <li><a href="http://www.guokang.com/p_cgwt.htm" target="_blank">公司介绍</a></li>
-	                    <li><a href="http://www.guokang.com/p_fwnr.htm" target="_blank">公司新闻</a></li>
-	                    <li><a href="http://www.guokang.com/p_fwwd.htm" target="_blank">就医资讯</a></li>
-	                    <li><a href="http://www.guokang.com/p_ygfk.htm" target="_blank">专家观点</a></li>
+	                    <li><a href="#" target="_blank">公司介绍</a></li>
+	                    <li><a href="{lanrain::U('Home/Huai/news',array('cname'=>'公司新闻'))}" target="_blank">公司新闻</a></li>
+	                    <li><a href="{lanrain::U('Home/Huai/news',array('cname'=>'就医资讯'))}" target="_blank">就医资讯</a></li>
+	                    <li><a href="{lanrain::U('Home/Huai/news',array('cname'=>'专家观点'))}" target="_blank">专家观点</a></li>
                     </ul>
                 </span>
                 <span><a href="http://www.guokang.com/p_person.htm">沪爱服务</a>
                     <ul>
-                        <li><a href="http://www.guokang.com/p_ygkmxbgl.htm" target="_blank">个人及家庭</a></li>
+                        <li><a href="{lanrain::U('Home/Huai/jzfa')}" target="_blank">个人及家庭</a></li>
                         <li><a href="http://www.guokang.com/p_gkgg.htm" target="_blank">企业顾问</a></li>
                         <li><a href="http://www.guokang.com/p_myld.htm" target="_blank">医生服务</a></li>
                     </ul>
                 </span>
-                <span><a href="http://www.guokang.com/p_resource.htm">优质资源</a>
+                <span><a href="{lanrain::U('Home/Huai/source')}">优质资源</a>
                     <ul>
                         <li><a href="http://www.guokang.com/n_73.htm" target="_blank">知名专家</a></li>
                         <li><a href="http://www.guokang.com/n_74.htm" target="_blank">强大的医院</a></li>
@@ -289,17 +290,6 @@
         </div>
         <div class="feet_copyright">
                 <p>Copyright @ 2014 www.hajk.com.cn  All rights reserved  版权所有：上海沪爱健康管理有限公司<a href="www.miitbeian.gov.cn" style="color:white;" >&nbsp;&nbsp;&nbsp;沪ICP备09033276号</a></p> 
-                <div style=" display:none;"></div>
-                 <div id="LRdiv1" style="display:none;"></div>
-                 <div id="LRdiv2" style="display:none;"></div>
-                 <div id="LRdiv3" style="display:none;"></div>
-                 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="0" height="0" id="LR_Flash" class="noswap"><param name="movie" value="http://pat.zoosnet.net/js/lrfla.swf"><param name="BGColor" value="FFFFFF"><param name="quality" value="high"><param name="Scale" value="NoBorder"><param name="allowScriptAccess" value="always"><embed src="http://pat.zoosnet.net/js/lrfla.swf" quality="high" width="0" height="0" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" name="LR_Flash" allowscriptaccess="always"></object>
-                 <script language="VBScript">
-On Error Resume Next
-Sub LR_Flash_FSCommand(ByVal command, ByVal args)
-	Call LR_Flash_DoFSCommand(command, args)
-End Sub
-</script>
 <script>
 var _hmt = _hmt || [];
 (function() {

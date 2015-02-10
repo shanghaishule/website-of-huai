@@ -764,7 +764,6 @@ overflow: hidden;
     margin-left: -26px;
     background: url("../images/ydian.png") no-repeat 0px;
 }
-
 .round1{margin-top: 0;*margin-left:-222px;}
 .resource_head{
     overflow: hidden;
@@ -773,7 +772,7 @@ overflow: hidden;
 }
 .resource_position{
     float: left;
-    color: #006835;
+    color: #3a89c9;
     display: block;
     text-indent: 15px;
     font-size: 12px;
@@ -785,6 +784,7 @@ overflow: hidden;
 
 .resource_main{
     overflow: hidden;
+    border-left: 1px solid #c3c3c3;
 }
 .resource_share{
     float: right;
@@ -866,17 +866,16 @@ overflow: hidden;
 .resource_two{
     overflow: hidden;
     margin-left: 20px;
- border: 5px solid #ccc;
-margin-bottom: 20px;   
+    
 }
-.l1{border-top:1px solid #ccc;height:1px;margin-top:10px}
+.j-content  .resource_two{border:5px solid #ccc;margin-bottom:20px;}
 .resource_name{
-    color: #006835;
+    color: #777;
     font-size: 24px;
     font-weight: bold;
     overflow: hidden;
-	text-align:center;
 }
+.j-content .resource_name{color:#006835;text-align:center;}
 .resource_name_p{
     color: #777;
     font-size: 24px;
@@ -902,8 +901,8 @@ margin-bottom: 20px;
 	float:right;
 	 
 }
-.resource_p{color: #b9b9b9;	text-align:center;}
-
+.resource_p{color: #b9b9b9;}
+.j-content .resource_p{text-align:center;}
 .resource_ul{
     padding-top: 25px;
     overflow: hidden;
@@ -1787,7 +1786,7 @@ float: right;
     display: block;
     text-align: center;
     line-height: 24px;
-    background: #006835;
+    background: #3a89c9;
 }
 .person_more:hover{
     color: #fff;
@@ -2850,3 +2849,5 @@ color: white;
 	margin-right:78px;
 	overflow:hidden;
 }
+.l1{border-top:1px solid #ccc;height:1px;margin-top:10px;}
+.b-normal{border:none;}
