@@ -644,7 +644,7 @@ overflow: hidden;
 /*feet*/
 .feet{
     
-    background: #006969;
+    background:#006835;
 }
 .feet_left{
     width: 254px;
@@ -697,7 +697,7 @@ overflow: hidden;
 }
 
 .feet_code{
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 .feet_right{
@@ -726,7 +726,7 @@ overflow: hidden;
     padding-top: 8px;
 }
 .feet_ul span ul li a{
-    color: #87b7dd;
+    color: #ffffff;
     font-size: 12px;
     line-height: 23px;
     font-weight: 100;
@@ -737,13 +737,17 @@ overflow: hidden;
 
 .feet_copyright{
     overflow: hidden;
+	float: left;
+	margin-left: 19px;
 }
 .feet_copyright p{
-    color: #15558a;
+    color: #ffffff;
     line-height: 25px;
+	font-size: 16px;
 }
 .feet_copyright p a{
-    color: #15558a;
+    color: #ffffff;
+	font-size: 16px;
 }
 .feet_copyright p a:hover{
     color:#fff;
