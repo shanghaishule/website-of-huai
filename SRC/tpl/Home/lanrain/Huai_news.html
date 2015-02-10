@@ -9,6 +9,9 @@
     
 
 
+<link rel="stylesheet" href="__PUBLIC__/layout/style.css" type="text/css" />
+
+<script type="text/javascript" src="__PUBLIC__/layout/js/jquery.js"></script>
  <link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/indexn/cssreset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/indexn/css1.css">
 <!-- Header start -->
@@ -18,7 +21,7 @@
     <script type="text/javascript" src="__PUBLIC__/js/indexn/js.js"></script>
     <script type="text/javascript" src="__PUBLIC__/js/indexn/jq.marq.js"></script>
 <script src="__PUBLIC__/js/indexn/jquery.flexslider-min.js"></script>
-
+<script type="text/javascript" src="__PUBLIC__/layout/js/main.js"></script>
 <script>
 $(function(){
 	$('.flexslider').flexslider({
@@ -34,14 +37,11 @@ $(function(){
 
 
 <!--top-->
-
-<link rel="stylesheet" href="__PUBLIC__/layout/style.css" type="text/css" />
-<script type="text/javascript" src="__PUBLIC__/layout/js/jquery.js"></script>
 <div class="top">
     <!--top_one-->
     <div class="top_one">
         <!--logo-->
-        <a href="./中国领先的私人医生服务机构-国康健康管理服务有限公司_files/中国领先的私人医生服务机构-国康健康管理服务有限公司.html" class="top_logo"><img src="__PUBLIC__/images/header1.png" width="960" alt="沪爱健康" title="沪爱健康"></a>
+        <a href="" class="top_logo"><img src="__PUBLIC__/images/header1.png" width="960" alt="沪爱健康" title="沪爱健康"></a>
         <!--ico-->
     </div>
     <!--top_two-->
@@ -67,12 +67,12 @@ $(function(){
 </script>
         <!--navigation-->
         <div class="navigation">
-         	    <span><a href="" class="hover">首 页</a>
+         	    <span><a href="{lanrain::U('Home/Huai/indexn')}" class="hover">首 页</a>
                  <!-- -->
 
         </span>
 		
-                	    <span><a href="" class="1" -"36"="">个人及家庭</a>
+                	    <span><a href="{lanrain::U('Home/Huai/family')}" class="1">个人及家庭</a>
                  <!--                      <ul class="nav_ul">
                                            <li><a href="/n_76.htm">典型客户</a></li>
                   
@@ -83,7 +83,7 @@ $(function(){
 
         </span>
 		
-                	    <span><a href="" class="1" -"82"="">企业顾问</a>
+                	    <span><a href="{lanrain::U('Home/Huai/enterprise')}" class="1" -"82"="">企业顾问</a>
                  <!-- -->
 
         </span>
@@ -95,14 +95,14 @@ $(function(){
                     -->
 
         </span>
-		 <span><a href="" class="1" -"82"="">优质资源</a></span>
-                	    <span><a href="http://www.guokang.com/p_resource.htm" class="1" -"75"="">沪爱商城</a>
+		 <span><a href="{lanrain::U('Home/Huai/source')}" class="1">优质资源</a></span>
+                	    <span><a href="http://www.guokang.com/p_resource.htm" class="1">沪爱商城</a>
                                 
                   
 
         </span>
 		
-                	    <span><a href="http://www.guokang.com/p_about1.htm" class="1" -"79"="">关于沪爱</a>
+                	    <span><a href="http://www.guokang.com/p_about1.htm" class="1">关于沪爱</a>
                 <ul class="nav_ul">
                                            <li><a href="{lanrain::U('Home/Huai/about')}">沪爱简介</a></li>
                                            <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
@@ -118,7 +118,6 @@ $(function(){
         </div>
     </div>
 </div>
-   
     	<!-- HEADER END -->
     <div class="b10"></div>        
         <!-- CONTENT BEGIN -->
