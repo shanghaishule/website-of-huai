@@ -80,7 +80,10 @@ class HuaiAction extends BaseAction {
 	}
 	//indexn
 	public function indexn(){
-	
+		$mod = M('zhuanjia');
+		$list = $mod->limit(0,9)->select();
+		$list = $this->getList($list);
+		$this->assign('list',$list);
 		$this->display();
 	}
 

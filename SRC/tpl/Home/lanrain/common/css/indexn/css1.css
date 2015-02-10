@@ -2787,8 +2787,8 @@ color: white;
 .eight_prev,.eight_next{width: 33px;height: 33px;display: block;margin-top: 80px;}
 .eight_prev{background: url("/tpl/Home/lanrain/common/images/indexn/platfrom_prev.png") no-repeat;float: left;}
 .eight_next{background: url("/tpl/Home/lanrain/common/images/indexn/playtfrom_next.png") no-repeat;float: right;}
-.eight_prev:hover{background: url("../images/platfrom_prev_hover.png") no-repeat;float: left;}
-.eight_next:hover{background: url("../images/platfrom_next_hover.png") no-repeat;float: right;}
+.eight_prev:hover{background: url("../../../images/platfrom_prev_hover.png") no-repeat;float: left;}
+.eight_next:hover{background: url("../../../images/platfrom_next_hover.png") no-repeat;float: right;}
 .eight_u{
     width: 883px;
     height: 235px;
