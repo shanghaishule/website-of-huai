@@ -871,10 +871,11 @@ overflow: hidden;
 .resource_two{
     overflow: hidden;
     margin-left: 20px;
-	text-align:center;border: 5px solid #ccc;
+	text-align:center;
 margin-bottom: 20px;
     
 }
+.Wrapright{text-align:center}
 .resource_name{
     color: #777;
     font-size: 24px;
@@ -882,7 +883,8 @@ margin-bottom: 20px;
     overflow: hidden;
 	overflow: hidden;
 padding: 5px 0;
-	color:#006939
+	color:#006939;
+	background: #DCDBDB;
 }
 .resource_name_p{
     color: #777;
