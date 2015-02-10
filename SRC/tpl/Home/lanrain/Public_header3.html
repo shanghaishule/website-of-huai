@@ -39,24 +39,27 @@ $(function(){
     <!--top_one-->
     <div class="top_one">
         <!--logo-->
-        <a href="" class="top_logo"><img src="__PUBLIC__/images/header1.png" width="960" alt="沪爱健康" title="沪爱健康"></a>
+        <a href="{lanrain::U('Home/Huai/indexn')}" class="top_logo">
+        <img src="__PUBLIC__/images/header1.png" width="960" alt="沪爱健康" title="沪爱健康">
+        </a>
         <!--ico-->
     </div>
     <!--top_two-->
     <div class="top_two">
         <!--doctor-->
         <div class="doctor">
-         <a onclick="javascript:location.href=&#39;/p_person.htm&#39;" href="">沪爱产品</a>
+         <a onclick="" href="">沪爱产品</a>
             <ul class="doctor_ul" style="display: none; height: 0px;">
                                 
-   <li data="" class=""><a href=""><span>就医陪诊</span></a></li>
+   <li data="" class=""><a href="{lanrain::U('Home/Huai/diagnosis')}"><span>就医陪诊</span></a></li>
             	                   
-   <li data="" class="flex-active"><a href=""><span>复诊助手</span></a></li>
+   <li data="" class="flex-active"><a href="{lanrain::U('Home/Huai/suspect')}"><span>复诊助手</span></a></li>
             	                   
-   <li data=""><a href=""><span>绿色通道</span></a></li>
+   <li data=""><a href="{lanrain::U('Home/Huai/lvse')}"><span>绿色就医</span></a></li>
             	                   
-   <li data=""><a href=""><span>定制体检</span></a></li>
+   <li data=""><a href=" {lanrain::U('Home/Huai/exam')}"><span>白金体检</span></a></li>
    <li data=""><a href=""><span>亚健康管理</span></a></li>
+   <li data=""><a href=""><span>移植中心</span></a></li>
             	           
             </ul>
         </div>
@@ -70,7 +73,7 @@ $(function(){
 
         </span>
 		
-                	    <span><a href="{lanrain::U('Home/Huai/family')}" class="1">个人及家庭</a>
+                	    <span><a href="{lanrain::U('Home/Huai/jzfa')}" class="1">个人及家庭</a>
                  <!--                      <ul class="nav_ul">
                                            <li><a href="/n_76.htm">典型客户</a></li>
                   
@@ -85,7 +88,7 @@ $(function(){
                  <!-- -->
 
         </span>
-         <span><a href="" class="1" -"75"="">医生服务</a>
+         <span><a href="" class="1" >医生服务</a>
                  <!--                      <ul class="nav_ul">
                                            <li><a href="/n_73.htm">知名专家</a></li>
                                            <li><a href="/n_74.htm">强大的医院合作网络</a></li>
@@ -94,14 +97,10 @@ $(function(){
 
         </span>
 		 <span><a href="{lanrain::U('Home/Huai/source')}" class="1">优质资源</a></span>
-                	    <span><a href="http://www.guokang.com/p_resource.htm" class="1">沪爱商城</a>
-                                
-                  
+         <span><a href="www.81bjmall.com" class="1">沪爱商城</a> </span>
 
-        </span>
-		
-                	    <span><a href="http://www.guokang.com/p_about1.htm" class="1">关于沪爱</a>
-                        <ul class="nav_ul">
+                	    <span><a href="" class="1">关于沪爱</a>
+                <ul class="nav_ul">
                                            <li><a href="{lanrain::U('Home/Huai/about')}">沪爱简介</a></li>
                                            <li><a href="{lanrain::U('Home/Huai/hospitalall')}">医疗网络</a></li>
                                            <li><a href="{lanrain::U('Home/Huai/product')}">军医文化</a></li>
