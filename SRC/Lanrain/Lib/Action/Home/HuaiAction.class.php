@@ -144,7 +144,7 @@ class HuaiAction extends BaseAction {
 	public function jzfa(){
 		$this->display();
 	}
-	
+	//三大专题
 	public function d_jzfa1(){
 		$this->display();
 	}
@@ -156,15 +156,25 @@ class HuaiAction extends BaseAction {
 	public function d_jzfa3(){
 		$this->display();
 	}
-
+	
+    //亚健康管理
+    public function yjkgl(){
+    	$this->display();
+    }
 	// 资讯
 	public function news() {
+		$cname = addslashes($this->_get('cname','trim'));
+		if($cname == '就医资讯' || $cname == '专家观点' || $cname == '公司新闻'){
+			 $where['classname'] = $cname;
+		}else{
+			$where = " 1 = 1";
+		}
 		$db=D('Img');
 		//$where['classname']=$this->_get('classname','trim');
-		$count=$db->count();
+		$count=$db->where($where)->count();
 		$Page       = new Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数
 		$show       = $Page->show();//
-		$res=$db->order('statdate DESC,id ASC')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$res=$db->order('statdate DESC,id ASC')->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
 		$res=$this->convertLinks($res);
 		$this->assign('page',$show);
 		$this->assign('info',$this->info);
