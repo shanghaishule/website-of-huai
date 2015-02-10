@@ -785,7 +785,7 @@ overflow: hidden;
 
 .resource_main{
     overflow: hidden;
-    border-left: 1px solid #c3c3c3;
+    
 }
 .resource_share{
     float: right;
@@ -867,6 +867,8 @@ overflow: hidden;
 .resource_two{
     overflow: hidden;
     margin-left: 20px;
+	text-align:center;border: 5px solid #ccc;
+margin-bottom: 20px;
     
 }
 .resource_name{
@@ -874,6 +876,9 @@ overflow: hidden;
     font-size: 24px;
     font-weight: bold;
     overflow: hidden;
+	overflow: hidden;
+padding: 5px 0;
+	color:#006939
 }
 .resource_name_p{
     color: #777;
@@ -900,7 +905,7 @@ overflow: hidden;
 	float:right;
 	 
 }
-.resource_p{color: #b9b9b9;}
+.resource_p{color: #b9b9b9;border-bottom: 1px solid #ccc;}
 
 .resource_ul{
     padding-top: 25px;
@@ -1754,12 +1759,14 @@ float: right;
     width:212px;
     height: 154px;
     float: left;
-    border: 1px solid #c2c2c2;
+    
 }
 .person li .person_intro{
     width: 715px;
     float: right;
     overflow: hidden;
+	text-align: left;
+padding-top: 20px;
 }
 .person_intro h3{
     color: #666;

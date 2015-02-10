@@ -78,7 +78,28 @@ class HuaiAction extends BaseAction {
 	
 		$this->display();
 	}
+	//indexn
 	public function indexn(){
+	
+		$this->display();
+	}
+	//family
+	public function enterprise(){
+	
+		$this->display();
+	}
+	//high
+	public function high(){
+	
+		$this->display();
+	}
+	//center
+	public function center(){
+	
+		$this->display();
+	}
+	//worker
+	public function worker(){
 	
 		$this->display();
 	}
