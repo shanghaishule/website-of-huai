@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>三甲医院知名医生_保健服务团队_最大的私人医生服务平台-国康私人医生集团</title>
+<meta name="Keywords" content="三甲医院知名医生,保健服务团队,私人医生服务平台,国康私人医生集团" />
+<meta name="Description" content="国康私人医生集团是国内最大的私人医生服务平台,医疗资源涵盖北京,上海,广州等全国各大城市的三甲医院的知名医生,拥有专业的保健服务团队,7X24小时响应服务." />
+    <link rel="stylesheet" href="/tpl/Home/lanrain/css/reset.css" />
+    <link rel="stylesheet" href="/tpl/Home/lanrain/css/css.css" />
+    <link rel="stylesheet" href="/tpl/Home/lanrain/css/page.css" />
+	<script type="text/javascript" src="/tpl/Home/lanrain/js/jquery-min-1.7.js"></script>
+    <script type="text/javascript" src="/tpl/Home/lanrain/js/js.js"></script>
+    <script type="text/javascript" src="/tpl/Home/lanrain/js/jq.marq.js"></script>
+</head>
+<body>
+
+<div class="in_content">
+    <!--banner-->
+    <p style=" height:240px;background:url(/tpl/Home/lanrain/images/20141120105528_8330.jpg) no-repeat center; "></p>
+    <!--<img src="/include/upload/kind/image/20141120/20141120105528_8330.jpg" alt="深圳市国康健康管理服务有限公司" title="深圳市国康健康管理服务有限公司" width="100%">-->    <div style="height:30px;"></div>
+    <div class="main_cont">
+        <div class="resource_main">
+            <!--head-->
+            <div class="resource_head">
+                <div class="round round1"></div>
+                <div class="resource_position">
+                    您现在的位置：
+                  <a href="{lanrain::C('site_url')}">首页</a>
+                    » <a href="{lanrain::U('Home/Huai/source')}">优质资源</a> »<a href="javascript:void(0)">知名专家</a>
+                </div>
+                <!--right-->
+                <div class="resource_share">
+                    <span class="resource_fen">分享到：</span>
+                    <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                </div>
+            </div>
+			
+            <!--第三块-->
+            <div class="resource_two">
+                <div class="round"></div>
+                <div class="resource_name">知名专家</div>
+                <p class="resource_p">来自于500多家三甲医院的5500多名知名医学专家教授加盟沪爱健康平台</p>
+                <ul class="resource_ul">
+                      <volist name="list" id="val" mod="5">
+                      <li <eq name="mod" value="4">class="r"</eq>>
+                        <div class="resource_k">
+                            <div class="resource_k_name">
+                                <a href="javascript:void(0)"><h3>{lanrain:$val.name} 教授</h3></a>
+                                  
+                                <a href="javascript:void(0)"><h4>{lanrain:$val.hospital}{lanrain:$val.keshi}</h4></a>
+                            </div>
+                            <a href="javascript:void(0)" class="resource_k_pic"><img width="181" height="192" src="{lanrain:$val.img}" alt="" /></a>
+                            <div style=" height:0px;"><div class="keep" style="top: 155px;"> </div></div>
+                            <div style="top: 1px; position: relative; margin-left: -4px;" class="opa">
+                                <p class="resource_k_word"></p>
+                                <p class="resource_k_word_w">
+                                                         
+                           {lanrain:$val.name}
+                                                         
+                           {lanrain:$val.hospital}
+                                                         
+                           {lanrain:$val.keshi}
+                                                         
+                           {lanrain:$val.title}
+                            </p>
+                            </div>
+                        </div>
+                    </li>     
+                  </volist>
+                </ul>
+            </div>
+
+        </div>
+       <div class="viciao" id="page">{lanrain:$page}</div>
+    <div style="height:50px;"></div>
+    </div>
+</div>
+<div id="LRdiv0" style="display: block;">
+
+<script type="text/javascript">
+    var browser = {
+
+        versions: function () {
+            var u = navigator.userAgent, app = navigator.appVersion;
+
+            return {
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+                ios: !!u.match(/(i[^;]+\;(U;)? CPU.+Mac OS X)/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+        } (),
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+    }
+
+    
+    $(function () {
+    if(browser.versions.iPad)
+    {
+        $('#demo01').flexslider({
+            animation: "slide",
+            direction: "horizontal",
+            easing: "swing",
+            manualControls: ".doctor_ul li a span"
+        });  
+         }
+        else
+        {
+        $('#demo01').flexslider({
+            animation: "slide",
+            direction: "horizontal",
+            easing: "swing",
+            manualControls: ".doctor_ul li"
+        });  
+        }
+        //        $(".doctor_ul li").mousemove(function (i) {
+        //            var id = $(this).attr("data");
+        //            $('#demo01 li').removeClass("flex-active-slide");
+        //            $('#demo01 li').eq(id).addClass("flex-active-slide");
+
+        //        })
+//        $('#demo02').flexslider({
+//            animation: "slide",
+//            direction: "vertical",
+//            easing: "swing"
+//        });
+     
+    });
+ 
+</script>
+</div>
+</body>
+</html>

@@ -83,6 +83,7 @@ class HuaiAction extends BaseAction {
 	
 		$this->display();
 	}
+
 	//family
 	public function enterprise(){
 	
@@ -103,6 +104,56 @@ class HuaiAction extends BaseAction {
 	
 		$this->display();
 	}
+
+	//优质资源
+	public function source(){
+		$mod = M('zhuanjia');
+		$list = $mod->limit(0,9)->select();
+		$list = $this->getList($list);
+		$this->assign('list',$list);
+		$this->display();
+	}
+	//优质资源列表
+	public function lists(){
+		$mod = M('zhuanjia');
+		$count=$mod->count();
+		$Page       = new Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数
+		$show       = $Page->show();//
+		$list = $mod->limit($Page->firstRow.','.$Page->listRows)->select();
+		$list = $this->getList($list);
+		$this->assign('list',$list);
+		$this->assign('page',$show);
+		$this->display();
+	}
+	
+	public function getList($list = array()){
+		foreach ($list as $key => $val){
+			$hos = M('order_address')->field("id,name")->where(array('id'=>$val['address_id']))->find();
+			$keshi = M('keshi')->field("id,name")->where(array('id'=>$val['keshi_id']))->find();
+			$zhicheng = M('zhicheng')->field('id,name')->where(array('id'=>$val['zhicheng_id']))->find();
+			$list[$key]['hospital'] = $hos['name'];
+			$list[$key]['keshi'] = $keshi['name'];
+			$list[$key]['title'] = $zhicheng['name'];
+		}
+		return $list;
+	}	
+	//家族方案
+	public function jzfa(){
+		$this->display();
+	}
+	
+	public function d_jzfa1(){
+		$this->display();
+	}
+
+	public function d_jzfa2(){
+		$this->display();
+	}
+	
+	public function d_jzfa3(){
+		$this->display();
+	}
+
 	// 资讯
 	public function news() {
 		$db=D('Img');
