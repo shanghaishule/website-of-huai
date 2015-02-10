@@ -1,0 +1,154 @@
+<include file="Public:header3" />
+
+   
+
+<!--content-->
+<div class="in_content">
+    <!--banner-->
+                  <p style=" height:350px;background:url(__PUBLIC__/images/indexn/qiye.jpg) no-repeat center; background-size:100% 100%"></p>
+      <div style="height:30px;"></div>
+    <div class="main_cont">
+        <div class="resource_main">
+            <!--head-->
+            <div class="resource_head">
+                <div class="round round1"></div>
+                
+                <!--right-->
+               
+            </div>
+            <!--新增-->           
+             <div class="resource_two">
+                <!-- <div class="round"></div>
+                <div class="resource_name">企业健康现状</div>
+                <p class="resource_p"><span style="color:#B9B9B9;font-family:&#39;Microsoft YaHei&#39;;line-height:normal;text-indent:-24px;white-space:normal;background-color:#F6F6F6;">随着知识经济时代的到来，企业之间的竞争早已转变为人才之间的竞争，员工是企业最重要的财富。</span></p>
+                <ul class="person">
+                    <li>
+                        <a href="http://www.guokang.com/p_qyxz.htm" class="person_pic"><img width="212" height="154" src="__PUBLIC__/images/indexn/issue.jpg" alt="企业健康现状"></a>
+                        <div class="person_intro">
+                            
+                            <p>为了更好的留住人才，企业对员工的管理不再仅局限于招聘甄选、职业发展规划、绩效考核与薪资报酬等传统的人力资源管理，而开始重视和管理员工的健康，加大对健康福利的投资力度，如健康体检、医疗保险、健康大讲堂等</p>
+                            <a href="http://www.guokang.com/p_qyxz.htm" class="person_more">查看专题</a>
+                        </div>
+                    </li>
+                   
+                   
+                </ul> -->
+            </div>             <div class="resource_two">
+                <div class="round"></div>
+                <div class="resource_name">企业高管方案</div>
+                <p class="resource_p">管理团队在企业中担任重要职务，负责经营管理，是企业核心资产。</p>
+                <ul class="person">
+                    <li>
+                        <a href="{lanrain::U('Home/Huai/high')}" class="person_pic"><img width="212" height="154" src="__PUBLIC__/images/indexn/gaoguan.jpg" alt="高管方案"></a>
+                        <div class="person_intro">
+                            
+                            <p>亚健康管理/慢病管理/慢病并发症管理/家族病管理/就医策划管理/健康档案管理</p>
+                            <a href="{lanrain::U('Home/Huai/high')}" class="person_more">查看专题</a>
+                        </div>
+                    </li>
+                   
+                   
+                </ul>
+            </div>             <div class="resource_two">
+                <div class="round"></div>
+                <div class="resource_name">企业中层方案</div>
+                <p class="resource_p">中层干部及核心研发人员是企业最重要的人才，是企业核心竞争力的保障。</p>
+                <ul class="person">
+                    <li>
+                        <a href="{lanrain::U('Home/Huai/center')}" class="person_pic"><img width="212" height="154" src="__PUBLIC__/images/indexn/zhongceng.jpg" alt="中层方案"></a>
+                        <div class="person_intro">
+                            
+                            <p>亚健康管理/慢病管理/就医策划管理/健康档案管理/体检管理</p>
+                            <a href="{lanrain::U('Home/Huai/center')}" class="person_more">查看专题</a>
+                        </div>
+                    </li>
+                   
+                   
+                </ul>
+            </div>             <div class="resource_two">
+                <div class="round"></div>
+                <div class="resource_name">企业员工方案</div>
+                <p class="resource_p">员工是企业最重要资产，企业的发展离不开员工的付出。</p>
+                <ul class="person">
+                    <li>
+                        <a href="{lanrain::U('Home/Huai/worker')}" class="person_pic"><img width="212" height="154" src="__PUBLIC__/images/indexn/yuangong.jpg" alt="员工方案"></a>
+                        <div class="person_intro">
+                           
+                            <p>重大疾病治疗路径策划管理/住院、手术安排/日常保健指导</p>
+                            <a href="{lanrain::U('Home/Huai/worker')}" class="person_more">查看专题</a>
+                        </div>
+                    </li>
+                   
+                   
+                </ul>
+            </div>             <div class="resource_two">
+              <!--   <div class="round"></div>
+                <div class="resource_name">体检经纪</div>
+                <p class="resource_p"><span style="color:#B9B9B9;line-height:normal;font-family:&quot;Microsoft YaHei&quot;;white-space:normal;background-color:#F6F6F6;">繁琐的体检 &nbsp;一站式搞定 &nbsp;顾问式体检服务</span></p>
+                <ul class="person">
+                    <li>
+                        <a href="{lanrain::U('Home/Huai/gexing')}" class="person_pic"><img width="212" height="154" src="__PUBLIC__/images/indexn/tijian.jpg" alt="体检经纪"></a>
+                        <div class="person_intro">
+                            <h3>体检经纪方案</h3>
+                            <p>综合评估体检单位实力、特色、环境等，快速挑选出合适的体检单位个性化设计体检套餐，避免漏查体检过程把控，保证有序进行</p>
+                            <a href="{lanrain::U('Home/Huai/gexing')}" class="person_more">查看专题</a>
+                        </div>
+                    </li>
+                   
+                   
+                </ul> -->
+            </div> 
+           <!--选择我们的企业-->
+           
+
+
+           
+            <script>
+                $(function () {
+                    jQuery.post("/qy.aspx?code=77", { "code": 77 }, function (data) {
+
+                        $(".qyjpost").html(data);
+
+                    })
+                })
+               
+                function onlists(i) {
+                    jQuery.post("json_cont.aspx?act=case_qy", { "cat_id": 77, "id": i, "cont": "json/qyj" }, function (data) {
+
+                        $(".qyjadd").html(data);
+
+                    })
+                }             
+//            
+        $(function () {
+            qy();
+        })
+        function qy() {
+            jQuery.post("/Case.aspx?code=76", { "code": 76 }, function (data) {
+
+                $(".qypost").html(data);
+
+            })
+        }
+        function onlist(i) {
+            jQuery.post("json_cont.aspx?act=case_qy", { "cat_id": 76, "id": i, "cont": "json/qy" }, function (data) {
+             
+                $(".qyadd").html(data);
+
+            })
+        }
+            </script>
+ 
+
+            <div style="height:50px;"></div>
+        </div>
+        <div style="height:50px;"></div>
+    </div>
+</div>
+    
+<!--feet-->
+<include file="Public:footer2" />
+</body>
+</html>
+                  
+
