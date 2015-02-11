@@ -2571,9 +2571,9 @@ color: white;
 .two_c li a img{width: 324px;height: 170px;margin-bottom: 20px;}
 .two_c li a h1{font-size: 18px;color: #666;font-weight: bold;padding-bottom: 10px;}
 .two_c li a p{padding: 0px 20px 0px 25px;overflow: hidden;height: 47px;color: #666;text-align: left;}
-.two_c li a:hover{background: url("/tpl/Home/lanrain/common/images/indexn/greenbg.jpg") no-repeat center;}
+.two_c li a:hover{background: url("/tpl/Home/lanrain/common/images/indexn/greenbg.jpg") no-repeat center;text-decoration: none;}
 .two_c li a:hover h1{color: #fff;}
-.two_c li a:hover p{color: #d9e5f2;}
+.two_c li a:hover p{color: white;}
 
 /*three*/
 .ne_three{overflow: hidden;height: 522px;background: #f1f1f1;}
@@ -2632,10 +2632,10 @@ color: white;
 .six_title{}
 .six_title h1{color: #7f7f7f;font-size: 24px;}
 .six_title h1 span{font-size: 24px;font-family: -webkit-pictograph;color: #959595;padding-left: 5px;}
-.six_c{overflow: hidden;padding: 50px 0px 0px 0px;}
+.six_c{overflow: hidden;padding: 50px 0px 0px 0px;text-align:center}
 .six_c li{padding:0px 20px;*padding:0px 16px;float: left;height: 60px;cursor: pointer;margin-bottom: 50px;width: 310px;}
 .six_c li  .six_c4,.six_c1,.six_c2,.six_c3,.six_c5,.six_c6{display: block;width: 65px;height: 60px;float: left;}
-.six_c li .six_z{float: left;padding-left: 10px;overflow: hidden;width: 225px;}
+.six_c li .six_z{float: left;padding-left: 44px;overflow: hidden;width: 225px;text-align:center}
 .six_z h3{color: #006939;font-size: 24px;font-weight: bold;}
 .six_z p{padding-top: 8px;}
 .six_c1{background: url("../images/six1.png") no-repeat 0px;}
