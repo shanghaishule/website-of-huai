@@ -90,20 +90,26 @@
         </div>
         <div class="two_c">
             <ul>
-                <li style="margin-top: 0px;"><a target="_blank" href=""{lanrain::U('Home/Huai/jzfa')}"">
+
+                <li style="margin-top: 0px;"><a target="_blank" href="{lanrain::U('Home/Huaijzfa')}">
+
                     <img src="__PUBLIC__/images/indexn/prog1.jpg" width="324" height="170" alt="">
                     <h1>个人及家庭</h1>
-                    <p>健康不仅是没有疾病或不虚弱，同时也是身体、心理和社会功能的良好适应和完满状态 </p>
+
+                    <p>沪爱健康组织全国知名专家开展糖尿病、高血压、冠心病、颈腰椎等慢病深入研究</p>
+
                 </a></li>
                 <li style="margin-top: 0px;"><a target="_blank" href="{lanrain::U('Home/Huai/enterprise')}">
                     <img src="__PUBLIC__/images/indexn/prog2.jpg" width="324" height="170" alt="">
                    <h1>企业方案</h1>
+
                     <p>员工是企业最重要资产，是企业核心竞争力的保障，企业的发展离不开员工的付出</p>
+
                 </a></li>
-                <li style="padding-right: 0px; margin-top: 0px;"><a target="_blank" href="#">
+                <li style="padding-right: 0px; margin-top: 0px;"><a target="_blank" href="{lanrain::U('Home/Huai/yisheng')}">
                     <img src="__PUBLIC__/images/indexn/prog3.jpg" width="324" height="170" alt="">
              <h1>医生服务</h1>
-                    <p>员工是企业最重要资产，企业的发展离不开员工的付出。</p>
+                    <p>让医生很好的管理自己的病人</p>
                 </a></li>
             </ul>
         </div>
@@ -205,10 +211,21 @@
         <div class="eight_title"></div>
         <div class="ten_c" id="">
             <ul style="width: 12336px;">
-                                <li><a target="_blank" href="">
+                                <li class="jsshow"><a target="_blank" href="">
                     <img src="__PUBLIC__/images/indexn/changhai.jpg" alt="" width="238" height="150">
-                    <p>第二军医大学附属第一医院长海医院</p>
-                </a></li>
+                    <p>第二军医大学附属第一医院长海医院</p> 
+                    <p>现有国家临床医学研究中心1个,国家级重点学科15个，国家卫生部临床重点专科5个，全军医学专科研究所（中心）18个、重点实验室2个，全军或上海市护理示范基地10个，上海市重点学科1个、医学重点学科2个、临床医学中心2个、专业质控中心7个、示范学科1个，胰腺疾病和前列腺疾病诊疗团队入选“国家教育部创新团队”。</p> 
+                    </a>
+                                                                                                          
+					 <div class="imgtext">
+											       
+						 <p id="imgtextp"style="padding-top: 109px;line-height: 20px"> 
+								肿瘤筛查年龄：女性45岁，男性50岁。 建议年龄提前： 女性35岁，男性40岁。例如：有乳腺癌家族史的人，从35岁开始每年进行一次乳房X线摄影（乳腺钼钯）筛查。
+
+</p>
+					</div>
+                    
+                    </li>
                               <li><a target="_blank" href="http://www.guokang.com/n_detail/4398.htm">
                      <img src="__PUBLIC__/images/indexn/changzheng.jpg" alt="" width="238" height="150">
                     <p>第二军医大学附属第二医院长征医院</p>
@@ -222,6 +239,21 @@
         </div>
         <a target="_blank" href="{lanrain::U('Home/Huai/source')}" class="more">更多医院&gt;&gt;</a>
     </div>
+    <script type="text/javascript">
+								$(function(){
+								 $(".imgtext").hide();
+								 $(".jsshow").hover(
+								  function(){
+									     $(this).find('.jsa').hide();
+								          $(this).find('.imgtext').show().animate({top:"0"},400);
+								     },
+							      function(){
+									    $(this).find('.jsa').show();
+								         $(this).find(".imgtext").animate({top:"284px"},400);
+								     }   
+								 );								 
+								});
+	</script>
 </div>
  <include file="Public:footer2" />
 </body>

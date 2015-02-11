@@ -17,7 +17,12 @@
     <script type="text/javascript" src="__PUBLIC__/js/indexn/js.js"></script>
     <script type="text/javascript" src="__PUBLIC__/js/indexn/jq.marq.js"></script>
 <script src="__PUBLIC__/js/indexn/jquery.flexslider-min.js"></script>
-
+<script>
+    $(function(){
+    	$('a[href="/index.php'+location.search+'"]').parent().addClass('current');
+    	$('a[href="'+location.href+'"]').parent().addClass('current');
+    });
+    </script>
 
 <script>
 $(function(){
