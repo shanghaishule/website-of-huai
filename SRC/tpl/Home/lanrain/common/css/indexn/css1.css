@@ -2930,7 +2930,7 @@ li.p-one{margin-left:20px;margin-right:40px;}
 .p_resource_two .pz-step li .p-buy{margin:0;position:relative;}
 .p-buy a{color:#FFFFFF;font-size:16px;padding:4px 0 15px 0;margin:20px auto 0 auto;width:100px;height:15px;border-radius:5px;display:block;background-color:#006939;text-decoration:none;}
 .p-buy a:hover{text-decoration:none;}
-.buy-code{width:180px;height:180px;position:absolute;bottom:38px;left:27%;border: 1px solid #ccc;display:none;}
+.buy-code{width:180px;position:absolute;bottom:35px;left:27%;border: 1px solid #ccc;display:none;background:#FFFFFF;}
 .buy-code img{display:block;}
 .shixiang{width:932px;padding:25px 10px 25px 20px;margin-left:20px;border:1px solid #ccc;}
 .shixiang ul li{line-height:30px;}
