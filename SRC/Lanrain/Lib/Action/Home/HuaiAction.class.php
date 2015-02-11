@@ -184,7 +184,10 @@ class HuaiAction extends BaseAction {
 		
 		$this->display();
 	}
-	
+	//移植中心
+	public function yizhi(){
+		$this->display();
+	}
 	//资讯详情
 	public function newsDetail(){
 	   $id = $this->_get('itemid','trim,intval');
