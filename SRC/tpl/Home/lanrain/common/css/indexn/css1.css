@@ -868,6 +868,10 @@ overflow: hidden;
     background: url("../images/sxuan.png") no-repeat 38px 11px #fff;
     *background: url("../images/sxuan.png") no-repeat 38px 2px #fff;
 }
+.current{background:#006939;color:white}
+span.current a{color:white}
+.jsshow{position:relative}
+.imgtext{position:absolute;top:0}
 /*第三块*/
 .resource_two{
     overflow: hidden;
@@ -2843,10 +2847,10 @@ color: white;
 /*ten*/
 .ne_ten{overflow: hidden;padding: 35px 0px;}
 .ten_c{overflow: hidden;padding: 18px 0px;}
-.ten_c li{width: 326px;float: left;overflow: hidden;padding-right: 19px;}
+.ten_c li{width: 300px;float: left;overflow: hidden;padding-right: px;border: 1px solid #ccc;margin-left:20px;height: 424px}
 .ten_c li.r{padding-right: 0;}
 .ten_c li a{display: block;text-align: center;}
-.ten_c li a p{line-height: 35px;color: #666;}
+.ten_c li a p{line-height: 35px;color: #006939;font-size:18px}
 .ten_c li a:hover img{
     filter: alpha(opacity=80);
     -moz-opacity: 0.8;
