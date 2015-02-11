@@ -5,7 +5,7 @@ return array (
   'DB_PORT' => '3306',
   'DB_NAME' => 'myhuai',
   'DB_USER' => 'root',
-  'DB_PWD' => '',
+  'DB_PWD' => '123456',
   'DB_PREFIX' => 'tp_',
 );
 ?>

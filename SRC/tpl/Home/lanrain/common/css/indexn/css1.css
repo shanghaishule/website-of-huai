@@ -2891,3 +2891,40 @@ line-height: 33px;
 	margin-right:78px;
 	overflow:hidden;
 }
+.pz .resource_position{color:#666666;font-size:13px;}
+.pz .resource_head{padding-bottom:10px;margin-left:0;}
+.pz .resource_head .jypz{color:#006939;}
+
+/**陪诊**/
+.p_main_cont{width: 1010px;
+overflow: hidden;
+margin: auto;}
+.p_resource_main{overflow: hidden;
+border-left: 1px solid #c3c3c3;}
+.p_resource_two{overflow: hidden;background:#ffffff;}
+.p_round{width: 11px;
+height: 11px;
+display: block;
+position: absolute;
+z-index: 1;
+margin-top: 10px;
+margin-left: -6px;
+background: url("../../../images/ydian.png") no-repeat 0px;}
+.p_resource_name{font-size: 24px;
+font-weight: bold;
+overflow: hidden;
+overflow: hidden;
+padding: 5px 0;margin-left: 20px;margin-bottom:15px;
+color: #000000;}
+ul.step li{width:230px;line-height:120px;border:1px solid #006939;float:left;display:inline;margin-left:15px;margin-bottom:15px;}
+ul.step li p{color:#006939;font-weight:bold;text-align:center}
+.red{color:#ff0000;}
+.pz-step li.p-one,.pz-step li.p-two{float:left;display:inline;width:400px;border:1px solid #c3c3c3;padding:30px;}
+li.p-one{margin-left:20px;margin-right:40px;}
+.pz-step li p{font-size:20px;font-weight:bold;text-align:center;margin-bottom: 20px;}
+.p_resource_two .pz-step li .p-buy{margin:0;position:relative;}
+.p-buy a{color:#FFFFFF;font-size:16px;padding:4px 0 15px 0;margin:20px auto 0 auto;width:100px;height:15px;border-radius:5px;display:block;background-color:#006939;text-decoration:none;}
+.p-buy a:hover{text-decoration:none;}
+.buy-code{width:180px;height:180px;position:absolute;bottom:38px;left:27%;border: 1px solid #ccc;display:none;}
+.buy-code img{display:block;}
+
