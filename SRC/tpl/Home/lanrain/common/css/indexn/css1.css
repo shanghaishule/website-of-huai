@@ -870,8 +870,7 @@ overflow: hidden;
 }
 .current{background:#006939;color:white}
 span.current a{color:white}
-.jsshow{position:relative}
-.imgtext{position:absolute;top:0}
+
 /*第三块*/
 .resource_two{
     overflow: hidden;
@@ -2817,7 +2816,8 @@ color: white;
 }
 .eight_u li img{position: relative;}
 .eight_u li h3{color: #666;font-size: 18px;font-weight: bold;padding: 10px 0px 3px 0px;}
-.eight_u li p{color: #666;}
+.eight_u li p{color: white;}
+.eight_u li p span{color:white}
 .eight_u li a:hover{color: #006939;}
 .eight_u li a:hover h3,.eight_u li a:hover p{color: #006939;}
 .eight_u li.r{padding-right: 0;}
@@ -2847,16 +2847,58 @@ color: white;
 /*ten*/
 .ne_ten{overflow: hidden;padding: 35px 0px;}
 .ten_c{overflow: hidden;padding: 18px 0px;}
-.ten_c li{width: 300px;float: left;overflow: hidden;padding-right: px;border: 1px solid #ccc;margin-left:20px;height: 424px}
+.ten_c li{width: 315px;float: left;overflow: hidden;padding-right: px;border: px solid #ccc;margin-left:20px;height: 350px}
 .ten_c li.r{padding-right: 0;}
-.ten_c li a{display: block;text-align: center;}
-.ten_c li a p{line-height: 35px;color: #006939;font-size:18px}
+.ten_c li a{display: block;text-align: center;border: 1px solid #ccc;height: 348px}
+.ten_c li a:hover{border:3px solid #006939;text-decoration:none}
+.ten_c li a p{line-height: 35px;color: #006939;}
 .ten_c li a:hover img{
     filter: alpha(opacity=80);
     -moz-opacity: 0.8;
     opacity: 0.8;
     -khtml-opacity: 0.8;
 }
+.jsshow{position:relative}
+.jsshow a img{padding-top:10px}
+.jsshow a .jsshowp{
+width: 90%;
+color: #888;
+line-height: 21px;
+margin-left: 5%;
+	padding-top:5px
+}
+.imgtext{color:white;position:absolute;bottom:0;height:284px;width:315px;background-color: #006939;
+FILTER: alpha(opacity=60);
+opacity: 1;
+-moz-opacity: 1;
+position: absolute;
+left: 0px;
+top:160px;}
+.jsshow a .jsshowp0{
+width: 90%;
+	height:30px;
+
+border-bottom:1px dashed #ccc;
+margin-left: 5%;
+}
+jsshownew{position:relative}
+
+
+.imgtext0{color:white;position:absolute;bottom:0;height:284px;width:170px;background-color: #006939;color:white;
+FILTER: alpha(opacity=60);
+opacity: 1;
+-moz-opacity: 1;
+position: absolute;
+left: 0px;
+top:160px;}
+.jsshow a .jsshowp0{
+width: 90%;
+	height:30px;
+
+border-bottom:1px dashed #ccc;
+margin-left: 5%;
+}
+.imgtext{position:absolute;top:160px}
 .ten_c li a:hover p{color: #006939;}
 
 .plat_more{

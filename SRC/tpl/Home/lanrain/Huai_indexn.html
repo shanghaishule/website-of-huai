@@ -190,12 +190,20 @@
             <div class="eight_u" id="sorllMenu11">
                 <ul style="width: 9560px;">
                   <volist name="list" id="vo">       
-                    <li><a target="_blank" href="#">
+                    <li class="jsshownew"><a target="_blank" href="#">
                         <div class="eight_k"></div>
                         <img src="{lanrain:$vo.img}" alt="" width="130" height="150">
                         <h3>{lanrain:$vo.name} 教授</h3>
                         <p>{lanrain:$vo.hospital}{lanrain:$vo.keshi}</p>
-                    </a></li>
+                    </a>
+                     <div class="imgtext0">
+											       
+						 <p style="padding-top: 10px;line-height: 20px;width:90%;padding-left:5%"> 
+								{lanrain:$vo.shanchang}
+
+                         </p>
+					</div>
+                    </li>
                  </volist>   
                     </ul>
             </div>
@@ -204,7 +212,22 @@
            <a target="_blank" href="{lanrain::U('Home/Huai/lists')}" class="more">更多医生&gt;&gt;</a>
         </div>
     </div>
-
+ <script type="text/javascript">
+								$(function(){
+								 $(".imgtext0").hide();
+								 $(".jsshownew").hover(
+								  function(){
+									     $(this).find('.jsa').hide();
+									     $(this).find('.imgtext0').addI
+								          $(this).find('.imgtext0').show().animate({top:"150"},400);
+								     },
+							      function(){
+									    $(this).find('.jsa').show();
+								         $(this).find(".imgtext0").animate({top:"235"},400);
+								     }   
+								 );								 
+								});
+	</script>
 
     <!--ten-->
     <div class="main_cont ne_ten">
@@ -213,27 +236,47 @@
             <ul style="width: 12336px;">
                                 <li class="jsshow"><a target="_blank" href="">
                     <img src="__PUBLIC__/images/indexn/changhai.jpg" alt="" width="238" height="150">
-                    <p>第二军医大学附属第一医院长海医院</p> 
-                    <p>现有国家临床医学研究中心1个,国家级重点学科15个，国家卫生部临床重点专科5个，全军医学专科研究所（中心）18个、重点实验室2个，全军或上海市护理示范基地10个，上海市重点学科1个、医学重点学科2个、临床医学中心2个、专业质控中心7个、示范学科1个，胰腺疾病和前列腺疾病诊疗团队入选“国家教育部创新团队”。</p> 
+                    <p class="jsshowp0">第二军医大学附属第一医院长海医院</p> 
+                    <p class="jsshowp">现有国家临床医学研究中心1个,国家级重点学科15个，国家卫生部临床重点专科5个，全军医学专科研究所（中心）18个、重点实验室2个。</p> 
                     </a>
                                                                                                           
 					 <div class="imgtext">
 											       
-						 <p id="imgtextp"style="padding-top: 109px;line-height: 20px"> 
-								肿瘤筛查年龄：女性45岁，男性50岁。 建议年龄提前： 女性35岁，男性40岁。例如：有乳腺癌家族史的人，从35岁开始每年进行一次乳房X线摄影（乳腺钼钯）筛查。
+						 <p id="imgtextp"style="padding-top: 10px;line-height: 20px;width:90%;padding-left:5%"> 
+								上海长海医院位于东海之滨、黄浦江畔，创建于1949年7月，始称华东军区人民医学院附属医院，1951年7月改称第二军医大学附属医院，1958年9月建制为第二军医大学第一附属医院，经过65年的建设发展，已经成为一所学科门类齐全医疗特色鲜明、综合实力强劲的现代化大型综合性医院。
 
-</p>
+                         </p>
 					</div>
                     
                     </li>
-                              <li><a target="_blank" href="http://www.guokang.com/n_detail/4398.htm">
+                    <li class="jsshow"><a target="_blank" href="http://www.guokang.com/n_detail/4398.htm">
                      <img src="__PUBLIC__/images/indexn/changzheng.jpg" alt="" width="238" height="150">
-                    <p>第二军医大学附属第二医院长征医院</p>
-                </a></li>
-                              <li><a target="_blank" href="http://www.guokang.com/n_detail/4387.htm">
+                    <p class="jsshowp0">第二军医大学附属第二医院长征医院</p>
+                     <p class="jsshowp">医院有10个国家重点学科，4个全军医学研究所，6个全军医学专科技术中心，2个上海市医学领先专业重点学科，2个上海市临床医学中心，是全军实验诊断重点实验室，国家药品临床研究基地，军队药品临床研究基地。</p> 
+                   
+                </a>
+                <div class="imgtext">
+											       
+						 <p id="imgtextp"style="padding-top: 10px;line-height: 20px;width:90%;padding-left:5%"> 
+								长征医院前身是1900年德国宝隆博士创办的“宝隆医院”，1930年更名为“国立同济大学附属医院”，1948年更名为“中美医院”；1955年10月，由时任国防部长彭德怀元帅签署命令，成立了“上海急症外科医院”；1958年9月，列编为“第二军医大学第二附属医院”；1966年9月，经上海市批准对外称“上海长征医院”。
+
+                         </p>
+					</div>
+                </li>
+                              <li class="jsshow"><a target="_blank" href="http://www.guokang.com/n_detail/4387.htm">
                      <img src="__PUBLIC__/images/indexn/gandan.jpg" alt="" width="238" height="150">
-                    <p>第二军医大学附属第三医院东方肝胆外科医院</p>
-                </a></li>
+                    <p class="jsshowp0">第二军医大学附属第三医院东方肝胆外科医院</p>
+                     <p class="jsshowp">已成为国家重点学科，国家级继续医学教育基地，全军肝胆外科专科中心，全军肝胆外科研究所，全军重点研究所，军队“重中之重”建设学科，上海市医学领先专业重点学科，上海市临床医学中心。</p> 
+                   
+                </a>
+                <div class="imgtext">
+											       
+						 <p id="imgtextp"style="padding-top: 10px;line-height: 20px;width:90%;padding-left:5%"> 
+								东方肝胆外科医院，是在我国肝胆外科开拓者、著名肝胆外科专家、中国科学院院士吴孟超教授领导下，从 1956 年成立肝胆外科三人小组开始，经过50多年的自力更生，由一个小组发展到集医、教、研为一体的院所合一、国内唯一的专科医院。
+
+                         </p>
+					</div>
+                </li>
                               
     </ul>
         </div>
@@ -245,11 +288,11 @@
 								 $(".jsshow").hover(
 								  function(){
 									     $(this).find('.jsa').hide();
-								          $(this).find('.imgtext').show().animate({top:"0"},400);
+								          $(this).find('.imgtext').show().animate({top:"190"},400);
 								     },
 							      function(){
 									    $(this).find('.jsa').show();
-								         $(this).find(".imgtext").animate({top:"284px"},400);
+								         $(this).find(".imgtext").animate({top:"351px"},400);
 								     }   
 								 );								 
 								});
