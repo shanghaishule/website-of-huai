@@ -14,6 +14,17 @@ class IndexAction extends BaseAction{
 		$this->assign('list',$list);
 		$this->display('indexn');
 	}
+	public function getList($list = array()){
+		foreach ($list as $key => $val){
+			$hos = M('order_address')->field("id,name")->where(array('id'=>$val['address_id']))->find();
+			$keshi = M('keshi')->field("id,name")->where(array('id'=>$val['keshi_id']))->find();
+			$zhicheng = M('zhicheng')->field('id,name')->where(array('id'=>$val['zhicheng_id']))->find();
+			$list[$key]['hospital'] = $hos['name'];
+			$list[$key]['keshi'] = $keshi['name'];
+			$list[$key]['title'] = $zhicheng['name'];
+		}
+		return $list;
+	}
 	
 	public function resetpwd(){
 		$uid=$this->_get('uid','intval');
