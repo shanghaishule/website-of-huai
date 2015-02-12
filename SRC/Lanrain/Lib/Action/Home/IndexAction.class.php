@@ -5,25 +5,7 @@ class IndexAction extends BaseAction{
 	}
 	//关注回复
 	public function index(){
-		$mod = M('zhuanjia');
-		$list = $mod->limit(0,9)->select();
-		foreach($list as $key => $val){
-			$list[$key]['shanchang'] = strip_tags($val['shanchang']);
-		}
-		$list = $this->getList($list);
-		$this->assign('list',$list);
 		$this->display('index');
-	}
-	public function getList($list = array()){
-		foreach ($list as $key => $val){
-			$hos = M('order_address')->field("id,name")->where(array('id'=>$val['address_id']))->find();
-			$keshi = M('keshi')->field("id,name")->where(array('id'=>$val['keshi_id']))->find();
-			$zhicheng = M('zhicheng')->field('id,name')->where(array('id'=>$val['zhicheng_id']))->find();
-			$list[$key]['hospital'] = $hos['name'];
-			$list[$key]['keshi'] = $keshi['name'];
-			$list[$key]['title'] = $zhicheng['name'];
-		}
-		return $list;
 	}
 	
 	public function resetpwd(){
