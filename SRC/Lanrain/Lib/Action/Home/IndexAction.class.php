@@ -5,20 +5,8 @@ class IndexAction extends BaseAction{
 	}
 	//关注回复
 	public function index(){
-		//就医资讯
-		$article_arr = M('img')->field('id,title')->where("classname='%s'",array('就医资讯'))->order('uptatetime DESC')->limit(9)->select();
-		//绿色通道
-		$green_arr = M('img')->field('id,title')->where("classname='%s'",array('绿色通道'))->order('uptatetime DESC')->limit(5)->select();
-		//专家观点
-		$idea_arr = M('img')->field('id,title')->where("classname='%s'",array('专家观点'))->order('uptatetime DESC')->limit(6)->select();
-		//公司新闻
-		$news_arr = M('img')->field('id,title')->where("classname='%s'",array('公司新闻'))->order('uptatetime DESC')->limit(10)->select();
-		
-		$this->assign('res',$article_arr);
-		$this->assign('res1',$green_arr);
-		$this->assign('res2',$idea_arr);
-		$this->assign('res3',$news_arr);
-		$this->display('indexn');
+		//$this->display('indexn');
+		$this->redirect(U("Huai/indexn"));
 	}
 	
 	public function resetpwd(){
