@@ -110,6 +110,11 @@ class HuaiAction extends BaseAction {
 	
 		$this->display();
 	}
+	
+	public function doctser(){
+	
+		$this->display();
+	}
 
 	//优质资源
 	public function source(){
