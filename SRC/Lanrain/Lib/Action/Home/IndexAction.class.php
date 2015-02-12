@@ -18,7 +18,7 @@ class IndexAction extends BaseAction{
 		$this->assign('res1',$green_arr);
 		$this->assign('res2',$idea_arr);
 		$this->assign('res3',$news_arr);
-		$this->display('Huai:index');
+		$this->display('Huai:indexn');
 	}
 	
 	public function resetpwd(){
