@@ -12,7 +12,7 @@ class IndexAction extends BaseAction{
 		}
 		$list = $this->getList($list);
 		$this->assign('list',$list);
-		$this->display('indexn');
+		$this->display('index');
 	}
 	public function getList($list = array()){
 		foreach ($list as $key => $val){
