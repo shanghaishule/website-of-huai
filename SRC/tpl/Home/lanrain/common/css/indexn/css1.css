@@ -1,10 +1,10 @@
 html,body
 {
-	min-width:1080px;
+	min-width:1010px;
 }
 /*top*/
 .top{
-    width: 1010px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -157,10 +157,11 @@ text-indent: 30px;
     top:50%;
     z-index:10;
     cursor:pointer;
-    opacity:0;
+    opacity:1;
     filter:alpha(opacity=0);
     -webkit-transition:all .3s ease;
 }
+.flex-direction-nav li{height:80px}
 .flex-direction-nav .flex-next{background-position:0 -90px;right:0;}
 .flex-direction-nav .flex-prev{left:0;}
 .flexslider:hover .flex-next{opacity:0.8;filter:alpha(opacity=25);}
@@ -2685,9 +2686,9 @@ color: white;
 .seven_le_c2 li a:hover{color: #006939;background: url("../images/seven_dot_hover.png") no-repeat 0px;}
 
 /* flexslider */
-.flexslider{position:relative;height:350px;overflow:hidden;background:url(../images/loading.gif) 50% no-repeat;}
+.flexslider{position:relative;height:350px;overflow:hidden;background:#f1f1f1 url(../images/loading.gif) 50% no-repeat;}
 .slides{position:relative;z-index:1;}
-.slides li{height:400px;}
+.slides li{height:350px;}
 .flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
 .flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
 .flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(../images/dot.png) right 0 no-repeat;cursor:pointer;}
@@ -2695,8 +2696,8 @@ color: white;
 
 .flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
 .flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
-.flex-direction-nav li a.flex-prev{left:40px;background:url(../images/prev.png) center center no-repeat;}
-.flex-direction-nav li a.flex-next{right:40px;background:url(../images/next.png) center center no-repeat;}
+.flex-direction-nav li a.flex-prev{left:40px;background:url(/tpl/Home/lanrain/common/images/indexn/prev.png) center center no-repeat;}
+.flex-direction-nav li a.flex-next{right:40px;background:url(/tpl/Home/lanrain/common/images/indexn/next.png) center center no-repeat;}
 
 
 .seven_ri_c{overflow: hidden;margin-top: 13px;}
