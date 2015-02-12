@@ -5,8 +5,14 @@ class IndexAction extends BaseAction{
 	}
 	//关注回复
 	public function index(){
-		//$this->display('indexn');
-		$this->redirect(U("Huai/indexn"));
+		$mod = M('zhuanjia');
+		$list = $mod->limit(0,9)->select();
+		foreach($list as $key => $val){
+			$list[$key]['shanchang'] = strip_tags($val['shanchang']);
+		}
+		$list = $this->getList($list);
+		$this->assign('list',$list);
+		$this->display('indexn');
 	}
 	
 	public function resetpwd(){
