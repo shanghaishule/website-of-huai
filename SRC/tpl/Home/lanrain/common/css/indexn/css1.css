@@ -734,7 +734,7 @@ overflow: hidden;
     font-weight: 100;
 }
 .feet_ul span ul li a:hover{
-    color:#15558a;
+    color:#f1f1f1;
 }
 
 .feet_copyright{
@@ -2848,7 +2848,7 @@ color: white;
 .nine_c li a:hover h5{text-decoration: underline;}
 
 /*ten*/
-.ne_ten{overflow: hidden;padding: 35px 0px;}
+.ne_ten{overflow: hidden;padding: 0px 0px;}
 .ten_c{overflow: hidden;padding: 18px 0px;}
 .ten_c li{width: 315px;float: left;overflow: hidden;padding-right: px;border: px solid #ccc;margin-left:20px;height: 350px}
 .ten_c li.r{padding-right: 0;}
