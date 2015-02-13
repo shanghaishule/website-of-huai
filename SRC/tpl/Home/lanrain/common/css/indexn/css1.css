@@ -154,7 +154,7 @@ text-indent: 30px;
     display:block;
     background:url(../images/ad_ctr.png) no-repeat;
     position:absolute;
-    top:50%;
+    top:36%;
     z-index:10;
     cursor:pointer;
     opacity:1;
