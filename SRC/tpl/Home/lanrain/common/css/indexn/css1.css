@@ -925,18 +925,19 @@ padding: 5px 0;
 }
 .resource_ul li{
     float: left;
-    width: 190px;
+    width: 193px;
     padding:0px 9px 10px 0px;
 }
 .resource_ul li.r{padding-right: 0;}
 .resource_ul .resource_k{
-    width: 180px;
+    width: 140px;
     height: 280px;
     background: #fff;
     text-align: center;
     position: relative;
     overflow: hidden;
     border: 4px solid #e8e8e8;
+	margin:auto
 }
 .resource_k .resource_k_name{
     height: 62px;
@@ -954,7 +955,7 @@ padding: 5px 0;
     font-size: 14px;
 }
 .resource_k .resource_k_pic{
-    width: 181px;
+    width: 140px;
     height: 192px;
 }
 .resource_k_word{
@@ -970,7 +971,7 @@ padding: 5px 0;
     color: #fff;
     padding: 5px 10px 5px 10px;
     position: relative;
-    margin-top: -45px;
+    margin-top: -50px;
     text-align: left;
 }
 .resource_more{
@@ -986,7 +987,11 @@ padding: 5px 0;
     width: 187px;
     height: 286px;
     border: none;
-    background: url("../../../images/resource_more.jpg") no-repeat;}
+    background:#006939;
+ filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    -khtml-opacity: 0.5;}
 /*第四块*/
 .resource_four{
     overflow: hidden;
@@ -999,7 +1004,7 @@ padding: 5px 0;
 }
 .resource_four li a{
     width: 246px;
-    height: 45px;
+    height: 46px;
     line-height: 46px;
     text-align: center;
     display: block;
