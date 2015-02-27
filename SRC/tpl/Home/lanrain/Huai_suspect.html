@@ -113,7 +113,7 @@ padding-top: 10px;">
 	     </div>
 	    <div class="booksusbtm1 right">
 	      <div class="booksusleft liucheng">
-				      <h2>服务流程</h2>
+				      <h2>我有疑问</h2>
 				      <div class="booksusleftcontent">
 				        <p>一：怎样确定检查项目</p>
 						    <h class="rebookhos">答：复诊的病人在治疗上都有规范化治疗依据。同时我们会第一时间帮您联系给您主诊的医生，再次确认您此次
@@ -127,9 +127,44 @@ padding-top: 10px;">
 				    
 				      </div>
 				      <div class="booksusleftcontent">
-				        <p>三：你们收费吗？</p>
+				        <p>三：你们收费吗？<a style="color:red" class="shoufei"  href="javascript:void(0)">查看收费标准</a></p>
 				    <h class="rebookhos">答：我们主要是针对目前老百姓看病难特别是院前检查时间久等待入院时间长等困难，着力采用网络科技加线下
 				       服务两种方式解决上述难题，其中有大量的工作人员参与在服务一线，需要收取适量的劳务费用。</h>
+				       <div class="fufei" id="" style="display:none;background:#006835;color:white"> 
+																		<ul> 
+																		<li class="tuijan">
+																			
+																					 <label><input name="taocanProject" type="checkbox" id ="taocan" value="套餐一：预约检查项目（一项）|300" />
+																					   <span class="choosemhead">套餐一：预约检查项目（一项）</span><span class="choosemoney">&nbsp;300</span> </label>
+																					   <p>提前预约各类检查项目，注：不提供人员陪同</p>
+																					
+																		</li> 
+																		<li class="tuijan">
+																			
+																					 <label><input name="taocanProject" type="checkbox" id ="taocan" value="套餐二：预约检查项目（两项及以上|500" />
+																					   <span class="choosemhead">套餐二：预约检查项目（两项及以上）</span><span class="choosemoney">&nbsp;500</span> </label>
+																					  <p>提前预约各类检查项目，注：不提供人员陪同</p>
+																					
+																		</li> 
+																		<li class="tuijan">
+																			
+																					 <label><input name="taocanProject" type="checkbox" id ="taocan" value="套餐三：预约+陪诊+速取检查报告|800" />
+																					   <span class="choosemhead">套餐三：预约+陪诊+速取检查报告</span><span class="choosemoney">&nbsp;800</span> </label>
+																					   <p>提前预约全程陪同及提前取报告</p>
+																					
+																		</li>  
+																		<li class="tuijan">
+																			
+																					 <label><input name="taocanProject" type="checkbox" id ="taocan" value="套餐四：预约+陪诊+速取检查报告+及时会诊|1100" />
+																					   <span class="choosemhead">套餐四：预约+陪诊+速取检查报告+及时会诊</span><span class="choosemoney">&nbsp;1100</span> </label>
+																					   <p>提前预约全程陪同及提前取报告及时专家会诊</p>
+																					
+																		</li> 
+																		
+																		
+																		</ul> 
+																
+																</div> 
 				    
 				      </div>
 				      <div class="booksusleftcontent">
@@ -145,6 +180,13 @@ padding-top: 10px;">
 				      </div>
 				      
 			     </div>
+			                                      
+				<script type="text/javascript">
+			$(function(){
+				$(".shoufei").mouseover(function(){$('.fufei').show();});
+				$(".shoufei").mouseout(function(){$('.fufei').hide();});
+			});
+			</script>
 			     <div class="booksusleft ">
 				      <h2>服务案例</h2>
 				      <div class="booksusleftcontent">
