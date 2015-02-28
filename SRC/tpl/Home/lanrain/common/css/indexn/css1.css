@@ -2857,8 +2857,8 @@ color: white;
 .ten_c{overflow: hidden;padding: 18px 0px;}
 .ten_c li{width: 315px;float: left;overflow: hidden;padding-right: px;border: px solid #ccc;margin-left:20px;height: 350px}
 .ten_c li.r{padding-right: 0;}
-.ten_c li a{display: block;text-align: center;border: 1px solid #ccc;height: 348px}
-.ten_c li a:hover{border:3px solid #006939;text-decoration:none}
+.ten_c li a{display: block;text-align: center;border: 1px solid #ccc;height: 344px;padding:2px;}
+.ten_c li a:hover{border:2px solid #006939;text-decoration:none;padding:1px}
 .ten_c li a p{line-height: 35px;color: #006939;}
 .ten_c li a:hover img{
     filter: alpha(opacity=80);
@@ -2900,11 +2900,10 @@ position: absolute;
 left: 0px;
 top:160px;}
 .jsshow a .jsshowp0{
-width: 90%;
-	height:30px;
-
+width: 92%;
+height:30px;
 border-bottom:1px dashed #ccc;
-margin-left: 5%;
+margin:0 auto;
 }
 .imgtext{position:absolute;top:160px}
 .ten_c li a:hover p{color: #006939;}
