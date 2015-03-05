@@ -1002,6 +1002,8 @@ padding: 5px 0;
 .resource_four li{
     float: left;
 }
+.inner1{width:985px;margin:auto}
+.inner1 li{float:left;width:216px;margin-right:29px;margin-top: 20px;}
 .resource_four li a{
     width: 246px;
     height: 46px;
