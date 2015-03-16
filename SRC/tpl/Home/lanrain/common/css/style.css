@@ -105,7 +105,7 @@ ul.p6 li {list-style-type:none;}
 .bookpic{margin:0 auto;width:1010px;height:350px}
 .bookcontent{width:100%;text-align:center;}
 .booklitter1{width:30%;margin:0 auto;border-bottom:1px solid #333}
-.booklitter1 p{font-size:20px;font-weight:bold;width:50%;margin:0 auto;border-bottom:2px solid #006835}
+.booklitter1 p{font-size:20px;font-weight:bold;width:50%;margin:0 auto;border-bottom:2px solid #006835;padding-bottom: 10px}
 .booklitter2 {margin-top: 5px;}
 .bookinfo li{width:33.33%;float:left;list-style: none;text-align:center;}
 .bookinfo{width:960px;margin:0 auto;margin-top: 57px;}

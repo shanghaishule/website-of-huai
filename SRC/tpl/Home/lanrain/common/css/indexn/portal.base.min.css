@@ -3227,7 +3227,7 @@ a.nonehover:hover {
 
 .g-fastorder-box select {
 	float: left;
-	width: 156px
+	width: 261px
 }
 
 .g-fastorder-box select.error {
@@ -4813,7 +4813,7 @@ a.nonehover:hover {
 	color: #fff;
 	transition: none;
 	display: block;
-margin-top: 20px
+margin-top: 45px
 }
 
 .gbt-blue:hover {
