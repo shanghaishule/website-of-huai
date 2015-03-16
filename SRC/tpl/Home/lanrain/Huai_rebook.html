@@ -1,13 +1,89 @@
 <include file="Public:header3" />
-
+  <link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/indexn/portal.base.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/css/indexn/portal.min.css">
 <!--==============================content================================-->
+
   <div class="bookmain">
    <div class="booktop" style="background: url(/tpl/Home/lanrain/common/images/bookpic.jpg);">
      <div class="bookpic" ">
        <img src="/tpl/Home/lanrain/common/images/bookpic1.png" width="960px">
      </div>
     </div>
+    
     <div class="bookcontent">
+   <div class="g-box g-fastorder-box">
+	
+	<div class="row g-clear">
+		<label>医院：</label>
+		<select class="province js-province" name="province">
+			<option value="">请选择...</option>
+		</select>	 
+	</div>
+	
+	<div class="row g-clear">
+		<label>科室：</label>
+		<select class="js-hospital disabled" disabled="disabled" name="hospital">
+			<option value="">请选择...</option>
+		</select>	 	 
+	</div>
+	<div class="row g-clear">
+		<label>医生：</label>
+		<select class="js-dept disabled" disabled="disabled" name="hdid">
+			<option value="">请选择...</option>
+		</select>	  
+	</div>
+	<div class="btn">
+		<a href="javascript:;" class="gbn gbt-orange js-btn">快速搜索</a>
+	</div> 
+</div>			
+							<div style="clear:both"></div>	
+    <div class="gh-search gh-web-search gh-search-left"> 
+		<form class="gh-search-form" action="http://www.guahao.com/search" name="qform">
+			<span class="gh-search-input">
+				<span class="search-icon"></span>
+    			<input type="text" name="q" value="" autocomplete="off" maxlength="50" id="js-q" placeholder="请输入疾病名、科室名、医院名或医生名" class="ui-autocomplete-input" role="textbox" aria-haspopup="true" aria-autocomplete="off">  
+			</span> 
+				<a class="gbn gbt-green2 radius-right big-search-bt" href="javascript:void(0);">搜索</a>
+				<div class="clear"></div>
+		</form>
+		<div class="search-key">  
+			
+	    				<a >
+						 	例如
+	    				</a>
+	    				<a >
+						 	长海医院
+	    				</a>
+	    				<a >
+						 	内分泌科
+	    				</a>
+	    				<a >
+						 	肾结石
+	    				</a>
+	    				<a >
+						 	东方肝胆外科医院
+	    				</a>
+	    				<a >
+						 	肝外科
+	    				</a>
+	    				<a >
+						 	肝癌
+	    				</a>
+	    				<a >
+						 	长征医院
+	    				</a>
+	    				<a >
+						 	心血内科
+	    				</a>
+	    				<a >
+						 	心脏病
+	    				</a>
+	    				
+			
+			
+    	</div> 
+	</div> 
+	<div style="clear:both"></div>
     <div class="booklitter">
 	     <div class="booklitter1">
 	         <p>二军大名医全方位科学诊断</p>

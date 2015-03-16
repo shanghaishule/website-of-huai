@@ -1,0 +1,686 @@
+<include file="Public:header3" />
+<link rel="stylesheet" type="text/css" media="screen"
+	href="__PUBLIC__/css/indexn/portal.base.min.css">
+	<link rel="stylesheet" type="text/css" media="screen"
+		href="__PUBLIC__/css/indexn/portal.min.css">
+
+
+
+
+<div id="g-wrapper" class="g-wrapper ">
+	<div id="gh">
+
+
+		<div class="gh-menu">
+			<div class="g-box g-fastorder-box" style="background: #f1f1f1">
+
+				<div class="row g-clear">
+					<label>医院：</label> <select class="province js-province"
+						name="province">
+						<option value="">请选择...</option>
+					</select>
+				</div>
+
+				<div class="row g-clear">
+					<label>科室：</label> <select class="js-hospital disabled"
+						disabled="disabled" name="hospital">
+						<option value="">请选择...</option>
+					</select>
+				</div>
+				<div class="row g-clear">
+					<label>医生：</label> <select class="js-dept disabled"
+						disabled="disabled" name="hdid">
+						<option value="">请选择...</option>
+					</select>
+				</div>
+				<div class="btn">
+					<a href="javascript:;" class="gbn gbt-orange js-btn">快速搜索</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="clear: both"></div>
+	<div class="gh-search gh-web-search gh-search-left">
+		<form class="gh-search-form" action="http://www.guahao.com/search"
+			name="qform">
+			<span class="gh-search-input"> <span class="search-icon"></span>
+				<input type="text" name="q" value="" autocomplete="off"
+				maxlength="50" id="js-q" placeholder="请输入疾病名、科室名、医院名或医生名"
+				class="ui-autocomplete-input" role="textbox" aria-haspopup="true"
+				aria-autocomplete="off">
+			</span> <a class="gbn gbt-green2 radius-right big-search-bt"
+				href="javascript:void(0);">搜索</a>
+			<div class="clear"></div>
+		</form>
+		<div class="search-key">
+
+			<a> 例如 </a> <a> 长海医院 </a> <a> 内分泌科 </a> <a> 肾结石 </a> <a>
+				东方肝胆外科医院 </a> <a> 肝外科 </a> <a> 肝癌 </a> <a> 长征医院 </a> <a> 心血内科 </a> <a>
+				心脏病 </a>
+
+
+
+		</div>
+	</div>
+	<div id="gc" style="min-height: 552px;">
+		<!-- 医院搜索的页面 -->
+
+		<div class="g-container gp-search gp-search-hos" id="g-cfg"
+			data-page="hospital" data-module="search" data-loadpop="default"
+			data-is-responsive="1">
+			<div class="search-top J_AreaFilter">
+				<div class="search-wrap">
+
+
+
+					<div class="g-grid2-l">
+
+						<div class="results">
+							<div class="filter-new  J_Filter">
+								<form name="fform"
+									action="">
+									
+									<div class="gfm-inline gfm-thin top">
+										<label class="gfm-checkbox"><input type="checkbox"
+											class="J_Submit" data-name="o" data-code="SXKT" value="1"><span>共为您搜索到65个医生</span></label>
+										
+									</div>
+									
+								</form>
+							</div>
+							<ul class="g-hpt-items J_HospitalList" id="J_HospitalList">
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								
+								<li class="J_ListItem g-clear"><div
+										class="hospital-box g-clear">
+										<div class="hospital-total">
+											<div class="set-relative">
+												<div class="search-hos-info g-clear">
+													<a target="_blank"
+														href=""
+														onmousedown=""
+														class="img"> <img
+														src="/tpl/Home/lanrain/common/images/doct3.jpg"
+														alt="吴孟超" title="吴孟超"></a>
+													<dl>
+														<dt>
+
+															<a
+																href=""
+																onmousedown=""
+																target="_blank" title="吴孟超"> 吴孟超</a> <span>主任医生</span>
+														</dt>
+														<dd>
+															<p class="tel">
+																<span title="021-64370045">肝胆外科</span>
+															</p>
+															<p class="addr">
+																<span title="东方肝胆外科医院" style="width:140px">东方肝胆外科医院</span>
+
+															</p>
+															<!-- 推荐内容科室或者医生 -->
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+										<!--没有开通情况-->
+										<!--开通情况-->
+										<div class="hospital-comment">
+											<div class="order-num g-1200px-show">
+												<p class="num">3.4万</p>
+												<p>就医经验</p>
+											</div>
+											<div class="hop-comment">
+												
+												<p>擅长：xxxxxx</p>
+											</div>
+										</div>
+										<div class="hospital-docindex">
+											<div class="order-wrap">
+
+												<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">邀他会诊</a>
+													<a
+													href=""
+													class="gbn gbt-blue" target="_blank"
+													onmousedown="">预约挂号</a>
+													
+											</div>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+
+
+
+
+
+							
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="g-grid2-r">
+						
+						<div class="g-ads-side J_Ads" data-pos="2" data-rows="3"
+							style="display: block;">
+							<a onmousedown="" target="_blank" href="" style="text-align:center">
+							   <img alt="沪爱健康微信公众号" src="/tpl/Home/lanrain/common/images/fuwuhao.jpg">
+							   <p style="font-size:20px;margin-bottom:20px;font-family:'Microsoft YaHei';">沪爱服务微信公众号</p>
+							  </a>
+								<a onmousedown=""
+								target="_blank" href="http://www.81bjmall.com/"><img
+								alt="首长保健商城" src="__PUBLIC__/images/indexn/malladv.png"></a>
+						</div>
+						
+					</div>
+					<div class="clear"></div>
+				</div>
+
+
+
+
+			</div>
+			
+
+   
+<!--==============================footer=================================-->
+</div>
+     <include file="Public:footer2" />
+		</body>
+		</html>

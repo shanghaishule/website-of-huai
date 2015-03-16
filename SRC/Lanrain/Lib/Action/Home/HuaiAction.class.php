@@ -95,6 +95,11 @@ class HuaiAction extends BaseAction {
 	
 		$this->display();
 	}
+	//会诊医生
+	public function hzdoc(){
+	
+		$this->display();
+	}
 	//high
 	public function high(){
 	
