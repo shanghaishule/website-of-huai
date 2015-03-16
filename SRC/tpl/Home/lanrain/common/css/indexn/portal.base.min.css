@@ -4041,7 +4041,7 @@ a.nonehover:hover {
 
 .g-hpt-items .hospital-total {
 	border-right: 1px solid #f2f2f2;
-	width: 390px;
+	width: 340px;
 	float: left;
 	height: 118px
 }
@@ -4178,7 +4178,8 @@ a.nonehover:hover {
 	border-right: 1px solid #f2f2f2;
 	float: left;
 	height: 118px;
-	width: 200px
+	width: 250px;
+	overflow:auto;
 }
 
 .g-hpt-items .hospital-comment .hop-comment {

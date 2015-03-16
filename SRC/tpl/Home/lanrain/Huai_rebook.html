@@ -12,34 +12,75 @@
     
     <div class="bookcontent">
    <div class="g-box g-fastorder-box">
-	
-	<div class="row g-clear">
-		<label>医院：</label>
-		<select class="province js-province" name="province">
-			<option value="">请选择...</option>
-		</select>	 
-	</div>
-	
-	<div class="row g-clear">
-		<label>科室：</label>
-		<select class="js-hospital disabled" disabled="disabled" name="hospital">
-			<option value="">请选择...</option>
-		</select>	 	 
-	</div>
-	
-	<div class="btn">
-		<a href="javascript:;" class="gbn gbt-orange js-btn">快速搜索</a>
-	</div> 
-</div>			
+              <form id="form1" name="form1" method="post" action="{lanrain::U('Huai/ksearch')}">
+				<div class="row g-clear">
+					<label>医院：</label> 
+					<select class="province js-province" name="hospital">
+						<option value="">请选择...</option>
+						<volist name="hospitalList" id="val">
+							<option value="{lanrain:$val.hospital}">{lanrain:$val.hospital}</option>
+						</volist>
+					</select>
+				</div>
+				<div class="row g-clear">
+					<label>科室：</label> <select class="js-hospital department" name="department">
+						<option value="">请选择...</option>
+					</select>
+				</div>
+				</form>
+				<div class="btn">
+					<a href="javascript:ksearch();" class="gbn gbt-orange js-btn">快速搜索</a>
+				</div> 
+</div>	
+              <script type="text/javascript">
+              $(function(){
+            	  $(".province").change(function(){
+            		 	 var a = $(this).val();
+            		 	 if(a != '' ){
+            		 		   $(".department").html('<option value="">查询中...</option>');
+            		 		   $.getJSON("{lanrain::U('Huai/getDepartment')}",{hospital:a},function(data){
+            		 			   if(data.length > 0){
+            		 				   $(".department").html('');
+            		 				   var html = '';
+            		 				    for(var i =0;i<data.length;i++){
+            		 				    	html +="<option value="+data[i].department+">"+data[i].department+"</option>";
+            		 				    }
+            		 				    $(".department").html(html);
+            		 			   }
+            		 		   });
+            		 	 }else{
+            		 		$(".department").html('<option value="">请选择...</option>');
+            		 	 }
+            	  });
+              });
+              function ksearch(){
+            	  var a = $(".province").val();
+            	  var b = $(".department").val();
+            	  if(a == '' || b == ''){
+            		  return false;
+            	  }else{
+            		  $('#form1').submit();
+            	  }
+              }
+              function search(){
+            	  var k = $("#js-q").val();
+            	  if(k == ''){
+            		  return false;
+            	  }else{
+            		  $("#form2").submit();
+            	  }
+              }
+              </script>		
 							<div style="clear:both"></div>	
     <div class="gh-search gh-web-search gh-search-left"> 
-		<form class="gh-search-form" action="http://www.guahao.com/search" name="qform">
-			<span class="gh-search-input">
-				<span class="search-icon"></span>
-    			<input type="text" name="q" value="" autocomplete="off" maxlength="50" id="js-q" placeholder="请输入疾病名、科室名、医院名或医生名" class="ui-autocomplete-input" role="textbox" aria-haspopup="true" aria-autocomplete="off">  
-			</span> 
-				<a class="gbn gbt-green2 radius-right big-search-bt" href="javascript:void(0);">搜索</a>
-				<div class="clear"></div>
+		<form id="form2" action="{lanrain::U('Huai/search')}" name="form2" method="post">
+			<span class="gh-search-input"> <span class="search-icon"></span>
+				<input type="text" name="keywords" value="{lanrain:$keywords}" autocomplete="off"
+				maxlength="50" id="js-q" placeholder="请输入疾病名、科室名、医院名或医生名"
+				class="ui-autocomplete-input" role="textbox" aria-haspopup="true" aria-autocomplete="off">
+			</span> <a class="gbn gbt-green2 radius-right big-search-bt"
+				href="javascript:search();">搜索</a>
+			<div class="clear"></div>
 		</form>
 		<div class="search-key">  
 			

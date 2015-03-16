@@ -58,6 +58,10 @@ class HuaiAction extends BaseAction {
 	}
 	// rebook
 	public function rebook() {
+		$mod = M('doctor');
+		//所有医院
+		$hospitalList = $mod->field('id,hospital')->group('hospital')->where("hospital != ''")->select();
+		$this->assign("hospitalList",$hospitalList);
 		$this->display ();
 	}
 	// rebook
@@ -97,8 +101,90 @@ class HuaiAction extends BaseAction {
 	}
 	//会诊医生
 	public function hzdoc(){
-	
+		$mod = M('doctor');
+		//所有医院
+		$hospitalList = $mod->field('id,hospital')->group('hospital')->where("hospital != ''")->select();
+		//所有医生
+		$where['name'] = array("neq",'');
+        $this->publicSearch($where);
 		$this->display();
+	}
+	//根据医院获取该医院所有科室
+	public function getDepartment(){
+		$hospital = $this->_get('hospital');
+		$departmentList = M('doctor')->field('department')->where(array('hospital'=>$hospital))->group('department')->select();
+		echo json_encode($departmentList);
+	}
+	//根据医院和科室查找医生/快速搜索
+	public function ksearch(){
+		$hospital = $this->_post('hospital');
+		$department = $this->_post('department');
+		if($hospital == '' && $department == '' && !isset($_SESSION["hospital"]) && !isset($_SESSION["department"])) {
+			  $this->redirect(U('Huai/hzdoc'));exit;
+		}else{
+			  $where = array();
+			  $where['hospital'] = $hospital ? $hospital:$_SESSION["hospital"];
+			  if(!isset($_SESSION["hospital"])) $_SESSION["hospital"]  = $hospital;
+			  $where['department'] = $department ? $department:$_SESSION["department"];
+			  if(!isset($_SESSION["department"]))$_SESSION["department"] =$department;
+              $this->publicSearch($where);
+			  $this->display('hzdoc');			  
+		}
+	}
+	//模糊搜索
+	public function search(){
+		    $keywords = $this->_post('keywords','trim');
+		    if($keywords == '' && !isset($_SESSION['doc_keyword'])){
+		    	$this->redirect(U('Huai/hzdoc'));exit;
+		    }else{
+		    	if(!isset($_SESSION['doc_keyword']))$_SESSION['doc_keyword'] = $keywords;
+		    	if($keywords == ''){
+		    		$keywords = $_SESSION['doc_keyword'];
+		    	}
+		    	$where = array();
+		    	$where['name'] = array('like','%'.$keywords.'%');
+		    	$where['department'] = array('like','%'.$keywords.'%');
+		    	$where['hospital'] = array('like','%'.$keywords.'%');
+		    	$where['goodProject'] = array('like','%'.$keywords.'%');
+		    	$where['_logic'] = 'or';
+				$mod = M('doctor');
+				//所有医院
+				$hospitalList = $mod->field('id,hospital')->group('hospital')->where("hospital != ''")->select();
+				//所有医生
+				$count=$mod->where($where)->count();
+				$Page       = new Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数
+				$show       = $Page->show();//
+				$doctorList=$mod->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+				foreach($doctorList as $key =>$val){
+					 $doctorList[$key]['name'] = preg_replace("/($keywords)/i","<b style=\"color:red\">\\1</b>",$val['name']);
+					 $doctorList[$key]['department'] = preg_replace("/($keywords)/i","<b style=\"color:red\">\\1</b>",$val['department']);
+					 $doctorList[$key]['hospital'] = preg_replace("/($keywords)/i","<b style=\"color:red\">\\1</b>",$val['hospital']);
+					 $doctorList[$key]['goodProject'] = preg_replace("/($keywords)/i","<b style=\"color:red\">\\1</b>",$val['goodProject']);			 
+				}
+				$this->assign('page',$show);
+				//dump($doctorList);die;
+				$this->assign("doctorList",$doctorList);
+				$this->assign("count",$count);
+				$this->assign("hospitalList",$hospitalList);	
+		    	$this->assign("keywords",$keywords);
+		    	$this->display('hzdoc');
+		    }
+	}
+	//搜索公共部分
+	public function publicSearch($where= array()){
+		$mod = M('doctor');
+		//所有医院
+		$hospitalList = $mod->field('id,hospital')->group('hospital')->where("hospital != ''")->select();
+		//所有医生
+		$count=$mod->where($where)->count();
+		$Page       = new Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数
+		$show       = $Page->show();//
+		$doctorList=$mod->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+		$this->assign('page',$show);
+		//dump($doctorList);die;
+		$this->assign("doctorList",$doctorList);
+		$this->assign("count",$count);
+		$this->assign("hospitalList",$hospitalList);		
 	}
 	//high
 	public function high(){
