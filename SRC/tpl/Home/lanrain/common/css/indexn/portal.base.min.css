@@ -4200,8 +4200,7 @@ a.nonehover:hover {
 .g-hpt-items .hospital-comment .hop-comment p {
 	line-height: 24px;
 	text-align: left;
-	padding-left: 22px;
-	padding-top: 15px;
+	padding: 11px;
 }
 
 .g-hpt-items .hospital-comment .hop-comment p span {
