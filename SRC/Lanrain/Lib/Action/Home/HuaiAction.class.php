@@ -117,30 +117,41 @@ class HuaiAction extends BaseAction {
 	}
 	//根据医院和科室查找医生/快速搜索
 	public function ksearch(){
-		$hospital = $this->_post('hospital');
-		$department = $this->_post('department');
-		if($hospital == '' && $department == '' && !isset($_SESSION["hospital"]) && !isset($_SESSION["department"])) {
+		$hospital = '';
+		$department='';
+		if(IS_POST){
+				$hospital = $this->_post('hospital');
+				$department = $this->_post('department');			
+		}
+		if(IS_GET){
+				$hospital = $this->_get('hospital');
+				$department = $this->_get('department');			
+		}
+
+		if($hospital == '' && $department == '') {
 			  $this->redirect(U('Huai/hzdoc'));exit;
 		}else{
 			  $where = array();
-			  $where['hospital'] = $hospital ? $hospital:$_SESSION["hospital"];
-			  if(!isset($_SESSION["hospital"])) $_SESSION["hospital"]  = $hospital;
-			  $where['department'] = $department ? $department:$_SESSION["department"];
-			  if(!isset($_SESSION["department"]))$_SESSION["department"] =$department;
+			  $where['hospital'] = $hospital;
+			  $where['department'] = $department;
               $this->publicSearch($where);
 			  $this->display('hzdoc');			  
 		}
 	}
 	//模糊搜索
 	public function search(){
-		    $keywords = $this->_post('keywords','trim');
-		    if($keywords == '' && !isset($_SESSION['doc_keyword'])){
+		       $keywords = '';
+			   if(IS_POST){
+			   	    $keywords = $this->_post('keywords','trim');
+			   }
+			   
+			   if(IS_GET){
+			   		$keywords = $this->_get('keywords','trim');
+			   }
+		    
+		    if($keywords == ''){
 		    	$this->redirect(U('Huai/hzdoc'));exit;
 		    }else{
-		    	if(!isset($_SESSION['doc_keyword']))$_SESSION['doc_keyword'] = $keywords;
-		    	if($keywords == ''){
-		    		$keywords = $_SESSION['doc_keyword'];
-		    	}
 		    	$where = array();
 		    	$where['name'] = array('like','%'.$keywords.'%');
 		    	$where['department'] = array('like','%'.$keywords.'%');
