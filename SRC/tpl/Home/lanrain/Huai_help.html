@@ -1,0 +1,131 @@
+<include file="Public:header3" />
+
+  
+<link rel="stylesheet" type="text/css" media="screen"
+	href="__PUBLIC__/css/home1.css">
+<!--==============================content================================-->
+<div class="booktop" style="background: url(/tpl/Home/lanrain/common/images/indexn/helpbg.jpg) no-repeat;background-size:100% 100%">
+     <div class="bookpic" ">
+       <img src="/tpl/Home/lanrain/common/images/indexn/help.png" width="960"height="325">
+     </div>
+    </div>
+ <div id="bd">
+	 
+
+    <div class="abox box1">
+        
+        <div class="body">
+            <ul class="list">
+                                <li class="li_a"
+					style="opacity: 1; background-image: url(__PUBLIC__/images/jy01.png);background-size:100% 100%"
+					onclick="">
+                                      
+                                        <div class="c">
+                        <a href="{lanrain::U('Home/Huai/diagnosis')}"
+							class="title">1、陪诊助手</a>
+                        <p>专业的护士陪诊队伍，让您看病不用茫然，不用排队，一步到位<br><span style="color:#006939">>>点击查看详情</span></p>
+                    </div>
+                </li>
+                                <li class="li_b"
+					style="opacity: 1; background-image: url(__PUBLIC__/images/jy02.png);"
+					onclick="">
+                                      
+                                        <div class="c">
+                        <a href="{lanrain::U('Home/Huai/suspect')}"
+							class="title">2、复诊好帮手</a>
+                        <p>提前帮你缴费预约好，来院就能做检查，看专家，不要再来回奔波浪费时间耽误病情<br><span style="color:#006939">>>点击查看详情</span></p>
+                    </div>
+                </li>
+                                <li class="li_c"
+					style="opacity: 1; background-image:url(__PUBLIC__/images/jy03.png);"
+					onclick="">
+                                      
+                                        <div class="c">
+                        <a href="{lanrain::U('Home/Huai/lvse')}"
+							class="title">3、绿色通道</a>
+                        <p>帮您安排好，无需再等待，直接检查直接看病<br><span style="color:#006939">>>点击查看详情</span></p>
+                    </div>
+                </li>
+                                <li class="li_d"
+					style="opacity: 1; background-image: url(__PUBLIC__/images/jy04.png);"
+					onclick="">
+                                     
+                                        <div class="c">
+                        <a href="{lanrain::U('Home/Huai/rebook')}"
+							class="title">4、专家会诊</a>
+                        <p>三甲医院主任级别至少两位为您做最科学的诊断，提出权威的方案<br><span style="color:#006939">>>点击查看详情</span></p>
+                    </div>
+                </li>
+                            </ul>
+        </div>
+        <div class="foot"></div>
+    </div>
+
+    <div class="talk_box">
+        <div class="ad_a">
+			 <img src="__PUBLIC__/images/fuwuhao.jpg" width="238px" height="238px">
+		</div>
+        <div class="head">扫描微信二维码</div>
+        <div class="title">手机在线选择服务</div>
+        
+    </div>
+
+   
+
+   
+    </div>
+<script>
+    $(function () {
+        $('.box1 li,.box2 li,.box3 li,.service_list li').hover(function () {
+            var find_l = $(this).parent().find('li');
+            find_l.not($(this).stop().animate({ 'opacity': '1' }, 200)).stop().animate({ 'opacity': '0.5' }, 200);
+        }, function () {
+            var find_l = $(this).parent().find('li');
+            find_l.stop().animate({ 'opacity': '1' }, 200);
+        });
+        
+        var html = '';
+        $('#bd').after(html);
+        
+         var body_height = $('body').height();
+    $('.mask').css('height',body_height);
+    
+    if (typeof document.body.style.maxHeight === "undefined") {
+      var window_width = $('body').width();
+      $('.mask').css('width',window_width);
+    }
+    });
+</script>
+ <script>
+function getMsg(){
+	var topic_id = "53";
+    $.ajax({
+        type:"post",
+        url:'/passport/getmsg',
+        data:{'topic_id':topic_id},
+        success:function(result){
+        	if(result!="null"){
+                $("#today_topic").html(result);
+            }
+        }
+
+    });
+}
+function tzurl(url){
+	window.location.href= url;
+}
+$(function(){
+    setInterval("getMsg()",120000);
+});
+</script>   	
+</div>
+
+	
+<!--==============================footer=================================-->
+     <include file="Public:footer2" />
+</div>    
+<script>
+	Cufon.now();
+</script>
+</body>
+</html>

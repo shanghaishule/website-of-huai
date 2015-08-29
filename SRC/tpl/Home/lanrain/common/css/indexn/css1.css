@@ -2553,7 +2553,7 @@ color: white;
 .ne_one{overflow: hidden;padding: 19px 0px;height: 180px;}
 .ne_one li{float: left;width: 168px;overflow: hidden;background: url("../images/one_line.png") no-repeat 0px;}
 .ne_one li a{display: block;width: 150px;height: 150px;padding:15px 5px 5px 5px;}
-.ne_one li p{color:#006939;font-weight:bold;font-size:20px}
+.ne_one li p{color:#006939;font-size:20px}
 .ne_one1{background: url("/tpl/Home/lanrain/common/images/indexn/one1.png") no-repeat center;}
 .ne_one2{background: url("/tpl/Home/lanrain/common/images/indexn/one2.png") no-repeat center;}
 .ne_one3{background: url("/tpl/Home/lanrain/common/images/indexn/one3.png") no-repeat center;}
@@ -2639,7 +2639,7 @@ color: white;
 
 /*five*/
 .ne_five{overflow: hidden;height: 522px;background: #f1f1f1;}
-.bg6{background: url("/tpl/Home/lanrain/common/images/indexn/bg6.jpg") no-repeat center}
+/*.bg6{background: url("/tpl/Home/lanrain/common/images/indexn/bg6.jpg") no-repeat center}*/
 /*six*/
 .ne_six{overflow: hidden;padding: 0px 0px;}
 .six_title{}
@@ -2854,10 +2854,33 @@ color: white;
 .nine_c li a h6{float: right;color: #bfbfbf;}
 .nine_c li a:hover h5{text-decoration: underline;}
 
+
+
+/*jiyinjiance*/
+.dna .ten_c li{width: 230px;float: left;overflow: hidden;padding-right: px;border: px solid #ccc;margin-left:20px;height: 230px}
+.dna .ten_c li a{display: block;text-align: center;;height: 230px;padding:0px;}
+.dna .imgtext{color:white;position:absolute;bottom:0;height:284px;width:230px;background-color: #006939;
+FILTER: alpha(opacity=60);
+opacity: 1;
+-moz-opacity: 1;
+position: absolute;
+left: 0px;
+top:160px;}
+.dna .jsshow a img{padding-top:0px}
+.dna .ten_c li a:hover{border:2px solid #006939;text-decoration:none;}
+
+
+
+/*jiyinjiance*/
+
+
+
 /*ten*/
 .ne_ten{overflow: hidden;padding: 0px 0px;}
 .ten_c{overflow: hidden;padding: 18px 0px;}
+
 .ten_c li{width: 315px;float: left;overflow: hidden;padding-right: px;border: px solid #ccc;margin-left:20px;height: 350px}
+
 .ten_c li.r{padding-right: 0;}
 .ten_c li a{display: block;text-align: center;border: 1px solid #ccc;height: 344px;padding:2px;}
 .ten_c li a:hover{border:2px solid #006939;text-decoration:none;padding:1px}
@@ -2992,4 +3015,59 @@ li.p-one{margin-left:20px;margin-right:40px;}
 .cz-hospital p{font-size:20px;text-align:center;margin-bottom:20px;}
 .cz-hospital #cz-detail{padding:10px;}
 
-
+/*huisuo*/
+.huisuo1{width:100%;height:350px;background:#630000}
+.huisuogy{text-align:center;margin:0 auto;width:1010px;padding-top: 59px;}
+.huisuogy p{color:white}
+.huisuowh{text-align:center;margin:0 auto;width:1010px;padding-top: 96px;}
+.huisuowh p{color:white}
+.hsgy01{text-align:center;font-size: 35px;padding: 25px 0 15px 0;
+}
+.hsgy02{font-size: 16px;
+line-height: 33px;}
+.huisuofw .two_c {
+overflow: hidden;
+padding-top: 30px;
+height: 375px;}
+.huisuofw .two_c li {
+width: 230px;
+float: left;
+padding-right: 21px;}
+.huisuofw .two_c li a img {
+width: 230px;
+height: 160px;
+margin-bottom: 20px;}
+.huisuotf{width:1010px;margin:0 auto}
+.huisuofw01 .two_c {
+overflow: hidden;
+padding-top: 30px;
+height: 346px;
+}	
+.huisuofw01 .two_c li {
+width: 185px;
+float: left;
+padding-right: 21px;}
+.huisuofw01 .two_c li a img {
+width: 185px;
+height: 130px;
+margin-bottom: 20px;}
+/*banner*/
+.booktop{background-size:100%}
+	
+	/*jiating*/
+.dietician_box {
+margin-top: 8px;
+height: 600px;
+background: url("../img/bg_5_1.jpg") no-repeat top center;
+position: relative;}
+.sampling_box {
+margin-top: 8px;
+height: 600px;
+background: url("../img/bg_3_1.jpg") no-repeat top center;
+position: relative;
+}
+.report_box {
+margin-top: 8px;
+height: 600px;
+background: url("../img/bg_4_1.jpg") no-repeat top center;
+}
