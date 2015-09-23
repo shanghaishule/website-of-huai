@@ -15,6 +15,10 @@ class HuaiAction extends BaseAction {
 	public function index() {
 		$this->display();
 	}
+	// 首页
+	public function xiaobao() {
+		$this->display();
+	}
 	// jiuyi zhu shou
 	public function help() {
 		$this->display();
