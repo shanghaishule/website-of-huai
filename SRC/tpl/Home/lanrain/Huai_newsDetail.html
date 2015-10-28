@@ -125,7 +125,7 @@ $(function(){
                             
                             <ul>
                             	<li><a href="{lanrain::C('site_url')}">首页</a></li>
-                                <li><a href="{lanrain::U('Home/Huai/news')}">就医资讯</a></li>
+                                <li><a href="{lanrain::U('Home/Huai/news')}">沪爱资讯</a></li>
                                 <li>{lanrain:$res['title']|msubstr=0,50,'utf-8',true}</li>
                             </ul>
                         </div> 
@@ -152,12 +152,12 @@ $(function(){
                         
                         <div class="block_blog_1">
                         	<article class="blog_post">
-                            	<div class="f_pic"><img src="{lanrain:$res['pic']}" alt="" width="610" height="244"/></div>
+                            	<div class="f_pic"><img src="{lanrain:$res['pic']}" alt="" width="244" height="244"/></div>
                             	
-                                <h4 class="title">{lanrain:$res['title']}</h4>
+                                <h4 class="title" style="font-size: 27px; line-height:30px;">{lanrain:$res['title']}</h4>
                                 
                                 <div class="content">
-                                	<p>{lanrain:$res['info']|htmlspecialchars_decode}</p>
+                                	<p style="line-height:20px">{lanrain:$res['info']|htmlspecialchars_decode}</p>
                                 </div>
                                 
                                 <div class="info">
@@ -205,140 +205,7 @@ $(function(){
                        <!-- -评论end -->
                     </div>
                     
-                    <div class="sidebar">
-                        
-                     
-                        
-                        <div class="block_popular_posts">
-                        	<h4>健康便签</h4>
-                            
-                        	<div class="article">
-								<div class="pic">
-									<a href="#" class="w_hover">
-										<img src="__PUBLIC__/images/pic_popular_post_1.jpg" alt="" />
-										<span></span>
-									</a>
-								</div>
-                                        
-								<div class="text">
-									<p class="title"><a href="{lanrain::U('Home/Huai/news',array('cname'=>'公司新闻'))}">公司新闻</a></p>
-									<div class="date"><p>11 July, 2012</p></div>
-                                    <div class="icons">
-                                    	<ul>
-                                        	<li><a href="#" class="views">41</a></li>
-                                            <li><a href="#" class="comments">22</a></li>
-                                        </ul>
-                                    </div>
-								</div>
-							</div>
-							<div class="line_3"></div>
-                            
-                            <div class="article">
-								<div class="pic">
-									<a href="#" class="w_hover">
-										<img src="__PUBLIC__/images/pic_popular_post_2.jpg" alt="" />
-										<span></span>
-									</a>
-								</div>
-                                        
-								<div class="text">
-									<p class="title"><a href="{lanrain::U('Home/Huai/news',array('cname'=>'就医资讯'))}">就医资讯</a></p>
-									<div class="date"><p>07 July, 2012</p></div>
-                                    <div class="icons">
-                                    	<ul>
-                                        	<li><a href="#" class="views">24</a></li>
-                                            <li><a href="#" class="comments">16</a></li>
-                                        </ul>
-                                    </div>
-								</div>
-							</div>
-							<div class="line_3"></div>
-                            
-                            <div class="article">
-								<div class="pic">
-									<a href="#" class="w_hover">
-										<img src="__PUBLIC__/images/pic_popular_post_3.jpg" alt="" />
-										<span></span>
-									</a>
-								</div>
-                                        
-								<div class="text">
-									<p class="title"><a href="{lanrain::U('Home/Huai/news',array('cname'=>'专家观点'))}">专家观点</a></p>
-									<div class="date"><p>05 July, 2012</p></div>
-                                    <div class="icons">
-                                    	<ul>
-                                        	<li><a href="#" class="views">33</a></li>
-                                            <li><a href="#" class="comments">25</a></li>
-                                        </ul>
-                                    </div>
-								</div>
-							</div>
-							
-							<div class="line_2"></div>
-                        </div>
-                        
-                        <div class="separator" style="height:31px;"></div>
-                        
-                        <div class="block_popular_stuff">
-                        	<h4>健康视频</h4>
-                            
-                            <div class="content">
-                            	<a href="#" class="view_all">健康美丽由内而外</a>
-                            	<div class="media"><a href="http://www.youtube.com/watch?v=ySIvism2af8" class="general_pic_hover play no_fx" data-rel="prettyPhoto" title="Popular Video"><img src="__PUBLIC__/images/pic_pop_video.jpg" alt="" /></a></div>
-                                <p><a href="blog_post_w_video.html">漂亮女生的健康管理</a> <img src="__PUBLIC__/images/icon_video.gif" alt="" /></p>
-                                <p class="date">11 July, 2012</p>
-                            </div>
-                            
-                            <div class="info">
-                            	<ul>
-                                	<li class="comments"><a href="#">115</a></li>
-                                    <li class="views"><a href="#">220</a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="clearboth"></div>
-                            
-                            <div class="line_2"></div>
-                        </div>
-                        
-                        <div class="separator" style="height:31px;"></div>
-                        
-                        <div class="block_popular_stuff">
-                        	<h4>健康图片</h4>
-                            
-                            <div class="content">
-                            	<a href="#" class="view_all">显示所有</a>
-                            	<div class="media"><a href="__PUBLIC__/images/pic_pop_photo_big.jpg" class="general_pic_hover zoom no_fx" data-rel="prettyPhoto" title="Popular Photo"><img src="__PUBLIC__/images/pic_pop_photo.jpg" alt="" /></a></div>
-                                <p><a href="blog_post_w_slider.html">生活小习惯</a> <img src="__PUBLIC__/images/icon_photo.gif" alt="" /></p>
-                                <p class="date">11 July, 2012</p>
-                            </div>
-                            
-                            <div class="info">
-                            	<ul>
-                                	<li class="comments"><a href="#">100</a></li>
-                                    <li class="views"><a href="#">134</a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="clearboth"></div>
-                            
-                            <div class="line_2"></div>
-                        </div>
-                        
-                      	<div class="separator" style="height:31px;"></div>
-                        
-                        <div class="block_newsletter">
-                        	<h4>写信</h4>
-                            
-                            <form action="#" />
-                            	<div class="field"><input type="text" class="w_def_text" title="写出你想说的" /></div>
-                                <input type="submit" class="button" value="发送" />
-                                
-                                <div class="clearboth"></div>
-                            </form>
-                        </div>
-                        
-                    </div>
+                    
                     
                     
                 	<div class="clearboth"></div>

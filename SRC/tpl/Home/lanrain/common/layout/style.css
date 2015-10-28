@@ -349,13 +349,15 @@ float: right;
 
 #content {padding:0;}
 .general_content {}
-.general_content p {color:#666666; line-height:18px;}
+.general_content p {color:#666666; line-height:56px;}
 
 .right_sidebar .general_content {;}
-.right_sidebar .main_content {padding-right: 7px;width:620px; float:left;padding-left: 10px;
+.right_sidebar .main_content {padding-right: 7px;width::100%; float:left;padding-left: 10px;
 padding-top: 10px;background:white}
 .right_sidebar .sidebar {padding-left: 8px;width:300px; float:right;margin-top:0px;padding-right: 10px;background:white}
-
+.leftnewsdetail{float:left;width: 670px;
+    margin-left: 16px;}
+.f_pic{float:left}
 .left_sidebar .general_content {background:url(images/line_content.gif) repeat-y 320px 0px;}
 .left_sidebar .main_content {width:620px; float:right;}
 .left_sidebar .sidebar {width:300px; float:left;}

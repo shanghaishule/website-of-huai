@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5{font-weight: 400;}
         height: 100%;
     }
 }
+
 .btn_green2{border: 1px solid #55c2b9; color: #55c2b9; background: transparent; cursor: pointer;border-radius: 3px;}
 .btn_green2:hover{background: rgba(255,255,255,.2);}
 .btn_black{background: #33383f;color: #fff;cursor: pointer;}

@@ -11,6 +11,9 @@ class IndexAction extends BaseAction{
 			$list[$key]['shanchang'] = strip_tags($val['shanchang']);
 		}
 		$list = $this->getList($list);
+		$db=D('Img');
+		$articleList = $db->field('id,title')->order('uptatetime DESC')->limit(0,6)->select();
+		$this->assign('res',$articleList);
 		$this->assign('list',$list);
 		$this->display("Huai:index");
 	}
