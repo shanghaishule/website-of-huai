@@ -12,7 +12,7 @@ class IndexAction extends BaseAction{
 		}
 		$list = $this->getList($list);
 		$db=D('Img');
-		$articleList = $db->field('id,title')->order('uptatetime DESC')->limit(0,6)->select();
+		$articleList = $db->field('id,title')->order('uptatetime DESC')->limit(0,7)->select();
 		$this->assign('res',$articleList);
 		$this->assign('list',$list);
 		$this->display("Huai:index");
