@@ -1,0 +1,144 @@
+<include file="Public:header3" />
+<!-- =================侧边栏===================== -->
+<div class="booktop" style="background: url(/tpl/Home/lanrain/common/images/bookpic.jpg) no-repeat;background-size:100% 100%;;">
+     <div class="bookpic" ">
+       <img src="/tpl/Home/lanrain/common/images/indexn/jiameng.png" width="1010"height="325">
+     </div>
+    </div>
+<div class="main">
+	<div class="bg-img"></div>
+<div class="navbox">
+	<ul id="sliderNav" class="sliderNav">
+		<li class="sliderTag"><a href="#one">招商区域</a></li>
+        <li class="sliderTag"><a href="#two">招商政策</a></li>
+		<li class="sliderTag"><a href="#three">经销商分类</a></li>
+		<li class="sliderTag"><a href="#four">店员招募与培训</a></li>
+	</ul>
+</div>
+<!-- =================侧边栏===================== -->
+<script>
+$(function(){
+	//Default Action
+	$(".hosall").hide(); //Hide all content
+	$("ul.sliderNav li:first").addClass("active").show(); //Activate first tab
+	$(".hosall:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.sliderNav li").click(function() {
+		$("ul.sliderNav li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".hosall").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+
+});
+</script>
+<!--==============================content================================-->
+<section id="content-new" class="">
+<div class="juzhong">
+	<div class="hosall" id="one">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+
+						<img src="__PUBLIC__/images/huai11.jpg" width="100%"  alt=""
+							class="img-border ">
+						<p class="p4">我们面向全国经济较发达的中等以上城市招商，代理商根据情况不同一般为各自区域内的一般分销商，如果有较强的实力和销售网络为区域独家专营店</p>
+                        
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+  <div class="hosall" id="two">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+
+						<img src="__PUBLIC__/images/lingdao.jpg" width="100%" alt=""
+							class="img-border ">
+						
+                         <ul class="list-2 p5">
+						    <li>低门槛：无加盟费.无独立店雨要求仅需缴纳最低3万服务保证金，首次最低进货5万元。</li>
+							<li>零风险：产品保质期内无条件退货；推出加盟时服务保证金在扣除客户投诉赔付等相关费用后全额退还</li>
+							<li>高回报：如果平均一天能销售一个肿瘤基因检测套餐或沪爱保健品或免疫细胞存储等产品，年回报最低达到50万元，销售能力较强的分销店,年收入将超过100万元。混营店l一般分销店1的投资回报率高达136%, 专营店回报率达到230%。</li>
+							
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="hosall" id="three">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+
+						<p class="p4"></p>
+						
+						<ul class="list-2 p5">
+						    <li>我们将经销商按代理权限不同,分为一般分销商和独家专营店两个大类。</li>
+							<li>一般分销商要求：1、拥有20平方米以上的经管服务场所,且能拿出不少于5平方米的展拒,为本公司产品提供产品展示: 2、服务保证金灵活协商,原则上为不超过一个月销售额,最低不少千3万元。3、首次进货更活协商,但最低不少子7万元。</li>
+							<li>沪爱健康专营店要求：1、对健康行业具有浓厚的兴趣；2、拥有100平米以上的经营场所；3、根据规模缴纳10万-30万元的服务保证金；4、首次进货20万-50万的基因检测系列产品、沪爱保健品等其他健康产品，代理商任选；5、沪爱健康专营店，不得经营其他产品和服务</li>
+							
+						</ul>
+						
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="hosall" id="four">
+		<div class="grid_12">
+			<div class="box-shadow">
+				<div class="wrap block-2 bg2">
+					<div class="m4">
+
+						<img src="__PUBLIC__/images/jiagou.png" width="100%"  alt=""
+							class="img-border ">
+						<p class="p4"></p>
+						<ul class="list-2 p5">
+						    <li>由分销商自行招募所有员工，以20-40岁女性为好，或者气质较好的中老年人，有保健品、保险产品销售经验者优先</li>
+							<li>我公司提供对销售人员的专业培训。培训包括销售礼仪，基因检测、免疫细胞等健康知识，销售话术，成交技巧等</li>
+						
+						</ul>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	</div>
+</section>
+<div class="clear"></div>
+<div style="height: 50px"></div>
+<!--==============================content================================-->
+<!--==============================footer=================================-->
+</div>
+<include file="Public:footer2" />
+<script>
+	Cufon.now();
+</script>
+</body>
+</html>
