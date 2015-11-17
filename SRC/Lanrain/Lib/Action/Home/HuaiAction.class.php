@@ -15,6 +15,10 @@ class HuaiAction extends BaseAction {
 	public function index() {
 		$this->display();
 	}
+	// lvsejiuyi
+	public function lvsejiuyi() {
+		$this->display();
+	}
 	// 招商
 	public function biz() {
 		$this->display();
