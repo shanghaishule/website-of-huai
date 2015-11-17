@@ -2,8 +2,8 @@ html {
 	font-size: 20px
 }
 
-body>.GJ_Gp,body>[class*=gp-] {
-	width: 16rem;
+body {
+	width: 100%;
 	margin: 0 auto
 }
 
@@ -129,7 +129,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 
 .gp-czwy-recommend section {
 	position: relative;
-	width: 16rem;
+	width: 100%;
 	margin: 0 auto
 }
 
@@ -167,15 +167,15 @@ body>.GJ_Gp,body>[class*=gp-] {
 }
 
 .gp-czwy-recommend .section-a {
-	width: 16rem;
-	height: 16.79rem;
-	background: url(1.jpg) no-repeat;
+	width: 100%;
+	
+	/*background: url(1.jpg) no-repeat;*/
 	background-size: 100%
 }
 
 .gp-czwy-recommend .section-a>* {
 	font-size: .7rem;
-	position: absolute;
+	
 	bottom: .12427746%
 }
 
@@ -258,7 +258,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url(../img/czwy/recommend/title_icon.png) no-repeat;
+	background: url(title_icon.png) no-repeat;
 	background-size: 20px auto;
 	position: absolute;
 	left: 20px;
@@ -290,7 +290,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 	display: block;
 	width: 61px;
 	height: 50px;
-	background: url(../img/czwy/recommend/cpts.png) no-repeat;
+	background: url(cpts.png) no-repeat;
 	background-size: 61px auto;
 	position: absolute;
 	left: 0;
@@ -341,7 +341,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url(../img/czwy/recommend/title_icon.png) no-repeat;
+	background: url(title_icon.png) no-repeat;
 	background-size: 20px auto;
 	position: absolute;
 	left: 20px;
@@ -433,7 +433,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url(../img/czwy/recommend/title_icon.png) no-repeat;
+	background: url(title_icon.png) no-repeat;
 	background-size: 20px auto;
 	position: absolute;
 	left: 20px;
@@ -618,7 +618,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 }
 
 .gp-czwy-recommend .section-action .content {
-	width: 16rem;
+	width: 100%;
 	margin: 0 auto;
 	padding: 7px 10px;
 	box-sizing: border-box
@@ -807,7 +807,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 }
 
 .gp-czwy-buy .section-action .content {
-	width: 16rem;
+	width: 100%;
 	margin: 0 auto;
 	padding: 7px 10px;
 	box-sizing: border-box
@@ -884,7 +884,7 @@ body>.GJ_Gp,body>[class*=gp-] {
 }
 
 .gp-czwy-confirm .section-action .content {
-	width: 16rem;
+	width: 100%;
 	margin: 0 auto;
 	padding: 7px 10px;
 	box-sizing: border-box
