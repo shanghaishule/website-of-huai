@@ -296,7 +296,9 @@ body {
 	left: 0;
 	top: 9px
 }
-
+.gp-czwy-recommend .section-cpts .content li:nth-of-type(5):before {
+	background-position: 0 -200px
+}
 .gp-czwy-recommend .section-cpts .content li:nth-of-type(4):before {
 	background-position: 0 -150px
 }
